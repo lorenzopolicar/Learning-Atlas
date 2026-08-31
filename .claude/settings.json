@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 scripts/atlas.py validate --strict && python3 scripts/atlas.py index --check && python3 scripts/atlas.py export notebooklm --check",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

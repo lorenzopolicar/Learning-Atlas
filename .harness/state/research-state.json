@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "last_weekly_scout": "2026-08-31",
+  "last_monthly_synthesis": "2026-08-31",
+  "last_quarterly_review": "2026-08-31",
+  "active_review": "R001",
+  "current_queue_item": 1,
+  "runs": [
+    {
+      "date": "2026-08-31",
+      "kind": "foundation",
+      "question": "Q001",
+      "sources_added": ["S001", "S002", "S003", "S004", "S005", "S006", "S007", "S008", "S009", "S010", "S011", "S012", "S013", "S014"],
+      "briefing": "briefings/weekly/2026-08-31-foundation.md",
+      "note": "Human-requested initial corpus; the three-source cap applies to recurring autonomous runs."
+    }
+  ]
+}

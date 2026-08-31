@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pdf
+*.epub
+*.mobi
+tmp/
+dist/

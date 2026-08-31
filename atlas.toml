@@ -1,0 +1,15 @@
+[atlas]
+schema_version = 1
+
+[retrieval]
+max_items = 12
+max_chars = 6000
+
+[review]
+stale_after_days = 180
+
+[automation]
+max_new_sources_per_run = 3
+
+[status]
+allowed = ["seed", "provisional", "contested", "established", "draft", "adopted", "active", "retired", "open", "complete", "reviewed"]

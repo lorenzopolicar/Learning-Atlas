@@ -1,0 +1,619 @@
+{
+  "nodes": [
+    {
+      "id": "B001",
+      "type": "belief",
+      "title": "Optimize durable capability, not completion",
+      "status": "adopted",
+      "path": "beliefs/B001-optimize-capability-not-completion.md"
+    },
+    {
+      "id": "B002",
+      "type": "belief",
+      "title": "Preserve productive effort while removing incidental friction",
+      "status": "adopted",
+      "path": "beliefs/B002-preserve-productive-effort.md"
+    },
+    {
+      "id": "B003",
+      "type": "belief",
+      "title": "The evidence-backed learner model is the core compounding asset",
+      "status": "adopted",
+      "path": "beliefs/B003-learner-model-is-core-value.md"
+    },
+    {
+      "id": "B004",
+      "type": "belief",
+      "title": "Represent independent and AI-assisted capability separately",
+      "status": "adopted",
+      "path": "beliefs/B004-separate-independent-and-assisted-capability.md"
+    },
+    {
+      "id": "B005",
+      "type": "belief",
+      "title": "Personalization must earn its complexity",
+      "status": "adopted",
+      "path": "beliefs/B005-personalization-must-earn-complexity.md"
+    },
+    {
+      "id": "C001",
+      "type": "claim",
+      "title": "Assisted performance is not evidence of durable learning",
+      "status": "provisional",
+      "path": "claims/C001-assisted-performance-is-not-learning.md"
+    },
+    {
+      "id": "C002",
+      "type": "claim",
+      "title": "Pedagogical structure changes AI learning outcomes",
+      "status": "provisional",
+      "path": "claims/C002-pedagogical-structure-changes-ai-learning-outcomes.md"
+    },
+    {
+      "id": "C003",
+      "type": "claim",
+      "title": "Effective guidance varies with learner expertise",
+      "status": "provisional",
+      "path": "claims/C003-guidance-should-vary-with-expertise.md"
+    },
+    {
+      "id": "C004",
+      "type": "claim",
+      "title": "Retrieval practice supports delayed retention and some transfer",
+      "status": "established",
+      "path": "claims/C004-retrieval-supports-retention-and-transfer.md"
+    },
+    {
+      "id": "C005",
+      "type": "claim",
+      "title": "Spacing improves long-term retention",
+      "status": "established",
+      "path": "claims/C005-spacing-improves-long-term-retention.md"
+    },
+    {
+      "id": "C006",
+      "type": "claim",
+      "title": "Feedback is not uniformly beneficial",
+      "status": "provisional",
+      "path": "claims/C006-feedback-effects-depend-on-form-and-context.md"
+    },
+    {
+      "id": "C007",
+      "type": "claim",
+      "title": "Learner models are probabilistic inferences, not ground truth",
+      "status": "provisional",
+      "path": "claims/C007-learner-models-are-probabilistic-inferences.md"
+    },
+    {
+      "id": "C008",
+      "type": "claim",
+      "title": "Trustworthy capability judgments need multiple evidence channels",
+      "status": "provisional",
+      "path": "claims/C008-trustworthy-assessment-needs-multiple-evidence-channels.md"
+    },
+    {
+      "id": "D001",
+      "type": "decision",
+      "title": "Use Git as the canonical synthesis store",
+      "status": "active",
+      "path": "decisions/D001-git-is-canonical-knowledge-store.md"
+    },
+    {
+      "id": "P001",
+      "type": "principle",
+      "title": "Use progressive assistance",
+      "status": "active",
+      "path": "principles/P001-progressive-assistance.md"
+    },
+    {
+      "id": "P002",
+      "type": "principle",
+      "title": "Use an evidence ledger for learner inferences",
+      "status": "active",
+      "path": "principles/P002-use-an-evidence-ledger.md"
+    },
+    {
+      "id": "P003",
+      "type": "principle",
+      "title": "Adapt and fade guidance with evidence",
+      "status": "active",
+      "path": "principles/P003-adapt-and-fade-guidance.md"
+    },
+    {
+      "id": "P004",
+      "type": "principle",
+      "title": "Retrieve and space important capabilities",
+      "status": "active",
+      "path": "principles/P004-retrieve-and-space.md"
+    },
+    {
+      "id": "P005",
+      "type": "principle",
+      "title": "Measure learning after assistance is removed",
+      "status": "active",
+      "path": "principles/P005-measure-learning-after-assistance.md"
+    },
+    {
+      "id": "P006",
+      "type": "principle",
+      "title": "Triangulate capability evidence",
+      "status": "active",
+      "path": "principles/P006-triangulate-capability-evidence.md"
+    },
+    {
+      "id": "P007",
+      "type": "principle",
+      "title": "Preserve traceability from source to decision",
+      "status": "active",
+      "path": "principles/P007-preserve-research-traceability.md"
+    },
+    {
+      "id": "Q001",
+      "type": "question",
+      "title": "When does AI-assisted performance become durable learning?",
+      "status": "open",
+      "path": "questions/Q001-when-does-ai-performance-become-learning.md"
+    },
+    {
+      "id": "Q002",
+      "type": "question",
+      "title": "What should a trustworthy learner model represent?",
+      "status": "open",
+      "path": "questions/Q002-what-should-a-learner-model-represent.md"
+    },
+    {
+      "id": "Q003",
+      "type": "question",
+      "title": "What is worth learning in an AI-rich world?",
+      "status": "open",
+      "path": "questions/Q003-what-is-worth-learning-in-an-ai-world.md"
+    },
+    {
+      "id": "R001",
+      "type": "review",
+      "title": "Learning versus performance in AI-assisted learning",
+      "status": "active",
+      "path": "reviews/R001-learning-performance-gap/protocol.md"
+    },
+    {
+      "id": "S001",
+      "type": "source",
+      "title": "Generative AI without guardrails can harm learning outcomes",
+      "status": "reviewed",
+      "path": "sources/notes/S001-bastani-generative-ai-guardrails.md"
+    },
+    {
+      "id": "S002",
+      "type": "source",
+      "title": "AI tutoring outperforms in-class active learning",
+      "status": "reviewed",
+      "path": "sources/notes/S002-kestin-ai-tutoring-rct.md"
+    },
+    {
+      "id": "S003",
+      "type": "source",
+      "title": "Building AI Companions that Prioritise Learning over Performance",
+      "status": "reviewed",
+      "path": "sources/notes/S003-khosravi-learning-first-ai-companions.md"
+    },
+    {
+      "id": "S004",
+      "type": "source",
+      "title": "OECD Digital Education Outlook 2026",
+      "status": "reviewed",
+      "path": "sources/notes/S004-oecd-digital-education-outlook-2026.md"
+    },
+    {
+      "id": "S005",
+      "type": "source",
+      "title": "From Chalkboards to Chatbots: Transforming Learning in Nigeria, One Prompt at a Time",
+      "status": "reviewed",
+      "path": "sources/notes/S005-world-bank-nigeria-chatbot-rct.md"
+    },
+    {
+      "id": "S006",
+      "type": "source",
+      "title": "Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention",
+      "status": "reviewed",
+      "path": "sources/notes/S006-roediger-karpicke-testing-effect.md"
+    },
+    {
+      "id": "S007",
+      "type": "source",
+      "title": "Transfer of Test-Enhanced Learning: Meta-Analytic Review and Synthesis",
+      "status": "reviewed",
+      "path": "sources/notes/S007-pan-rickard-transfer-retrieval.md"
+    },
+    {
+      "id": "S008",
+      "type": "source",
+      "title": "Distributed Practice in Verbal Recall Tasks",
+      "status": "reviewed",
+      "path": "sources/notes/S008-cepeda-distributed-practice.md"
+    },
+    {
+      "id": "S009",
+      "type": "source",
+      "title": "The Expertise Reversal Effect",
+      "status": "reviewed",
+      "path": "sources/notes/S009-kalyuga-expertise-reversal.md"
+    },
+    {
+      "id": "S010",
+      "type": "source",
+      "title": "The Power of Feedback",
+      "status": "reviewed",
+      "path": "sources/notes/S010-hattie-timperley-feedback.md"
+    },
+    {
+      "id": "S011",
+      "type": "source",
+      "title": "Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge",
+      "status": "reviewed",
+      "path": "sources/notes/S011-corbett-anderson-knowledge-tracing.md"
+    },
+    {
+      "id": "S012",
+      "type": "source",
+      "title": "Enacting Assessment Reform in a Time of Artificial Intelligence",
+      "status": "reviewed",
+      "path": "sources/notes/S012-teqsa-assessment-reform-ai.md"
+    },
+    {
+      "id": "S013",
+      "type": "source",
+      "title": "Validity of Psychological Assessment",
+      "status": "reviewed",
+      "path": "sources/notes/S013-messick-validity-assessment.md"
+    },
+    {
+      "id": "S014",
+      "type": "source",
+      "title": "The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems",
+      "status": "reviewed",
+      "path": "sources/notes/S014-vanlehn-tutoring-effectiveness.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "B001",
+      "target": "C001",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B001",
+      "target": "C002",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B001",
+      "target": "C004",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B001",
+      "target": "C005",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B002",
+      "target": "C001",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B002",
+      "target": "C002",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B002",
+      "target": "C003",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B002",
+      "target": "C004",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B003",
+      "target": "C002",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B003",
+      "target": "C003",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B003",
+      "target": "C007",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B003",
+      "target": "C008",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B004",
+      "target": "C001",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B004",
+      "target": "C007",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B004",
+      "target": "C008",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B005",
+      "target": "C003",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B005",
+      "target": "C007",
+      "relation": "derived_from"
+    },
+    {
+      "source": "C001",
+      "target": "S001",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C001",
+      "target": "S004",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C001",
+      "target": "S006",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S001",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S002",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S005",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S014",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C003",
+      "target": "S009",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C004",
+      "target": "S006",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C004",
+      "target": "S007",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C005",
+      "target": "S008",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C006",
+      "target": "S010",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C007",
+      "target": "S011",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C007",
+      "target": "S013",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C008",
+      "target": "S012",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C008",
+      "target": "S013",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "D001",
+      "target": "P002",
+      "relation": "principles"
+    },
+    {
+      "source": "D001",
+      "target": "P007",
+      "relation": "principles"
+    },
+    {
+      "source": "D001",
+      "target": "C007",
+      "relation": "related_claims"
+    },
+    {
+      "source": "D001",
+      "target": "C008",
+      "relation": "related_claims"
+    },
+    {
+      "source": "P001",
+      "target": "C001",
+      "relation": "based_on"
+    },
+    {
+      "source": "P001",
+      "target": "C002",
+      "relation": "based_on"
+    },
+    {
+      "source": "P001",
+      "target": "C003",
+      "relation": "based_on"
+    },
+    {
+      "source": "P001",
+      "target": "B002",
+      "relation": "based_on"
+    },
+    {
+      "source": "P002",
+      "target": "C007",
+      "relation": "based_on"
+    },
+    {
+      "source": "P002",
+      "target": "C008",
+      "relation": "based_on"
+    },
+    {
+      "source": "P002",
+      "target": "B003",
+      "relation": "based_on"
+    },
+    {
+      "source": "P002",
+      "target": "B004",
+      "relation": "based_on"
+    },
+    {
+      "source": "P003",
+      "target": "C003",
+      "relation": "based_on"
+    },
+    {
+      "source": "P003",
+      "target": "C007",
+      "relation": "based_on"
+    },
+    {
+      "source": "P003",
+      "target": "B005",
+      "relation": "based_on"
+    },
+    {
+      "source": "P004",
+      "target": "C004",
+      "relation": "based_on"
+    },
+    {
+      "source": "P004",
+      "target": "C005",
+      "relation": "based_on"
+    },
+    {
+      "source": "P004",
+      "target": "B001",
+      "relation": "based_on"
+    },
+    {
+      "source": "P004",
+      "target": "B002",
+      "relation": "based_on"
+    },
+    {
+      "source": "P005",
+      "target": "C001",
+      "relation": "based_on"
+    },
+    {
+      "source": "P005",
+      "target": "C004",
+      "relation": "based_on"
+    },
+    {
+      "source": "P005",
+      "target": "C005",
+      "relation": "based_on"
+    },
+    {
+      "source": "P005",
+      "target": "B001",
+      "relation": "based_on"
+    },
+    {
+      "source": "P006",
+      "target": "C007",
+      "relation": "based_on"
+    },
+    {
+      "source": "P006",
+      "target": "C008",
+      "relation": "based_on"
+    },
+    {
+      "source": "P006",
+      "target": "B004",
+      "relation": "based_on"
+    },
+    {
+      "source": "P007",
+      "target": "C007",
+      "relation": "based_on"
+    },
+    {
+      "source": "P007",
+      "target": "C008",
+      "relation": "based_on"
+    },
+    {
+      "source": "P007",
+      "target": "B003",
+      "relation": "based_on"
+    },
+    {
+      "source": "Q001",
+      "target": "C001",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q001",
+      "target": "C002",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q002",
+      "target": "C007",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q002",
+      "target": "C008",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q003",
+      "target": "C001",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q003",
+      "target": "C008",
+      "relation": "related_claims"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "EV001",
+      "query": "Should the tutor give the complete answer immediately?",
+      "expected_ids": ["C001", "C002", "P001"],
+      "required_concepts": ["performance support", "attempt", "boundary conditions"]
+    },
+    {
+      "id": "EV002",
+      "query": "Can generated work update a learner mastery score?",
+      "expected_ids": ["C007", "C008", "P002"],
+      "required_concepts": ["provenance", "assistance state", "uncertainty"]
+    },
+    {
+      "id": "EV003",
+      "query": "How should we know whether an AI lesson caused learning?",
+      "expected_ids": ["C001", "P005"],
+      "required_concepts": ["independent", "delay", "transfer"]
+    },
+    {
+      "id": "EV004",
+      "query": "How should the learning engine adapt and fade guidance by expertise while scheduling retrieval and spacing?",
+      "expected_ids": ["C003", "C004", "C005", "P003", "P004"],
+      "required_concepts": ["expertise", "retrieval", "spacing"]
+    }
+  ]
+}
