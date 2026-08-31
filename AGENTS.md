@@ -11,6 +11,7 @@ Build a rigorous, cumulative, and useful body of knowledge for AI-powered learni
 3. Query the atlas rather than loading the whole repository:
    `python3 scripts/atlas.py query "<question>" --type claim --type principle`.
 4. For scheduled work, read `.harness/state/research-state.json` and the relevant runbook.
+5. Before external research, call `research_capabilities` and use the routing table in `.agents/skills/atlas-research/references/tool-routing.md`.
 
 ## Epistemic rules
 
@@ -23,6 +24,8 @@ Build a rigorous, cumulative, and useful body of knowledge for AI-powered learni
 - Treat philosophical and critical perspectives as discourse unless they make empirically testable claims.
 - Cite atlas IDs in synthesis and product work, for example `[C001]` and `[P005]`.
 - Do not invent bibliographic details. Mark unknowns explicitly and queue them for verification.
+- Treat podcasts, talks, interviews, newsletters, books, standards, datasets, and practitioner writing according to epistemic role rather than excluding them or laundering them into empirical evidence.
+- Preserve page, section, table, dataset-row, or timestamp locators and transcript provenance for consequential observations.
 
 ## Change policy
 
@@ -30,6 +33,7 @@ Build a rigorous, cumulative, and useful body of knowledge for AI-powered learni
 - Only a human-reviewed change may mark a claim `established`, a belief `adopted`, or a principle `active`.
 - Automated runs admit at most three new sources. Prefer deepening an existing evidence chain over indiscriminate collection.
 - Do not store copyrighted papers, private learner data, credentials, or identifiable research participants in this repository.
+- Keep full transcripts, authorized media, and extraction intermediates in the gitignored `.harness/inbox/` or an approved external store.
 - Do not auto-merge research changes.
 
 ## Required checks

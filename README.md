@@ -33,6 +33,7 @@ These layers are deliberately separate:
 - [Design principles](indexes/principles.md)
 - [Orqestra bridge](bridges/orqestra.md)
 - [Tooling architecture](bridges/tooling.md)
+- [First end-to-end pipeline smoketest](research/process-lab/2026-08-31-research-pipeline-smoketest.md)
 - [Automation model](.harness/runbooks/research-cycle.md)
 - [Configured schedules](.harness/automations.md)
 
@@ -50,6 +51,38 @@ python3 scripts/atlas.py eval
 python3 -m unittest discover -s tests -v
 ```
 
+### Research gateway
+
+Codex and Claude share a provenance-first MCP declared in `.codex/config.toml` and `.mcp.json`. It searches scholarly metadata and podcast directories, verifies DOIs and citation neighborhoods, resolves feeds and transcript links, inspects publisher pages, extracts authorized local documents, optionally transcribes local media, searches Zotero read-only, and stages normalized candidates without admitting them as evidence.
+
+```bash
+python3 scripts/research_gateway.py capabilities
+python3 scripts/research_gateway.py discover works "AI tutoring delayed retention" --limit 5
+python3 scripts/research_gateway.py resolve-paper 10.1038/s41598-025-97652-6
+python3 scripts/research_gateway.py discover podcasts "AI education learning" --limit 5
+python3 scripts/research_gateway.py resolve-feed https://publisher.example/feed.xml
+python3 scripts/research_gateway.py resolve-media https://publisher.example/episode/transcript
+```
+
+OpenAlex and Crossref require no credentials. Optional provider variables are documented in `.env.example`. Full text, transcripts, media, and intermediate extractions stay in the gitignored `.harness/inbox/`; Git contains only lawful metadata, bounded excerpts, locators, and original synthesis.
+
+Docling is an optional isolated extractor rather than a project dependency:
+
+```bash
+uv tool install docling
+```
+
+If it is absent, the gateway reports and uses its bounded `pdftotext` or plain-text fallback.
+
+Create a source note using the closest profile:
+
+```bash
+python3 scripts/atlas.py new source example-study --source-profile empirical
+python3 scripts/atlas.py new source example-interview --source-profile media
+python3 scripts/atlas.py new source example-book --source-profile book
+python3 scripts/atlas.py new source example-dataset --source-profile dataset
+```
+
 To create the human-readable NotebookLM pack:
 
 ```bash
@@ -64,6 +97,8 @@ The generated pack is a portable reading and conversation surface. The repositor
 - **Weekly:** scout a narrow question, admit at most three high-value sources, update claims, and publish a briefing.
 - **Monthly:** synthesize accumulated evidence, seek contradictions, and propose belief/principle revisions.
 - **Quarterly:** reassess the agenda and retire stale beliefs, weak questions, and product assumptions.
+
+The programmes are continuity scaffolds, not a static syllabus. Signals, queue priorities, source lanes, and methods evolve weekly and monthly; material programme changes are recorded in [the agenda ledger](research/agenda-ledger.md) and require human review.
 
 Automated agents may research and open pull requests. They do not silently promote provisional claims, merge their own work, or overwrite a disputed belief. Human judgment remains the publication boundary.
 

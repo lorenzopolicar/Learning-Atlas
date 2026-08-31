@@ -22,11 +22,14 @@ The scout begins from an explicit gap in the current graph, searches for evidenc
 - `last_run_state`
 - `source_admission_limit`
 - `target_review_id` when applicable
+- `source_lanes` justified by the question
+- `provider_capabilities_and_fallbacks`
 
 ### Tools
 
 - repository query and validation harness;
-- scholarly/web search and primary-source retrieval;
+- native web and Exa semantic discovery;
+- Atlas research MCP for scholarly verification, citation chaining, feeds, multimedia provenance, extraction, transcription, Zotero lookup, and staging;
 - Git history and pull-request workflow;
 - Zotero/Drive only when connected and authorized.
 
@@ -37,6 +40,8 @@ The scout begins from an explicit gap in the current graph, searches for evidenc
 - no fabricated metadata;
 - no copyrighted full text in Git;
 - preserve nulls, contradictions, and exclusion reasons;
+- preserve page/timestamp locators, transcript origin, rights, hashes, and epistemic role;
+- full text, transcripts, media, and extraction intermediates stay out of Git;
 - generated files and tests are current;
 - no automatic merge.
 
@@ -44,11 +49,12 @@ The scout begins from an explicit gap in the current graph, searches for evidenc
 
 1. question and gap;
 2. search performed;
-3. sources admitted or rejected and why;
-4. claim-level change;
-5. product relevance;
-6. uncertainty and next action;
-7. validation result and pull-request link.
+3. capabilities, fallbacks, and source lanes used;
+4. candidates staged, admitted, or rejected and why;
+5. claim-, belief-, discourse-, or question-level change;
+6. product relevance;
+7. uncertainty and next falsification action;
+8. validation result and pull-request link.
 
 ## Ambiguity policy
 

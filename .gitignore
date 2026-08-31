@@ -13,3 +13,4 @@ venv/
 *.mobi
 tmp/
 dist/
+.harness/inbox/

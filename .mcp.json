@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "exa": {
+      "type": "http",
+      "url": "https://mcp.exa.ai/mcp"
+    },
+    "atlas-research": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["scripts/atlas_mcp.py"],
+      "env": {}
+    }
+  }
+}

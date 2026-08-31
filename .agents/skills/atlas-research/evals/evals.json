@@ -1,0 +1,43 @@
+{
+  "skill_name": "atlas-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Research whether progressive hinting in AI tutors improves delayed independent performance. Include citation chaining and look for nulls or boundary conditions.",
+      "expected_output": "A bounded scholarly search with original-source verification, corrections/retraction check, candidate staging, outcome distinctions, and no claim promotion from abstracts.",
+      "files": [],
+      "assertions": [
+        "Uses scholarly discovery plus DOI/citation verification",
+        "Distinguishes assisted performance from delayed independent performance",
+        "Records rejected or inaccessible candidates and uncertainty",
+        "Admits at most three sources in an autonomous run"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Find thoughtful podcasts or interviews about what remains worth learning when AI can perform the task. Extract the strongest positions with timestamps and turn useful leads into atlas questions.",
+      "expected_output": "Podcast discovery and RSS/publisher resolution, timestamped transcript provenance, expert-perspective classification, original-study follow-up, and questions rather than laundered empirical claims.",
+      "files": [],
+      "assertions": [
+        "Records publisher, episode, speakers, date, transcript type, and timestamp basis",
+        "Labels automatic transcript uncertainty when applicable",
+        "Classifies arguments or testimony by epistemic role",
+        "Chases empirical references to original sources",
+        "Does not commit full transcripts"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Use papers, a standards or policy source, and practitioner discourse to advise how Orqestra should represent human-AI collaborative capability separately from independent capability.",
+      "expected_output": "A mixed-source evidence chain that keeps empirical effects, authoritative requirements, and practitioner judgment distinct while producing bounded product implications and falsification steps.",
+      "files": [],
+      "assertions": [
+        "Searches multiple justified source lanes",
+        "Preserves source-specific authority and limitations",
+        "Cites atlas IDs when extending existing work",
+        "Returns product implications plus a falsification plan",
+        "Reports provider fallbacks and access limitations"
+      ]
+    }
+  ]
+}

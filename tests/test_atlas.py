@@ -52,6 +52,11 @@ class AtlasHarnessTests(unittest.TestCase):
         self.assertEqual(first.stdout, second.stdout)
         self.assertRegex(first.stdout.strip(), r"^C\d{3}$")
 
+    def test_source_profiles_are_available(self) -> None:
+        result = self.run_cli("new", "source", "not-a-real-source", "--source-profile", "media", "--help")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("--source-profile", result.stdout)
+
     def test_retrieval_contract_evaluations(self) -> None:
         result = self.run_cli("eval")
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)

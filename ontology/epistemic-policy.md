@@ -50,6 +50,10 @@ Confidence is `low`, `moderate`, or `high`. Status describes maturity; confidenc
 - Citation count, prestige, and novelty do not substitute for methodological fit.
 - Absence of contradicting evidence is not evidence of absence.
 - Product analytics show behaviour in context; they do not automatically show learning or causality.
+- A podcast, interview, talk, or practitioner essay defaults to perspective, argument, or testimony. Follow any empirical citation to its original work before using it as empirical support.
+- Automatic transcripts and captions are navigation aids. Preserve timestamp, speaker, transcript provenance, and uncertainty; verify consequential quotations against publisher media or an official transcript.
+- A book, standard, or institutional document may be authoritative for a definition, rule, or intellectual position without establishing a causal learning effect.
+- Discovery metadata, citation graphs, and open-access resolvers establish identity and access paths—not methods, findings, or validity.
 
 ## Learning outcome hierarchy
 

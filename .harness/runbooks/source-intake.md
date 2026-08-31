@@ -2,7 +2,9 @@
 
 ## Discovery
 
-Use scholarly databases, DOI registries, publisher pages, institutional repositories, citation chains, and trial registries. Search engines and AI tools may help discover candidates; they are not evidence.
+Use scholarly databases, DOI registries, publisher pages, institutional repositories, citation chains, trial registries, podcast feeds, official transcripts or captions, book catalogues, standards bodies, datasets, and relevant practitioner publications. Search engines and AI tools may help discover candidates; they are not evidence.
+
+Start by calling `research_capabilities`, then route through `.agents/skills/atlas-research/references/tool-routing.md`. Use `stage_source_candidate` to create a local candidate record before admission. The inbox is gitignored and deliberately separate from canonical source notes.
 
 ## Canonical division of labour
 
@@ -14,13 +16,23 @@ Use Better BibTeX or an equivalent stable-key workflow if Zotero is adopted. Exp
 
 ## Admit a source
 
-1. Verify title, author list, year, venue, DOI/URL, publication status, and corrections or retractions.
-2. Read enough of the actual work to describe design, population, intervention, comparator, outcomes, timing, and limitations.
-3. Create a source note from the template and add its bibliography entry.
-4. Fill the evidence profile with reasons; `unclear` is valid.
-5. Add the narrowest candidate claim. Do not let the paper’s title determine claim wording.
-6. If part of a review, update search, screening, and extraction records.
-7. Run validation.
+1. Verify title, creators or speakers, date, container, canonical identifier/URL, publication status, rights, and corrections or retractions when relevant.
+2. Inspect the actual content. For empirical work, describe design, population, intervention, comparator, outcomes, timing, and limitations. For discourse or testimony, describe the speaker's standing, context, argument, counterposition, and epistemic role.
+3. Preserve a page, section, table, dataset-row, or timestamp locator for consequential observations.
+4. Create a source note with the closest profile and add its bibliography entry:
+   `python3 scripts/atlas.py new source <slug> --source-profile empirical|media|book|dataset`.
+5. Fill the evidence profile for empirical work; `unclear` is valid. For other source types, record limitations and what the source cannot establish.
+6. Add the narrowest candidate claim, belief, discourse tension, or question appropriate to the epistemic role.
+7. If the source mentions research, resolve the original work before treating the statement as evidence.
+8. If part of a review, update search, screening, and extraction records.
+9. Run validation.
+
+## Media-specific intake
+
+- Prefer publisher transcripts or official captions. Label automatic transcripts with engine, version, date, language, and speaker/timestamp uncertainty.
+- Store full transcripts and authorized media only in `.harness/inbox/`, Zotero, Drive, or another private lawful store. Never commit them.
+- Use short excerpts only when needed for analysis and retain timestamp locators.
+- A media source may revise a belief or open a question without supporting an empirical claim. That is legitimate progress.
 
 ## NotebookLM workflow
 

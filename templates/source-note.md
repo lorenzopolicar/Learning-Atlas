@@ -5,6 +5,7 @@
   "title": "Source title",
   "citation_key": "authorYearShortTitle",
   "source_kind": "journal-article",
+  "epistemic_roles": ["empirical-study"],
   "year": 2026,
   "url": "https://doi.org/...",
   "status": "seed",
@@ -18,6 +19,14 @@
 # S000 — Source title
 
 ## Why it matters
+
+## Identity and provenance
+
+- Canonical identifier:
+- Version inspected:
+- Content inspected: full text / methods and results / abstract only
+- Access and rights:
+- Locator convention: page / section / table / figure
 
 ## Study or argument
 

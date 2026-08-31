@@ -1,0 +1,21 @@
+# Project-scoped MCPs load only when this repository is trusted.
+# Exa is deliberately limited to discovery/fetch tools. The local gateway owns
+# normalization, provenance, scholarly verification, media intake, and staging.
+
+[mcp_servers.exa]
+url = "https://mcp.exa.ai/mcp"
+enabled = true
+required = false
+enabled_tools = ["web_search_exa", "web_fetch_exa"]
+default_tools_approval_mode = "auto"
+startup_timeout_sec = 20
+tool_timeout_sec = 90
+
+[mcp_servers.atlas_research]
+command = "python3"
+args = ["scripts/atlas_mcp.py"]
+enabled = true
+required = false
+default_tools_approval_mode = "auto"
+startup_timeout_sec = 15
+tool_timeout_sec = 600

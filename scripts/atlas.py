@@ -53,6 +53,13 @@ TEMPLATES = {
     "discourse": "discourse-note.md",
 }
 
+SOURCE_PROFILE_TEMPLATES = {
+    "empirical": "source-note.md",
+    "media": "source-media.md",
+    "book": "source-book.md",
+    "dataset": "source-dataset.md",
+}
+
 REQUIRED = {
     "source": ("id", "type", "title", "citation_key", "source_kind", "year", "url", "status", "topics", "added", "last_reviewed"),
     "claim": ("id", "type", "title", "statement", "status", "confidence", "topics", "supporting_sources", "contradicting_sources", "boundary_conditions", "product_relevance", "last_reviewed"),
@@ -81,6 +88,11 @@ REFERENCE_FIELDS = {
 
 DATE_FIELDS = {"added", "last_reviewed", "date"}
 CONFIDENCE = {"low", "moderate", "high"}
+EPISTEMIC_ROLES = {
+    "empirical-study", "research-synthesis", "theoretical-argument", "expert-perspective",
+    "firsthand-account", "normative-argument", "historical-source", "institutional-guidance",
+    "product-claim", "dataset", "discovery-lead",
+}
 ID_RE = re.compile(r"^[SCBPDQENR]\d{3}$")
 TOKEN_RE = re.compile(r"[a-z0-9][a-z0-9-]+")
 STOPWORDS = {
@@ -200,6 +212,16 @@ def validate_records(records: list[dict[str, Any]]) -> tuple[list[str], list[str
                 errors.append(f"{label}: source URL must be absolute")
             if "..." in url or "example." in url:
                 errors.append(f"{label}: placeholder source URL")
+            if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", str(meta.get("source_kind", ""))):
+                errors.append(f"{label}: source_kind must be lowercase kebab-case")
+            roles = meta.get("epistemic_roles")
+            if roles is not None:
+                if not isinstance(roles, list):
+                    errors.append(f"{label}: epistemic_roles must be a list")
+                else:
+                    unsupported = sorted(set(roles) - EPISTEMIC_ROLES)
+                    if unsupported:
+                        errors.append(f"{label}: unsupported epistemic_roles: {', '.join(unsupported)}")
 
         if artifact_type == "claim" and meta.get("status") in {"provisional", "contested", "established"}:
             if not meta.get("supporting_sources"):
@@ -514,7 +536,7 @@ def next_id(artifact_type: str, records: list[dict[str, Any]]) -> str:
     return f"{prefix}{(max(numbers, default=0) + 1):03d}"
 
 
-def new_command(artifact_type: str, slug: str) -> int:
+def new_command(artifact_type: str, slug: str, source_profile: str | None = None) -> int:
     if artifact_type not in TEMPLATES:
         print(f"Creation is not supported for {artifact_type}.", file=sys.stderr)
         return 2
@@ -527,7 +549,10 @@ def new_command(artifact_type: str, slug: str) -> int:
             print(f"ERROR: {error}", file=sys.stderr)
         return 1
     artifact_id = next_id(artifact_type, records)
-    template_path = ROOT / "templates" / TEMPLATES[artifact_type]
+    template_name = TEMPLATES[artifact_type]
+    if artifact_type == "source" and source_profile:
+        template_name = SOURCE_PROFILE_TEMPLATES[source_profile]
+    template_path = ROOT / "templates" / template_name
     content = template_path.read_text(encoding="utf-8")
     content = content.replace(f"{PREFIXES[artifact_type]}000", artifact_id)
     content = content.replace("YYYY-MM-DD", dt.date.today().isoformat())
@@ -565,6 +590,11 @@ def main() -> int:
     new_parser = subparsers.add_parser("new", help="create an artifact from a template")
     new_parser.add_argument("type", choices=sorted(TEMPLATES))
     new_parser.add_argument("slug")
+    new_parser.add_argument(
+        "--source-profile",
+        choices=sorted(SOURCE_PROFILE_TEMPLATES),
+        help="choose a source-specific template (only valid with type=source)",
+    )
 
     export_parser = subparsers.add_parser("export", help="generate an external reading pack")
     export_parser.add_argument("target", choices=["notebooklm"])
@@ -598,7 +628,10 @@ def main() -> int:
         print(next_id(args.type, records))
         return 0
     if args.command == "new":
-        return new_command(args.type, args.slug)
+        if args.source_profile and args.type != "source":
+            print("--source-profile is only valid when creating a source.", file=sys.stderr)
+            return 2
+        return new_command(args.type, args.slug, args.source_profile)
     return 2
 
 

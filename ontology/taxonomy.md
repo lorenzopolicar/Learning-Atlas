@@ -16,6 +16,22 @@
 
 IDs are permanent and never reused. Titles and filenames may evolve; inbound references use IDs.
 
+## Source media and epistemic role
+
+`source_kind` describes the container: journal article, preprint, report, book, chapter, podcast episode, interview, lecture, video, newsletter, standard, dataset, product evidence, or another precise kebab-case kind.
+
+`epistemic_roles` describes what the inspected source can contribute:
+
+- `empirical-study` and `research-synthesis` — evidence that still requires design and boundary appraisal;
+- `theoretical-argument` and `normative-argument` — reasoning to examine rather than effects to quote;
+- `expert-perspective` and `firsthand-account` — situated testimony, experience, and taste;
+- `historical-source` and `institutional-guidance` — context, policy, or authoritative interpretation;
+- `product-claim` — a claim by an interested maker that requires independent verification;
+- `dataset` — observations whose construction determines suitable inference;
+- `discovery-lead` — something that points to another source but is not yet evidence.
+
+A source may have several roles. Container does not determine authority: a podcast can contain firsthand testimony, a paper can be a theoretical argument, and a standards document can be authoritative for requirements without proving learning effects.
+
 ## Topic vocabulary
 
 Use a small set of stable top-level topics and add precise free-text tags only when necessary:

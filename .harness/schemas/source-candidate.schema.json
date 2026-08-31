@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learning-atlas.local/schemas/source-candidate.schema.json",
+  "title": "Learning Atlas source candidate",
+  "description": "A discovery-stage record. It is not an admitted atlas source and cannot support a mature claim.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "source_type",
+    "title",
+    "canonical_url",
+    "discovery",
+    "provenance",
+    "epistemic_roles",
+    "verification"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "candidate_id": {"type": "string", "pattern": "^cand_[a-f0-9]{16}$"},
+    "source_type": {
+      "enum": [
+        "journal-article", "conference-paper", "preprint", "systematic-review", "report",
+        "book", "book-chapter", "podcast-series", "podcast-episode", "video", "lecture",
+        "interview", "newsletter", "web-essay", "standard", "dataset", "product-evidence", "other"
+      ]
+    },
+    "title": {"type": "string", "minLength": 1},
+    "creators": {"type": "array", "items": {"type": "object"}},
+    "published_at": {"type": ["string", "integer", "null"]},
+    "canonical_url": {"type": "string", "pattern": "^https?://"},
+    "canonical_identifiers": {"type": "array", "items": {"type": "object"}},
+    "container": {"type": "object"},
+    "discovery": {
+      "type": "object",
+      "required": ["provider", "retrieved_at"],
+      "properties": {
+        "provider": {"type": "string"},
+        "query": {"type": ["string", "null"]},
+        "retrieved_at": {"type": "string"}
+      }
+    },
+    "access": {"type": "object"},
+    "provenance": {
+      "type": "object",
+      "required": ["retrieved_at", "extractor", "locator_basis"]
+    },
+    "locators": {"type": "array", "items": {"type": "object"}},
+    "epistemic_roles": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "empirical-study", "research-synthesis", "theoretical-argument", "expert-perspective",
+          "firsthand-account", "normative-argument", "historical-source", "institutional-guidance",
+          "product-claim", "dataset", "discovery-lead"
+        ]
+      }
+    },
+    "verification": {"type": "object", "required": ["status", "checks", "warnings"]},
+    "summary": {"type": "string"},
+    "transcript": {"type": "object"},
+    "provider_payload": {"type": "object"}
+  },
+  "not": {
+    "anyOf": [
+      {"required": ["full_text"]},
+      {"required": ["full_transcript"]},
+      {"required": ["media_bytes"]},
+      {"required": ["document_bytes"]}
+    ]
+  }
+}
