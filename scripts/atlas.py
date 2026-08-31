@@ -56,6 +56,7 @@ TEMPLATES = {
 SOURCE_PROFILE_TEMPLATES = {
     "empirical": "source-note.md",
     "media": "source-media.md",
+    "social": "source-social.md",
     "book": "source-book.md",
     "dataset": "source-dataset.md",
 }
@@ -369,9 +370,9 @@ def notebooklm_content(records: list[dict[str, Any]]) -> str:
             [
                 f"## {meta['id']} — {record_title(record)}",
                 "",
-                f"Type: {meta['type']}  ",
-                f"Status: {meta.get('status', '')}  ",
-                f"Topics: {', '.join(meta.get('topics', []))}  ",
+                f"Type: {meta['type']}",
+                f"Status: {meta.get('status', '')}",
+                f"Topics: {', '.join(meta.get('topics', []))}",
                 f"Canonical path: `{relative(record['path'])}`",
                 "",
                 record["body"],
@@ -511,9 +512,12 @@ def eval_command() -> int:
             print(f"ERROR: {error}")
         return 1
     failures = 0
-    allowed = {"claim", "belief", "principle"}
     for case in suite["cases"]:
-        ranked = rank_records(case["query"], records, allowed)[: int(CONFIG["retrieval"]["max_items"])]
+        # A case declares its intended consumption surface. This lets product
+        # contracts stay focused while still testing discourse, questions,
+        # reviews, and sources rather than making them structurally invisible.
+        allowed = set(case.get("types") or CONTENT_DIRS)
+        ranked = rank_records(case["query"], records, allowed)[: int(case.get("limit") or CONFIG["retrieval"]["max_items"])]
         returned = {record["meta"]["id"] for _, _, record in ranked}
         corpus = " ".join(
             json.dumps(record["meta"], ensure_ascii=False) + " " + record["body"]

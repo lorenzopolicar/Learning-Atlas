@@ -38,6 +38,19 @@
         "Returns product implications plus a falsification plan",
         "Reports provider fallbacks and access limitations"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Map the strongest public X and LinkedIn positions on whether people should learn underlying tasks or learn to direct AI, then contrast them with one podcast and original research. Use reach only to sample discourse.",
+      "expected_output": "A discourse map with stable post and episode identities, snapshot warnings, timestamped media, linked-original follow-up, explicit social sampling criteria, and empirical claims kept separate from arguments.",
+      "files": [],
+      "assertions": [
+        "Uses public social search rather than assuming a dedicated platform API",
+        "Records stable X or LinkedIn identifiers and retrieval limitations",
+        "Treats reach and authority as sampling signals rather than evidence",
+        "Follows empirical links to original sources",
+        "Represents genuine counterpositions instead of a popularity ranking"
+      ]
     }
   ]
 }

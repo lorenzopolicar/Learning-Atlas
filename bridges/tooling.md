@@ -11,7 +11,7 @@ Choose tools by epistemic role. No application should silently occupy discovery,
 | Codex and Claude skills | Repeatable research, synthesis, and product-consultation workflows | Procedural guidance |
 | Web and scholarly repositories | Discovery and original-source access | Original source is evidence; search output is not |
 | Python harness | Schema, graph, bounded retrieval, export, and integrity evaluation | Deterministic repository guardrail |
-| Atlas research gateway MCP | Normalized scholarly/media identity, citation checks, lawful extraction, locators, transcription, Zotero lookup, and reversible staging | Candidate metadata and provenance only |
+| Atlas research gateway MCP | Nine intent-level tools over scholarly, media, public social, extraction, transcription, Zotero, and candidate-inbox operations | Candidate metadata and provenance only; agents assign epistemic authority |
 | Exa MCP | Semantic discovery and targeted web retrieval | Discovery lead only |
 
 ## Recommended next connections
@@ -64,7 +64,7 @@ Suggested agent contract:
 ## Deliberate omissions
 
 - A vector database is premature at the current corpus size; deterministic ranked retrieval is easier to inspect and test.
-- An autonomous multi-agent swarm would increase review volume before the evidence model has proven its quality.
+- An autonomous write-heavy agent swarm remains deliberately omitted. Bounded read-only scout, analyst, contrarian, and synthesis agents may work independently; one integrating agent owns canonical edits and publication checks.
 - A direct NotebookLM-to-Git write path would turn generated conversation into apparent evidence.
 - Broad plugin installation without a defined role increases permissions and maintenance surface.
 - Exa and Tavily are not installed together because their broad search/retrieval roles overlap.

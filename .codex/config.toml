@@ -2,6 +2,9 @@
 # Exa is deliberately limited to discovery/fetch tools. The local gateway owns
 # normalization, provenance, scholarly verification, media intake, and staging.
 
+[agents]
+max_concurrent_threads_per_session = 4
+
 [mcp_servers.exa]
 url = "https://mcp.exa.ai/mcp"
 enabled = true

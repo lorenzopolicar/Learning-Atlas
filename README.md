@@ -34,6 +34,7 @@ These layers are deliberately separate:
 - [Orqestra bridge](bridges/orqestra.md)
 - [Tooling architecture](bridges/tooling.md)
 - [First end-to-end pipeline smoketest](research/process-lab/2026-08-31-research-pipeline-smoketest.md)
+- [Multisource passes and harness audit](research/process-lab/2026-08-31-multisource-passes-and-harness-audit.md)
 - [Automation model](.harness/runbooks/research-cycle.md)
 - [Configured schedules](.harness/automations.md)
 
@@ -53,7 +54,7 @@ python3 -m unittest discover -s tests -v
 
 ### Research gateway
 
-Codex and Claude share a provenance-first MCP declared in `.codex/config.toml` and `.mcp.json`. It searches scholarly metadata and podcast directories, verifies DOIs and citation neighborhoods, resolves feeds and transcript links, inspects publisher pages, extracts authorized local documents, optionally transcribes local media, searches Zotero read-only, and stages normalized candidates without admitting them as evidence.
+Codex and Claude share a provenance-first MCP declared in `.codex/config.toml` and `.mcp.json`. Its nine intent-level tools discover, resolve, extract, trace, lawfully store, transcribe, search Zotero, and manage candidate envelopes. Public X and LinkedIn posts are handled as stable, snapshot-limited social sources; empirical links are followed to originals. The gateway never assigns evidentiary authority or admits a source—the reviewing agent does.
 
 ```bash
 python3 scripts/research_gateway.py capabilities
@@ -79,6 +80,7 @@ Create a source note using the closest profile:
 ```bash
 python3 scripts/atlas.py new source example-study --source-profile empirical
 python3 scripts/atlas.py new source example-interview --source-profile media
+python3 scripts/atlas.py new source example-post --source-profile social
 python3 scripts/atlas.py new source example-book --source-profile book
 python3 scripts/atlas.py new source example-dataset --source-profile dataset
 ```
@@ -99,6 +101,8 @@ The generated pack is a portable reading and conversation surface. The repositor
 - **Quarterly:** reassess the agenda and retire stale beliefs, weak questions, and product assumptions.
 
 The programmes are continuity scaffolds, not a static syllabus. Signals, queue priorities, source lanes, and methods evolve weekly and monthly; material programme changes are recorded in [the agenda ledger](research/agenda-ledger.md) and require human review.
+
+For complex passes, Codex can delegate independent read-heavy work to project-scoped research, evidence, contrarian, and synthesis agents under `.codex/agents/`; Claude has matching definitions under `.claude/agents/`. The primary agent remains responsible for comparing their outputs, editing the canonical artifacts, and running validation.
 
 Automated agents may research and open pull requests. They do not silently promote provisional claims, merge their own work, or overwrite a disputed belief. Human judgment remains the publication boundary.
 

@@ -2,4 +2,6 @@
 
 # Discourses
 
-_No artifacts yet._
+| ID | Title | Status | Confidence | Topics |
+|---|---|---|---|---|
+| [N001](../discourse/N001-learning-directing-and-orchestrating-ai.md) | Learning, directing, and orchestrating AI | draft |  | human-ai-collaboration, motivation-and-agency, assessment-validity, institutional-design |

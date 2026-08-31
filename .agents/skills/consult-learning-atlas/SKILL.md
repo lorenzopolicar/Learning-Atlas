@@ -1,6 +1,6 @@
 ---
 name: consult-learning-atlas
-description: Consult the Learning Atlas for evidence-backed AI learning-system design. Use when implementing or reviewing tutoring, learner modelling, feedback, assessment, personalization, learning measurement, or human-AI capability features—especially in Orqestra. Returns bounded claims and principles with IDs, boundaries, and a falsification plan rather than loading the entire knowledge base.
+description: Consult the Learning Atlas for evidence-backed AI learning-system design. Use when implementing or reviewing tutoring, learner modelling, feedback, assessment, personalization, learning measurement, AI literacy, or human-AI capability features—especially in Orqestra. Returns a bounded typed evidence chain with IDs, boundaries, epistemic roles, and a falsification plan rather than loading the entire knowledge base.
 ---
 
 # Consult Learning Atlas
@@ -20,6 +20,16 @@ python3 "$atlas_root/scripts/atlas.py" query "<product question>" --type claim -
 
 The default result is bounded to 12 artifacts and 6,000 characters. Do not replace this with a whole-repository scan.
 
+For questions about what is worth learning, AI literacy, institutional purpose, or the construct of human-AI capability, also include the relevant non-core lanes:
+
+```bash
+python3 "$atlas_root/scripts/atlas.py" query "<product question>" \
+  --type claim --type belief --type principle \
+  --type question --type discourse --type source
+```
+
+Use these lanes when the decision genuinely turns on contested purposes, source appraisal, or institutional frameworks; do not add them to a narrow implementation query by habit.
+
 ## Read and apply
 
 1. Read `.harness/specs/atlas-consultant.md` and `ontology/epistemic-policy.md`.
@@ -32,6 +42,7 @@ The default result is bounded to 12 artifacts and 6,000 characters. Do not repla
    - implementation implications;
    - measurement and falsification plan;
    - open questions.
+   Keep causal evidence, institutional guidance, expert perspective, testimony, and normative argument visibly distinct. A discourse note can constrain product taste without becoming an empirical effect claim.
 5. Cite atlas IDs in code comments, decision records, or implementation plans when they materially justify a choice.
 
 ## Feedback loop

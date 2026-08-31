@@ -46,6 +46,13 @@ Do not apply the comparative filter to the broad scoping search; use it for a na
 
 Google Scholar and web search are discovery aids, not the reproducible database search.
 
+## 2026-08-31 targeted update
+
+- Native web query: `2025 2026 randomized controlled trial generative AI learning later unaided assessment retention students`
+- arXiv/publisher resolution: *Experimental Evidence on the Learning Impact of Generative AI*, arXiv:2607.08849v1
+- Decision: include as [S015] after full-text methods/results inspection because it randomizes AI access and measures both immediate and approximately one-week unaided outcomes.
+- Boundary: this targeted update does not complete the reproducible database search or publication-bias assessment. The queue item remains active.
+
 ## Required search log
 
 For every database: platform, full query, filters, date searched, result count, export filename, and deduplication count. Store citation metadata in Zotero and screening decisions in `screening.csv`.

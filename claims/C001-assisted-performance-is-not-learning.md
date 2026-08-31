@@ -31,7 +31,7 @@ This is not the claim that assistance necessarily harms learning. Structured tut
 
 ## Counterevidence and uncertainty
 
-Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. Beneficial AI conditions may create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
+Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
 
 ## Product relevance
 

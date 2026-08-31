@@ -4,11 +4,13 @@ Learning Atlas is a knowledge dependency, not an always-on prompt appendix.
 
 ## Retrieval contract
 
-Agents begin with a concrete product question and receive at most 12 relevance-ranked artifacts or 6,000 characters. They then open only the claims, beliefs, principles, and source notes necessary for the decision.
+Agents begin with a concrete product question and receive at most 12 relevance-ranked artifacts or 6,000 characters. They then open only the claims, beliefs, principles, discourse, questions, and source notes necessary for the decision.
 
 ```bash
 python3 scripts/atlas.py query "<question>" --type claim --type belief --type principle
 ```
+
+Add `--type question --type discourse --type source` when the task turns on contested purposes, institutional frameworks, or source appraisal. Do not load those lanes by default for a narrow implementation check.
 
 Each response should retain:
 

@@ -27,9 +27,9 @@ Then query the repository for the selected question. Do not load every artifact.
 ## Run
 
 1. Select one unblocked queue item and state the existing evidence gap.
-2. Call `research_capabilities`. Choose source lanes because they can change the question—not to satisfy a media quota.
+2. Call `research_capabilities`. Choose source lanes because they can change the question—not to satisfy a media quota. For contested future-facing questions, deliberately sample a strong social/practitioner position and follow its linked originals.
 3. Search broadly with native web and Exa, then use the Atlas research MCP to resolve identity, citation context, lawful access, content hashes, pages/timestamps, and transcript provenance.
-4. Stage promising normalized candidates. Staging is a reversible inbox action, not atlas admission.
+4. Stage promising normalized candidates with `candidate_inbox(action=stage)`. Staging is a reversible inbox action, not atlas admission.
 5. Inspect the actual source. An abstract screens a paper; a transcript navigates media. Neither alone is enough for a promoted empirical claim.
 6. Assign epistemic role before extracting conclusions. Follow every consequential “research shows” statement to the original work.
 7. Admit no more than three new sources in an autonomous run. Use the closest source profile and verified bibliographic metadata.
@@ -43,6 +43,7 @@ Then query the repository for the selected question. Do not load every artifact.
 
 - A negative result, corrected metadata record, or narrower boundary is valid progress.
 - Never infer causality from engagement or supported output quality.
+- Use social reach only as an explicit sampling signal. Preserve a stable platform ID and snapshot warning; do not treat likes, views, identity, or authority as evidence.
 - Never commit copyrighted full text or identifiable learner data.
 - Never commit full podcast/video transcripts or media. Keep bounded excerpts and precise timestamps in Git; keep lawful working copies in the local inbox or approved private storage.
 - Treat expert perspective and firsthand testimony as valuable in their own right. Do not call them weak papers; do not call them experiments.

@@ -13,6 +13,38 @@
       "sources_added": ["S001", "S002", "S003", "S004", "S005", "S006", "S007", "S008", "S009", "S010", "S011", "S012", "S013", "S014"],
       "briefing": "briefings/weekly/2026-08-31-foundation.md",
       "note": "Human-requested initial corpus; the three-source cap applies to recurring autonomous runs."
+    },
+    {
+      "date": "2026-08-31",
+      "kind": "scholarly-full-pass",
+      "question": "Q001",
+      "sources_added": ["S015"],
+      "briefing": "briefings/weekly/2026-08-31-multisource-full-passes.md",
+      "note": "Human-requested controlled-study pass; added a positive one-week counterexample and kept R001 open."
+    },
+    {
+      "date": "2026-08-31",
+      "kind": "social-discourse-full-pass",
+      "question": "Q003",
+      "sources_added": ["S017", "S018"],
+      "briefing": "briefings/weekly/2026-08-31-multisource-full-passes.md",
+      "note": "Public X and LinkedIn sources admitted as argument and discovery lead, not empirical evidence."
+    },
+    {
+      "date": "2026-08-31",
+      "kind": "podcast-full-pass",
+      "question": "Q003",
+      "sources_added": ["S019"],
+      "briefing": "briefings/weekly/2026-08-31-multisource-full-passes.md",
+      "note": "Publisher transcript, RSS identity, GUID and timestamped expert positions inspected."
+    },
+    {
+      "date": "2026-08-31",
+      "kind": "institutional-framework-full-pass",
+      "question": "Q003",
+      "sources_added": ["S016"],
+      "briefing": "briefings/weekly/2026-08-31-multisource-full-passes.md",
+      "note": "OECD-EU framework admitted as non-binding institutional guidance and theoretical architecture."
     }
   ]
 }

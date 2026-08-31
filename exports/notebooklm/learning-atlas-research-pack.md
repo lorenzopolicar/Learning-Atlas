@@ -10,9 +10,9 @@ Ask for the evidence chain behind a principle, disagreements between sources, bo
 
 ## S001 — Generative AI without guardrails can harm learning outcomes
 
-Type: source  
-Status: reviewed  
-Topics: learning-vs-performance, ai-tutoring, scaffolding, assessment-validity  
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, ai-tutoring, scaffolding, assessment-validity
 Canonical path: `sources/notes/S001-bastani-generative-ai-guardrails.md`
 
 # S001 — Generative AI without guardrails can harm learning outcomes
@@ -52,9 +52,9 @@ Supports [C001] and [C002]. It is central evidence for progressive assistance [P
 
 ## S002 — AI tutoring outperforms in-class active learning
 
-Type: source  
-Status: reviewed  
-Topics: ai-tutoring, learning-vs-performance, scaffolding  
+Type: source
+Status: reviewed
+Topics: ai-tutoring, learning-vs-performance, scaffolding
 Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 
 # S002 — AI tutoring outperforms in-class active learning
@@ -90,9 +90,9 @@ Supports [C002] while making the design of the pedagogical harness a necessary b
 
 ## S003 — Building AI Companions that Prioritise Learning over Performance
 
-Type: source  
-Status: reviewed  
-Topics: learning-vs-performance, ai-tutoring, learner-modelling, ethics-and-governance  
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, ai-tutoring, learner-modelling, ethics-and-governance
 Canonical path: `sources/notes/S003-khosravi-learning-first-ai-companions.md`
 
 # S003 — Building AI Companions that Prioritise Learning over Performance
@@ -128,9 +128,9 @@ Useful design synthesis for [B001], [B003], and [P001], but should not be treate
 
 ## S004 — OECD Digital Education Outlook 2026
 
-Type: source  
-Status: reviewed  
-Topics: learning-vs-performance, ai-tutoring, teacher-practice, institutional-design  
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, ai-tutoring, teacher-practice, institutional-design
 Canonical path: `sources/notes/S004-oecd-digital-education-outlook-2026.md`
 
 # S004 — OECD Digital Education Outlook 2026
@@ -166,9 +166,9 @@ Supports the framing of [C001] and the need for [P005]. Use underlying primary s
 
 ## S005 — From Chalkboards to Chatbots: Transforming Learning in Nigeria, One Prompt at a Time
 
-Type: source  
-Status: reviewed  
-Topics: ai-tutoring, teacher-practice, learning-vs-performance, institutional-design  
+Type: source
+Status: reviewed
+Topics: ai-tutoring, teacher-practice, learning-vs-performance, institutional-design
 Canonical path: `sources/notes/S005-world-bank-nigeria-chatbot-rct.md`
 
 # S005 — From Chalkboards to Chatbots
@@ -204,9 +204,9 @@ Supports [C002] with teacher mediation and structure as essential boundary condi
 
 ## S006 — Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention
 
-Type: source  
-Status: reviewed  
-Topics: retrieval-and-spacing, learning-vs-performance, assessment-validity  
+Type: source
+Status: reviewed
+Topics: retrieval-and-spacing, learning-vs-performance, assessment-validity
 Canonical path: `sources/notes/S006-roediger-karpicke-testing-effect.md`
 
 # S006 — Test-Enhanced Learning
@@ -242,9 +242,9 @@ Supports [C004], [P004], and the outcome hierarchy in the epistemic policy.
 
 ## S007 — Transfer of Test-Enhanced Learning: Meta-Analytic Review and Synthesis
 
-Type: source  
-Status: reviewed  
-Topics: retrieval-and-spacing, transfer, learning-vs-performance  
+Type: source
+Status: reviewed
+Topics: retrieval-and-spacing, transfer, learning-vs-performance
 Canonical path: `sources/notes/S007-pan-rickard-transfer-retrieval.md`
 
 # S007 — Transfer of Test-Enhanced Learning
@@ -280,9 +280,9 @@ Supports [C004] while constraining claims about far or authentic transfer.
 
 ## S008 — Distributed Practice in Verbal Recall Tasks
 
-Type: source  
-Status: reviewed  
-Topics: retrieval-and-spacing, learning-vs-performance  
+Type: source
+Status: reviewed
+Topics: retrieval-and-spacing, learning-vs-performance
 Canonical path: `sources/notes/S008-cepeda-distributed-practice.md`
 
 # S008 — Distributed Practice in Verbal Recall Tasks
@@ -318,9 +318,9 @@ Supports [C005] and [P004].
 
 ## S009 — The Expertise Reversal Effect
 
-Type: source  
-Status: reviewed  
-Topics: scaffolding, learner-modelling, ai-tutoring  
+Type: source
+Status: reviewed
+Topics: scaffolding, learner-modelling, ai-tutoring
 Canonical path: `sources/notes/S009-kalyuga-expertise-reversal.md`
 
 # S009 — The Expertise Reversal Effect
@@ -356,9 +356,9 @@ Supports [C003], [B005], and [P003].
 
 ## S010 — The Power of Feedback
 
-Type: source  
-Status: reviewed  
-Topics: feedback, metacognition, motivation-and-agency  
+Type: source
+Status: reviewed
+Topics: feedback, metacognition, motivation-and-agency
 Canonical path: `sources/notes/S010-hattie-timperley-feedback.md`
 
 # S010 — The Power of Feedback
@@ -394,9 +394,9 @@ Supports [C006] and constrains simplistic “more feedback” product strategies
 
 ## S011 — Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge
 
-Type: source  
-Status: reviewed  
-Topics: learner-modelling, assessment-validity, ai-tutoring  
+Type: source
+Status: reviewed
+Topics: learner-modelling, assessment-validity, ai-tutoring
 Canonical path: `sources/notes/S011-corbett-anderson-knowledge-tracing.md`
 
 # S011 — Knowledge Tracing
@@ -432,9 +432,9 @@ Contributes to [C007], [B003], and [P002].
 
 ## S012 — Enacting Assessment Reform in a Time of Artificial Intelligence
 
-Type: source  
-Status: reviewed  
-Topics: assessment-validity, human-ai-collaboration, institutional-design  
+Type: source
+Status: reviewed
+Topics: assessment-validity, human-ai-collaboration, institutional-design
 Canonical path: `sources/notes/S012-teqsa-assessment-reform-ai.md`
 
 # S012 — Enacting Assessment Reform in a Time of Artificial Intelligence
@@ -470,9 +470,9 @@ Supports [C008], [B004], and [P006] as a design and governance source.
 
 ## S013 — Validity of Psychological Assessment
 
-Type: source  
-Status: reviewed  
-Topics: assessment-validity, learner-modelling, ethics-and-governance  
+Type: source
+Status: reviewed
+Topics: assessment-validity, learner-modelling, ethics-and-governance
 Canonical path: `sources/notes/S013-messick-validity-assessment.md`
 
 # S013 — Validity of Psychological Assessment
@@ -508,9 +508,9 @@ Supports [C007], [C008], [P002], and [P006].
 
 ## S014 — The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems
 
-Type: source  
-Status: reviewed  
-Topics: ai-tutoring, feedback, scaffolding  
+Type: source
+Status: reviewed
+Topics: ai-tutoring, feedback, scaffolding
 Canonical path: `sources/notes/S014-vanlehn-tutoring-effectiveness.md`
 
 # S014 — Relative effectiveness of tutoring systems
@@ -544,11 +544,252 @@ The review predates large language models and draws heavily from structured STEM
 
 Provides historical support for [C002] and for designing interaction around learning processes rather than conversational realism.
 
+## S015 — Experimental Evidence on the Learning Impact of Generative AI
+
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, ai-tutoring, assessment-validity, human-ai-collaboration
+Canonical path: `sources/notes/S015-contractor-reyes-experimental-evidence.md`
+
+# S015 — Experimental Evidence on the Learning Impact of Generative AI
+
+## Why it matters
+
+This is a rare controlled GenAI study that measures unaided performance both immediately and after a delay. It is an important positive counterweight to studies in which assisted output gains disappear or reverse once support is removed.
+
+## Identity and provenance
+
+- Canonical identifier: arXiv:2607.08849v1
+- Version inspected: 9 July 2026 preprint by Zara Contractor and Germán Reyes
+- Content inspected: full text, methods, main results, appendices relevant to treatment compliance and use classification
+- Access and rights: publisher-open arXiv PDF; page declares CC BY 4.0
+- Retrieval: gateway record `cand_aea65662c7ad1943`; PDF SHA-256 `d5ea73073c4400924a5e73d21399e54f80d279f0f75383b804df60b56fcfcc05`
+- Locator convention: numbered section, table and appendix labels in v1
+
+## Study
+
+- Population and setting: 211 Middlebury College undergraduates in Spring 2025; 204 returned for session two. The sample was academically selective (mean GPA 3.68; mean SAT 1386) and more than 80% were already familiar with AI.
+- Intervention and comparator: random assignment to generative-AI-allowed or AI-forbidden conditions during a 35-minute learning-and-writing phase. The AI condition received a logged-in GPT-4o account; the control retained ordinary web access.
+- Task: learn one unfamiliar technical topic—blockchain, carbon capture, or CRISPR—and write an approximately 500-word analytical essay.
+- Outcomes: unaided five-item knowledge test immediately after learning; unaided ten-item test and a new analytical essay about seven days later.
+- Design: eight time slots with parallel treatment labs, randomized computers and topic/prompt assignments, proctor observation, platform logs and session fixed effects.
+
+## Findings
+
+- Assignment raised observed ChatGPT use by 67.3 percentage points. Immediate unaided knowledge was 6.7 points higher (0.27 SD, p=.034); one-week unaided retention was 5.1 points higher (0.27 SD, p=.027), about 76% of the immediate point estimate (sections 4.1, 4.2 and 5.1; tables 3 and 4).
+- On the delayed essay, style/clarity improved by 0.30 SD and relevance by 0.26 SD; the 0.20 SD overall-quality estimate was imprecise (section 5.2; table 6).
+- Total learning time did not change. Treated learners shifted about 5.3 percentage points away from writing and 4.4 points toward reading/searching, and reported 0.66/10 higher enjoyment (section 4.4; table 7).
+- Test-rule violations rose by 12.6 percentage points. The authors estimate they could explain at most roughly one third of the immediate test effect under a deliberately conservative assumption (section 4.4; table 7).
+- Conversation logs were classified after treatment: 49% of AI users as pure augmentation, 32% automation, 8% mixed and 11% other. Automation users' assisted essay advantage disappeared later, while augmentation users retained a positive but imprecise delayed test estimate (section 5.3; table 8).
+
+## Limitations and boundary conditions
+
+- Randomization identifies access to AI, not the causal effect of augmentation versus automation; those modes were chosen by students and classified post-treatment.
+- The lab held time-on-task approximately fixed. In normal coursework, learners may use AI to save time and then reallocate it away from learning.
+- The study covers one selective US institution, three unfamiliar topics, a short delay and near transfer. It does not establish long-horizon, far-transfer or population-wide effects.
+- Four protocol variations occurred across early sessions; session fixed effects were used, but implementation was not perfectly uniform.
+- Subgroup differences—especially smaller effects in the lowest GPA/SAT quartiles—are concerning but mostly imprecise.
+- This is a preprint and has not yet supplied independent replication.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-high | Random assignment, strong first stage and low attrition; some noncompliance, rule violations and protocol variations |
+| Directness | high | Directly tests assisted learning followed by unaided immediate and delayed outcomes |
+| Consistency | unclear | One study; it differs from several negative or null GenAI learning results |
+| Replication | low | Preprint at one institution |
+| Magnitude | moderate | 0.27 SD on both immediate and one-week tests |
+| Duration | low-moderate | One-week retention only |
+| Transfer | low | New questions and essay prompt, but the same topic and near task family |
+| Ecological validity | moderate-low | Real students and ordinary AI, but a tightly timed paid laboratory task |
+
+## Candidate claims
+
+Supports provisional [C009](../../claims/C009-off-the-shelf-ai-can-improve-short-delay-learning.md). It qualifies—not overturns—[C001](../../claims/C001-assisted-performance-is-not-learning.md): assisted performance remains an invalid proxy, but the measured unaided outcome can be positive. The automation/augmentation pattern is a hypothesis-generating mechanism result, not a randomized comparison.
+
+## S016 — Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education
+
+Type: source
+Status: reviewed
+Topics: human-ai-collaboration, motivation-and-agency, ethics-and-governance, assessment-validity
+Canonical path: `sources/notes/S016-oecd-eu-ai-literacy-framework.md`
+
+# S016 — Empowering Learners for the Age of AI
+
+## Why it matters
+
+The OECD–European Commission framework offers a current, internationally consulted vocabulary for what learners should be able to understand, decide and do with AI. It is authoritative for a policy position and design vocabulary, not proof that its progression causes learning.
+
+## Identity and provenance
+
+- DOI: 10.1787/65cd27d4-en
+- Publication: OECD Publishing, 18 June 2026; 64 pages
+- Content inspected: complete report, competency pages, development process and annexes
+- Licence: CC BY 4.0
+- Development status: non-binding guidance; OECD work approved/declassified by the PISA Governing Board on 8 April 2026
+- Retrieval: gateway record `cand_4abcd1a960f421ab`; PDF SHA-256 `8662f4c12a327443dc82de6458a3f084a8fc279e55c982da2cd1bb97aa51fc5e`
+
+## Framework
+
+AI literacy is defined as technical knowledge, durable skills and future-ready attitudes that enable learners to engage, create with, manage and shape AI while evaluating benefits, risks and ethics (p. 5). The four domains are deliberately progressive but adaptable:
+
+1. **Engage with AI:** participate critically and responsibly.
+2. **Create with AI:** use AI as a creative partner while retaining agency.
+3. **Manage AI:** divide work intentionally between humans and AI.
+4. **Shape AI:** understand and improve systems in relation to human values.
+
+The domains contain 19 competences: seven Engage, four Create, four Manage and four Shape. Each has developmental learner expectations and classroom scenarios rather than age- or grade-locked levels (pp. 8–9, 18–43).
+
+## Development and standing
+
+- The framework synthesised prior international frameworks, literature reviews, interviews, focus groups and expert discussions (pp. 15–16, 59–61).
+- More than 2,000 people across over 100 countries contributed feedback to the 2025 draft. Survey respondents were primarily teachers (41%) and learning designers (15%); youth representatives were 3% (pp. 57–58).
+- Revisions increased attention to metacognition, agency, healthy scepticism, environmental impacts and realistic progression (p. 58).
+- It explicitly says AI tool use is not AI literacy and that GenAI learning evidence remains mixed (pp. 5, 13).
+
+## Limitations and boundary conditions
+
+- This is a normative and implementation framework, not an effectiveness trial, validated assessment or complete curriculum.
+- The broad consultation strengthens relevance but is not representative democratic preference measurement; some groups, including learners and caregivers, were a small share.
+- The domain sequence is a proposed learning architecture. Its ordering, 19 competences and learning scenarios still require local validation, developmental testing and adaptation beyond primary/secondary settings.
+- Some empirical statements rely on recent reports with variable evidentiary strength. Follow original citations before treating them as effect evidence.
+
+## Design implications
+
+The framework argues against both total prohibition and mere tool fluency. Orqestra can treat Engage/Create/Manage/Shape as a useful coverage audit while preserving independent evidence for each capability. Particularly relevant competencies include deciding whether AI fits a task, decomposing work, monitoring use, evaluating outputs and systems, and maintaining agency.
+
+## S017 — Should education shift from learning to do X to directing AI doing X?
+
+Type: source
+Status: reviewed
+Topics: human-ai-collaboration, institutional-design, motivation-and-agency
+Canonical path: `sources/notes/S017-diamandis-direct-ai-post.md`
+
+# S017 — Should education shift from learning to do X to directing AI doing X?
+
+## Why it matters
+
+The post states a culturally influential substitution thesis in unusually compact form: if AI can perform advanced disciplinary work, education should reconsider whether learners need the underlying capability or primarily need to direct AI. This is valuable as a position to steel-man and test, not as empirical evidence.
+
+## Identity and provenance
+
+- Author: Peter H. Diamandis
+- Platform identifier: X status `2037636030845829220`
+- Published: 27 March 2026
+- Retrieval: public post snapshot on 31 August 2026; gateway record `cand_73ae833aff222418`; normalized post-content SHA-256 `863c0b02530922d8c1ded6fab9a2c910691669e9a95d00a62e1c3c5f37381939` (raw platform-page hashes are retained in the staged snapshots and vary with page chrome)
+- Scope inspected: post text; replies and linked evidence were not treated as part of the source
+- Discovery signal: search indexing indicated unusually high reach. Reach was used for discourse sampling, never as epistemic weight.
+
+## Position
+
+The strongest version is not “knowledge is obsolete.” It is an opportunity-cost argument: when AI can perform portions of scientific reasoning and discovery, long programmes that train humans to reproduce those operations may crowd out learning how to specify aims, direct systems, evaluate results and choose consequential problems.
+
+## Limitations and counterposition
+
+- The post provides no definitions, evidence, curriculum design or boundary conditions.
+- Directing a system may itself require conceptual models, error detection, epistemic judgment and disciplinary taste. Removing the underlying learning could destroy the prerequisites for competent direction.
+- “Learn X” and “direct AI doing X” are not necessarily alternatives; education can allocate tasks across independent, assisted and collaborative capability.
+- Public posts are editable/deletable, reply context is incomplete and engagement is volatile.
+
+## Candidate contribution
+
+Used in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md) as the substitution pole of the debate around [Q003](../../questions/Q003-what-is-worth-learning-in-an-ai-world.md). It supports no empirical claim by itself.
+
+## S018 — Learning Orchestration in AI-mediated assessment
+
+Type: source
+Status: reviewed
+Topics: assessment-validity, human-ai-collaboration, motivation-and-agency
+Canonical path: `sources/notes/S018-wood-learning-orchestration-post.md`
+
+# S018 — Learning Orchestration in AI-mediated assessment
+
+## Why it matters
+
+Wood's post supplies a richer alternative to treating process logs as self-authenticating evidence. It frames worthwhile capability as coordination plus judgment across cognitive, epistemic and ethical dimensions, and it points to an inspectable preprint.
+
+## Identity and provenance
+
+- Author: James Wood, Durham University education researcher
+- Platform identifier: LinkedIn activity `7462437499588730880`
+- Published: 19 May 2026
+- Retrieval: public post and visible author comment on 31 August 2026; gateway record `cand_7206cc73256e46a1`; normalized post-content SHA-256 `050c95c66bb95db14fb33adaebaaa62871ce2811e61ad7dc7d01375e2ae3d788` (raw platform-page hashes are retained in staged snapshots and vary with page chrome)
+- Linked original: OSF preprint DOI 10.35542/osf.io/uthme_v1. The OSF page rejected automated retrieval; metadata/abstract were independently resolved, but the full preprint was not admitted through this post.
+
+## Position
+
+Learning orchestration is the learner's capability to coordinate human, AI and artefactual resources while regulating:
+
+- cognitive and metacognitive support, so assistance does not displace thinking;
+- epistemic trust and verification across sources;
+- ethical responsibility and accountable authorship.
+
+The post argues that process visibility is insufficient: visible activity can document shallow or uncritical use just as readily as credible learning. Learners need anchored evaluative judgment, developmental readiness and the ability to justify decisions under uncertain credibility.
+
+## Standing and limitations
+
+- The social post is suitable for mapping the argument and following its citations, not for supporting the case-study findings it summarizes.
+- The linked preprint reports a design-informed case study with fifteen master's students and five stimulated-recall interviews. It is under review, small and qualitative; full methods must be inspected before empirical use.
+- The three-domain account may be an excellent construct hypothesis without yet being a validated measurement model.
+
+## Candidate contribution
+
+Used in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md). The linked preprint remains a queued original-source follow-up.
+
+## S019 — Teaching With AI, Part 1: Navigating the New Era of Human Learning
+
+Type: source
+Status: reviewed
+Topics: human-ai-collaboration, institutional-design, teacher-practice, motivation-and-agency
+Canonical path: `sources/notes/S019-higheredjobs-teaching-with-ai-podcast.md`
+
+# S019 — Teaching With AI, Part 1
+
+## Why it matters
+
+The conversation connects the future-of-learning argument to curriculum change, faculty identity, cognitive offloading and outcome-specific policies. It also demonstrates that podcasts can be handled with stable episode identity, an RSS GUID, a publisher transcript and speaker timestamps.
+
+## Identity and provenance
+
+- Series: HigherEdJobs Podcast, season 5 episode 91
+- Hosts: Andy Hibel and Kelly Cherwin
+- Guests: José Antonio Bowen and Edward Watson
+- Published: 13 January 2026; 23 minutes
+- Episode GUID: `b1dbc6f1-1bbc-4423-ad20-2276da7fcc4d`
+- Feed: `https://feeds.transistor.fm/the-higheredjobs-podcast`
+- Content inspected: publisher-provided HTML transcript, cross-checked with RSS identity and media enclosure
+- Transcript hash: `ab5036dbc7d5735d81a6a2b246a17839893aad6aeea9d309c842f87ec145696c`
+- Gateway record: `cand_770205244a52fe1c`
+
+## Timestamped observations
+
+| Timestamp | Speaker | Observation | Role | Follow-up |
+|---|---|---|---|---|
+| 00:01:25 | Watson | Institutions are shifting from integrity-first reactions toward AI literacy and graduate preparation, while faculty anxiety remains high. | Expert perspective | Resolve the cited AAC&U 2025 survey before using prevalence claims. |
+| 00:05:12 | Bowen | Abundant, less reliable information increased the value of judgment; AI may similarly augment thinking or indiscriminately offload it and weaken independent capability. | Normative argument | Compare with C001 and direct offloading studies. |
+| 00:07:50 | Watson | AI literacy should be treated as a learning outcome and mapped across curricula using ordinary curriculum-design processes. | Expert perspective | Compare with S016's competency architecture. |
+| 00:09:13 | Bowen | Institutions must change curricula while simultaneously studying effects; fast experimentation needs an explicit tolerance for failed designs. | Normative argument | Translate into reversible experiments and review cadences. |
+| 00:11:13 | Watson | AI literacy is temporally unstable enough that curricula, faculty support and definitions need faster revision loops than typical learning outcomes. | Expert perspective | Test which competencies are durable versus tool-specific. |
+| 00:15:16 | Bowen | Transparency about AI use should include how it helped or hindered learning; future work may need to exceed both unaided human and AI-only output. | Normative argument | Avoid treating transparency alone as capability evidence. |
+| 00:18:12 | Watson | The educational acceptability of the same AI action depends on the intended learning outcome—for example, learning to write versus using writing to learn. | Theoretical argument | Link allowed assistance to the construct being assessed. |
+
+## Limitations and boundary conditions
+
+- This is an expert conversation promoting a related book, not a representative survey or causal study.
+- Several empirical-sounding observations are leads requiring original reports.
+- The transcript is publisher-provided but timestamps should be checked against audio before consequential quotation.
+- The guests disagree with blanket rules but do not provide a validated method for deciding the underlying capability every learner must retain.
+
+## Candidate contribution
+
+Used in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md) to represent an outcome-specific hybrid position and an institutional need for faster learning loops.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
-Type: claim  
-Status: provisional  
-Topics: learning-vs-performance, assessment-validity, ai-tutoring  
+Type: claim
+Status: provisional
+Topics: learning-vs-performance, assessment-validity, ai-tutoring
 Canonical path: `claims/C001-assisted-performance-is-not-learning.md`
 
 # C001 — Assisted performance is not evidence of durable learning
@@ -567,7 +808,7 @@ This is not the claim that assistance necessarily harms learning. Structured tut
 
 ## Counterevidence and uncertainty
 
-Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. Beneficial AI conditions may create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
+Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
 
 ## Product relevance
 
@@ -575,9 +816,9 @@ Every important learning metric should state assistance state, delay, and transf
 
 ## C002 — Pedagogical structure changes AI learning outcomes
 
-Type: claim  
-Status: provisional  
-Topics: ai-tutoring, scaffolding, teacher-practice, learning-vs-performance  
+Type: claim
+Status: provisional
+Topics: ai-tutoring, scaffolding, teacher-practice, learning-vs-performance
 Canonical path: `claims/C002-pedagogical-structure-changes-ai-learning-outcomes.md`
 
 # C002 — Pedagogical structure changes AI learning outcomes
@@ -604,9 +845,9 @@ Learning products should expose and test their pedagogical policy: when to ask, 
 
 ## C003 — Effective guidance varies with learner expertise
 
-Type: claim  
-Status: provisional  
-Topics: scaffolding, learner-modelling, ai-tutoring  
+Type: claim
+Status: provisional
+Topics: scaffolding, learner-modelling, ai-tutoring
 Canonical path: `claims/C003-guidance-should-vary-with-expertise.md`
 
 # C003 — Effective guidance varies with learner expertise
@@ -625,9 +866,9 @@ Represent support decisions as hypotheses tied to learner evidence. Fade support
 
 ## C004 — Retrieval practice supports delayed retention and some transfer
 
-Type: claim  
-Status: established  
-Topics: retrieval-and-spacing, transfer, learning-vs-performance  
+Type: claim
+Status: established
+Topics: retrieval-and-spacing, transfer, learning-vs-performance
 Canonical path: `claims/C004-retrieval-supports-retention-and-transfer.md`
 
 # C004 — Retrieval practice supports delayed retention and some transfer
@@ -646,9 +887,9 @@ Ask the learner to recall, explain, predict, or produce before revealing an answ
 
 ## C005 — Spacing improves long-term retention
 
-Type: claim  
-Status: established  
-Topics: retrieval-and-spacing, learning-vs-performance  
+Type: claim
+Status: established
+Topics: retrieval-and-spacing, learning-vs-performance
 Canonical path: `claims/C005-spacing-improves-long-term-retention.md`
 
 # C005 — Spacing improves long-term retention
@@ -667,9 +908,9 @@ Maintain an evidence-aware revisit queue. Choose spacing against the time horizo
 
 ## C006 — Feedback is not uniformly beneficial
 
-Type: claim  
-Status: provisional  
-Topics: feedback, metacognition, motivation-and-agency  
+Type: claim
+Status: provisional
+Topics: feedback, metacognition, motivation-and-agency
 Canonical path: `claims/C006-feedback-effects-depend-on-form-and-context.md`
 
 # C006 — Feedback is not uniformly beneficial
@@ -688,9 +929,9 @@ Treat feedback as a policy decision. Diagnose before responding, link feedback t
 
 ## C007 — Learner models are probabilistic inferences, not ground truth
 
-Type: claim  
-Status: provisional  
-Topics: learner-modelling, assessment-validity, ethics-and-governance  
+Type: claim
+Status: provisional
+Topics: learner-modelling, assessment-validity, ethics-and-governance
 Canonical path: `claims/C007-learner-models-are-probabilistic-inferences.md`
 
 # C007 — Learner models are probabilistic inferences, not ground truth
@@ -709,9 +950,9 @@ Use an evidence ledger: observation, context, assistance state, time, model vers
 
 ## C008 — Trustworthy capability judgments need multiple evidence channels
 
-Type: claim  
-Status: provisional  
-Topics: assessment-validity, human-ai-collaboration, institutional-design  
+Type: claim
+Status: provisional
+Topics: assessment-validity, human-ai-collaboration, institutional-design
 Canonical path: `claims/C008-trustworthy-assessment-needs-multiple-evidence-channels.md`
 
 # C008 — Trustworthy capability judgments need multiple evidence channels
@@ -728,11 +969,42 @@ Triangulation is not a vote count. Evidence channels must represent the construc
 
 Represent what the person did, with what support, under which conditions, and for what intended inference. Allow a portfolio to support a judgment; never let a model-generated label silently become the judgment.
 
+## C009 — Off-the-shelf AI can improve short-delay unaided learning in bounded conditions
+
+Type: claim
+Status: provisional
+Topics: learning-vs-performance, ai-tutoring, human-ai-collaboration
+Canonical path: `claims/C009-off-the-shelf-ai-can-improve-short-delay-learning.md`
+
+# C009 — Off-the-shelf AI can improve short-delay unaided learning in bounded conditions
+
+## Claim
+
+In one randomized, time-held learning task, access to ordinary GPT-4o improved unaided knowledge immediately and about one week later [S015]. This establishes possibility, not a reliable default effect.
+
+## Evidence and reasoning
+
+The study directly separates supported activity from later unsupported tests, records a strong treatment first stage and retains almost all participants. The 0.27 SD one-week test effect and delayed essay-dimension improvements make a pure assisted-output explanation unlikely.
+
+## Boundary conditions
+
+Students were paid to remain in a laboratory and could not easily convert AI productivity into less study time. They were relatively high-achieving, already familiar with AI, and learned constrained topics. The horizon was one week. Product designs operating across months, disciplines or more vulnerable populations should expect different results.
+
+## Countervailing evidence and uncertainty
+
+[S001] found that unrestricted AI improved practice performance but harmed later unaided mathematics performance, while safeguards mitigated the gap. It does not contradict the bounded possibility claim in [C009], but it strongly contradicts generalizing the result into a default effect. The studies differ in population, domain, task, incentives, interface and outcome. That heterogeneity is precisely why the Atlas should model conditions instead of seeking one global AI effect.
+
+The appealing augmentation-versus-automation result in [S015] is observational after random assignment. Learner choice, prior proficiency and task strategy may explain the difference.
+
+## Product relevance
+
+Orqestra should support ordinary AI use only inside an evaluable intervention contract: declared intended capability, assistance state, time allocation, delayed independent measure and a plan for detecting who benefits or offloads. The result argues for experimentation, not unrestricted default access.
+
 ## B001 — Optimize durable capability, not completion
 
-Type: belief  
-Status: adopted  
-Topics: learning-vs-performance, product-measurement, ai-tutoring  
+Type: belief
+Status: adopted
+Topics: learning-vs-performance, product-measurement, ai-tutoring
 Canonical path: `beliefs/B001-optimize-capability-not-completion.md`
 
 # B001 — Optimize durable capability, not completion
@@ -763,9 +1035,9 @@ The product should declare learning, assessment, and performance-support modes; 
 
 ## B002 — Preserve productive effort while removing incidental friction
 
-Type: belief  
-Status: adopted  
-Topics: scaffolding, learning-vs-performance, motivation-and-agency  
+Type: belief
+Status: adopted
+Topics: scaffolding, learning-vs-performance, motivation-and-agency
 Canonical path: `beliefs/B002-preserve-productive-effort.md`
 
 # B002 — Preserve productive effort while removing incidental friction
@@ -796,9 +1068,9 @@ Use attempt-before-answer, progressive hints, worked-example fading, retrieval, 
 
 ## B003 — The evidence-backed learner model is the core compounding asset
 
-Type: belief  
-Status: adopted  
-Topics: learner-modelling, product-measurement, ai-tutoring  
+Type: belief
+Status: adopted
+Topics: learner-modelling, product-measurement, ai-tutoring
 Canonical path: `beliefs/B003-learner-model-is-core-value.md`
 
 # B003 — The evidence-backed learner model is the core compounding asset
@@ -829,9 +1101,9 @@ Invest in evidence provenance, uncertainty, calibration, construct maps, tempora
 
 ## B004 — Represent independent and AI-assisted capability separately
 
-Type: belief  
-Status: adopted  
-Topics: assessment-validity, human-ai-collaboration, learner-modelling  
+Type: belief
+Status: adopted
+Topics: assessment-validity, human-ai-collaboration, learner-modelling
 Canonical path: `beliefs/B004-separate-independent-and-assisted-capability.md`
 
 # B004 — Represent independent and AI-assisted capability separately
@@ -862,9 +1134,9 @@ Tag every observation with assistance conditions. Model AI collaboration capabil
 
 ## B005 — Personalization must earn its complexity
 
-Type: belief  
-Status: adopted  
-Topics: learner-modelling, product-measurement, scaffolding  
+Type: belief
+Status: adopted
+Topics: learner-modelling, product-measurement, scaffolding
 Canonical path: `beliefs/B005-personalization-must-earn-complexity.md`
 
 # B005 — Personalization must earn its complexity
@@ -895,9 +1167,9 @@ Begin with rules a human can inspect. Introduce model-driven adaptation only wit
 
 ## P001 — Use progressive assistance
 
-Type: principle  
-Status: active  
-Topics: scaffolding, learning-vs-performance, ai-tutoring  
+Type: principle
+Status: active
+Topics: scaffolding, learning-vs-performance, ai-tutoring
 Canonical path: `principles/P001-progressive-assistance.md`
 
 # P001 — Use progressive assistance
@@ -932,9 +1204,9 @@ Compare against an answer-first condition using delayed independent performance,
 
 ## P002 — Use an evidence ledger for learner inferences
 
-Type: principle  
-Status: active  
-Topics: learner-modelling, assessment-validity, ethics-and-governance  
+Type: principle
+Status: active
+Topics: learner-modelling, assessment-validity, ethics-and-governance
 Canonical path: `principles/P002-use-an-evidence-ledger.md`
 
 # P002 — Use an evidence ledger for learner inferences
@@ -962,9 +1234,9 @@ Audit calibration, reversal after new evidence, explanation accuracy, user corre
 
 ## P003 — Adapt and fade guidance with evidence
 
-Type: principle  
-Status: active  
-Topics: scaffolding, learner-modelling, ai-tutoring  
+Type: principle
+Status: active
+Topics: scaffolding, learner-modelling, ai-tutoring
 Canonical path: `principles/P003-adapt-and-fade-guidance.md`
 
 # P003 — Adapt and fade guidance with evidence
@@ -991,9 +1263,9 @@ Evaluate independent learning, calibration, help misuse, frustration, fairness a
 
 ## P004 — Retrieve and space important capabilities
 
-Type: principle  
-Status: active  
-Topics: retrieval-and-spacing, transfer, product-measurement  
+Type: principle
+Status: active
+Topics: retrieval-and-spacing, transfer, product-measurement
 Canonical path: `principles/P004-retrieve-and-space.md`
 
 # P004 — Retrieve and space important capabilities
@@ -1021,9 +1293,9 @@ Measure delayed independent recall/application, near and far transfer, return ra
 
 ## P005 — Measure learning after assistance is removed
 
-Type: principle  
-Status: active  
-Topics: learning-vs-performance, assessment-validity, product-measurement  
+Type: principle
+Status: active
+Topics: learning-vs-performance, assessment-validity, product-measurement
 Canonical path: `principles/P005-measure-learning-after-assistance.md`
 
 # P005 — Measure learning after assistance is removed
@@ -1050,9 +1322,9 @@ Validate whether cheaper assisted proxies predict the delayed independent outcom
 
 ## P006 — Triangulate capability evidence
 
-Type: principle  
-Status: active  
-Topics: assessment-validity, human-ai-collaboration, ethics-and-governance  
+Type: principle
+Status: active
+Topics: assessment-validity, human-ai-collaboration, ethics-and-governance
 Canonical path: `principles/P006-triangulate-capability-evidence.md`
 
 # P006 — Triangulate capability evidence
@@ -1080,9 +1352,9 @@ Assess decision accuracy, fairness, consistency, construct coverage, burden, pri
 
 ## P007 — Preserve traceability from source to decision
 
-Type: principle  
-Status: active  
-Topics: ethics-and-governance, product-measurement, institutional-design  
+Type: principle
+Status: active
+Topics: ethics-and-governance, product-measurement, institutional-design
 Canonical path: `principles/P007-preserve-research-traceability.md`
 
 # P007 — Preserve traceability from source to decision
@@ -1110,9 +1382,9 @@ Measure time to audit or correct a claim, rate of broken references, reviewer co
 
 ## Q001 — When does AI-assisted performance become durable learning?
 
-Type: question  
-Status: open  
-Topics: learning-vs-performance, ai-tutoring, transfer, assessment-validity  
+Type: question
+Status: open
+Topics: learning-vs-performance, ai-tutoring, transfer, assessment-validity
 Canonical path: `questions/Q001-when-does-ai-performance-become-learning.md`
 
 # Q001 — When does AI-assisted performance become durable learning?
@@ -1135,9 +1407,9 @@ Update the structured search in `reviews/R001-learning-performance-gap/search-st
 
 ## Q002 — What should a trustworthy learner model represent?
 
-Type: question  
-Status: open  
-Topics: learner-modelling, assessment-validity, ethics-and-governance  
+Type: question
+Status: open
+Topics: learner-modelling, assessment-validity, ethics-and-governance
 Canonical path: `questions/Q002-what-should-a-learner-model-represent.md`
 
 # Q002 — What should a trustworthy learner model represent?
@@ -1160,9 +1432,9 @@ Begin with contemporary knowledge-tracing surveys, evidence-centred design, asse
 
 ## Q003 — What is worth learning in an AI-rich world?
 
-Type: question  
-Status: open  
-Topics: human-ai-collaboration, institutional-design, ethics-and-governance, motivation-and-agency  
+Type: question
+Status: open
+Topics: human-ai-collaboration, institutional-design, ethics-and-governance, motivation-and-agency
 Canonical path: `questions/Q003-what-is-worth-learning-in-an-ai-world.md`
 
 # Q003 — What is worth learning in an AI-rich world?
@@ -1181,4 +1453,4 @@ No single study will. The atlas should triangulate philosophy of education, labo
 
 ## Next search
 
-Create discourse notes spanning Papert, Biesta, critical edtech scholarship, capability approaches, and contemporary human-AI collaboration—steel-manning tensions rather than seeking a forced consensus.
+Continue [N001](../discourse/N001-learning-directing-and-orchestrating-ai.md) with Papert, Biesta, critical edtech scholarship, capability approaches, learner voices and disciplinary cases. Test the emerging idea of capability sovereignty rather than treating it as settled vocabulary.

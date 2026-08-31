@@ -4,9 +4,9 @@ Status: provisional orientation synthesis; not exhaustive.
 
 ## What we can say now
 
-Three initial comparative field studies make a useful triangulation. Unrestricted AI assistance can create large supported-performance gains while weakening later unaided performance [S001]. A tightly designed AI tutor can improve short-term learning relative to a specific active-learning lesson [S002]. A structured, teacher-supported programme can produce meaningful assessment gains in a low-resource secondary context [S005].
+Four comparative studies now make the early picture more heterogeneous. Unrestricted AI assistance can create large supported-performance gains while weakening later unaided performance [S001]. Yet ordinary GPT-4o access also improved immediate and one-week unaided performance in a time-held learning task [S015]. A tightly designed AI tutor can improve short-term learning relative to a specific active-learning lesson [S002], and a structured, teacher-supported programme can produce meaningful assessment gains in a low-resource secondary context [S005].
 
-The synthesis is therefore not “AI helps” or “AI harms.” The more defensible early claim is that pedagogical and institutional structure changes the outcome [C002], and that output achieved with assistance cannot establish learning [C001].
+The synthesis is therefore not “AI helps” or “AI harms,” nor is it “guardrails always beat general access.” The more defensible early claims are that assisted output cannot establish learning [C001], general access can produce short-delay learning under bounded conditions [C009], and task, incentive, population, interaction and institutional structure are plausible moderators that require direct tests.
 
 ## Candidate mechanisms
 
@@ -15,6 +15,8 @@ The synthesis is therefore not “AI helps” or “AI harms.” The more defens
 - task structure can focus attention and prevent plausible but pedagogically unhelpful responses;
 - teacher facilitation may support prompting, interpretation, motivation, classroom management, and error correction;
 - increased time-on-task or novelty may contribute to positive programme results;
+- holding time fixed may reveal learning-per-unit-time gains that disappear when learners use AI to reduce total study time;
+- learner-selected augmentation and automation may mark different mechanisms, but post-treatment use categories cannot establish their causal effects;
 - assessments aligned closely to the intervention may overstate transfer.
 
 These are mechanism hypotheses, not yet established components.
@@ -31,6 +33,7 @@ Build and test an explicit assistance policy rather than a monolithic chatbot. L
 - which guardrail components cause benefit;
 - how learners adapt strategically over repeated use;
 - whether dependence, calibration, and agency can be measured reliably;
+- whether the positive one-week effect in [S015] replicates in ordinary coursework, longer horizons and less selective populations;
 - the publication-bias and null-results landscape.
 
 ## Next synthesis threshold

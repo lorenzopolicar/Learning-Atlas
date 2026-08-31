@@ -93,7 +93,7 @@ class ResearchGatewayTests(unittest.TestCase):
         self.assertEqual(records[0]["source_type"], "podcast-episode")
         self.assertEqual(records[0]["transcript"]["availability"], "publisher-provided")
         self.assertEqual(records[0]["transcript"]["url"], "https://example.org/episodes/7.vtt")
-        self.assertIn("expert-perspective", records[0]["epistemic_roles"])
+        self.assertEqual(records[0]["epistemic_roles"], ["discovery-lead"])
         self.assertEqual(gateway.parse_feed(feed, "https://example.org/feed.xml", query="not this episode"), [])
 
     def test_timed_transcript_returns_locators_not_a_full_transcript(self) -> None:
@@ -129,12 +129,65 @@ Guest: Learning is more than completion.
         self.assertEqual(result["excerpt_segments"][0]["text"], "Welcome to the show.")
         self.assertNotIn("Today we discuss learning.", json.dumps(result["excerpt_segments"]))
 
+    def test_html_podcast_transcript_extracts_visible_speaker_text(self) -> None:
+        source = "<html><body><p>Andy (00:01)</p><p>Welcome.</p><p>Kelly (00:07)</p><p>Learning matters.</p></body></html>"
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "episode.html"
+            path.write_text(source, encoding="utf-8")
+            result = gateway.extract_transcript(str(path), max_excerpts=2, max_segments=10)
+        self.assertEqual(result["segment_count"], 2)
+        self.assertEqual(result["excerpt_segments"][0]["speaker"], "Andy")
+        self.assertEqual(result["excerpt_segments"][0]["text"], "Welcome.")
+
     def test_jsonld_metadata_extracts_episode_identity(self) -> None:
         metadata = gateway.jsonld_metadata(
             ['{"@type":"PodcastEpisode","name":"Learning with AI","datePublished":"2026-01-13","author":[{"name":"Ada"}],"duration":"PT23M"}']
         )
         self.assertEqual(metadata["title"], "Learning with AI")
         self.assertEqual(metadata["creators"], ["Ada"])
+
+    def test_scholarly_page_timestamp_is_not_misclassified_as_media(self) -> None:
+        page = b"""<html><head>
+        <meta name="citation_title" content="Experimental Evidence">
+        <meta name="citation_author" content="Zara Contractor">
+        <meta name="citation_author" content="German Reyes">
+        <meta name="citation_date" content="2026/07/13">
+        <meta name="citation_arxiv_id" content="2607.08849">
+        <link rel="canonical" href="https://arxiv.org/abs/2607.08849">
+        </head><body>Submitted at 18:15:08 UTC.</body></html>"""
+        candidate = gateway.candidate_from_page(
+            page,
+            {"content-type": "text/html; charset=utf-8"},
+            "https://arxiv.org/abs/2607.08849",
+            "preprint",
+        )
+        self.assertEqual(candidate["source_type"], "preprint")
+        self.assertEqual(candidate["transcript"]["availability"], "none")
+        self.assertEqual(candidate["locators"], [])
+        self.assertEqual([creator["name"] for creator in candidate["creators"]], ["Zara Contractor", "German Reyes"])
+        self.assertIn({"scheme": "arxiv", "value": "2607.08849"}, candidate["canonical_identifiers"])
+
+    def test_social_pages_get_stable_platform_identity_without_evidence_role(self) -> None:
+        x_candidate = gateway.candidate_from_page(
+            b"<html><head><title>Peter Diamandis (@PeterDiamandis) on X</title></head><body>Posted at 9:01 PM</body></html>",
+            {"content-type": "text/html"},
+            "https://x.com/PeterDiamandis/status/2037636030845829220",
+        )
+        self.assertEqual(x_candidate["source_type"], "social-post")
+        self.assertEqual(x_candidate["epistemic_roles"], ["discovery-lead"])
+        self.assertEqual(x_candidate["transcript"]["availability"], "none")
+        self.assertEqual(x_candidate["locators"][0]["kind"], "platform-id")
+        self.assertIn({"scheme": "x-status", "value": "2037636030845829220"}, x_candidate["canonical_identifiers"])
+        self.assertRegex(x_candidate["provenance"]["normalized_content_sha256"], "^[a-f0-9]{64}$")
+
+        linkedin_candidate = gateway.candidate_from_page(
+            b'<html><head><meta name="author" content="James Wood"></head><body><a href="https://osf.io/preprints/edarxiv/uthme_v1">Preprint</a></body></html>',
+            {"content-type": "text/html"},
+            "https://www.linkedin.com/posts/jameswood_activity-7462437499588730880",
+        )
+        self.assertEqual(linkedin_candidate["source_type"], "social-post")
+        self.assertEqual(linkedin_candidate["provider_payload"]["outbound_links"], ["https://osf.io/preprints/edarxiv/uthme_v1"])
+        self.assertIn({"scheme": "linkedin-activity", "value": "7462437499588730880"}, linkedin_candidate["canonical_identifiers"])
 
     def test_candidate_validation_rejects_nested_full_text(self) -> None:
         candidate = gateway.base_candidate(
@@ -172,6 +225,7 @@ Guest: Learning is more than completion.
             {"jsonrpc": "2.0", "method": "notifications/initialized", "params": {}},
             {"jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {}},
             {"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "research_capabilities", "arguments": {}}},
+            {"jsonrpc": "2.0", "id": 4, "method": "tools/call", "params": {"name": "candidate_inbox", "arguments": {"action": "list", "limit": 2}}},
         ]
         result = subprocess.run(
             [sys.executable, str(SCRIPTS / "atlas_mcp.py")],
@@ -186,8 +240,13 @@ Guest: Learning is more than completion.
         responses = [json.loads(line) for line in result.stdout.splitlines()]
         self.assertEqual(responses[0]["result"]["serverInfo"]["name"], "learning-atlas-research")
         tools = responses[1]["result"]["tools"]
-        self.assertIn("stage_source_candidate", {tool["name"] for tool in tools})
+        tool_names = {tool["name"] for tool in tools}
+        self.assertEqual(len(tool_names), 9)
+        self.assertIn("candidate_inbox", tool_names)
+        self.assertIn("resolve_source", tool_names)
+        self.assertNotIn("stage_source_candidate", tool_names)
         self.assertFalse(responses[2]["result"]["isError"])
+        self.assertFalse(responses[3]["result"]["isError"])
 
     def test_agent_mcp_configs_are_parseable(self) -> None:
         with (ROOT / ".codex" / "config.toml").open("rb") as handle:

@@ -18,7 +18,7 @@ IDs are permanent and never reused. Titles and filenames may evolve; inbound ref
 
 ## Source media and epistemic role
 
-`source_kind` describes the container: journal article, preprint, report, book, chapter, podcast episode, interview, lecture, video, newsletter, standard, dataset, product evidence, or another precise kebab-case kind.
+`source_kind` describes the container: journal article, preprint, report, book, chapter, podcast episode, interview, lecture, video, newsletter, social post, standard, dataset, product evidence, or another precise kebab-case kind.
 
 `epistemic_roles` describes what the inspected source can contribute:
 

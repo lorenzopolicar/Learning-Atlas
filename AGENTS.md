@@ -12,6 +12,7 @@ Build a rigorous, cumulative, and useful body of knowledge for AI-powered learni
    `python3 scripts/atlas.py query "<question>" --type claim --type principle`.
 4. For scheduled work, read `.harness/state/research-state.json` and the relevant runbook.
 5. Before external research, call `research_capabilities` and use the routing table in `.agents/skills/atlas-research/references/tool-routing.md`.
+6. For a multi-lane pass, the primary agent may delegate independent read-heavy scouting, evidence extraction, and red-teaming to the project agents in `.codex/agents/` or `.claude/agents/`. Keep canonical writes and final epistemic decisions with one integrating agent.
 
 ## Epistemic rules
 

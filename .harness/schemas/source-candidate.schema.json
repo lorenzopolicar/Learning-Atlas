@@ -22,7 +22,7 @@
       "enum": [
         "journal-article", "conference-paper", "preprint", "systematic-review", "report",
         "book", "book-chapter", "podcast-series", "podcast-episode", "video", "lecture",
-        "interview", "newsletter", "web-essay", "standard", "dataset", "product-evidence", "other"
+        "interview", "newsletter", "social-post", "web-essay", "standard", "dataset", "product-evidence", "other"
       ]
     },
     "title": {"type": "string", "minLength": 1},

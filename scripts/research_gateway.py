@@ -54,12 +54,14 @@ SOURCE_TYPES = {
     "lecture",
     "interview",
     "newsletter",
+    "social-post",
     "web-essay",
     "standard",
     "dataset",
     "product-evidence",
     "other",
 }
+MEDIA_SOURCE_TYPES = {"podcast-episode", "video", "lecture", "interview"}
 EPISTEMIC_ROLES = {
     "empirical-study",
     "research-synthesis",
@@ -107,7 +109,19 @@ def candidate_id(record: dict[str, Any]) -> str:
         for item in identifiers
         if isinstance(item, dict) and item.get("scheme") and item.get("value")
     }
-    priority = ("doi", "isbn", "podcast-guid", "youtube", "openalex", "podcast-index", "apple-podcast", "rss-feed")
+    priority = (
+        "doi",
+        "arxiv",
+        "isbn",
+        "podcast-guid",
+        "youtube",
+        "x-status",
+        "linkedin-activity",
+        "openalex",
+        "podcast-index",
+        "apple-podcast",
+        "rss-feed",
+    )
     identity = next((f"{scheme}:{normalized[scheme].lower()}" for scheme in priority if normalized.get(scheme)), "")
     identity = identity or str(record.get("canonical_url") or record.get("title") or "unknown")
     return "cand_" + hashlib.sha256(identity.encode("utf-8")).hexdigest()[:16]
@@ -743,7 +757,9 @@ def parse_feed(data: bytes, feed_url: str, limit: int = 10, query: str | None = 
             "url": transcript_url,
             "language": transcript_elements[0].attrib.get("language") if transcript_elements else None,
         }
-        record["epistemic_roles"] = ["expert-perspective", "discovery-lead"]
+        # A feed proves the episode container, not the epistemic role of its content.
+        # The reviewing agent assigns roles after inspecting the episode.
+        record["epistemic_roles"] = ["discovery-lead"]
         record["verification"] = {
             "status": "metadata-verified",
             "checks": ["rss-episode-resolved"],
@@ -768,9 +784,11 @@ class PageParser(HTMLParser):
         self.title_parts: list[str] = []
         self.text_parts: list[str] = []
         self.meta: dict[str, str] = {}
+        self.meta_values: dict[str, list[str]] = {}
         self.canonical: str | None = None
         self.jsonld_parts: list[str] = []
         self.feed_links: list[str] = []
+        self.links: list[str] = []
         self._in_title = False
         self._in_jsonld = False
         self._suppressed = 0
@@ -787,11 +805,14 @@ class PageParser(HTMLParser):
             key = values.get("property") or values.get("name")
             if key and values.get("content"):
                 self.meta[key.lower()] = values["content"]
+                self.meta_values.setdefault(key.lower(), []).append(values["content"])
         if tag.lower() == "link" and values.get("rel", "").lower() == "canonical":
             self.canonical = values.get("href")
         if tag.lower() == "link" and "alternate" in values.get("rel", "").lower() and "rss" in values.get("type", "").lower():
             if values.get("href"):
                 self.feed_links.append(values["href"])
+        if tag.lower() == "a" and values.get("href"):
+            self.links.append(values["href"])
 
     def handle_endtag(self, tag: str) -> None:
         if tag.lower() == "title":
@@ -883,7 +904,17 @@ def jsonld_metadata(parts: list[str]) -> dict[str, Any]:
         (
             item
             for item in objects
-            if str(item.get("@type", "")).lower() in {"podcastepisode", "episode", "audioobject", "videoobject", "article", "newsarticle"}
+            if str(item.get("@type", "")).lower()
+            in {
+                "podcastepisode",
+                "episode",
+                "audioobject",
+                "videoobject",
+                "article",
+                "newsarticle",
+                "scholarlyarticle",
+                "socialmediaposting",
+            }
         ),
         objects[0] if objects else {},
     )
@@ -924,8 +955,71 @@ def visible_page_metadata(text: str) -> dict[str, Any]:
     }
 
 
-def inspect_url(url: str, source_type: str = "web-essay") -> dict[str, Any]:
-    data, headers, final_url = _open_url(url, headers={"Accept": "text/html, text/plain, application/json"})
+def _unique_urls(values: Iterable[str], base_url: str, canonical_url: str, limit: int = 30) -> list[str]:
+    """Return bounded, normalized content links without deciding which are evidence."""
+    def site_family(host: str) -> str:
+        host = host.lower().removeprefix("www.")
+        if host == "linkedin.com" or host.endswith(".linkedin.com"):
+            return "linkedin.com"
+        if host in {"x.com", "twitter.com"} or host.endswith((".x.com", ".twitter.com")):
+            return "x.com"
+        return host
+
+    canonical_host = site_family(urllib.parse.urlparse(canonical_url).hostname or "")
+    result: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        resolved = urllib.parse.urljoin(base_url, html.unescape(value))
+        parsed = urllib.parse.urlparse(resolved)
+        if parsed.scheme not in {"http", "https"}:
+            continue
+        query = urllib.parse.parse_qs(parsed.query)
+        if parsed.path.rstrip("/") in {"/redir/redirect", "/redirect"} and query.get("url"):
+            resolved = query["url"][0]
+            parsed = urllib.parse.urlparse(resolved)
+        normalized = urllib.parse.urlunparse(parsed._replace(fragment=""))
+        if normalized.rstrip("/") == canonical_url.rstrip("/") or normalized in seen:
+            continue
+        target_host = site_family(parsed.hostname or "")
+        contentish_same_host = any(token in parsed.path.lower() for token in ("/pdf", "/download", "/transcript"))
+        if target_host == canonical_host and not contentish_same_host:
+            continue
+        seen.add(normalized)
+        result.append(normalized)
+        if len(result) >= limit:
+            break
+    return result
+
+
+def _platform_identity(canonical_url: str) -> tuple[str | None, dict[str, str] | None, dict[str, Any] | None]:
+    """Identify the publication container; epistemic interpretation remains agent work."""
+    parsed = urllib.parse.urlparse(canonical_url)
+    host = (parsed.hostname or "").lower().removeprefix("www.")
+    if host in {"x.com", "twitter.com"}:
+        match = re.search(r"/status/(\d+)", parsed.path)
+        if match:
+            value = match.group(1)
+            return "social-post", {"scheme": "x-status", "value": value}, {"kind": "platform-id", "value": value}
+    if host == "linkedin.com":
+        match = re.search(r"activity-(\d+)", parsed.path)
+        if match:
+            value = match.group(1)
+            return "social-post", {"scheme": "linkedin-activity", "value": value}, {"kind": "platform-id", "value": value}
+    if host == "arxiv.org":
+        match = re.search(r"/(?:abs|pdf)/(\d{4}\.\d{4,5})(?:v\d+)?", parsed.path)
+        if match:
+            value = match.group(1)
+            return None, {"scheme": "arxiv", "value": value}, None
+    return None, None, None
+
+
+def candidate_from_page(
+    data: bytes,
+    headers: dict[str, str],
+    final_url: str,
+    source_type: str = "web-essay",
+) -> dict[str, Any]:
+    """Normalize one retrieved page without making evidence or relevance judgments."""
     content_type = headers.get("content-type", "").split(";", 1)[0].lower()
     encoding = "utf-8"
     charset = re.search(r"charset=([^; ]+)", headers.get("content-type", ""), re.I)
@@ -938,11 +1032,31 @@ def inspect_url(url: str, source_type: str = "web-essay") -> dict[str, Any]:
         structured = jsonld_metadata(parser.jsonld_parts)
         visible = compact_whitespace(" ".join(parser.text_parts))
         visible_metadata = visible_page_metadata(visible)
-        title = structured.get("title") or parser.meta.get("og:title") or compact_whitespace(" ".join(parser.title_parts)) or final_url
+        title = (
+            structured.get("title")
+            or parser.meta.get("citation_title")
+            or parser.meta.get("og:title")
+            or compact_whitespace(" ".join(parser.title_parts))
+            or final_url
+        )
         canonical = urllib.parse.urljoin(final_url, parser.canonical) if parser.canonical else final_url
-        published = structured.get("published_at") or parser.meta.get("article:published_time") or parser.meta.get("date") or visible_metadata.get("published_at")
+        published = (
+            structured.get("published_at")
+            or parser.meta.get("citation_date")
+            or parser.meta.get("article:published_time")
+            or parser.meta.get("date")
+            or visible_metadata.get("published_at")
+        )
         description = parser.meta.get("description") or parser.meta.get("og:description") or visible
-        authors = structured.get("creators") or ([parser.meta.get("author")] if parser.meta.get("author") else [])
+        authors = (
+            structured.get("creators")
+            or parser.meta_values.get("citation_author", [])
+            or ([parser.meta.get("author")] if parser.meta.get("author") else [])
+        )
+        page_links = list(parser.links)
+        for metadata_link in parser.meta_values.get("citation_pdf_url", []):
+            page_links.append(metadata_link)
+        feed_urls = [urllib.parse.urljoin(final_url, item) for item in parser.feed_links]
     else:
         visible = compact_whitespace(text)
         title = Path(urllib.parse.urlparse(final_url).path).name or final_url
@@ -952,19 +1066,40 @@ def inspect_url(url: str, source_type: str = "web-essay") -> dict[str, Any]:
         authors = []
         structured = {}
         visible_metadata = {}
+        page_links = []
+        feed_urls = []
+
+    detected_type, platform_identifier, platform_locator = _platform_identity(canonical)
+    if detected_type:
+        source_type = detected_type
     record = base_candidate(title=title, source_type=source_type, canonical_url=canonical, provider="direct-url")
     record["creators"] = [{"name": author, "role": "speaker-or-author"} for author in authors]
+    if not record["creators"] and record["source_type"] == "social-post" and " (" in title:
+        record["creators"] = [{"name": title.split(" (", 1)[0], "role": "author"}]
     record["published_at"] = published
     record["summary"] = bounded(description)
     record["provenance"].update(
-        {"content_sha256": sha256_bytes(data), "locator_basis": "publisher-page", "content_type": content_type}
+        {
+            "content_sha256": sha256_bytes(data),
+            "normalized_content_sha256": sha256_bytes(compact_whitespace(description).encode("utf-8")),
+            "locator_basis": "publisher-page",
+            "content_type": content_type,
+        }
     )
-    record["locators"] = _timestamp_locators(visible)
-    if record["locators"] or "transcript" in title.lower() or "transcript" in visible[:5_000].lower():
+    if platform_identifier:
+        record["canonical_identifiers"].append(platform_identifier)
+    if content_type == "text/html":
+        doi = parser.meta.get("citation_doi")
+        arxiv_id = parser.meta.get("citation_arxiv_id")
+        if doi:
+            record["canonical_identifiers"].append({"scheme": "doi", "value": doi.lower().removeprefix("https://doi.org/")})
+        if arxiv_id and not any(item["scheme"] == "arxiv" for item in record["canonical_identifiers"]):
+            record["canonical_identifiers"].append({"scheme": "arxiv", "value": arxiv_id.removeprefix("arXiv:")})
+
+    is_media = record["source_type"] in MEDIA_SOURCE_TYPES
+    record["locators"] = _timestamp_locators(visible) if is_media else ([platform_locator] if platform_locator else [])
+    if is_media and (record["locators"] or "transcript" in title.lower() or "transcript" in visible[:5_000].lower()):
         record["transcript"] = {"availability": "publisher-provided", "kind": "html", "url": canonical, "language": None}
-        if source_type == "web-essay":
-            record["source_type"] = "podcast-episode"
-        record["epistemic_roles"] = ["expert-perspective", "discovery-lead"]
         segments = timestamped_speaker_segments(visible)
         if not record["creators"]:
             speakers = list(dict.fromkeys(item["label"] for item in record["locators"] if item.get("label")))
@@ -972,16 +1107,31 @@ def inspect_url(url: str, source_type: str = "web-essay") -> dict[str, Any]:
         record["provider_payload"] = {
             "series": structured.get("series") or (title.split("|", 1)[0].strip() if "|" in title else None),
             "duration": structured.get("duration") or visible_metadata.get("duration"),
-            "feed_urls": [urllib.parse.urljoin(final_url, item) for item in parser.feed_links],
+            "feed_urls": feed_urls,
             "transcript_excerpt_segments": segments,
         }
+    else:
+        outbound_links = _unique_urls(page_links, final_url, canonical)
+        if outbound_links:
+            record["provider_payload"] = {"outbound_links": outbound_links}
+    if record["source_type"] == "social-post":
+        warning = "This is a point-in-time public post snapshot; edits, replies, engagement counts, and linked evidence may be incomplete."
+    elif is_media:
+        warning = "Only a bounded extraction was returned; verify consequential quotations against the publisher transcript or audio."
+    else:
+        warning = "Only a bounded page extraction was returned; inspect the original work before using it as evidence."
     record["verification"] = {
         "status": "content-inspected",
         "checks": ["canonical-url-resolved", "content-hash-recorded"],
-        "warnings": ["Only a bounded extraction was returned; verify quotations against the publisher page or audio."],
+        "warnings": [warning],
     }
     record["candidate_id"] = candidate_id(record)
     return record
+
+
+def inspect_url(url: str, source_type: str = "web-essay") -> dict[str, Any]:
+    data, headers, final_url = _open_url(url, headers={"Accept": "text/html, text/plain, application/json"})
+    return candidate_from_page(data, headers, final_url, source_type)
 
 
 def resolve_media_source(url: str) -> dict[str, Any]:
@@ -1059,6 +1209,10 @@ def extract_transcript(value: str, max_excerpts: int = 5, max_segments: int = 50
         label = str(path)
         content_type = mimetypes.guess_type(path.name)[0] or "text/plain"
     text = data.decode("utf-8", errors="replace")
+    if "text/html" in content_type.lower() or "<html" in text[:1_000].lower():
+        parser = PageParser()
+        parser.feed(text)
+        text = compact_whitespace(" ".join(parser.text_parts))
     segments = parse_timed_text(text)
     if not segments:
         speaker_segments = timestamped_speaker_segments(

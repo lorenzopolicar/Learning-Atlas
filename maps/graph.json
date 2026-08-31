@@ -92,11 +92,25 @@
       "path": "claims/C008-trustworthy-assessment-needs-multiple-evidence-channels.md"
     },
     {
+      "id": "C009",
+      "type": "claim",
+      "title": "Off-the-shelf AI can improve short-delay unaided learning in bounded conditions",
+      "status": "provisional",
+      "path": "claims/C009-off-the-shelf-ai-can-improve-short-delay-learning.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
       "status": "active",
       "path": "decisions/D001-git-is-canonical-knowledge-store.md"
+    },
+    {
+      "id": "N001",
+      "type": "discourse",
+      "title": "Learning, directing, and orchestrating AI",
+      "status": "draft",
+      "path": "discourse/N001-learning-directing-and-orchestrating-ai.md"
     },
     {
       "id": "P001",
@@ -272,6 +286,41 @@
       "title": "The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems",
       "status": "reviewed",
       "path": "sources/notes/S014-vanlehn-tutoring-effectiveness.md"
+    },
+    {
+      "id": "S015",
+      "type": "source",
+      "title": "Experimental Evidence on the Learning Impact of Generative AI",
+      "status": "reviewed",
+      "path": "sources/notes/S015-contractor-reyes-experimental-evidence.md"
+    },
+    {
+      "id": "S016",
+      "type": "source",
+      "title": "Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education",
+      "status": "reviewed",
+      "path": "sources/notes/S016-oecd-eu-ai-literacy-framework.md"
+    },
+    {
+      "id": "S017",
+      "type": "source",
+      "title": "Should education shift from learning to do X to directing AI doing X?",
+      "status": "reviewed",
+      "path": "sources/notes/S017-diamandis-direct-ai-post.md"
+    },
+    {
+      "id": "S018",
+      "type": "source",
+      "title": "Learning Orchestration in AI-mediated assessment",
+      "status": "reviewed",
+      "path": "sources/notes/S018-wood-learning-orchestration-post.md"
+    },
+    {
+      "id": "S019",
+      "type": "source",
+      "title": "Teaching With AI, Part 1: Navigating the New Era of Human Learning",
+      "status": "reviewed",
+      "path": "sources/notes/S019-higheredjobs-teaching-with-ai-podcast.md"
     }
   ],
   "edges": [
@@ -441,6 +490,11 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C009",
+      "target": "S015",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "D001",
       "target": "P002",
       "relation": "principles"
@@ -459,6 +513,31 @@
       "source": "D001",
       "target": "C008",
       "relation": "related_claims"
+    },
+    {
+      "source": "N001",
+      "target": "S015",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S016",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S017",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S018",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S019",
+      "relation": "sources"
     },
     {
       "source": "P001",
@@ -613,6 +692,11 @@
     {
       "source": "Q003",
       "target": "C008",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q003",
+      "target": "C009",
       "relation": "related_claims"
     }
   ]

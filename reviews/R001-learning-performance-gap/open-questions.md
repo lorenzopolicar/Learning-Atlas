@@ -10,3 +10,5 @@
 8. Which findings survive teacher variation, ordinary product rollout, and longer horizons?
 9. Can short, low-burden probes predict later independent capability without teaching to the probe?
 10. What harms arise from withdrawing assistance solely for measurement?
+11. When AI increases learning per unit of time, how do learners reallocate saved time outside a laboratory?
+12. Which randomized interface or incentive changes move learners from automation toward augmentation, rather than merely classifying their choices afterward?
