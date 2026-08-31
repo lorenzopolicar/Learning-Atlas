@@ -2,4 +2,6 @@
 
 # Experiments
 
-_No artifacts yet._
+| ID | Title | Status | Confidence | Topics |
+|---|---|---|---|---|
+| [E001](../experiments/E001-ai-mediated-stewardship-probe.md) | Low-stakes AI-mediated task stewardship probe | draft |  | human-ai-collaboration, assessment-validity, metacognition, product-measurement, ethics-and-governance |

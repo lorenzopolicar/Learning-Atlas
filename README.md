@@ -32,9 +32,11 @@ These layers are deliberately separate:
 - [Current beliefs](indexes/beliefs.md)
 - [Design principles](indexes/principles.md)
 - [Orqestra bridge](bridges/orqestra.md)
+- [Orqestra AI-mediated stewardship design brief](bridges/orqestra-ai-mediated-stewardship.md)
 - [Tooling architecture](bridges/tooling.md)
 - [First end-to-end pipeline smoketest](research/process-lab/2026-08-31-research-pipeline-smoketest.md)
 - [Multisource passes and harness audit](research/process-lab/2026-08-31-multisource-passes-and-harness-audit.md)
+- [First supervised multi-agent proving cycle](research/process-lab/2026-08-31-supervised-agent-cycle-1.md)
 - [Automation model](.harness/runbooks/research-cycle.md)
 - [Configured schedules](.harness/automations.md)
 

@@ -35,6 +35,13 @@
       "types": ["question", "discourse", "source"],
       "expected_ids": ["Q003", "N001", "S017"],
       "required_concepts": ["independent", "directing", "capability"]
+    },
+    {
+      "id": "EV006",
+      "query": "AI-mediated task stewardship accessible baseline correct resistance assistance function Orqestra experiment",
+      "types": ["claim", "belief", "decision", "experiment", "discourse"],
+      "expected_ids": ["C008", "C010", "B004", "D002", "E001", "N001"],
+      "required_concepts": ["accessible baseline", "correct resistance", "assistance function"]
     }
   ]
 }

@@ -3,7 +3,7 @@
   "id": "P002",
   "type": "principle",
   "title": "Use an evidence ledger for learner inferences",
-  "statement": "Store learner observations separately from model inferences, with provenance, context, assistance state, time, uncertainty, and permitted use.",
+  "statement": "Store learner observations separately from model inferences, with provenance, context, accessible baseline, assistance state and function, time, uncertainty, and permitted use.",
   "status": "active",
   "confidence": "high",
   "topics": ["learner-modelling", "assessment-validity", "ethics-and-governance"],
@@ -29,7 +29,7 @@ Learner models are probabilistic and construct-dependent [C007]. Trustworthy jud
 
 - append-only observation events with correction records;
 - versioned inferences and confidence;
-- separate independent and AI-assisted evidence [B004];
+- separate accessible-independent, AI-assisted and supervisory/recovery evidence, including assistance function [B004];
 - provenance links from recommendation back to observations;
 - retention limits and user contestability;
 - decision-specific permissions.

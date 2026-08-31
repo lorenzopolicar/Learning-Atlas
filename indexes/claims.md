@@ -13,3 +13,4 @@
 | [C007](../claims/C007-learner-models-are-probabilistic-inferences.md) | Learner models are probabilistic inferences, not ground truth | provisional | high | learner-modelling, assessment-validity, ethics-and-governance |
 | [C008](../claims/C008-trustworthy-assessment-needs-multiple-evidence-channels.md) | Trustworthy capability judgments need multiple evidence channels | provisional | moderate | assessment-validity, human-ai-collaboration, institutional-design |
 | [C009](../claims/C009-off-the-shelf-ai-can-improve-short-delay-learning.md) | Off-the-shelf AI can improve short-delay unaided learning in bounded conditions | provisional | moderate | learning-vs-performance, ai-tutoring, human-ai-collaboration |
+| [C010](../claims/C010-appropriate-reliance-has-distinct-components.md) | Appropriate reliance has distinct adoption and resistance components | provisional | moderate | human-ai-collaboration, assessment-validity, metacognition, product-measurement |

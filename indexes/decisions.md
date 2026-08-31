@@ -5,3 +5,4 @@
 | ID | Title | Status | Confidence | Topics |
 |---|---|---|---|---|
 | [D001](../decisions/D001-git-is-canonical-knowledge-store.md) | Use Git as the canonical synthesis store | active |  | ethics-and-governance, institutional-design |
+| [D002](../decisions/D002-pilot-task-level-ai-stewardship.md) | Pilot task-level AI-mediated stewardship without a composite score | active |  | human-ai-collaboration, assessment-validity, learner-modelling, product-measurement, ethics-and-governance |

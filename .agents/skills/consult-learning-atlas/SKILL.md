@@ -25,10 +25,13 @@ For questions about what is worth learning, AI literacy, institutional purpose, 
 ```bash
 python3 "$atlas_root/scripts/atlas.py" query "<product question>" \
   --type claim --type belief --type principle \
+  --type decision --type experiment \
   --type question --type discourse --type source
 ```
 
 Use these lanes when the decision genuinely turns on contested purposes, source appraisal, or institutional frameworks; do not add them to a narrow implementation query by habit.
+
+For human-AI capability or assessment work, explicitly check whether the retrieved chain distinguishes an accessible independent baseline from substantive AI delegation, records assistance function, and keeps task evidence separate from person-level inference. Treat “capability sovereignty” as a normative lens unless later evidence supersedes [N001] and [D002]; do not propose a composite sovereignty score from current Atlas evidence.
 
 ## Read and apply
 

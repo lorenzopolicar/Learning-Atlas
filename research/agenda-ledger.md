@@ -33,3 +33,14 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Decision: establish six programmes spanning empirical learning outcomes, learner modelling, intervention policy, assessment, purposes/power, and institutions.
 - Reason: prevent AI tutoring efficacy from collapsing the field into one convenient empirical lane.
 - Next review: after the first monthly synthesis and again at the first quarterly direction review.
+
+### 2026-08-31 — Human-directed capability-stewardship proving cycle
+
+- Proposal and decision: the user directed work on the previously reported priority items. Move collaborative capability assessment from queue priority 4 to priority 1 and make its next step a co-designed, pre-registered pilot [E001], not further unconstrained construct invention.
+- Triggering signals: the Orqestra learning roadmap needs interpretable evidence of independent and AI-mediated capability; [C008] showed the need for contextual evidence; a multi-agent construct audit found that “capability sovereignty” is too broad to score; [S022] showed that tool removal can also remove access.
+- Wording and method change: retain capability sovereignty as a normative relational lens in [N001]. Use task-level **AI-mediated stewardship** for operational testing. Separate accessible-independent, AI-assisted and supervisory/recovery lanes and record assistance function [D002].
+- Source lanes: add disabled and otherwise underserved learner testimony as a required boundary lane; seek non-Western and non-English voices in the next pass. Pair this with measurement, learning-science and critical/normative sources rather than treating testimony as effect evidence.
+- Opportunity cost: the R001 post-2025 controlled-study update moves from queue priority 1 to 2. No programme or north-star wording changes.
+- Bias and novelty risk: a memorable new label can disguise old constructs or become a surveillance score. The experiment must compare incremental validity against simpler domain-performance baselines and support learner contestability.
+- Review horizon and success signal: revisit after the [E001] pilot design review or the next monthly synthesis, whichever comes first. Continue only if the proposed evidence adds validity without inequitable burden.
+- Human decision: accepted through the explicit instruction to proceed with the priority work; implementation in Orqestra remains a separate decision after the pilot protocol is reviewed.

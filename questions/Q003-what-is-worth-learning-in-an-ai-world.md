@@ -7,7 +7,7 @@
   "status": "open",
   "priority": "high",
   "topics": ["human-ai-collaboration", "institutional-design", "ethics-and-governance", "motivation-and-agency"],
-  "related_claims": ["C001", "C008", "C009"],
+  "related_claims": ["C001", "C008", "C009", "C010"],
   "last_reviewed": "2026-08-31"
 }
 ---
@@ -28,4 +28,4 @@ No single study will. The atlas should triangulate philosophy of education, labo
 
 ## Next search
 
-Continue [N001](../discourse/N001-learning-directing-and-orchestrating-ai.md) with Papert, Biesta, critical edtech scholarship, capability approaches, learner voices and disciplinary cases. Test the emerging idea of capability sovereignty rather than treating it as settled vocabulary.
+Continue [N001](../discourse/N001-learning-directing-and-orchestrating-ai.md) with Papert, Biesta, critical edtech scholarship, capability approaches, non-Western learner voices and disciplinary cases. The first construct audit retained capability sovereignty only as a normative relational lens and proposed task-level AI-mediated stewardship for falsifiable product work; test whether either framing adds value beyond its constituent constructs.

@@ -99,11 +99,32 @@
       "path": "claims/C009-off-the-shelf-ai-can-improve-short-delay-learning.md"
     },
     {
+      "id": "C010",
+      "type": "claim",
+      "title": "Appropriate reliance has distinct adoption and resistance components",
+      "status": "provisional",
+      "path": "claims/C010-appropriate-reliance-has-distinct-components.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
       "status": "active",
       "path": "decisions/D001-git-is-canonical-knowledge-store.md"
+    },
+    {
+      "id": "D002",
+      "type": "decision",
+      "title": "Pilot task-level AI-mediated stewardship without a composite score",
+      "status": "active",
+      "path": "decisions/D002-pilot-task-level-ai-stewardship.md"
+    },
+    {
+      "id": "E001",
+      "type": "experiment",
+      "title": "Low-stakes AI-mediated task stewardship probe",
+      "status": "draft",
+      "path": "experiments/E001-ai-mediated-stewardship-probe.md"
     },
     {
       "id": "N001",
@@ -321,6 +342,27 @@
       "title": "Teaching With AI, Part 1: Navigating the New Era of Human Learning",
       "status": "reviewed",
       "path": "sources/notes/S019-higheredjobs-teaching-with-ai-podcast.md"
+    },
+    {
+      "id": "S020",
+      "type": "source",
+      "title": "Appropriate Reliance on AI Advice: Conceptualization and the Effect of Explanations",
+      "status": "reviewed",
+      "path": "sources/notes/S020-schemmer-appropriate-reliance.md"
+    },
+    {
+      "id": "S021",
+      "type": "source",
+      "title": "Modeling the Joint Impact of Human and AI Metacognitive Sensitivity on Human–AI Collaboration",
+      "status": "reviewed",
+      "path": "sources/notes/S021-li-steyvers-metacognitive-sensitivity.md"
+    },
+    {
+      "id": "S022",
+      "type": "source",
+      "title": "Exploring the Role of Generative AI in Higher Education: Semi-structured Interviews with Students with Disabilities",
+      "status": "reviewed",
+      "path": "sources/notes/S022-pierres-disabled-students-genai.md"
     }
   ],
   "edges": [
@@ -397,6 +439,11 @@
     {
       "source": "B004",
       "target": "C008",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B004",
+      "target": "C010",
       "relation": "derived_from"
     },
     {
@@ -490,8 +537,33 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C008",
+      "target": "S020",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C008",
+      "target": "S021",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C008",
+      "target": "S022",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "C009",
       "target": "S015",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C010",
+      "target": "S020",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C010",
+      "target": "S021",
       "relation": "supporting_sources"
     },
     {
@@ -513,6 +585,61 @@
       "source": "D001",
       "target": "C008",
       "relation": "related_claims"
+    },
+    {
+      "source": "D002",
+      "target": "P002",
+      "relation": "principles"
+    },
+    {
+      "source": "D002",
+      "target": "P005",
+      "relation": "principles"
+    },
+    {
+      "source": "D002",
+      "target": "P006",
+      "relation": "principles"
+    },
+    {
+      "source": "D002",
+      "target": "C007",
+      "relation": "related_claims"
+    },
+    {
+      "source": "D002",
+      "target": "C008",
+      "relation": "related_claims"
+    },
+    {
+      "source": "D002",
+      "target": "C010",
+      "relation": "related_claims"
+    },
+    {
+      "source": "E001",
+      "target": "B004",
+      "relation": "tests_beliefs"
+    },
+    {
+      "source": "E001",
+      "target": "C010",
+      "relation": "tests_claims"
+    },
+    {
+      "source": "E001",
+      "target": "P002",
+      "relation": "tests_principles"
+    },
+    {
+      "source": "E001",
+      "target": "P005",
+      "relation": "tests_principles"
+    },
+    {
+      "source": "E001",
+      "target": "P006",
+      "relation": "tests_principles"
     },
     {
       "source": "N001",
@@ -537,6 +664,21 @@
     {
       "source": "N001",
       "target": "S019",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S020",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S021",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S022",
       "relation": "sources"
     },
     {
@@ -697,6 +839,11 @@
     {
       "source": "Q003",
       "target": "C009",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q003",
+      "target": "C010",
       "relation": "related_claims"
     }
   ]

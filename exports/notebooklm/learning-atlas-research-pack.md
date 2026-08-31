@@ -785,6 +785,183 @@ The conversation connects the future-of-learning argument to curriculum change, 
 
 Used in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md) to represent an outcome-specific hybrid position and an institutional need for faster learning loops.
 
+## S020 — Appropriate Reliance on AI Advice: Conceptualization and the Effect of Explanations
+
+Type: source
+Status: reviewed
+Topics: human-ai-collaboration, assessment-validity, product-measurement, metacognition
+Canonical path: `sources/notes/S020-schemmer-appropriate-reliance.md`
+
+# S020 — Appropriate Reliance on AI Advice
+
+## Why it matters
+
+The paper separates two behaviours that a final accuracy score collapses: correctly adopting AI advice after an initially wrong judgment and correctly resisting AI advice after an initially correct judgment. This is a useful measurement primitive for bounded supervisory tasks, not a complete measure of learning or agency.
+
+## Identity and provenance
+
+- DOI: 10.1145/3581641.3584066; IUI 2023 conference paper
+- Version inspected: complete author-hosted arXiv preprint, arXiv:2302.02187
+- Content inspected: full text, measures, hypotheses, results, discussion and appendices relevant to the experiment
+- Retrieval: gateway record `cand_aabb11b83b1fbfb4`; PDF SHA-256 `3238886354f687e7893898ff8d3f6fcdc93f0f1e5ab3f09b116a1e2546dab161`
+- Locator convention: numbered sections, equations, figures and tables in the inspected preprint
+
+## Study
+
+- Population and setting: 200 Prolific participants; one was excluded. Mean age was 27.5. Participants classified hotel reviews as genuine or deceptive.
+- Intervention and comparator: participants first made a classification and reported confidence, then saw AI advice either with or without a LIME explanation, and could revise both.
+- Task and model: 16 experimental trials. The underlying support-vector machine was 86% accurate, but the experiment deliberately sampled equal numbers of correct and incorrect AI recommendations.
+- Design: between-participant explanation condition with repeated sequential decisions. The task creates observable human–AI disagreement cases and known correctness.
+
+## Findings
+
+- Relative AI reliance (RAIR) was defined as switching from an initially wrong human answer to correct AI advice. Relative self-reliance (RSR) was defined as retaining an initially correct human answer when AI advice was wrong.
+- Mean RAIR was 29.59% without explanations and 38.87% with explanations (`p = .05`). Mean RSR was 71.87% and 69.45%, respectively (`p = .54`). The explanation therefore affected one reliance component but not the other.
+- Relative to the initial human decision, final accuracy changed by -1.56 percentage points in the control condition and +2.45 points in the explanation condition (`p = .02` for the difference). Neither condition produced complementary performance above both the human and AI baselines.
+- Trust or agreement alone would not reveal whether a participant accepted correct advice or accepted incorrect advice. The initial judgment and the correctness of both parties are necessary for the two-sided interpretation.
+
+## Limitations and boundary conditions
+
+- The task was short, artificial, binary and objectively scored. Participants were crowd workers whose initial accuracy was close to chance, not learners developing a consequential domain capability.
+- A self-first sequence can anchor the participant and makes the measurement procedure part of the intervention. No feedback, delayed outcome, transfer measure or longitudinal learning outcome was included.
+- RAIR and RSR require enough initial-error/AI-correct and initial-correct/AI-error cases. They are undefined or unstable with few disagreements and do not directly apply where truth is plural or delayed.
+- LIME explanations and one classifier do not represent contemporary open-ended generative collaboration. Improved RAIR did not establish better resistance, authorship, responsibility or durable learning.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate | Controlled experiment with known correctness; sequential design and near-chance human performance shape behaviour |
+| Directness | moderate | Direct for observable advice-taking, indirect for educational capability |
+| Consistency | unclear | One experiment and one explanation format |
+| Replication | low | No independent replication assessed in this pass |
+| Magnitude | low-moderate | Explanation shifted RAIR by about nine points but not RSR |
+| Duration | low | Sixteen trials, no delay |
+| Transfer | low | No transfer outcome |
+| Ecological validity | low | Artificial hotel-review classification by crowd workers |
+
+## Candidate claims
+
+Supports [C010](../../claims/C010-appropriate-reliance-has-distinct-components.md). It supplies task-level evidence for [C008](../../claims/C008-trustworthy-assessment-needs-multiple-evidence-channels.md), but it does not validate an overall human–AI capability score.
+
+## S021 — Modeling the Joint Impact of Human and AI Metacognitive Sensitivity on Human–AI Collaboration
+
+Type: source
+Status: reviewed
+Topics: human-ai-collaboration, metacognition, assessment-validity, product-measurement
+Canonical path: `sources/notes/S021-li-steyvers-metacognitive-sensitivity.md`
+
+# S021 — Human and AI metacognitive sensitivity
+
+## Why it matters
+
+The paper shows why raw confidence or calibration is not enough for combining human and AI judgments. What matters in its model is whether each agent's confidence discriminates its own correct from incorrect decisions—and whether the agents make different errors.
+
+## Identity and provenance
+
+- DOI: 10.1016/j.jmp.2026.102988; *Journal of Mathematical Psychology*, volume 129, article 102988
+- Version inspected: complete open published manuscript, dated 24 April 2026
+- Content inspected: full text, formal derivation, simulations, empirical validation and limitations
+- Access and rights: CC BY
+- Retrieval: gateway record `cand_0875a2fa7c54659d`; PDF SHA-256 `930e796291d481b9355a4cd170591a880824df20a8eea1f10dd881583f800849`
+- Locator convention: numbered sections, propositions, figures and tables
+
+## Study and model
+
+- Construct: metacognitive sensitivity is the degree to which confidence separates correct from incorrect decisions. AUROC2 estimates the probability that a randomly chosen correct response has higher confidence than a randomly chosen incorrect response; 0.5 is chance and 1 is perfect discrimination.
+- Formal contribution: a Bayes-optimal arbitration rule combines each agent's accuracy and metacognitive sensitivity. Under the model, above-chance sensitivity in either agent can enable complementarity.
+- Empirical validation: the authors reused ImageNet-16H observations from 145 Mechanical Turk workers and predictions from 20 AI models. They constructed 2,900 human–AI dyads from 200 image-classification trials per person; the people did not collaborate live under the proposed rule.
+
+## Findings
+
+- The Bayes-optimal combination reached accuracy .826, compared with .781 for choosing the more confident answer, .784 for humans, .633 for AI and .709 for random choice in the analyzed dyads.
+- The proposed rule achieved complementarity for 76.2% of dyads versus 44.1% for the maximum-confidence strategy.
+- Human and AI errors were positively correlated (mean phi approximately .25). Treating errors as independent can overstate the opportunity for complementary performance.
+- Accuracy, calibration, confidence level and metacognitive sensitivity are related but non-equivalent. A system can be confident without having confidence that meaningfully discriminates its errors.
+
+## Limitations and boundary conditions
+
+- The headline result is an analytical upper-bound-style result under a specified statistical model, not evidence that ordinary learners can learn or execute the Bayes-optimal rule.
+- The empirical component constructs dyads after the fact from an image-classification dataset. It is not a live collaboration, educational intervention or longitudinal study.
+- AUROC2 requires many correctness-labelled judgments and sufficient variation. It is a task-level estimate, not a stable person trait or a substitute for domain performance.
+- Classification with known truth does not generalize automatically to creative, ethical, social or open-ended tasks. Confidence elicitation can also add burden or distort behaviour.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate | Clear formal assumptions and extensive constructed validation; no live intervention |
+| Directness | moderate | Direct for arbitration theory, indirect for teachable learner capability |
+| Consistency | unclear | One dataset family and derived dyads |
+| Replication | low | No independent replication assessed in this pass |
+| Magnitude | moderate | Model materially exceeded simpler combination rules in the analyzed data |
+| Duration | low | Repeated trials without longitudinal follow-up |
+| Transfer | low | No cross-domain or educational transfer |
+| Ecological validity | low | Post-hoc image-classification dyads, not authentic AI-mediated work |
+
+## Candidate claims
+
+Supports the confidence-quality boundary in [C010](../../claims/C010-appropriate-reliance-has-distinct-components.md). It motivates measuring confidence discrimination only where the task and trial count make that inference defensible.
+
+## S022 — Exploring the Role of Generative AI in Higher Education: Semi-structured Interviews with Students with Disabilities
+
+Type: source
+Status: reviewed
+Topics: institutional-design, ethics-and-governance, motivation-and-agency, assessment-validity
+Canonical path: `sources/notes/S022-pierres-disabled-students-genai.md`
+
+# S022 — Generative AI and students with disabilities
+
+## Why it matters
+
+This study makes assistance function visible. For some learners, AI did not simply perform the assessed cognition: it reduced pain, made inaccessible material usable, supported expression or compensated for inadequate institutional accommodations. Removing every tool can therefore make an “independent” assessment less valid rather than more valid.
+
+## Identity and provenance
+
+- DOI: 10.1007/s10639-024-13134-8; *Education and Information Technologies* 30 (2025), 8923–8952; published online 25 November 2024
+- Version inspected: complete publisher PDF
+- Content inspected: full text, methods, participant table, findings, discussion and limitations
+- Access and rights: CC BY 4.0
+- Retrieval: gateway record `cand_36cbc4b34617235a`; PDF SHA-256 `4ea225f99932a7be5e1b820f4e56841ad4b6a14a51ba7572de9ac6814de2c9f7`
+- Locator convention: numbered sections, tables and publisher page numbers
+
+## Study
+
+- Population and setting: 33 higher-education students with disabilities, including 20 neurodiverse learners, nine with visual impairments and seven with chronic disease; several reported multiple disabilities. Twenty-four studied in German-speaking Switzerland, seven in France and two in Germany.
+- Data collection: semi-structured interviews lasting 24–65 minutes, conducted May–July 2023. Participants were recruited as ChatGPT users and were concentrated in social science and business-related fields.
+- Analysis: qualitative thematic analysis of uses, perceived benefits, limitations, concerns and expectations. The study measures experience and perception, not learning effects.
+
+## Findings
+
+- Thirty participants described ChatGPT favourably. Twenty-six used it as a teaching assistant for clarification, overview, exam preparation or engagement; 11 explicitly said it should supplement rather than replace human teaching or accommodations.
+- Twenty-three reported positive outcomes: 18 described time savings, nine reduced effort or pain, eight increased autonomy, and two said it compensated for inadequate institutional support. Nineteen described a general lack of university support or accommodations.
+- Nearly every participant identified limitations, including accessibility failures for some visually impaired learners. Twenty-eight raised overreliance concerns; 20 discussed stopped learning, reduced critical thinking or failure to check answers.
+- Seven feared that institutions might use AI availability to withdraw accommodations or increase expectations.
+
+## Limitations and boundary conditions
+
+- The sample was small, self-selected, European and already using ChatGPT. Enthusiastic or capable users may be overrepresented.
+- Disciplines were concentrated, and important groups—including people using motor or augmentative communication supports—were not represented. Hearing impairment was only partly represented.
+- Benefits, learning risks and autonomy were self-reported. The study did not measure performance, retention, transfer or causal effects.
+- “AI assistance” is heterogeneous: access restoration, representation, expression, executive support and substantive cognitive delegation may have different construct implications. The interviews motivate that distinction but do not validate a taxonomy.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | low for effects; moderate for themes | Qualitative interviews can characterize experience but not causal learning outcomes |
+| Directness | high | Direct learner testimony about disability, support and AI use |
+| Consistency | unclear | One small purposive sample |
+| Replication | low | No comparative replication assessed in this pass |
+| Magnitude | not applicable | Qualitative prevalence in a non-representative sample is descriptive |
+| Duration | low | Interviews about current use, no follow-up |
+| Transfer | unclear | No measured transfer |
+| Ecological validity | moderate | Authentic higher-education experiences, geographically and disciplinarily narrow |
+
+## Candidate claims
+
+Revises the accessibility boundary in [C008](../../claims/C008-trustworthy-assessment-needs-multiple-evidence-channels.md) and the discourse in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md). It does not show that generative AI improves learning for disabled students.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -959,15 +1136,15 @@ Canonical path: `claims/C008-trustworthy-assessment-needs-multiple-evidence-chan
 
 ## Evidence and reasoning
 
-AI makes a submitted artifact a weaker proxy for unaided capability. Sector guidance advocates programme-level, varied, contextualized evidence [S012], while validity theory requires justification of the interpretations and actions drawn from that evidence [S013].
+AI makes a submitted artifact a weaker proxy for unaided capability. Sector guidance advocates programme-level, varied, contextualized evidence [S012], while validity theory requires justification of the interpretations and actions drawn from that evidence [S013]. Sequential advice studies show that final accuracy can hide correct adoption and correct resistance [S020], and that raw confidence is weaker than confidence that discriminates errors [S021]. Disabled learners' accounts show that AI may reduce construct-irrelevant access barriers as well as delegate cognition [S022].
 
 ## Boundary conditions
 
-Triangulation is not a vote count. Evidence channels must represent the construct, avoid irrelevant variance, and be sufficiently independent. More surveillance can increase harm without increasing validity.
+Triangulation is not a vote count. Evidence channels must represent the construct, avoid irrelevant variance, and be sufficiently independent. More surveillance can increase harm without increasing validity. Tool presence does not reveal tool function: withdrawing access-restoring support can make an ostensibly independent measure less valid.
 
 ## Product relevance
 
-Represent what the person did, with what support, under which conditions, and for what intended inference. Allow a portfolio to support a judgment; never let a model-generated label silently become the judgment.
+Represent what the person did, with what support, for which function, under which conditions, and for what intended inference. Define independent performance against an accessible baseline that retains screen readers, transcription, alternative expression, and other support not intended to perform the target construct. Allow a portfolio to support a judgment; never let a model-generated label silently become the judgment.
 
 ## C009 — Off-the-shelf AI can improve short-delay unaided learning in bounded conditions
 
@@ -999,6 +1176,31 @@ The appealing augmentation-versus-automation result in [S015] is observational a
 ## Product relevance
 
 Orqestra should support ordinary AI use only inside an evaluable intervention contract: declared intended capability, assistance state, time allocation, delayed independent measure and a plan for detecting who benefits or offloads. The result argues for experimentation, not unrestricted default access.
+
+## C010 — Appropriate reliance has distinct adoption and resistance components
+
+Type: claim
+Status: provisional
+Topics: human-ai-collaboration, assessment-validity, metacognition, product-measurement
+Canonical path: `claims/C010-appropriate-reliance-has-distinct-components.md`
+
+# C010 — Appropriate reliance has distinct adoption and resistance components
+
+## Evidence and reasoning
+
+Schemmer et al. operationalize correct uptake (RAIR) and correct resistance (RSR) from sequential decisions [S020]. Their explanation condition improved RAIR but not RSR, demonstrating why agreement or a single reliance direction can be misleading. Li and Steyvers distinguish confidence level and calibration from metacognitive sensitivity—the capacity of confidence to discriminate correct from incorrect judgments—and show its role in an idealized arbitration model [S021].
+
+Together, the sources support a narrow measurement claim: when correctness and pre-advice state are observable, supervisory behaviour has at least two directions and confidence quality is conditional. They do not establish a general human–AI capability construct.
+
+## Boundary conditions
+
+RAIR and RSR are conditional rates whose denominators depend on initial human accuracy, AI accuracy and disagreements. Sparse denominators make them unstable. Asking for an initial answer can also anchor the learner, so the measure changes the interaction it observes.
+
+The claim does not cover creative, normative or social work whose quality is plural or delayed. It does not establish authorship, responsibility, justice, durable learning, or the teachability of evaluative control.
+
+## Product relevance
+
+Use these measures only inside a transparent task-level evidence portfolio. Pair them with domain capability, error severity, verification and escalation behaviour, delayed performance, accessibility, learner burden, and the learner's opportunity to contest an inference.
 
 ## B001 — Optimize durable capability, not completion
 
@@ -1110,11 +1312,11 @@ Canonical path: `beliefs/B004-separate-independent-and-assisted-capability.md`
 
 ## Position
 
-Independent capability and effective human-AI collaboration are both valuable and neither should erase the other. A single score cannot responsibly answer both questions.
+Independent capability and effective human-AI collaboration are both valuable and neither should erase the other. A single score cannot responsibly answer both questions. “Independent” means without substantive AI delegation, not without the access-restoring technology a learner needs to encounter or express the target construct.
 
 ## Why we believe this
 
-AI-assisted performance may diverge from later independent performance [C001]. Any estimate is an inference tied to its observation context [C007], and trustworthy assessment needs multiple contextualized channels [C008].
+AI-assisted performance may diverge from later independent performance [C001]. Any estimate is an inference tied to its observation context [C007], and trustworthy assessment needs multiple contextualized channels [C008]. On bounded advice tasks, correct adoption and correct resistance are empirically distinct [C010].
 
 ## Strongest counterarguments
 
@@ -1126,11 +1328,12 @@ We would replace this separation with a richer model if it preserved the same in
 
 ## Implications
 
-Tag every observation with assistance conditions. Model AI collaboration capabilities—prompting, verification, judgment, escalation—alongside the target domain capability.
+Tag every observation with assistance conditions and function. Model task-level AI-mediated stewardship—verification, judgment, repair, escalation and contestability—alongside the target domain capability. Preserve a portfolio rather than aggregating these signals into a universal sovereignty score.
 
 ## Revision history
 
 - 2026-08-31: adopted as a founding belief.
+- 2026-08-31: clarified accessible baselines, assistance function and task-level supervisory evidence after [S020]–[S022].
 
 ## B005 — Personalization must earn its complexity
 
@@ -1223,7 +1426,7 @@ Learner models are probabilistic and construct-dependent [C007]. Trustworthy jud
 
 - append-only observation events with correction records;
 - versioned inferences and confidence;
-- separate independent and AI-assisted evidence [B004];
+- separate accessible-independent, AI-assisted and supervisory/recovery evidence, including assistance function [B004];
 - provenance links from recommendation back to observations;
 - retention limits and user contestability;
 - decision-specific permissions.
@@ -1453,4 +1656,4 @@ No single study will. The atlas should triangulate philosophy of education, labo
 
 ## Next search
 
-Continue [N001](../discourse/N001-learning-directing-and-orchestrating-ai.md) with Papert, Biesta, critical edtech scholarship, capability approaches, learner voices and disciplinary cases. Test the emerging idea of capability sovereignty rather than treating it as settled vocabulary.
+Continue [N001](../discourse/N001-learning-directing-and-orchestrating-ai.md) with Papert, Biesta, critical edtech scholarship, capability approaches, non-Western learner voices and disciplinary cases. The first construct audit retained capability sovereignty only as a normative relational lens and proposed task-level AI-mediated stewardship for falsifiable product work; test whether either framing adds value beyond its constituent constructs.

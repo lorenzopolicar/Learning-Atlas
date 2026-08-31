@@ -16,7 +16,7 @@ Orqestra can connect person, context, work, observed gaps, intervention, later p
 | personalization | [P003], [B005] | Does adaptation beat a strong transparent default on a declared outcome? |
 | assessment and evidence | [P005], [P006] | Are supported performance, independent capability, delay, and transfer visibly distinguished? |
 | product analytics | [C001], [P005] | Are completion, engagement, and assisted correctness being mistaken for learning? |
-| human-AI capability | [B004], [C009], [N001] | What must the learner notice, decide, justify, and recover from for delegation to count as responsible capability? |
+| human-AI capability | [B004], [C010], [N001], [D002] | What must the learner notice, decide, justify, verify, repair, escalate, and contest for delegation to count as responsible capability? |
 | AI literacy coverage | [S016], [N001] | Does the experience develop critical engagement, creation, task allocation, evaluation, agency, and the ability to shape systems—not only tool fluency? |
 
 ## Consult from Noema
@@ -57,4 +57,4 @@ No learner-identifiable data enters the public atlas. A product result should in
 2. Simple fixed scaffold versus evidence-based fading [P003, B005].
 3. Learner evidence ledger versus current state representation, evaluated for auditability, correction, and recommendation quality [P002].
 4. Separate independent and AI-assisted capability estimates, evaluated for calibration and decision usefulness [B004, P006].
-5. Capability-sovereignty probe: compare an artifact-only assessment with evidence of task decomposition, rejected AI outputs, justification, and recovery after tool removal [N001, C008].
+5. Run the low-stakes [AI-mediated task stewardship probe](../experiments/E001-ai-mediated-stewardship-probe.md), preserving access-restoring support and reporting a portfolio rather than a sovereignty score [C008, C010, D002]. See the [implementation-facing design brief](orqestra-ai-mediated-stewardship.md).
