@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learning-atlas.local/experiments/E001/event.schema.json",
+  "title": "E001 AI-mediated stewardship evidence event",
+  "description": "Append-only, learner-reviewable research evidence for E001. It is not a mastery score or a durable learner trait.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "eventId",
+    "eventType",
+    "occurredAt",
+    "learnerRef",
+    "objective",
+    "task",
+    "intendedInference",
+    "evidenceLane",
+    "assistanceEnvelope",
+    "stewardshipActions",
+    "outcome",
+    "accessibility",
+    "inferenceBoundary",
+    "governance"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "0.1.0" },
+    "eventId": { "type": "string", "format": "uuid" },
+    "eventType": { "enum": ["observation", "correction"] },
+    "occurredAt": { "type": "string", "format": "date-time" },
+    "learnerRef": {
+      "type": "string",
+      "minLength": 8,
+      "description": "A pilot-specific pseudonymous reference; never an email or display name."
+    },
+    "objective": { "$ref": "#/$defs/objective" },
+    "task": { "$ref": "#/$defs/task" },
+    "intendedInference": { "$ref": "#/$defs/intendedInference" },
+    "evidenceLane": {
+      "enum": ["accessible-independent", "ai-assisted", "supervisory-recovery"]
+    },
+    "assistanceEnvelope": { "$ref": "#/$defs/assistanceEnvelope" },
+    "systemProvenance": { "$ref": "#/$defs/systemProvenance" },
+    "preAdvice": { "$ref": "#/$defs/judgment" },
+    "intervention": { "$ref": "#/$defs/intervention" },
+    "postAdvice": { "$ref": "#/$defs/postAdvice" },
+    "stewardshipActions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "verify-source",
+          "check-tool",
+          "compare-alternative",
+          "repair",
+          "tool-switch",
+          "human-escalation",
+          "uncertainty-escalation",
+          "contest",
+          "none-observed"
+        ]
+      }
+    },
+    "outcome": { "$ref": "#/$defs/outcome" },
+    "accessibility": { "$ref": "#/$defs/accessibility" },
+    "inferenceBoundary": { "$ref": "#/$defs/inferenceBoundary" },
+    "governance": { "$ref": "#/$defs/governance" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "evidenceLane": { "const": "ai-assisted" } } },
+      "then": {
+        "required": ["systemProvenance", "preAdvice", "intervention", "postAdvice"]
+      }
+    },
+    {
+      "if": { "properties": { "eventType": { "const": "correction" } } },
+      "then": {
+        "properties": {
+          "governance": { "required": ["correctionOf", "correctionReason"] }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$",
+      "description": "Digest of content retained outside the event, if retention is justified."
+    },
+    "objective": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "targetCapability"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "targetCapability": { "type": "string", "minLength": 1 }
+      }
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "formId", "trialId"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "formId": { "type": "string", "minLength": 1 },
+        "trialId": { "type": "string", "minLength": 1 },
+        "rubricVersion": { "type": "string" }
+      }
+    },
+    "intendedInference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["purpose", "stakes", "permittedUses", "prohibitedUses", "expiresAt"],
+      "properties": {
+        "purpose": { "const": "E001 research pilot" },
+        "stakes": { "const": "low" },
+        "permittedUses": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["pilot-analysis", "learner-review", "instrument-improvement"] }
+        },
+        "prohibitedUses": {
+          "type": "array",
+          "minItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "learner-ranking",
+              "credentialing",
+              "employment-decision",
+              "silent-mastery-update",
+              "diagnosis",
+              "disciplinary-action"
+            ]
+          }
+        },
+        "expiresAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "assistanceEnvelope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accessibleBaseline", "functions", "toolsAllowed", "toolsUsed", "substantiveGenerationState"],
+      "properties": {
+        "accessibleBaseline": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "functions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "access-restoration",
+              "representation",
+              "expression",
+              "executive-support",
+              "substantive-cognitive-delegation",
+              "mixed"
+            ]
+          }
+        },
+        "toolsAllowed": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "toolsUsed": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "substantiveGenerationState": { "enum": ["not-available", "available-not-used", "used"] }
+      }
+    },
+    "systemProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "model", "modelVersion", "adviceVersion", "promptVersion", "knownUncertainty"],
+      "properties": {
+        "provider": { "type": "string", "minLength": 1 },
+        "model": { "type": "string", "minLength": 1 },
+        "modelVersion": { "type": "string", "minLength": 1 },
+        "adviceVersion": { "type": "string", "minLength": 1 },
+        "promptVersion": { "type": "string", "minLength": 1 },
+        "retrievalProvenance": { "type": "array", "items": { "type": "string" } },
+        "knownUncertainty": { "type": "string", "minLength": 1 }
+      }
+    },
+    "judgment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["responseDigest", "judgment", "confidence"],
+      "properties": {
+        "responseDigest": { "$ref": "#/$defs/digest" },
+        "judgment": { "enum": ["correct", "partial", "incorrect", "not-yet-scorable"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "rationaleDigest": { "$ref": "#/$defs/digest" }
+      }
+    },
+    "intervention": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ordering", "adviceState", "severity", "adviceDigest", "cues"],
+      "properties": {
+        "ordering": { "enum": ["self-first", "advice-first"] },
+        "adviceState": { "enum": ["correct", "incomplete", "plausible-incorrect", "not-defensibly-scorable"] },
+        "severity": { "type": "integer", "minimum": 0, "maximum": 4 },
+        "adviceDigest": { "$ref": "#/$defs/digest" },
+        "cues": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["provenance", "uncertainty", "justification-prompt", "none"] }
+        }
+      }
+    },
+    "postAdvice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["responseDigest", "confidence", "disposition", "acceptedElementRefs", "rejectedElementRefs"],
+      "properties": {
+        "responseDigest": { "$ref": "#/$defs/digest" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "disposition": { "enum": ["accepted", "rejected", "edited", "escalated"] },
+        "acceptedElementRefs": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "rejectedElementRefs": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "rationaleDigest": { "$ref": "#/$defs/digest" }
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scoringStatus", "correctness", "severityWeightedError", "delaySeconds", "transferDistance", "supportState"],
+      "properties": {
+        "scoringStatus": { "enum": ["scored", "unscored"] },
+        "score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "correctness": { "enum": ["correct", "partial", "incorrect", "not-scorable"] },
+        "severityWeightedError": { "type": ["number", "null"], "minimum": 0 },
+        "delaySeconds": { "type": "integer", "minimum": 0 },
+        "transferDistance": { "enum": ["immediate", "near", "far", "authentic"] },
+        "supportState": { "enum": ["accessible-independent", "ai-assisted", "supervisory-recovery"] }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accessSupportsPreserved", "classificationReviewedByLearner"],
+      "properties": {
+        "accessSupportsPreserved": { "const": true },
+        "classificationReviewedByLearner": { "type": "boolean" },
+        "barrierNote": {
+          "type": "string",
+          "description": "Optional task-context barrier, not a diagnosis."
+        }
+      }
+    },
+    "inferenceBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["permittedInference", "prohibitedInference", "uncertainty", "validUntil"],
+      "properties": {
+        "permittedInference": { "type": "string", "minLength": 1 },
+        "prohibitedInference": { "type": "string", "minLength": 1 },
+        "uncertainty": { "type": "string", "minLength": 1 },
+        "validUntil": { "type": "string", "format": "date-time" }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["consentVersion", "learnerVisible", "contestable", "retentionUntil"],
+      "properties": {
+        "consentVersion": { "type": "string", "minLength": 1 },
+        "learnerVisible": { "const": true },
+        "contestable": { "const": true },
+        "retentionUntil": { "type": "string", "format": "date-time" },
+        "correctionOf": { "type": "string", "format": "uuid" },
+        "correctionReason": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "0.1.0",
+  "eventId": "7d409708-19f3-4bb4-a691-b9a1232f4b01",
+  "eventType": "observation",
+  "occurredAt": "2026-09-01T02:00:00Z",
+  "learnerRef": "psn_e001_001",
+  "objective": {
+    "id": "objective-phishing-triage",
+    "version": "1.0.0",
+    "targetCapability": "identify and safely escalate suspicious messages"
+  },
+  "task": {
+    "id": "phishing-triage",
+    "version": "1.0.0",
+    "formId": "form-b",
+    "trialId": "trial-004",
+    "rubricVersion": "1.0.0"
+  },
+  "intendedInference": {
+    "purpose": "E001 research pilot",
+    "stakes": "low",
+    "permittedUses": ["pilot-analysis", "learner-review", "instrument-improvement"],
+    "prohibitedUses": ["learner-ranking", "credentialing", "employment-decision", "silent-mastery-update", "diagnosis"],
+    "expiresAt": "2027-03-01T00:00:00Z"
+  },
+  "evidenceLane": "ai-assisted",
+  "assistanceEnvelope": {
+    "accessibleBaseline": ["screen-reader", "keyboard-navigation"],
+    "functions": ["access-restoration", "substantive-cognitive-delegation"],
+    "toolsAllowed": ["screen-reader", "controlled-advice-panel"],
+    "toolsUsed": ["screen-reader", "controlled-advice-panel"],
+    "substantiveGenerationState": "used"
+  },
+  "systemProvenance": {
+    "provider": "controlled-pilot-fixture",
+    "model": "authored-advice-bank",
+    "modelVersion": "1.0.0",
+    "adviceVersion": "plausible-incorrect-severity-2-v1",
+    "promptVersion": "not-applicable-authored-advice",
+    "retrievalProvenance": [],
+    "knownUncertainty": "The fixture represents authored advice, not live model variability."
+  },
+  "preAdvice": {
+    "responseDigest": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "judgment": "correct",
+    "confidence": 0.62,
+    "rationaleDigest": "sha256:2222222222222222222222222222222222222222222222222222222222222222"
+  },
+  "intervention": {
+    "ordering": "self-first",
+    "adviceState": "plausible-incorrect",
+    "severity": 2,
+    "adviceDigest": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+    "cues": ["provenance", "uncertainty", "justification-prompt"]
+  },
+  "postAdvice": {
+    "responseDigest": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+    "confidence": 0.78,
+    "disposition": "rejected",
+    "acceptedElementRefs": [],
+    "rejectedElementRefs": ["advice-element-1"],
+    "rationaleDigest": "sha256:5555555555555555555555555555555555555555555555555555555555555555"
+  },
+  "stewardshipActions": ["verify-source", "uncertainty-escalation"],
+  "outcome": {
+    "scoringStatus": "scored",
+    "score": 1,
+    "correctness": "correct",
+    "severityWeightedError": 0,
+    "delaySeconds": 0,
+    "transferDistance": "immediate",
+    "supportState": "ai-assisted"
+  },
+  "accessibility": {
+    "accessSupportsPreserved": true,
+    "classificationReviewedByLearner": true
+  },
+  "inferenceBoundary": {
+    "permittedInference": "Behaviour on this versioned, low-stakes trial may contribute to an aggregate pilot analysis.",
+    "prohibitedInference": "This event does not establish general mastery, intelligence, employability, disability, or a stable stewardship trait.",
+    "uncertainty": "A single controlled disagreement trial has high sampling and measurement uncertainty.",
+    "validUntil": "2027-03-01T00:00:00Z"
+  },
+  "governance": {
+    "consentVersion": "e001-consent-1.0.0",
+    "learnerVisible": true,
+    "contestable": true,
+    "retentionUntil": "2027-03-01T00:00:00Z"
+  }
+}

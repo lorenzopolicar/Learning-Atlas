@@ -4,15 +4,23 @@
   "type": "experiment",
   "title": "Low-stakes AI-mediated task stewardship probe",
   "status": "draft",
-  "date": "2026-08-31",
+  "date": "2026-09-01",
   "topics": ["human-ai-collaboration", "assessment-validity", "metacognition", "product-measurement", "ethics-and-governance"],
-  "tests_claims": ["C010"],
+  "tests_claims": ["C010", "C011"],
   "tests_beliefs": ["B004"],
-  "tests_principles": ["P002", "P005", "P006"]
+  "tests_principles": ["P001", "P002", "P005", "P006"]
 }
 ---
 
 # E001 — Low-stakes AI-mediated task stewardship probe
+
+**Implementation readiness:** contract-ready for learner/domain/accessibility co-design; not approved for product deployment. See the [implementation package](E001-ai-mediated-stewardship-probe/pilot-package.md), [event schema](E001-ai-mediated-stewardship-probe/event.schema.json), and synthetic [fixtures](E001-ai-mediated-stewardship-probe/fixtures/).
+
+## Evidence rationale
+
+[S024] provides fragile, same-session evidence that requiring early performance before AI access can outperform always-on access, so E001 uses a transparent self-first sequence as the main measurement baseline rather than beginning with an opaque adaptive policy [C011, P001]. It also randomizes order on matched tasks because eliciting an initial judgment may itself change the construct.
+
+[S023] found a large supported programming advantage but an inconclusive absolute one-week retest contrast, while [S025] found high perceived helpfulness without improved unaided bedside performance. Neither validates stewardship as a construct. Together they strengthen the requirement to separate supported output, later accessible-independent performance, perceived usefulness and process evidence [C001, C012, P005].
 
 ## Hypotheses
 

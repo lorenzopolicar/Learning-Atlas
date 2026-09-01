@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "0.1.0",
+  "eventId": "b542ba66-34e7-4778-942f-6e5177a75002",
+  "eventType": "observation",
+  "occurredAt": "2026-09-08T02:00:00Z",
+  "learnerRef": "psn_e001_001",
+  "objective": {
+    "id": "objective-phishing-triage",
+    "version": "1.0.0",
+    "targetCapability": "identify and safely escalate suspicious messages"
+  },
+  "task": {
+    "id": "phishing-triage",
+    "version": "1.0.0",
+    "formId": "transfer-form-c",
+    "trialId": "followup-004",
+    "rubricVersion": "1.0.0"
+  },
+  "intendedInference": {
+    "purpose": "E001 research pilot",
+    "stakes": "low",
+    "permittedUses": ["pilot-analysis", "learner-review", "instrument-improvement"],
+    "prohibitedUses": ["learner-ranking", "credentialing", "employment-decision", "silent-mastery-update", "diagnosis"],
+    "expiresAt": "2027-03-08T00:00:00Z"
+  },
+  "evidenceLane": "accessible-independent",
+  "assistanceEnvelope": {
+    "accessibleBaseline": ["screen-reader", "keyboard-navigation"],
+    "functions": ["access-restoration"],
+    "toolsAllowed": ["screen-reader"],
+    "toolsUsed": ["screen-reader"],
+    "substantiveGenerationState": "not-available"
+  },
+  "stewardshipActions": ["none-observed"],
+  "outcome": {
+    "scoringStatus": "scored",
+    "score": 1,
+    "correctness": "correct",
+    "severityWeightedError": 0,
+    "delaySeconds": 604800,
+    "transferDistance": "near",
+    "supportState": "accessible-independent"
+  },
+  "accessibility": {
+    "accessSupportsPreserved": true,
+    "classificationReviewedByLearner": true
+  },
+  "inferenceBoundary": {
+    "permittedInference": "This task contributes bounded evidence about delayed accessible-independent performance on a near-transfer form.",
+    "prohibitedInference": "This event alone does not establish durable mastery or unaided performance without ordinary access support.",
+    "uncertainty": "One near-transfer item cannot distinguish retention, transfer, guessing, or task-form effects.",
+    "validUntil": "2027-03-08T00:00:00Z"
+  },
+  "governance": {
+    "consentVersion": "e001-consent-1.0.0",
+    "learnerVisible": true,
+    "contestable": true,
+    "retentionUntil": "2027-03-08T00:00:00Z"
+  }
+}

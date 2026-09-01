@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_weekly_scout": "2026-08-31",
+  "last_weekly_scout": "2026-09-01",
   "last_monthly_synthesis": "2026-08-31",
   "last_quarterly_review": "2026-08-31",
   "active_review": "R001",
@@ -8,8 +8,8 @@
   "scheduled_run_observation": {
     "target": 3,
     "actual_scheduled_runs_observed": 0,
-    "supervised_shadow_cycles": 1,
-    "note": "The 2026-08-31 proving cycle exercised the scheduled research controls under supervision. It is not counted as an actual scheduler execution."
+    "supervised_shadow_cycles": 2,
+    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass exercised scheduled research controls under supervision. Neither is counted as an actual scheduler execution."
   },
   "runs": [
     {
@@ -59,6 +59,14 @@
       "sources_added": ["S020", "S021", "S022"],
       "briefing": "briefings/weekly/2026-08-31-capability-stewardship-proving-cycle.md",
       "note": "Three independent read-only lanes covered measurement, learner/accessibility evidence and contrarian construct review. Human-directed run; admitted the three-source maximum and produced D002/E001."
+    },
+    {
+      "date": "2026-09-01",
+      "kind": "scholarly-controlled-outcomes-pass",
+      "question": "Q001",
+      "sources_added": ["S023", "S024", "S025"],
+      "briefing": "briefings/weekly/2026-09-01-assisted-independent-outcomes.md",
+      "note": "Human-directed supervised shadow pass admitted one null/inconclusive one-week contrast, one fragile positive access-timing study and one authentic clinical null; held two abstract-only candidates."
     }
   ]
 }

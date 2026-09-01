@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "0.1.0",
+  "eventId": "ed2c6a8c-b282-4dcb-92a2-1f4da2f84003",
+  "eventType": "correction",
+  "occurredAt": "2026-09-01T03:00:00Z",
+  "learnerRef": "psn_e001_001",
+  "objective": {
+    "id": "objective-phishing-triage",
+    "version": "1.0.0",
+    "targetCapability": "identify and safely escalate suspicious messages"
+  },
+  "task": {
+    "id": "phishing-triage",
+    "version": "1.0.0",
+    "formId": "form-b",
+    "trialId": "trial-004",
+    "rubricVersion": "1.0.1"
+  },
+  "intendedInference": {
+    "purpose": "E001 research pilot",
+    "stakes": "low",
+    "permittedUses": ["pilot-analysis", "learner-review", "instrument-improvement"],
+    "prohibitedUses": ["learner-ranking", "credentialing", "employment-decision", "silent-mastery-update", "diagnosis"],
+    "expiresAt": "2027-03-01T00:00:00Z"
+  },
+  "evidenceLane": "ai-assisted",
+  "assistanceEnvelope": {
+    "accessibleBaseline": ["screen-reader", "keyboard-navigation"],
+    "functions": ["access-restoration", "substantive-cognitive-delegation"],
+    "toolsAllowed": ["screen-reader", "controlled-advice-panel"],
+    "toolsUsed": ["screen-reader", "controlled-advice-panel"],
+    "substantiveGenerationState": "used"
+  },
+  "systemProvenance": {
+    "provider": "controlled-pilot-fixture",
+    "model": "authored-advice-bank",
+    "modelVersion": "1.0.0",
+    "adviceVersion": "plausible-incorrect-severity-2-v1",
+    "promptVersion": "not-applicable-authored-advice",
+    "retrievalProvenance": [],
+    "knownUncertainty": "The fixture represents authored advice, not live model variability."
+  },
+  "preAdvice": {
+    "responseDigest": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "judgment": "correct",
+    "confidence": 0.62
+  },
+  "intervention": {
+    "ordering": "self-first",
+    "adviceState": "plausible-incorrect",
+    "severity": 2,
+    "adviceDigest": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+    "cues": ["provenance", "uncertainty", "justification-prompt"]
+  },
+  "postAdvice": {
+    "responseDigest": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
+    "confidence": 0.74,
+    "disposition": "edited",
+    "acceptedElementRefs": [],
+    "rejectedElementRefs": ["advice-element-1"]
+  },
+  "stewardshipActions": ["verify-source", "contest"],
+  "outcome": {
+    "scoringStatus": "scored",
+    "score": 0.8,
+    "correctness": "partial",
+    "severityWeightedError": 0.4,
+    "delaySeconds": 0,
+    "transferDistance": "immediate",
+    "supportState": "ai-assisted"
+  },
+  "accessibility": {
+    "accessSupportsPreserved": true,
+    "classificationReviewedByLearner": true,
+    "barrierNote": "The learner reported that the original response control obscured one selected element."
+  },
+  "inferenceBoundary": {
+    "permittedInference": "This corrected event replaces the original event in pilot analysis while preserving its history.",
+    "prohibitedInference": "Neither version establishes a stable learner trait; this event does not support ranking, mastery or employment inference.",
+    "uncertainty": "The correction changes the rubric-scored outcome and must trigger analysis recomputation.",
+    "validUntil": "2027-03-01T00:00:00Z"
+  },
+  "governance": {
+    "consentVersion": "e001-consent-1.0.0",
+    "learnerVisible": true,
+    "contestable": true,
+    "retentionUntil": "2027-03-01T00:00:00Z",
+    "correctionOf": "7d409708-19f3-4bb4-a691-b9a1232f4b01",
+    "correctionReason": "Learner contest identified a response-control capture error; the corrected rubric result is partial rather than correct."
+  }
+}

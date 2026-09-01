@@ -106,6 +106,20 @@
       "path": "claims/C010-appropriate-reliance-has-distinct-components.md"
     },
     {
+      "id": "C011",
+      "type": "claim",
+      "title": "Delayed AI access can outperform always-on access on an immediate independent test",
+      "status": "provisional",
+      "path": "claims/C011-delayed-access-can-beat-always-on.md"
+    },
+    {
+      "id": "C012",
+      "type": "claim",
+      "title": "Minimal AI training and access did not improve authentic bedside performance",
+      "status": "provisional",
+      "path": "claims/C012-minimal-ai-access-did-not-improve-bedside-performance.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
@@ -363,6 +377,27 @@
       "title": "Exploring the Role of Generative AI in Higher Education: Semi-structured Interviews with Students with Disabilities",
       "status": "reviewed",
       "path": "sources/notes/S022-pierres-disabled-students-genai.md"
+    },
+    {
+      "id": "S023",
+      "type": "source",
+      "title": "Fast and Forgettable: A Controlled Study of Novices' Performance, Learning, Workload, and Emotion in AI-Assisted and Human Pair Programming Paradigms",
+      "status": "reviewed",
+      "path": "sources/notes/S023-gardella-fast-and-forgettable.md"
+    },
+    {
+      "id": "S024",
+      "type": "source",
+      "title": "Access Timing as Scaffolding: A Reinforcement Learning Approach to GenAI in Education",
+      "status": "reviewed",
+      "path": "sources/notes/S024-rotter-access-timing.md"
+    },
+    {
+      "id": "S025",
+      "type": "source",
+      "title": "AI at the bedside: Randomised controlled trial of ChatGPT's impact on student performance in real-patient clinical exams",
+      "status": "reviewed",
+      "path": "sources/notes/S025-saloojee-ai-at-bedside.md"
     }
   ],
   "edges": [
@@ -472,6 +507,11 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C001",
+      "target": "S023",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "C002",
       "target": "S001",
       "relation": "supporting_sources"
@@ -489,6 +529,11 @@
     {
       "source": "C002",
       "target": "S014",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S024",
       "relation": "supporting_sources"
     },
     {
@@ -567,6 +612,16 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C011",
+      "target": "S024",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C012",
+      "target": "S025",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "D001",
       "target": "P002",
       "relation": "principles"
@@ -625,6 +680,16 @@
       "source": "E001",
       "target": "C010",
       "relation": "tests_claims"
+    },
+    {
+      "source": "E001",
+      "target": "C011",
+      "relation": "tests_claims"
+    },
+    {
+      "source": "E001",
+      "target": "P001",
+      "relation": "tests_principles"
     },
     {
       "source": "E001",
@@ -694,6 +759,11 @@
     {
       "source": "P001",
       "target": "C003",
+      "relation": "based_on"
+    },
+    {
+      "source": "P001",
+      "target": "C011",
       "relation": "based_on"
     },
     {

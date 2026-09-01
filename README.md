@@ -33,12 +33,15 @@ These layers are deliberately separate:
 - [Design principles](indexes/principles.md)
 - [Orqestra bridge](bridges/orqestra.md)
 - [Orqestra AI-mediated stewardship design brief](bridges/orqestra-ai-mediated-stewardship.md)
+- [E001 implementation-ready pilot package](experiments/E001-ai-mediated-stewardship-probe/pilot-package.md)
 - [Tooling architecture](bridges/tooling.md)
 - [First end-to-end pipeline smoketest](research/process-lab/2026-08-31-research-pipeline-smoketest.md)
 - [Multisource passes and harness audit](research/process-lab/2026-08-31-multisource-passes-and-harness-audit.md)
 - [First supervised multi-agent proving cycle](research/process-lab/2026-08-31-supervised-agent-cycle-1.md)
+- [E001 product-contact pass](research/process-lab/2026-09-01-e001-product-contact.md)
 - [Automation model](.harness/runbooks/research-cycle.md)
 - [Configured schedules](.harness/automations.md)
+- [How to work with the Atlas](guides/using-learning-atlas.md)
 
 ## Use it
 
@@ -46,6 +49,7 @@ The harness has no third-party runtime dependencies and requires Python 3.11+.
 
 ```bash
 python3 scripts/atlas.py status
+python3 scripts/atlas.py recent --limit 5
 python3 scripts/atlas.py query "assessment feedback transfer" --type claim --type principle
 python3 scripts/atlas.py new claim worked-example-fading
 python3 scripts/atlas.py index

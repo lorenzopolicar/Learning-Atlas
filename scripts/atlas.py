@@ -503,6 +503,73 @@ def status_command() -> int:
     return 0
 
 
+def recent_command(limit: int) -> int:
+    """Show the latest research runs as a compact, traceable change feed."""
+    state_path = ROOT / ".harness" / "state" / "research-state.json"
+    try:
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        print(f"ERROR: cannot read {relative(state_path)}: {exc}", file=sys.stderr)
+        return 1
+
+    runs = state.get("runs", [])
+    if not isinstance(runs, list):
+        print(f"ERROR: {relative(state_path)}: runs must be a list", file=sys.stderr)
+        return 1
+    if limit < 1:
+        print("--limit must be at least 1", file=sys.stderr)
+        return 2
+
+    records, errors = collect()
+    if errors:
+        for error in errors:
+            print(f"ERROR: {error}", file=sys.stderr)
+        return 1
+    by_id = {record["meta"]["id"]: record for record in records}
+
+    selected = list(reversed(runs[-limit:]))
+    print(f"Learning Atlas recent research: {len(selected)} of {len(runs)} recorded run(s)")
+    observation = state.get("scheduled_run_observation", {})
+    if isinstance(observation, dict):
+        observed = observation.get("actual_scheduled_runs_observed")
+        target = observation.get("target")
+        shadows = observation.get("supervised_shadow_cycles")
+        if all(value is not None for value in (observed, target, shadows)):
+            print(f"Scheduler proving: {observed}/{target} actual run(s) observed; {shadows} supervised shadow cycle(s)")
+
+    if not selected:
+        print("No research runs recorded.")
+        return 0
+
+    for run in selected:
+        if not isinstance(run, dict):
+            print("\n- malformed run entry")
+            continue
+        question_id = str(run.get("question", "unknown"))
+        question = by_id.get(question_id)
+        question_title = record_title(question) if question else "unknown question"
+        print(f"\n{run.get('date', 'unknown date')} | {run.get('kind', 'unknown kind')} | {question_id}: {question_title}")
+
+        source_ids = run.get("sources_added", [])
+        if isinstance(source_ids, list) and source_ids:
+            print("  Added:")
+            for source_id in source_ids:
+                source = by_id.get(str(source_id))
+                source_title = record_title(source) if source else "missing artifact"
+                source_path = relative(source["path"]) if source else "unavailable"
+                print(f"    {source_id} — {source_title} ({source_path})")
+        else:
+            print("  Added: no new sources")
+
+        briefing = run.get("briefing")
+        if briefing:
+            print(f"  Briefing: {briefing}")
+        note = run.get("note")
+        if note:
+            print(f"  Change: {note}")
+    return 0
+
+
 def eval_command() -> int:
     path = ROOT / ".harness" / "evals" / "cases.json"
     suite = json.loads(path.read_text(encoding="utf-8"))
@@ -586,6 +653,8 @@ def main() -> int:
     query_parser.add_argument("--max-chars", type=int)
 
     subparsers.add_parser("status", help="show artifact counts and maturity")
+    recent_parser = subparsers.add_parser("recent", help="show recent research runs and what they changed")
+    recent_parser.add_argument("--limit", type=int, default=5, help="number of runs to show (default: 5)")
     subparsers.add_parser("eval", help="run retrieval contract evaluations")
 
     next_parser = subparsers.add_parser("next-id", help="print the next ID for an artifact type")
@@ -626,6 +695,8 @@ def main() -> int:
         return query_command(args.query, args.type, args.limit, args.max_chars)
     if args.command == "status":
         return status_command()
+    if args.command == "recent":
+        return recent_command(args.limit)
     if args.command == "eval":
         return eval_command()
     if args.command == "next-id":

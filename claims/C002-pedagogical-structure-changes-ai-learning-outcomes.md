@@ -7,11 +7,11 @@
   "status": "provisional",
   "confidence": "moderate",
   "topics": ["ai-tutoring", "scaffolding", "teacher-practice", "learning-vs-performance"],
-  "supporting_sources": ["S001", "S002", "S005", "S014"],
+  "supporting_sources": ["S001", "S002", "S005", "S014", "S024"],
   "contradicting_sources": [],
-  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, and additional time may contribute materially."],
+  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, and additional time may contribute materially.", "The direct access-timing study is a preprint with non-random workshop-level assignment and no policy ablation."],
   "product_relevance": "Treat the pedagogical harness as the product, not as a prompt wrapped around a general chatbot.",
-  "last_reviewed": "2026-08-31"
+  "last_reviewed": "2026-09-01"
 }
 ---
 
@@ -24,6 +24,8 @@ The educational effect of generative AI depends materially on the surrounding pe
 ## Evidence and reasoning
 
 The convergent pattern is promising across secondary mathematics, university physics, and an after-school programme in Nigeria. Earlier intelligent-tutoring research also suggests that step-linked feedback and task structure—not the mere appearance of conversation—can produce meaningful effects [S014].
+
+[S024] narrows one potentially causal design dimension: its delayed-access policy beat always-on access on an immediate unassisted test. Because conditions were assigned by workshop and the adaptive reward was bundled, this strengthens the access-timing hypothesis without establishing the superiority of RL or any specific component.
 
 ## Boundary conditions
 

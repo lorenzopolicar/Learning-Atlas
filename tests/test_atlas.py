@@ -52,6 +52,19 @@ class AtlasHarnessTests(unittest.TestCase):
         self.assertEqual(first.stdout, second.stdout)
         self.assertRegex(first.stdout.strip(), r"^C\d{3}$")
 
+    def test_recent_research_is_bounded_and_traceable(self) -> None:
+        result = self.run_cli("recent", "--limit", "2")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("Learning Atlas recent research: 2 of", result.stdout)
+        self.assertIn("Scheduler proving:", result.stdout)
+        self.assertIn("Briefing:", result.stdout)
+        self.assertIn("sources/notes/", result.stdout)
+
+    def test_recent_rejects_non_positive_limit(self) -> None:
+        result = self.run_cli("recent", "--limit", "0")
+        self.assertEqual(result.returncode, 2, result.stdout + result.stderr)
+        self.assertIn("at least 1", result.stderr)
+
     def test_source_profiles_are_available(self) -> None:
         result = self.run_cli("new", "source", "not-a-real-source", "--source-profile", "media", "--help")
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)

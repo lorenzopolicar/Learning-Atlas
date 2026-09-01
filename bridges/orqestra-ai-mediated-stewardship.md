@@ -2,9 +2,11 @@
 
 **Status:** evidence-backed proposal for product discovery and a low-stakes pilot, not an implementation instruction or validated learner score
 
-**Atlas basis:** [C007], [C008], [C010], [B004], [P002], [P005], [P006], [N001], [D002], [E001]
+**Atlas basis:** [C001], [C002], [C007], [C008], [C010], [C011], [C012], [B004], [P001], [P002], [P005], [P006], [N001], [D002], [E001]
 
-**Repository snapshot inspected:** `/Users/lorenzo.policar/Developer/emtech-noema`, branch `learning-upgrade`, 31 August 2026. The checkout had substantial user-owned changes; this pass was read-only.
+**Repository snapshot inspected:** `/Users/lorenzo.policar/Developer/emtech-noema`, branch `learning-upgrade`, 1 September 2026. The checkout had substantial user-owned changes; both inspections were read-only.
+
+**Implementation package:** [E001 pilot package](../experiments/E001-ai-mediated-stewardship-probe/pilot-package.md), JSON Schema `0.1.0`, synthetic fixtures and invariant tests.
 
 ## Product decision in one sentence
 
@@ -32,6 +34,8 @@ The current Noema schema contains useful course and assessment summaries but can
 - Work-profile extraction describes completion as “verified learning” and uses maximum Bloom and immediate gain as quality evidence.
 
 Those fields do not preserve objective/task/form versions, initial judgment, advice state, assistance function, AI provenance, confidence, verification, disagreement, recovery, accessibility conditions, permitted inference, or model version. They should not be stretched into a stewardship measure. Existing summaries can remain product metrics while a future evidence ledger is evaluated separately.
+
+The inspected implementation seams were `packages/noema-db/src/schema.ts`, `apps/noema/lib/learn/assessment-scoring.ts`, and `apps/noema/lib/actions/learn/assessment-actions.ts`. E001 should not modify them during construct discovery. Use a research-flagged, append-only store with separately permissioned identity mapping; promote only after the delivery gates below pass.
 
 ## Proposed evidence contract
 
@@ -77,6 +81,8 @@ Implement [E001] as research instrumentation before a durable profile:
 4. Record an initial judgment before controlled advice for the measurement condition, while randomizing order in a subset to estimate measurement reactivity.
 5. Add delayed accessible-independent and near-transfer tasks.
 6. Return evidence to the learner as a reviewable portfolio, not a label.
+
+The executable contract and delivery sequence now live in the [E001 implementation package](../experiments/E001-ai-mediated-stewardship-probe/pilot-package.md). Its fixtures make three validity requirements concrete: ordinary access support remains present in a delayed independent lane; substantive generation and its provenance are explicit in the assisted lane; and a learner contest creates a correction event rather than overwriting the observation.
 
 ## Delivery gates
 

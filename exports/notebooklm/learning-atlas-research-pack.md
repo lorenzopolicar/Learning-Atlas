@@ -962,6 +962,205 @@ This study makes assistance function visible. For some learners, AI did not simp
 
 Revises the accessibility boundary in [C008](../../claims/C008-trustworthy-assessment-needs-multiple-evidence-channels.md) and the discourse in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md). It does not show that generative AI improves learning for disabled students.
 
+## S023 — Fast and Forgettable: A Controlled Study of Novices' Performance, Learning, Workload, and Emotion in AI-Assisted and Human Pair Programming Paradigms
+
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, programming-education, human-ai-collaboration, cognitive-load
+Canonical path: `sources/notes/S023-gardella-fast-and-forgettable.md`
+
+# S023 — Fast and Forgettable
+
+## Why it matters
+
+This study measures exactly the divergence the Atlas is designed to preserve: performance on the same programming-task family while working with GitHub Copilot or a human peer, followed by individual performance without either teammate after one week. It also observes workload and affect, showing why a faster, easier interaction is not a sufficient learning signal.
+
+## Identity and provenance
+
+- Canonical identifier: arXiv:2604.18538v1
+- Version inspected: 20 April 2026 preprint submitted to ACM
+- Content inspected: complete PDF, including design, procedure, tables 1–3, discussion, threats to validity and linked supplement identity
+- Access and rights: publisher-open arXiv PDF; abstract page links CC BY-NC-SA 4.0
+- Retrieval: gateway candidate `cand_23d6408ebf85a9b0`; PDF SHA-256 `8ed0fe3361656d014d953626e3358504bd515bbf456af5d01d722727d7bab2b0`
+- Locator convention: numbered section, table and page in v1
+
+## Study
+
+- Population and setting: 22 novice/intermediate Python programmers at a selective eastern-US research university; convenience recruitment; 16 men and 6 women; 4 participants reported a physical, cognitive or attentional impairment.
+- Intervention and comparator: counterbalanced within-subject trials on different matched HumanEval task pools, once with GitHub Copilot/GPT-4.1 and once with a similarly skilled human partner.
+- Outcomes and timing: 20-minute assisted team performance, workload and affect in session one; individual repetition of both task pools without Copilot or a human partner approximately one week later.
+- Design: controlled within-subject laboratory study with 11 human pairs, task/order counterbalancing and clustered bootstrap inference. Participants were incentivized to balance productivity and understanding and knew a retention test would occur, but did not know it would repeat the same tasks.
+
+## Findings
+
+- Copilot raised session-one performance by 14.09 points on the 100-point speed/completion measure relative to a human partner (adjusted p<.001; Hedges' g=.99; table 1).
+- One-week absolute individual retest performance was 4.79 points lower for task pools first completed with Copilot, but the estimate was imprecise and non-significant (95% CI -16.86 to 7.46; adjusted p=.529; g=-.27; table 2).
+- The drop from assisted session-one performance to individual retest was 18.88 points larger after Copilot exposure (95% CI -32.87 to -5.01; unadjusted p=.015; multiplicity-adjusted p=.054; g=-1.13). This is a performance–learning divergence, not reliable evidence that Copilot caused worse absolute learning.
+- Copilot reduced reported mental demand, temporal demand and effort by about 23–29 points on the NASA-TLX dimensions, with large effects. Human collaboration produced more positive and arousing affect.
+
+## Limitations and boundary conditions
+
+- Twenty-two self-selected volunteers provide little power for an absolute learning contrast and very limited population coverage.
+- The comparator is a human peer, not unaided practice; both conditions contain assistance and social/task differences.
+- Retest items repeat the same task pools, so this is retention/very-near transfer rather than novel programming capability.
+- The fixed 20-minute session and reliable, simple HumanEval tasks may exaggerate the amount of spare study time available after Copilot completion.
+- Participants knew a retention assessment would occur and had received a Copilot workshop, limiting transfer to ordinary use.
+- The paper is a preprint. Several subgroup results are exploratory, and the main absolute independent-outcome contrast is null.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate | Within-person counterbalancing and robust clustered inference; small multi-level sample and peer comparator complicate inference |
+| Directness | high | Measures supported performance and the same learners' one-week unassisted performance |
+| Consistency | moderate | Aligns with a performance/learning gap, but the absolute retest contrast is inconclusive |
+| Replication | low | One preprint and 22 participants |
+| Magnitude | mixed | Large assisted gain and relative drop; small, imprecise absolute retest difference |
+| Duration | moderate-low | Approximately one week |
+| Transfer | low | Repeated task pools |
+| Ecological validity | moderate-low | Real tools and plausible programming tasks in a tightly controlled laboratory |
+
+## Candidate claims
+
+Supports [C001](../../claims/C001-assisted-performance-is-not-learning.md): a large assisted advantage did not produce a reliable independent advantage one week later. It does not establish that Copilot reduces absolute learning.
+
+## Notes
+
+The study argues for keeping assisted score, absolute later score and change-from-assisted score separate. The last measure can become mechanically dramatic when the system inflates the starting point.
+
+## S024 — Access Timing as Scaffolding: A Reinforcement Learning Approach to GenAI in Education
+
+Type: source
+Status: reviewed
+Topics: scaffolding, learning-vs-performance, metacognition, ai-tutoring
+Canonical path: `sources/notes/S024-rotter-access-timing.md`
+
+# S024 — Access Timing as Scaffolding
+
+## Why it matters
+
+This is a direct component study of when a learner should receive ordinary GenAI access. It compares always-on, never-on and adaptively delayed access, then removes AI for an objective test. Its positive result is product-relevant, while its assignment and analysis limitations make it a hypothesis-strengthening preprint rather than a deployment warrant.
+
+## Identity and provenance
+
+- Canonical identifier: arXiv:2605.15850v3
+- Version inspected: 11 August 2026, submitted for peer review
+- Content inspected: complete HTML/PDF methods, task and policy description, measures, quantitative/qualitative results, limitations and appendices relevant to the reward function
+- Access and rights: publisher-open arXiv PDF
+- Retrieval: gateway candidate `cand_6a6fb6f04c45653b`; PDF SHA-256 `14f8d8a9821f6f57f3e44900003b233e86a4a3fbdebe660819334eaf90fd21f5`
+- Locator convention: numbered section, table and figure in v3
+
+## Study
+
+- Population and setting: 105 university students, mostly bachelor-level, aged 18–39 in nine controlled workshops; 60 women and 45 men.
+- Intervention and comparator: an RL policy allowed Mistral 3 14B access after states such as failed attempts and time, compared with always-available and never-available GenAI.
+- Outcomes and timing: learning-phase errors, time and AI requests; after a drawing distractor, eight unassisted multiple-choice items about the same social-media/self-image content, item-level confidence judgments and MAI-AI self-report.
+- Design: between-group controlled laboratory study. Entire workshop sessions—not individuals—received one condition so sessions would finish together. The policy was trained on simulated students parameterized from a nine-person pilot.
+
+## Findings
+
+- The delayed-access group scored 5.11/8 on the immediate unassisted test versus 4.03/8 for always-on access (t(71)=2.51, p=.014, d=.59). It did not differ from never-on access (5.25/8; p=.762, d=-.07).
+- Item-level metacognitive accuracy was higher under delayed than always-on access (5.95 vs 5.17; p=.023, d=.54), but did not differ from never-on access. Self-reported metacognitive-awareness change did not differ among conditions.
+- Delayed access produced 2.46 AI requests on average versus 11.25 for always-on access; 43.2% of the delayed group never used AI.
+- Exploratory error/time advantages versus never-on access disappeared after controlling for the conditions' unequal gender distribution.
+
+## Limitations and boundary conditions
+
+- Condition assignment by workshop session and a significant gender imbalance weaken causal attribution; the paper's pairwise tests do not model workshop clustering.
+- Four participants, including those who answered zero unassisted items correctly, were excluded. If that criterion was not predeclared and is affected by condition, it can bias the primary comparison.
+- The policy bundles reward components for completion, time, alternating use, productive failure and cognitive load. No ablation shows that adaptive RL—or any single theory—caused the result.
+- The outcome is an eight-item immediate, near test after a short distractor, not delayed retention, transfer or repeated strategy development.
+- The policy was trained from a nine-person pilot; participants can game its access rule; the study is a preprint in one topic and laboratory.
+- Because 43.2% of the delayed group never received AI, the contrast is an intention-to-treat policy effect, not the effect of delayed AI use among users.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | low-moderate | Controlled comparison, but session-level assignment, imbalance, exclusion and unmodelled clustering create material bias risk |
+| Directness | high | Access policy is manipulated and AI is removed for the objective outcome |
+| Consistency | moderate | Direction aligns with attempt-before-support theory and S001; direct replications are absent |
+| Replication | low | One preprint |
+| Magnitude | moderate | d=.59 versus always-on access on eight items |
+| Duration | low | Same-session distractor only |
+| Transfer | low | Same content and response format |
+| Ecological validity | low | One brief laboratory task with an experimental access gate |
+
+## Candidate claims
+
+Supports low-confidence [C011](../../claims/C011-delayed-access-can-beat-always-on.md). It is not evidence that an RL policy should be deployed; a transparent fixed attempt threshold is the appropriate next comparator.
+
+## Notes
+
+The useful intervention is access timing. The RL machinery is one implementation and should not inherit credit for a bundled policy without ablation.
+
+## S025 — AI at the bedside: Randomised controlled trial of ChatGPT's impact on student performance in real-patient clinical exams
+
+Type: source
+Status: reviewed
+Topics: human-ai-collaboration, assessment-validity, clinical-education, learning-vs-performance
+Canonical path: `sources/notes/S025-saloojee-ai-at-bedside.md`
+
+# S025 — AI at the bedside
+
+## Why it matters
+
+This multicentre trial moves beyond text vignettes into real patient encounters in a middle-income setting. It shows that access to a capable general tool plus a briefing is not equivalent to usable human–AI capability, and that high perceived helpfulness can coexist with no measured performance advantage.
+
+## Identity and provenance
+
+- Canonical identifier: DOI 10.1080/0142159X.2026.2652061; PMID 42010936
+- Version inspected: Medical Teacher version published online 20 April 2026
+- Content inspected: full open-access PDF, methods, results, tables, discussion, limitations and data-availability statement
+- Access and rights: CC BY 4.0 publisher PDF
+- Retrieval: gateway candidate `cand_adcab10d7541ad23`; PDF SHA-256 `bfacfa48dbb5a612028f95e30e3b9a7b69497bf3e85e489aa8d8f78ad19bd9ff`
+- Locator convention: numbered section, table and page in the publisher PDF
+
+## Study
+
+- Population and setting: 73 final-year medical students across four University of the Witwatersrand academic hospitals in Johannesburg; 49 ChatGPT and 24 control; Internal Medicine or Paediatrics; real consenting patients.
+- Intervention and comparator: GPT-4o permitted on the learner's device during a 30-minute patient encounter after a one-hour webinar and written guidance, versus no digital aids. ChatGPT was prohibited during the following 20-minute blinded assessor evaluation.
+- Outcomes and timing: 0–100 clinical-performance rubric across seven domains; observation and student/patient experience; compulsory end-of-rotation summative clinical assessment.
+- Design: registered, individually randomized 2:1 parallel trial stratified by site, with assessor blinding and intention-to-treat analysis.
+
+## Findings
+
+- Overall performance did not differ: 66.7 (SD 9.9) with ChatGPT versus 68.2 (SD 7.8) in control; unadjusted p=.50 and site/prior-performance-adjusted p=.21. Domain effects were small or negligible and none was significant.
+- Frequency, duration, timing and perceived helpfulness of use had weak, non-significant associations with performance. Forty-five percent felt ChatGPT slowed the encounter and 37% reported distraction.
+- Learner perception diverged from measured effect: 85% called ChatGPT helpful, 92% valued differential-diagnosis support and 81% management support.
+- The abstract reports similar group performance on the subsequent summative clinical test. The main paper reports that the study assessment did not predict subsequent scores (p=.11), but does not provide a clear numerical randomized group contrast for that outcome; do not infer a durable null beyond the stated summary.
+- Observers described an emergent pattern in which stronger use began with an independent assessment and then used AI to check omissions or stress-test a plan. This is qualitative and not a randomized component comparison.
+
+## Limitations and boundary conditions
+
+- Nine students withdrew after allocation and the slightly under-target 2:1 sample provides limited power for small effects.
+- Twenty-eight assessors received no study-specific calibration; examiner identity was the strongest exploratory predictor.
+- Only 47% completed a pre-training questionnaire. No prompt/system logs were available, prior AI experience was incompletely measured, and use was self-directed.
+- The study tests brief training and tool availability under time pressure, not a practiced, integrated collaboration workflow or an AI tutor.
+- Patient, device and ward variation increase authenticity but also measurement noise.
+- The later summative group result is underreported in the main text. The trial's strongest inference concerns immediate authentic performance, not durable learning.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-high | Registered individual randomization, blinded assessment and adjusted ITT analysis; attrition and assessor variance remain |
+| Directness | high | Real patient-facing use and authentic assessment of the intended clinical capability |
+| Consistency | moderate | Aligns with other null point-of-care/tool-access trials; structured training contrasts remain sparse |
+| Replication | low | First trial in this exact bedside context |
+| Magnitude | low | Small, non-significant overall and domain differences |
+| Duration | low-unclear | Primary assessment immediate; later summative contrast underreported |
+| Transfer | high for performance | Real patients and broad clinical rubric; not a learning-transfer design |
+| Ecological validity | high | Four ordinary academic hospitals in South Africa |
+
+## Candidate claims
+
+Supports [C012](../../claims/C012-minimal-ai-access-did-not-improve-bedside-performance.md). It also motivates measuring workflow quality separately from access and frequency, but the observer-described workflow requires a direct component trial.
+
+## Notes
+
+The public anonymized dataset is registered at Zenodo DOI 10.5281/zenodo.17459336. Funding came in whole or part from the Gates Foundation; the authors reported no potential conflict.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -978,6 +1177,8 @@ Improved task performance while generative AI is available does not by itself es
 ## Evidence and reasoning
 
 The immediate/delayed divergence is not unique to AI: restudy can look effective at a short interval while retrieval produces better delayed retention [S006]. The OECD synthesis identifies the same distinction as central to responsible educational GenAI use [S004].
+
+In a small programming study, Copilot produced a large assisted speed/completion advantage, but not a reliable absolute advantage when participants repeated the task pools alone one week later [S023]. Its much larger assisted-to-retest drop is descriptive of the proxy failure; because the absolute retest contrast was imprecise, it is not evidence of a general Copilot learning penalty.
 
 ## Boundary conditions
 
@@ -1007,6 +1208,8 @@ The educational effect of generative AI depends materially on the surrounding pe
 ## Evidence and reasoning
 
 The convergent pattern is promising across secondary mathematics, university physics, and an after-school programme in Nigeria. Earlier intelligent-tutoring research also suggests that step-linked feedback and task structure—not the mere appearance of conversation—can produce meaningful effects [S014].
+
+[S024] narrows one potentially causal design dimension: its delayed-access policy beat always-on access on an immediate unassisted test. Because conditions were assigned by workshop and the adaptive reward was bundled, this strengthens the access-timing hypothesis without establishing the superiority of RL or any specific component.
 
 ## Boundary conditions
 
@@ -1202,6 +1405,64 @@ The claim does not cover creative, normative or social work whose quality is plu
 
 Use these measures only inside a transparent task-level evidence portfolio. Pair them with domain capability, error severity, verification and escalation behaviour, delayed performance, accessibility, learner burden, and the learner's opportunity to contest an inference.
 
+## C011 — Delayed AI access can outperform always-on access on an immediate independent test
+
+Type: claim
+Status: provisional
+Topics: scaffolding, learning-vs-performance, metacognition, ai-tutoring
+Canonical path: `claims/C011-delayed-access-can-beat-always-on.md`
+
+# C011 — Delayed AI access can outperform always-on access on an immediate independent test
+
+## Claim
+
+One narrow controlled study found that strategically delaying or withholding ordinary GenAI access yielded better immediate unassisted performance and confidence accuracy than allowing it continuously [S024]. It matched, but did not beat, a no-access condition.
+
+## Evidence and reasoning
+
+The delayed group averaged 5.11/8 versus 4.03/8 for always-on access (d=.59), and metacognitive accuracy also favoured delay (d=.54). AI was removed for the outcome. The comparison is consistent with preserving an initial attempt before support, but cannot distinguish adaptive timing from the bundled policy or from group differences.
+
+## Boundary conditions
+
+Assignment occurred at workshop level, gender balance differed, zero scorers were excluded, and clustering was not modelled. The task lasted one session, measured near content recall after a distractor, and used a policy trained from a nine-person pilot.
+
+## Counterevidence and uncertainty
+
+[S015] shows that always-available off-the-shelf AI can improve one-week unaided learning under fixed time in a different task. These findings are not direct contradictions because the learners, activities, assistance use and horizons differ. [S023] finds a large Copilot-assisted advantage but an inconclusive one-week absolute retest difference. The correct synthesis is conditional, not a default verdict for or against access.
+
+## Product relevance
+
+Compare an attempt-before-access rule with always-on and never-on conditions using delayed independent and transfer outcomes. Only add learner-model or RL complexity if it beats the transparent rule and passes fairness, gaming and explainability checks.
+
+## C012 — Minimal AI training and access did not improve authentic bedside performance
+
+Type: claim
+Status: provisional
+Topics: human-ai-collaboration, assessment-validity, clinical-education
+Canonical path: `claims/C012-minimal-ai-access-did-not-improve-bedside-performance.md`
+
+# C012 — Minimal AI training and access did not improve authentic bedside performance
+
+## Claim
+
+Access to GPT-4o during a real patient encounter, preceded by a one-hour webinar and written guidance, did not improve final-year medical students' blinded overall or domain clinical scores in one registered four-hospital RCT [S025].
+
+## Evidence and reasoning
+
+Overall scores were 66.7 with ChatGPT and 68.2 without digital aids; adjusted p=.21. No use-frequency, duration, timing or helpfulness measure predicted performance. The setting is unusually authentic and the trial separates model capability from a learner's ability to integrate it under time and patient-interaction demands.
+
+## Boundary conditions
+
+This is not evidence that structured AI collaboration cannot help. Engagement with preparation was incomplete, use was unstandardized, no prompt logs were available, and 28 assessors introduced substantial variance. The study was slightly under its planned sample and nine students withdrew after allocation.
+
+## Counterevidence and uncertainty
+
+Observer reports favoured an independent-first, AI-as-check workflow, but that workflow was neither deliberately assigned nor quantitatively tested. The paper reports similar later summative performance by group without a clear numerical contrast in the main text. A trained workflow or task-specific system may produce a different effect.
+
+## Product relevance
+
+Orqestra should represent tool access, assistance state and stewardship actions separately. A human–AI capability experiment should teach and manipulate a workflow, preserve the learner's pre-advice state, and measure both immediate assisted quality and later accessible-independent performance.
+
 ## B001 — Optimize durable capability, not completion
 
 Type: belief
@@ -1384,6 +1645,8 @@ In deliberate learning, ask the learner to think, retrieve, predict, choose, or 
 ## Rationale
 
 Unrestricted assistance can improve the current artifact while weakening later independent performance [C001]. Structured tutoring changes outcomes [C002], and the appropriate amount of guidance varies with expertise [C003].
+
+One narrow controlled study also found that delaying access matched a no-access condition and beat always-on access on an immediate independent test [C011]. Its limitations justify a comparative pilot, not a universal gate or an opaque RL policy.
 
 ## Apply when
 

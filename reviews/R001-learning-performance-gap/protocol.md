@@ -6,7 +6,7 @@
   "status": "active",
   "topics": ["learning-vs-performance", "ai-tutoring", "assessment-validity", "transfer"],
   "related_questions": ["Q001"],
-  "last_reviewed": "2026-08-31"
+  "last_reviewed": "2026-09-01"
 }
 ---
 
@@ -64,7 +64,7 @@ Use RoB 2 for randomized trials when a mature synthesis requires formal appraisa
 
 ## Current status
 
-The initial orientation set includes [S001], [S002], [S003], [S004], [S005], and the pre-GenAI tutoring review [S014]. This is a seed synthesis, not a claim of exhaustive coverage. The next run must search forward citations, recent databases, and contrary or null findings.
+The orientation set now includes direct assisted/independent contrasts [S001, S015, S023, S024], structured tutoring and programme studies [S002, S005], the authentic point-of-care trial [S025], and the pre-GenAI tutoring review [S014]. The 2026-09-01 targeted update added one null/inconclusive one-week programming contrast, one fragile positive access-timing contrast, and one authentic clinical null. This remains a seed synthesis, not a database-complete review. The next run must complete reproducible database and citation-chain searches, resolve the full text of the 275-participant Bassner et al. null RCT, and formally appraise risk of bias.
 
 ## Governance
 
