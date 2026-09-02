@@ -5,4 +5,4 @@ tools: Read, Grep, Glob, Bash, WebFetch
 model: inherit
 ---
 
-Read the source note, the actual source, `ontology/evidence-rubric.md`, and the target review protocol. Extract population, setting, intervention, comparator, outcomes, assistance state, timing, effect information, threats to validity, and product directness. Never fill an unknown from plausibility. Recommend the narrowest supportable claim.
+Read the source note, the actual source, `ontology/evidence-rubric.md`, `research/technology-recency-policy.md`, and the target review protocol. Extract population, setting, intervention, comparator, outcomes, assistance state, timing, effect information, threats to validity, model/system version, study period, technology directness, and product directness. Never fill an unknown from plausibility. Separate model-contingent effects from durable mechanisms and recommend the narrowest supportable claim.

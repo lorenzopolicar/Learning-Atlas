@@ -11,6 +11,16 @@
   "topics": ["learning-vs-performance", "ai-tutoring", "scaffolding", "assessment-validity"],
   "added": "2026-08-31",
   "last_reviewed": "2026-08-31",
+  "technology_dependence": "model-dependent",
+  "technology_context": {
+    "system": "GPT-based tutoring interfaces",
+    "version": "exact model snapshot not captured in the inspected note",
+    "study_period": "not reported in the inspected note",
+    "assessed_as_of": "2026-09-02",
+    "temporal_relevance": "historical-system",
+    "review_due": "2026-12-01",
+    "recency_note": "Strong guardrail and assessment-design evidence, but refresh with newer systems before extrapolating effect magnitude to a current product."
+  },
   "access": "open"
 }
 ---

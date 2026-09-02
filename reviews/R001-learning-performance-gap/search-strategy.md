@@ -7,7 +7,7 @@ Coverage status: targeted current-evidence update; not yet database-complete.
 
 ### Generative AI
 
-`"generative AI" OR "large language model*" OR LLM OR ChatGPT OR GPT-4 OR "AI tutor*" OR "AI companion*"`
+`"generative AI" OR "large language model*" OR LLM OR ChatGPT OR "reasoning model*" OR "multimodal model*" OR "AI agent*" OR "AI tutor*" OR "AI companion*"`
 
 ### Learning intervention
 
@@ -30,6 +30,12 @@ AND (retention OR transfer OR unaided OR independent OR posttest OR delayed OR "
 ```
 
 Do not apply the comparative filter to the broad scoping search; use it for a narrower causal map.
+
+## Technology-current stratum
+
+Run the broad query with a rolling 18-month publication filter first, then inspect model/system version and data-collection date manually. Add current model-family names only after verifying them from authoritative release records; hard-coded brand names age quickly. Classify each included empirical source using `research/technology-recency-policy.md`.
+
+Older GenAI records remain eligible for the historical map, mechanism contrasts, stronger designs and citation chaining. They cannot be the sole basis of a current product recommendation.
 
 ## Sources to search
 

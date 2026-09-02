@@ -11,6 +11,16 @@
   "topics": ["ai-tutoring", "teacher-practice", "learning-vs-performance", "institutional-design"],
   "added": "2026-08-31",
   "last_reviewed": "2026-08-31",
+  "technology_dependence": "model-dependent",
+  "technology_context": {
+    "system": "Microsoft Copilot",
+    "version": "GPT-4",
+    "study_period": "not reported in the inspected note",
+    "assessed_as_of": "2026-09-02",
+    "temporal_relevance": "historical-system",
+    "review_due": "2026-12-01",
+    "recency_note": "The teacher-supported programme is useful implementation evidence; the model-specific contribution and magnitude need current-system replication."
+  },
   "access": "open"
 }
 ---

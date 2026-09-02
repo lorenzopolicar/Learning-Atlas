@@ -28,6 +28,7 @@ These layers are deliberately separate:
 - [Project instructions](AGENTS.md)
 - [Epistemic policy](ontology/epistemic-policy.md)
 - [Research agenda](research/agenda.md)
+- [Technology recency policy](research/technology-recency-policy.md)
 - [R001: Learning versus performance in AI-assisted learning](reviews/R001-learning-performance-gap/protocol.md)
 - [Current beliefs](indexes/beliefs.md)
 - [Design principles](indexes/principles.md)
@@ -50,6 +51,7 @@ The harness has no third-party runtime dependencies and requires Python 3.11+.
 ```bash
 python3 scripts/atlas.py status
 python3 scripts/atlas.py recent --limit 5
+python3 scripts/atlas.py freshness
 python3 scripts/atlas.py query "assessment feedback transfer" --type claim --type principle
 python3 scripts/atlas.py new claim worked-example-fading
 python3 scripts/atlas.py index

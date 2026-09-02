@@ -12,6 +12,7 @@
   "topics": [],
   "added": "YYYY-MM-DD",
   "last_reviewed": "YYYY-MM-DD",
+  "technology_dependence": "unclassified",
   "access": "restricted"
 }
 ---

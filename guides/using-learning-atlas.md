@@ -8,9 +8,12 @@ Run:
 
 ```bash
 python3 scripts/atlas.py recent --limit 5
+python3 scripts/atlas.py freshness
 ```
 
 This is the compact change feed: recent research passes, the question each pass addressed, sources admitted, the briefing, and the interpretation of what changed. For a quick maturity snapshot, use `python3 scripts/atlas.py status`.
+
+`freshness` is the companion view for fast-moving AI evidence. It shows which empirical effects use current, recent, historical or unknown system generations, the model/version actually studied, and when the technology interpretation must be reviewed.
 
 Useful prompts for an agent include:
 

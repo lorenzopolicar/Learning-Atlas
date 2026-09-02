@@ -12,6 +12,16 @@
   "topics": ["learning-vs-performance", "ai-tutoring", "assessment-validity", "human-ai-collaboration"],
   "added": "2026-08-31",
   "last_reviewed": "2026-08-31",
+  "technology_dependence": "model-dependent",
+  "technology_context": {
+    "system": "OpenAI ChatGPT",
+    "version": "GPT-4o",
+    "study_period": "Spring 2025",
+    "assessed_as_of": "2026-09-02",
+    "temporal_relevance": "historical-system",
+    "review_due": "2026-12-01",
+    "recency_note": "The delayed unaided outcome remains valuable, but product-direct claims require replication with a newer system generation and contemporary interface."
+  },
   "access": "open"
 }
 ---

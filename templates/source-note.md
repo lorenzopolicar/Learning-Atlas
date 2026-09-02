@@ -12,6 +12,7 @@
   "topics": [],
   "added": "YYYY-MM-DD",
   "last_reviewed": "YYYY-MM-DD",
+  "technology_dependence": "unclassified",
   "access": "open"
 }
 ---
@@ -27,6 +28,16 @@
 - Content inspected: full text / methods and results / abstract only
 - Access and rights:
 - Locator convention: page / section / table / figure
+
+## Technology context and temporal relevance
+
+- Technology dependence: model-dependent / system-dependent / mechanism-oriented / model-independent
+- System and exact version:
+- Study or data-collection period:
+- Temporal relevance as of review: current-system / recent-system / historical-system / unknown
+- Review due:
+- What likely transfers across model generations:
+- What requires current-system replication:
 
 ## Study or argument
 

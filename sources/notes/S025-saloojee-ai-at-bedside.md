@@ -12,6 +12,16 @@
   "topics": ["human-ai-collaboration", "assessment-validity", "clinical-education", "learning-vs-performance"],
   "added": "2026-09-01",
   "last_reviewed": "2026-09-01",
+  "technology_dependence": "model-dependent",
+  "technology_context": {
+    "system": "OpenAI ChatGPT",
+    "version": "GPT-4o",
+    "study_period": "not reported in the inspected note",
+    "assessed_as_of": "2026-09-02",
+    "temporal_relevance": "historical-system",
+    "review_due": "2026-12-01",
+    "recency_note": "The authentic workflow null remains informative, but newer multimodal and agentic systems may alter point-of-care integration and require direct replication."
+  },
   "access": "open"
 }
 ---

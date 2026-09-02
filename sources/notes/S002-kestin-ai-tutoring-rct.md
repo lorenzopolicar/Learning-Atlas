@@ -11,6 +11,16 @@
   "topics": ["ai-tutoring", "learning-vs-performance", "scaffolding"],
   "added": "2026-08-31",
   "last_reviewed": "2026-08-31",
+  "technology_dependence": "model-dependent",
+  "technology_context": {
+    "system": "custom physics AI tutor",
+    "version": "exact model snapshot not captured in the inspected note",
+    "study_period": "not reported in the inspected note",
+    "assessed_as_of": "2026-09-02",
+    "temporal_relevance": "unknown",
+    "review_due": "2026-10-15",
+    "recency_note": "The instructional design remains directly relevant, but model and data-collection details must be recovered before treating the result as technology-current."
+  },
   "access": "open"
 }
 ---

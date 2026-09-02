@@ -16,9 +16,9 @@ Use Better BibTeX or an equivalent stable-key workflow if Zotero is adopted. Exp
 
 ## Admit a source
 
-1. Verify title, creators or speakers, date, container, canonical identifier/URL, publication status, rights, and corrections or retractions when relevant.
+1. Verify title, creators or speakers, date, container, canonical identifier/URL, publication status, rights, and corrections or retractions when relevant. Classify technology dependence.
 2. Inspect the actual content. For empirical work, describe design, population, intervention, comparator, outcomes, timing, and limitations. For discourse or testimony, describe the speaker's standing, context, argument, counterposition, and epistemic role.
-3. Preserve a page, section, table, dataset-row, or timestamp locator for consequential observations.
+3. Preserve a page, section, table, dataset-row, or timestamp locator for consequential observations. For model-dependent AI work, separately record exact system/version, data-collection period, assessed temporal relevance, review date, and which implications may not transfer to current systems.
 4. Create a source note with the closest profile and add its bibliography entry:
    `python3 scripts/atlas.py new source <slug> --source-profile empirical|media|social|book|dataset`.
 5. Fill the evidence profile for empirical work; `unclear` is valid. For other source types, record limitations and what the source cannot establish.

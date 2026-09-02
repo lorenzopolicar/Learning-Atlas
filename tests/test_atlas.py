@@ -65,6 +65,15 @@ class AtlasHarnessTests(unittest.TestCase):
         self.assertEqual(result.returncode, 2, result.stdout + result.stderr)
         self.assertIn("at least 1", result.stderr)
 
+    def test_model_dependent_evidence_freshness_is_explicit(self) -> None:
+        result = self.run_cli("freshness")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("Model-dependent evidence freshness: 7 source(s)", result.stdout)
+        self.assertIn("current-system", result.stdout)
+        self.assertIn("historical-system", result.stdout)
+        self.assertIn("GPT-4o", result.stdout)
+        self.assertIn("review_due=", result.stdout)
+
     def test_source_profiles_are_available(self) -> None:
         result = self.run_cli("new", "source", "not-a-real-source", "--source-profile", "media", "--help")
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)

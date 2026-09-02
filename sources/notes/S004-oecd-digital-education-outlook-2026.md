@@ -11,6 +11,7 @@
   "topics": ["learning-vs-performance", "ai-tutoring", "teacher-practice", "institutional-design"],
   "added": "2026-08-31",
   "last_reviewed": "2026-08-31",
+  "technology_dependence": "system-dependent",
   "access": "open"
 }
 ---

@@ -8,7 +8,6 @@ import datetime as dt
 import json
 import re
 import sys
-import textwrap
 import tomllib
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -62,7 +61,7 @@ SOURCE_PROFILE_TEMPLATES = {
 }
 
 REQUIRED = {
-    "source": ("id", "type", "title", "citation_key", "source_kind", "year", "url", "status", "topics", "added", "last_reviewed"),
+    "source": ("id", "type", "title", "citation_key", "source_kind", "year", "url", "status", "topics", "added", "last_reviewed", "technology_dependence"),
     "claim": ("id", "type", "title", "statement", "status", "confidence", "topics", "supporting_sources", "contradicting_sources", "boundary_conditions", "product_relevance", "last_reviewed"),
     "belief": ("id", "type", "title", "statement", "status", "confidence", "topics", "derived_from", "counterarguments", "would_change_my_mind", "last_reviewed"),
     "principle": ("id", "type", "title", "statement", "status", "confidence", "topics", "based_on", "applies_to", "exceptions", "falsifiers", "last_reviewed"),
@@ -94,6 +93,14 @@ EPISTEMIC_ROLES = {
     "firsthand-account", "normative-argument", "historical-source", "institutional-guidance",
     "product-claim", "dataset", "discovery-lead",
 }
+TECHNOLOGY_DEPENDENCE = {
+    "model-dependent",
+    "system-dependent",
+    "mechanism-oriented",
+    "model-independent",
+    "unclassified",
+}
+TEMPORAL_RELEVANCE = {"current-system", "recent-system", "historical-system", "unknown"}
 ID_RE = re.compile(r"^[SCBPDQENR]\d{3}$")
 TOKEN_RE = re.compile(r"[a-z0-9][a-z0-9-]+")
 STOPWORDS = {
@@ -223,6 +230,44 @@ def validate_records(records: list[dict[str, Any]]) -> tuple[list[str], list[str
                     unsupported = sorted(set(roles) - EPISTEMIC_ROLES)
                     if unsupported:
                         errors.append(f"{label}: unsupported epistemic_roles: {', '.join(unsupported)}")
+            dependence = meta.get("technology_dependence")
+            if dependence not in TECHNOLOGY_DEPENDENCE:
+                errors.append(
+                    f"{label}: technology_dependence must be one of {', '.join(sorted(TECHNOLOGY_DEPENDENCE))}"
+                )
+            if dependence == "unclassified" and meta.get("status") != "seed":
+                errors.append(f"{label}: reviewed sources cannot leave technology_dependence unclassified")
+            context = meta.get("technology_context")
+            if dependence == "model-dependent":
+                required_context = {
+                    "system",
+                    "version",
+                    "study_period",
+                    "assessed_as_of",
+                    "temporal_relevance",
+                    "review_due",
+                    "recency_note",
+                }
+                if not isinstance(context, dict):
+                    errors.append(f"{label}: model-dependent source needs technology_context")
+                else:
+                    missing_context = sorted(required_context - set(context))
+                    if missing_context:
+                        errors.append(
+                            f"{label}: technology_context missing: {', '.join(missing_context)}"
+                        )
+                    if context.get("temporal_relevance") not in TEMPORAL_RELEVANCE:
+                        errors.append(
+                            f"{label}: unsupported temporal_relevance {context.get('temporal_relevance')!r}"
+                        )
+                    for field in ("assessed_as_of", "review_due"):
+                        try:
+                            value = dt.date.fromisoformat(str(context.get(field)))
+                        except ValueError:
+                            errors.append(f"{label}: technology_context.{field} must be YYYY-MM-DD")
+                            continue
+                        if field == "review_due" and value < today:
+                            warnings.append(f"{label}: technology freshness review was due {value.isoformat()}")
 
         if artifact_type == "claim" and meta.get("status") in {"provisional", "contested", "established"}:
             if not meta.get("supporting_sources"):
@@ -366,19 +411,33 @@ def notebooklm_content(records: list[dict[str, Any]]) -> str:
         key=lambda r: (order[r["meta"]["type"]], r["meta"]["id"]),
     ):
         meta = record["meta"]
-        lines.extend(
+        header = [
+            f"## {meta['id']} — {record_title(record)}",
+            "",
+            f"Type: {meta['type']}",
+            f"Status: {meta.get('status', '')}",
+            f"Topics: {', '.join(meta.get('topics', []))}",
+        ]
+        if meta.get("type") == "source":
+            header.append(f"Technology dependence: {meta.get('technology_dependence', 'unclassified')}")
+            context = meta.get("technology_context")
+            if isinstance(context, dict):
+                header.append(
+                    "Technology context: "
+                    f"{context.get('system', 'unknown')} / {context.get('version', 'unknown')}; "
+                    f"study={context.get('study_period', 'unknown')}; "
+                    f"temporal relevance={context.get('temporal_relevance', 'unknown')}; "
+                    f"review due={context.get('review_due', 'unknown')}"
+                )
+        header.extend(
             [
-                f"## {meta['id']} — {record_title(record)}",
-                "",
-                f"Type: {meta['type']}",
-                f"Status: {meta.get('status', '')}",
-                f"Topics: {', '.join(meta.get('topics', []))}",
                 f"Canonical path: `{relative(record['path'])}`",
                 "",
                 record["body"],
                 "",
             ]
         )
+        lines.extend(header)
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -454,15 +513,21 @@ def query_command(query: str, types: list[str], limit: int | None, max_chars: in
     for score, _, record in scored[:item_limit]:
         meta = record["meta"]
         summary = str(meta.get("statement") or meta.get("question") or first_prose(record["body"]))
-        block = textwrap.dedent(
-            f"""
-            [{meta['id']}] {record_title(record)}
-            type={meta['type']} status={meta.get('status', '')} confidence={meta.get('confidence', '')}
-            path={relative(record['path'])}
-            relevance={score}
-            {summary}
-            """
-        ).strip()
+        detail_lines = [
+            f"[{meta['id']}] {record_title(record)}",
+            f"type={meta['type']} status={meta.get('status', '')} confidence={meta.get('confidence', '')}",
+            f"path={relative(record['path'])}",
+        ]
+        if meta.get("type") == "source":
+            context = meta.get("technology_context")
+            temporal = context.get("temporal_relevance", "not-applicable") if isinstance(context, dict) else "not-applicable"
+            system = context.get("system", "not-applicable") if isinstance(context, dict) else "not-applicable"
+            detail_lines.append(
+                f"technology={meta.get('technology_dependence', 'unclassified')} "
+                f"temporal={temporal} system={system}"
+            )
+        detail_lines.extend([f"relevance={score}", summary])
+        block = "\n".join(detail_lines)
         separator = "\n\n" if rendered else ""
         if used + len(separator) + len(block) > char_limit:
             break
@@ -570,6 +635,57 @@ def recent_command(limit: int) -> int:
     return 0
 
 
+def freshness_command() -> int:
+    """Expose how current the model-dependent evidence base actually is."""
+    records, parse_errors = collect()
+    validation_errors, _ = validate_records(records)
+    errors = parse_errors + validation_errors
+    if errors:
+        for error in errors:
+            print(f"ERROR: {error}", file=sys.stderr)
+        return 1
+
+    sources = [
+        record
+        for record in records
+        if record["meta"].get("type") == "source"
+        and record["meta"].get("technology_dependence") == "model-dependent"
+    ]
+    groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for source in sources:
+        context = source["meta"].get("technology_context", {})
+        groups[str(context.get("temporal_relevance", "unknown"))].append(source)
+
+    print(f"Model-dependent evidence freshness: {len(sources)} source(s)")
+    for tier in ("current-system", "recent-system", "historical-system", "unknown"):
+        print(f"  {tier:17} {len(groups[tier]):2}")
+
+    if not sources:
+        print("No model-dependent sources classified.")
+        return 0
+
+    print("\nEvidence register:")
+    tier_order = {"historical-system": 0, "unknown": 1, "recent-system": 2, "current-system": 3}
+    for source in sorted(
+        sources,
+        key=lambda item: (
+            tier_order.get(str(item["meta"]["technology_context"].get("temporal_relevance")), 9),
+            item["meta"]["id"],
+        ),
+    ):
+        meta = source["meta"]
+        context = meta["technology_context"]
+        review_due = dt.date.fromisoformat(str(context["review_due"]))
+        due_label = " OVERDUE" if review_due < dt.date.today() else ""
+        print(
+            f"  [{meta['id']}] {context['temporal_relevance']} | "
+            f"{context['system']} / {context['version']} | "
+            f"study={context['study_period']} | review_due={context['review_due']}{due_label}"
+        )
+        print(f"       {context['recency_note']} ({relative(source['path'])})")
+    return 0
+
+
 def eval_command() -> int:
     path = ROOT / ".harness" / "evals" / "cases.json"
     suite = json.loads(path.read_text(encoding="utf-8"))
@@ -655,6 +771,7 @@ def main() -> int:
     subparsers.add_parser("status", help="show artifact counts and maturity")
     recent_parser = subparsers.add_parser("recent", help="show recent research runs and what they changed")
     recent_parser.add_argument("--limit", type=int, default=5, help="number of runs to show (default: 5)")
+    subparsers.add_parser("freshness", help="show technology freshness of model-dependent evidence")
     subparsers.add_parser("eval", help="run retrieval contract evaluations")
 
     next_parser = subparsers.add_parser("next-id", help="print the next ID for an artifact type")
@@ -697,6 +814,8 @@ def main() -> int:
         return status_command()
     if args.command == "recent":
         return recent_command(args.limit)
+    if args.command == "freshness":
+        return freshness_command()
     if args.command == "eval":
         return eval_command()
     if args.command == "next-id":

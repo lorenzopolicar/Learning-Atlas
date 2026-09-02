@@ -11,6 +11,7 @@
   "topics": ["ai-tutoring", "feedback", "scaffolding"],
   "added": "2026-08-31",
   "last_reviewed": "2026-08-31",
+  "technology_dependence": "mechanism-oriented",
   "access": "mixed"
 }
 ---

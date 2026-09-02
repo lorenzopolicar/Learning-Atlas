@@ -9,10 +9,10 @@ Convert a live research question into a small, reviewable improvement to the atl
 1. Read `AGENTS.md`, the epistemic policy, `research/queue.md`, and `.harness/state/research-state.json`.
 2. Select one ready question. Prefer an existing claim whose boundary or confidence could materially change.
 3. Query the atlas for existing work. State the gap before searching externally.
-4. Search across the source lanes the question warrants: scholarly literature, citation chains, authoritative reports, books, standards, datasets, podcasts/interviews, talks, and public practitioner discourse including X and LinkedIn. Record exact queries, providers, dates, sampling rationale, and result paths for an active review. Reach may sample a prominent position; it never supplies evidence weight.
+4. Run `python3 scripts/atlas.py freshness`. For model-dependent questions, search the rolling 18-month window and current system generations first, then use older studies for mechanisms, stronger designs and citation chains. Search across the source lanes the question warrants: scholarly literature, citation chains, authoritative reports, books, standards, datasets, podcasts/interviews, talks, and public practitioner discourse including X and LinkedIn. Record exact queries, providers, dates, technology/date filters, sampling rationale, and result paths for an active review. Reach may sample a prominent position; it never supplies evidence weight.
 5. Call `research_capabilities`; use native web and Exa for discovery, then the Atlas research gateway for identity, provenance, locators, extraction, and local staging.
 6. For work with independent lanes, delegate read-heavy scouting, extraction, and red-teaming to project agents when available; one integrating agent owns canonical writes and epistemic decisions.
-7. Inspect the actual source. Admit at most three sources, emphasizing nulls, contradictions, replications, underrepresented contexts, and useful non-empirical challenges.
+7. Inspect the actual source. Admit at most three sources, emphasizing current-system studies, nulls, contradictions, replications, underrepresented contexts, and useful non-empirical challenges. Record technology dependence; model-dependent sources require exact system/version or “not reported,” study period, temporal relevance, and review date.
 8. Create or revise atomic claims, beliefs, discourse tensions, or questions according to source role. Never promote from snippets, metadata, abstracts, social popularity, or automatic transcripts alone.
 9. Write a weekly briefing: signal, evidence change, contradictions, product implication, source-portfolio effect, and next question.
 10. Update research state, regenerate derived files, validate, and test.
@@ -27,7 +27,8 @@ Convert a live research question into a small, reviewable improvement to the atl
 5. Identify which Orqestra decisions or experiments may be affected.
 6. Assess portfolio balance across empirical, architectural, normative, critical, and institutional work.
 7. Run a source-lane audit. Identify whether convenient papers and web pages are crowding out books, datasets, practitioner testimony, historical/critical work, or voices outside dominant institutions.
-8. Produce a synthesis briefing and draft pull request; do not self-approve maturity changes.
+8. Run the technology-freshness audit. Identify product guidance resting only on historical systems and propose a current-system replication or downgrade in product directness.
+9. Produce a synthesis briefing and draft pull request; do not self-approve maturity changes.
 
 ## Quarterly direction review
 

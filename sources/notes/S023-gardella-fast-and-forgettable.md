@@ -12,6 +12,16 @@
   "topics": ["learning-vs-performance", "programming-education", "human-ai-collaboration", "cognitive-load"],
   "added": "2026-09-01",
   "last_reviewed": "2026-09-01",
+  "technology_dependence": "model-dependent",
+  "technology_context": {
+    "system": "GitHub Copilot",
+    "version": "GPT-4.1",
+    "study_period": "not reported in the inspected note",
+    "assessed_as_of": "2026-09-02",
+    "temporal_relevance": "recent-system",
+    "review_due": "2027-03-01",
+    "recency_note": "Post-GPT-4o system evidence with a one-week retest, but newer agentic coding workflows may change both assistance magnitude and learner behaviour."
+  },
   "access": "publisher-open"
 }
 ---

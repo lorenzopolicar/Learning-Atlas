@@ -9,9 +9,9 @@
   "topics": ["ai-tutoring", "scaffolding", "teacher-practice", "learning-vs-performance"],
   "supporting_sources": ["S001", "S002", "S005", "S014", "S024"],
   "contradicting_sources": [],
-  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, and additional time may contribute materially.", "The direct access-timing study is a preprint with non-random workshop-level assignment and no policy ablation."],
+  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, and additional time may contribute materially.", "The direct access-timing study is a preprint with non-random workshop-level assignment and no policy ablation.", "The evidence chain mixes historical GPT-4/4o-era systems with recent-system evidence and has no current-system anchor."],
   "product_relevance": "Treat the pedagogical harness as the product, not as a prompt wrapped around a general chatbot.",
-  "last_reviewed": "2026-09-01"
+  "last_reviewed": "2026-09-02"
 }
 ---
 
@@ -30,6 +30,8 @@ The convergent pattern is promising across secondary mathematics, university phy
 ## Boundary conditions
 
 Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, and learner characteristics vary.
+
+The mechanism claim is more durable than any effect magnitude: the chain includes GPT-4/4o-era systems plus recent Mistral evidence, but no source is yet classified `current-system`. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
 
 ## Counterevidence and uncertainty
 

@@ -12,6 +12,16 @@
   "topics": ["scaffolding", "learning-vs-performance", "metacognition", "ai-tutoring"],
   "added": "2026-09-01",
   "last_reviewed": "2026-09-01",
+  "technology_dependence": "model-dependent",
+  "technology_context": {
+    "system": "Mistral",
+    "version": "Mistral 3 14B",
+    "study_period": "not reported in the inspected note",
+    "assessed_as_of": "2026-09-02",
+    "temporal_relevance": "recent-system",
+    "review_due": "2027-03-01",
+    "recency_note": "Recent access-policy evidence; its main uncertainty is study design rather than model age, and replication should compare a current system with a transparent fixed rule."
+  },
   "access": "publisher-open"
 }
 ---

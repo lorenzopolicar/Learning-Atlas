@@ -13,6 +13,8 @@ Ask for the evidence chain behind a principle, disagreements between sources, bo
 Type: source
 Status: reviewed
 Topics: learning-vs-performance, ai-tutoring, scaffolding, assessment-validity
+Technology dependence: model-dependent
+Technology context: GPT-based tutoring interfaces / exact model snapshot not captured in the inspected note; study=not reported in the inspected note; temporal relevance=historical-system; review due=2026-12-01
 Canonical path: `sources/notes/S001-bastani-generative-ai-guardrails.md`
 
 # S001 — Generative AI without guardrails can harm learning outcomes
@@ -55,6 +57,8 @@ Supports [C001] and [C002]. It is central evidence for progressive assistance [P
 Type: source
 Status: reviewed
 Topics: ai-tutoring, learning-vs-performance, scaffolding
+Technology dependence: model-dependent
+Technology context: custom physics AI tutor / exact model snapshot not captured in the inspected note; study=not reported in the inspected note; temporal relevance=unknown; review due=2026-10-15
 Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 
 # S002 — AI tutoring outperforms in-class active learning
@@ -93,6 +97,7 @@ Supports [C002] while making the design of the pedagogical harness a necessary b
 Type: source
 Status: reviewed
 Topics: learning-vs-performance, ai-tutoring, learner-modelling, ethics-and-governance
+Technology dependence: system-dependent
 Canonical path: `sources/notes/S003-khosravi-learning-first-ai-companions.md`
 
 # S003 — Building AI Companions that Prioritise Learning over Performance
@@ -131,6 +136,7 @@ Useful design synthesis for [B001], [B003], and [P001], but should not be treate
 Type: source
 Status: reviewed
 Topics: learning-vs-performance, ai-tutoring, teacher-practice, institutional-design
+Technology dependence: system-dependent
 Canonical path: `sources/notes/S004-oecd-digital-education-outlook-2026.md`
 
 # S004 — OECD Digital Education Outlook 2026
@@ -169,6 +175,8 @@ Supports the framing of [C001] and the need for [P005]. Use underlying primary s
 Type: source
 Status: reviewed
 Topics: ai-tutoring, teacher-practice, learning-vs-performance, institutional-design
+Technology dependence: model-dependent
+Technology context: Microsoft Copilot / GPT-4; study=not reported in the inspected note; temporal relevance=historical-system; review due=2026-12-01
 Canonical path: `sources/notes/S005-world-bank-nigeria-chatbot-rct.md`
 
 # S005 — From Chalkboards to Chatbots
@@ -207,6 +215,7 @@ Supports [C002] with teacher mediation and structure as essential boundary condi
 Type: source
 Status: reviewed
 Topics: retrieval-and-spacing, learning-vs-performance, assessment-validity
+Technology dependence: model-independent
 Canonical path: `sources/notes/S006-roediger-karpicke-testing-effect.md`
 
 # S006 — Test-Enhanced Learning
@@ -245,6 +254,7 @@ Supports [C004], [P004], and the outcome hierarchy in the epistemic policy.
 Type: source
 Status: reviewed
 Topics: retrieval-and-spacing, transfer, learning-vs-performance
+Technology dependence: model-independent
 Canonical path: `sources/notes/S007-pan-rickard-transfer-retrieval.md`
 
 # S007 — Transfer of Test-Enhanced Learning
@@ -283,6 +293,7 @@ Supports [C004] while constraining claims about far or authentic transfer.
 Type: source
 Status: reviewed
 Topics: retrieval-and-spacing, learning-vs-performance
+Technology dependence: model-independent
 Canonical path: `sources/notes/S008-cepeda-distributed-practice.md`
 
 # S008 — Distributed Practice in Verbal Recall Tasks
@@ -321,6 +332,7 @@ Supports [C005] and [P004].
 Type: source
 Status: reviewed
 Topics: scaffolding, learner-modelling, ai-tutoring
+Technology dependence: model-independent
 Canonical path: `sources/notes/S009-kalyuga-expertise-reversal.md`
 
 # S009 — The Expertise Reversal Effect
@@ -359,6 +371,7 @@ Supports [C003], [B005], and [P003].
 Type: source
 Status: reviewed
 Topics: feedback, metacognition, motivation-and-agency
+Technology dependence: model-independent
 Canonical path: `sources/notes/S010-hattie-timperley-feedback.md`
 
 # S010 — The Power of Feedback
@@ -397,6 +410,7 @@ Supports [C006] and constrains simplistic “more feedback” product strategies
 Type: source
 Status: reviewed
 Topics: learner-modelling, assessment-validity, ai-tutoring
+Technology dependence: mechanism-oriented
 Canonical path: `sources/notes/S011-corbett-anderson-knowledge-tracing.md`
 
 # S011 — Knowledge Tracing
@@ -435,6 +449,7 @@ Contributes to [C007], [B003], and [P002].
 Type: source
 Status: reviewed
 Topics: assessment-validity, human-ai-collaboration, institutional-design
+Technology dependence: system-dependent
 Canonical path: `sources/notes/S012-teqsa-assessment-reform-ai.md`
 
 # S012 — Enacting Assessment Reform in a Time of Artificial Intelligence
@@ -473,6 +488,7 @@ Supports [C008], [B004], and [P006] as a design and governance source.
 Type: source
 Status: reviewed
 Topics: assessment-validity, learner-modelling, ethics-and-governance
+Technology dependence: model-independent
 Canonical path: `sources/notes/S013-messick-validity-assessment.md`
 
 # S013 — Validity of Psychological Assessment
@@ -511,6 +527,7 @@ Supports [C007], [C008], [P002], and [P006].
 Type: source
 Status: reviewed
 Topics: ai-tutoring, feedback, scaffolding
+Technology dependence: mechanism-oriented
 Canonical path: `sources/notes/S014-vanlehn-tutoring-effectiveness.md`
 
 # S014 — Relative effectiveness of tutoring systems
@@ -549,6 +566,8 @@ Provides historical support for [C002] and for designing interaction around lear
 Type: source
 Status: reviewed
 Topics: learning-vs-performance, ai-tutoring, assessment-validity, human-ai-collaboration
+Technology dependence: model-dependent
+Technology context: OpenAI ChatGPT / GPT-4o; study=Spring 2025; temporal relevance=historical-system; review due=2026-12-01
 Canonical path: `sources/notes/S015-contractor-reyes-experimental-evidence.md`
 
 # S015 — Experimental Evidence on the Learning Impact of Generative AI
@@ -613,6 +632,7 @@ Supports provisional [C009](../../claims/C009-off-the-shelf-ai-can-improve-short
 Type: source
 Status: reviewed
 Topics: human-ai-collaboration, motivation-and-agency, ethics-and-governance, assessment-validity
+Technology dependence: system-dependent
 Canonical path: `sources/notes/S016-oecd-eu-ai-literacy-framework.md`
 
 # S016 — Empowering Learners for the Age of AI
@@ -664,6 +684,7 @@ The framework argues against both total prohibition and mere tool fluency. Orqes
 Type: source
 Status: reviewed
 Topics: human-ai-collaboration, institutional-design, motivation-and-agency
+Technology dependence: system-dependent
 Canonical path: `sources/notes/S017-diamandis-direct-ai-post.md`
 
 # S017 — Should education shift from learning to do X to directing AI doing X?
@@ -701,6 +722,7 @@ Used in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md) 
 Type: source
 Status: reviewed
 Topics: assessment-validity, human-ai-collaboration, motivation-and-agency
+Technology dependence: system-dependent
 Canonical path: `sources/notes/S018-wood-learning-orchestration-post.md`
 
 # S018 — Learning Orchestration in AI-mediated assessment
@@ -742,6 +764,7 @@ Used in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md).
 Type: source
 Status: reviewed
 Topics: human-ai-collaboration, institutional-design, teacher-practice, motivation-and-agency
+Technology dependence: system-dependent
 Canonical path: `sources/notes/S019-higheredjobs-teaching-with-ai-podcast.md`
 
 # S019 — Teaching With AI, Part 1
@@ -790,6 +813,7 @@ Used in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md) 
 Type: source
 Status: reviewed
 Topics: human-ai-collaboration, assessment-validity, product-measurement, metacognition
+Technology dependence: mechanism-oriented
 Canonical path: `sources/notes/S020-schemmer-appropriate-reliance.md`
 
 # S020 — Appropriate Reliance on AI Advice
@@ -849,6 +873,7 @@ Supports [C010](../../claims/C010-appropriate-reliance-has-distinct-components.m
 Type: source
 Status: reviewed
 Topics: human-ai-collaboration, metacognition, assessment-validity, product-measurement
+Technology dependence: mechanism-oriented
 Canonical path: `sources/notes/S021-li-steyvers-metacognitive-sensitivity.md`
 
 # S021 — Human and AI metacognitive sensitivity
@@ -908,6 +933,7 @@ Supports the confidence-quality boundary in [C010](../../claims/C010-appropriate
 Type: source
 Status: reviewed
 Topics: institutional-design, ethics-and-governance, motivation-and-agency, assessment-validity
+Technology dependence: system-dependent
 Canonical path: `sources/notes/S022-pierres-disabled-students-genai.md`
 
 # S022 — Generative AI and students with disabilities
@@ -967,6 +993,8 @@ Revises the accessibility boundary in [C008](../../claims/C008-trustworthy-asses
 Type: source
 Status: reviewed
 Topics: learning-vs-performance, programming-education, human-ai-collaboration, cognitive-load
+Technology dependence: model-dependent
+Technology context: GitHub Copilot / GPT-4.1; study=not reported in the inspected note; temporal relevance=recent-system; review due=2027-03-01
 Canonical path: `sources/notes/S023-gardella-fast-and-forgettable.md`
 
 # S023 — Fast and Forgettable
@@ -1033,6 +1061,8 @@ The study argues for keeping assisted score, absolute later score and change-fro
 Type: source
 Status: reviewed
 Topics: scaffolding, learning-vs-performance, metacognition, ai-tutoring
+Technology dependence: model-dependent
+Technology context: Mistral / Mistral 3 14B; study=not reported in the inspected note; temporal relevance=recent-system; review due=2027-03-01
 Canonical path: `sources/notes/S024-rotter-access-timing.md`
 
 # S024 — Access Timing as Scaffolding
@@ -1099,6 +1129,8 @@ The useful intervention is access timing. The RL machinery is one implementation
 Type: source
 Status: reviewed
 Topics: human-ai-collaboration, assessment-validity, clinical-education, learning-vs-performance
+Technology dependence: model-dependent
+Technology context: OpenAI ChatGPT / GPT-4o; study=not reported in the inspected note; temporal relevance=historical-system; review due=2026-12-01
 Canonical path: `sources/notes/S025-saloojee-ai-at-bedside.md`
 
 # S025 — AI at the bedside
@@ -1214,6 +1246,8 @@ The convergent pattern is promising across secondary mathematics, university phy
 ## Boundary conditions
 
 Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, and learner characteristics vary.
+
+The mechanism claim is more durable than any effect magnitude: the chain includes GPT-4/4o-era systems plus recent Mistral evidence, but no source is yet classified `current-system`. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
 
 ## Counterevidence and uncertainty
 
@@ -1376,6 +1410,8 @@ Students were paid to remain in a laboratory and could not easily convert AI pro
 
 The appealing augmentation-versus-automation result in [S015] is observational after random assignment. Learner choice, prior proficiency and task strategy may explain the difference.
 
+The intervention used GPT-4o in Spring 2025. Its delayed-outcome design remains important, but the effect estimate should not be treated as a current-system forecast without replication.
+
 ## Product relevance
 
 Orqestra should support ordinary AI use only inside an evaluable intervention contract: declared intended capability, assistance state, time allocation, delayed independent measure and a plan for detecting who benefits or offloads. The result argues for experimentation, not unrestricted default access.
@@ -1458,6 +1494,8 @@ This is not evidence that structured AI collaboration cannot help. Engagement wi
 ## Counterevidence and uncertainty
 
 Observer reports favoured an independent-first, AI-as-check workflow, but that workflow was neither deliberately assigned nor quantitatively tested. The paper reports similar later summative performance by group without a clear numerical contrast in the main text. A trained workflow or task-specific system may produce a different effect.
+
+GPT-4o is historical-system evidence for current product decisions. More capable multimodal or agentic systems might reduce lookup friction, increase distraction, or change verification demands; the direction is not inferable from this trial.
 
 ## Product relevance
 

@@ -7,4 +7,4 @@ skills:
   - atlas-synthesis
 ---
 
-Synthesize by claim, mechanism, boundary, and outcome. Steel-man the strongest counterposition. State whether the evidence changes wording, scope, confidence, status, or nothing. Leave final maturity changes and merge to human review.
+Synthesize by claim, mechanism, boundary, outcome, and technology freshness. Separate model-contingent effects from durable mechanisms and flag product guidance without a current-system anchor. Steel-man the strongest counterposition. State whether the evidence changes wording, scope, confidence, status, or nothing. Leave final maturity changes and merge to human review.

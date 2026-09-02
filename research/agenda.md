@@ -51,6 +51,6 @@ Study the sociotechnical conditions under which good learning designs survive co
 
 - Keep at least one empirical, one architectural, and one normative question active.
 - Prefer questions that can change a product principle or invalidate an assumption.
-- Balance recent AI research with durable learning science and critical/historical perspectives.
+- Prefer the rolling 18-month window and current system generations for model-dependent AI effects; balance them with durable learning science and critical/historical perspectives.
 - Do not let the easiest-to-measure population or outcome define the field.
 - Each quarterly review may add a programme only by retiring or merging another.

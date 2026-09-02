@@ -44,3 +44,14 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Bias and novelty risk: a memorable new label can disguise old constructs or become a surveillance score. The experiment must compare incremental validity against simpler domain-performance baselines and support learner contestability.
 - Review horizon and success signal: revisit after the [E001] pilot design review or the next monthly synthesis, whichever comes first. Continue only if the proposed evidence adds validity without inequitable burden.
 - Human decision: accepted through the explicit instruction to proceed with the priority work; implementation in Orqestra remains a separate decision after the pilot protocol is reviewed.
+
+### 2026-09-02 — Technology-sensitive recency preference
+
+- Proposal and decision: the user explicitly prefers recent AI research because model capability has advanced materially beyond GPT-4o-era systems.
+- Method change: for model-dependent effects, search the rolling 18-month window and newer system generations first; record system/version and study period separately from publication year; expose a freshness register and recurring review date.
+- Boundary: do not discard older learning science, measurement theory, causal studies, null results or mechanisms merely because they are old. Classify their technology dependence and make transfer assumptions explicit.
+- Product implication: current Orqestra advice must include a current-system evidence anchor or state that transfer from older systems is an untested hypothesis.
+- Opportunity cost: some autonomous search capacity shifts from accumulating additional GPT-4/4o-era intervention papers to finding replications with newer systems and comparable independent/delayed outcomes.
+- Bias and novelty risk: recent work is more likely to be preprint-only, underpowered, under-replicated or benchmark-driven. Methodological quality and outcome relevance remain separate from freshness.
+- Review horizon and success signal: review monthly; success means `atlas.py freshness` exposes no unlabeled model-dependent source and product briefs distinguish current, recent and historical systems.
+- Human decision: accepted by direct instruction on 2 September 2026.

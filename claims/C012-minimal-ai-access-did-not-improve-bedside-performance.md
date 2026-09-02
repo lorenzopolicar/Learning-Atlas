@@ -9,9 +9,9 @@
   "topics": ["human-ai-collaboration", "assessment-validity", "clinical-education"],
   "supporting_sources": ["S025"],
   "contradicting_sources": [],
-  "boundary_conditions": ["One South African medical programme and 73 final-year students.", "AI use was self-directed after a webinar with no hands-on patient practice or standardized workflow.", "The primary outcome was immediate clinical performance; the later summative contrast was underreported."],
+  "boundary_conditions": ["One South African medical programme and 73 final-year students.", "AI use was self-directed after a webinar with no hands-on patient practice or standardized workflow.", "The primary outcome was immediate clinical performance; the later summative contrast was underreported.", "The intervention used GPT-4o; newer multimodal or agentic systems could change the workflow and require direct replication."],
   "product_relevance": "Do not equate tool availability or usage frequency with collaborative capability; teach, log and test the workflow by which a learner frames, verifies and integrates AI support.",
-  "last_reviewed": "2026-09-01"
+  "last_reviewed": "2026-09-02"
 }
 ---
 
@@ -32,6 +32,8 @@ This is not evidence that structured AI collaboration cannot help. Engagement wi
 ## Counterevidence and uncertainty
 
 Observer reports favoured an independent-first, AI-as-check workflow, but that workflow was neither deliberately assigned nor quantitatively tested. The paper reports similar later summative performance by group without a clear numerical contrast in the main text. A trained workflow or task-specific system may produce a different effect.
+
+GPT-4o is historical-system evidence for current product decisions. More capable multimodal or agentic systems might reduce lookup friction, increase distraction, or change verification demands; the direction is not inferable from this trial.
 
 ## Product relevance
 

@@ -9,9 +9,9 @@
   "topics": ["learning-vs-performance", "ai-tutoring", "human-ai-collaboration"],
   "supporting_sources": ["S015"],
   "contradicting_sources": [],
-  "boundary_conditions": ["One selective US undergraduate sample and three unfamiliar technical topics.", "The delay was approximately one week and transfer remained near.", "The lab largely held learning time fixed; ordinary time reallocation may reverse the net effect.", "Augmentation and automation modes were not randomized."],
+  "boundary_conditions": ["One selective US undergraduate sample and three unfamiliar technical topics.", "The delay was approximately one week and transfer remained near.", "The lab largely held learning time fixed; ordinary time reallocation may reverse the net effect.", "Augmentation and automation modes were not randomized.", "The intervention used GPT-4o in Spring 2025; effect magnitude is historical-system evidence for a 2026 product."],
   "product_relevance": "Do not assume general chat access is educationally inert or harmful; measure later independent capability and instrument how assistance reallocates learner effort.",
-  "last_reviewed": "2026-08-31"
+  "last_reviewed": "2026-09-02"
 }
 ---
 
@@ -34,6 +34,8 @@ Students were paid to remain in a laboratory and could not easily convert AI pro
 [S001] found that unrestricted AI improved practice performance but harmed later unaided mathematics performance, while safeguards mitigated the gap. It does not contradict the bounded possibility claim in [C009], but it strongly contradicts generalizing the result into a default effect. The studies differ in population, domain, task, incentives, interface and outcome. That heterogeneity is precisely why the Atlas should model conditions instead of seeking one global AI effect.
 
 The appealing augmentation-versus-automation result in [S015] is observational after random assignment. Learner choice, prior proficiency and task strategy may explain the difference.
+
+The intervention used GPT-4o in Spring 2025. Its delayed-outcome design remains important, but the effect estimate should not be treated as a current-system forecast without replication.
 
 ## Product relevance
 

@@ -28,8 +28,15 @@ Appraise evidence as a profile, not a single magic score:
 | Duration | Does it persist beyond the immediate session? |
 | Transfer | Does it generalize to new tasks or settings? |
 | Ecological validity | Does it survive realistic constraints and behaviour? |
+| Technology directness | If the result depends on AI capability, does the evaluated system represent the product capability under consideration? |
 
 Ratings are `high`, `moderate`, `low`, `unclear`, or `not-applicable`. Write the reason; do not average the dimensions into false precision.
+
+## Technology-sensitive recency
+
+Publication date and technology date are different evidence properties. Model-dependent AI results record the system/version, study period, temporal-relevance assessment and review date defined in [the technology recency policy](../research/technology-recency-policy.md).
+
+Recent, methodologically weak evidence does not outrank an older strong design by default. Instead, syntheses show the trade-off: older work may provide stronger causal or mechanism evidence, while current-system work provides better technology directness. Product advice needs both where possible and must label extrapolation when no current-system anchor exists.
 
 ## Claim status and confidence
 

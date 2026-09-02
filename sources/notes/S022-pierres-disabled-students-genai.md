@@ -12,6 +12,7 @@
   "topics": ["institutional-design", "ethics-and-governance", "motivation-and-agency", "assessment-validity"],
   "added": "2026-08-31",
   "last_reviewed": "2026-08-31",
+  "technology_dependence": "system-dependent",
   "access": "open"
 }
 ---

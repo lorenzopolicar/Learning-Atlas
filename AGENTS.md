@@ -13,6 +13,7 @@ Build a rigorous, cumulative, and useful body of knowledge for AI-powered learni
 4. For scheduled work, read `.harness/state/research-state.json` and the relevant runbook.
 5. Before external research, call `research_capabilities` and use the routing table in `.agents/skills/atlas-research/references/tool-routing.md`.
 6. For a multi-lane pass, the primary agent may delegate independent read-heavy scouting, evidence extraction, and red-teaming to the project agents in `.codex/agents/` or `.claude/agents/`. Keep canonical writes and final epistemic decisions with one integrating agent.
+7. For AI evidence, read `research/technology-recency-policy.md` and run `python3 scripts/atlas.py freshness`. Search model-dependent work in the rolling 18-month window first and record the actual system/version and study period.
 
 ## Epistemic rules
 
@@ -27,6 +28,8 @@ Build a rigorous, cumulative, and useful body of knowledge for AI-powered learni
 - Do not invent bibliographic details. Mark unknowns explicitly and queue them for verification.
 - Treat podcasts, talks, interviews, newsletters, books, standards, datasets, and practitioner writing according to epistemic role rather than excluding them or laundering them into empirical evidence.
 - Preserve page, section, table, dataset-row, or timestamp locators and transcript provenance for consequential observations.
+- Do not treat publication year as technology recency. For model-dependent results, distinguish current-system evidence, recent transitional evidence, and historical-system mechanism evidence.
+- Do not make a product-direct recommendation from historical-system evidence alone without labelling transfer to the current system as an untested hypothesis.
 
 ## Change policy
 

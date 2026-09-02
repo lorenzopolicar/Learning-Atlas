@@ -24,6 +24,7 @@ The scout begins from an explicit gap in the current graph, searches for evidenc
 - `target_review_id` when applicable
 - `source_lanes` justified by the question
 - `provider_capabilities_and_fallbacks`
+- `technology_freshness_register` and rolling-window choice when the question is model-dependent
 
 ### Tools
 
@@ -41,6 +42,8 @@ The scout begins from an explicit gap in the current graph, searches for evidenc
 - no copyrighted full text in Git;
 - preserve nulls, contradictions, and exclusion reasons;
 - preserve page/timestamp locators, transcript origin, rights, hashes, and epistemic role;
+- model-dependent evidence records system/version, study period, temporal relevance and review date;
+- historical-system evidence cannot silently become current product evidence;
 - full text, transcripts, media, and extraction intermediates stay out of Git;
 - generated files and tests are current;
 - no automatic merge.
@@ -53,8 +56,9 @@ The scout begins from an explicit gap in the current graph, searches for evidenc
 4. candidates staged, admitted, or rejected and why;
 5. claim-, belief-, discourse-, or question-level change;
 6. product relevance;
-7. uncertainty and next falsification action;
-8. validation result and pull-request link.
+7. technology freshness and any transfer hypothesis;
+8. uncertainty and next falsification action;
+9. validation result and pull-request link.
 
 ## Ambiguity policy
 

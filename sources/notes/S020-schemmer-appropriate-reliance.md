@@ -12,6 +12,7 @@
   "topics": ["human-ai-collaboration", "assessment-validity", "product-measurement", "metacognition"],
   "added": "2026-08-31",
   "last_reviewed": "2026-08-31",
+  "technology_dependence": "mechanism-oriented",
   "access": "open"
 }
 ---

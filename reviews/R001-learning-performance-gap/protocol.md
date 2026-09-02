@@ -26,7 +26,7 @@ Living scoping review with systematic search and transparent reporting. The init
 - **Concept:** generative-AI or LLM assistance used during learning, practice, feedback, tutoring, or assessment preparation.
 - **Context:** any subject or domain; retain setting and stakes as moderators.
 - **Evidence:** empirical comparative studies must report a learning-relevant outcome. Prioritize designs that separate supported activity from unassisted assessment and include delay or transfer.
-- **Time:** 2022 onward for GenAI intervention studies; earlier tutoring and learning-science evidence enters through background reviews and mechanism chains.
+- **Time:** retain 2022 onward for the historical GenAI map, but search a rolling 18-month technology-current stratum first for product-direct conclusions. Record data-collection period and system version separately from publication year. Earlier tutoring and learning-science evidence enters through background reviews and mechanism chains.
 - **Language:** English for the initial pass; record this limitation.
 
 ## Exclusion criteria
@@ -57,6 +57,7 @@ Secondary outcomes include assisted task performance, time, engagement, motivati
 5. Synthesize direction and boundary conditions; do not pool incomparable outcomes.
 6. Grade the evidence profile by claim, not by paper count.
 7. Update claims and explicitly record contradictions.
+8. Report technology freshness by claim and identify conclusions supported only by historical systems.
 
 ## Bias and quality appraisal
 

@@ -12,6 +12,7 @@
   "topics": ["human-ai-collaboration", "motivation-and-agency", "ethics-and-governance", "assessment-validity"],
   "added": "2026-08-31",
   "last_reviewed": "2026-08-31",
+  "technology_dependence": "system-dependent",
   "access": "open"
 }
 ---
