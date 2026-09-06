@@ -120,6 +120,13 @@
       "path": "claims/C012-minimal-ai-access-did-not-improve-bedside-performance.md"
     },
     {
+      "id": "C013",
+      "type": "claim",
+      "title": "Elapsed time does not create a universal evidence-expiry rule",
+      "status": "provisional",
+      "path": "claims/C013-time-does-not-create-a-universal-evidence-expiry-rule.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
@@ -398,6 +405,27 @@
       "title": "AI at the bedside: Randomised controlled trial of ChatGPT's impact on student performance in real-patient clinical exams",
       "status": "reviewed",
       "path": "sources/notes/S025-saloojee-ai-at-bedside.md"
+    },
+    {
+      "id": "S026",
+      "type": "source",
+      "title": "A Brief Introduction to Evidence-Centered Design",
+      "status": "reviewed",
+      "path": "sources/notes/S026-mislevy-evidence-centred-design.md"
+    },
+    {
+      "id": "S027",
+      "type": "source",
+      "title": "Does Time Matter? Modeling the Effect of Time with Bayesian Knowledge Tracing",
+      "status": "reviewed",
+      "path": "sources/notes/S027-qiu-time-aware-bkt.md"
+    },
+    {
+      "id": "S028",
+      "type": "source",
+      "title": "Caliper Analytics Specification 1.2",
+      "status": "reviewed",
+      "path": "sources/notes/S028-caliper-event-provenance.md"
     }
   ],
   "edges": [
@@ -572,6 +600,11 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C007",
+      "target": "S026",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "C008",
       "target": "S012",
       "relation": "supporting_sources"
@@ -619,6 +652,11 @@
     {
       "source": "C012",
       "target": "S025",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C013",
+      "target": "S027",
       "relation": "supporting_sources"
     },
     {
@@ -783,6 +821,11 @@
     },
     {
       "source": "P002",
+      "target": "C013",
+      "relation": "based_on"
+    },
+    {
+      "source": "P002",
       "target": "B003",
       "relation": "based_on"
     },
@@ -894,6 +937,11 @@
     {
       "source": "Q002",
       "target": "C008",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q002",
+      "target": "C013",
       "relation": "related_claims"
     },
     {

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learning-atlas.local/experiments/E001/inference.schema.json",
+  "title": "E001 versioned learner-state inference",
+  "description": "A revisable low-stakes research inference derived from observation events, never part of the immutable observation envelope.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "inferenceId", "learnerRef", "target", "derivedFrom", "createdAt", "model", "estimate", "uncertainty", "decisionBoundary", "temporalPolicy", "governance", "status"],
+  "properties": {
+    "schemaVersion": { "const": "0.1.0" },
+    "inferenceId": { "type": "string", "format": "uuid" },
+    "learnerRef": { "type": "string", "minLength": 8 },
+    "target": { "type": "object", "additionalProperties": false, "required": ["constructId", "constructVersion", "scope"], "properties": { "constructId": { "type": "string", "minLength": 1 }, "constructVersion": { "type": "string", "minLength": 1 }, "scope": { "type": "string", "minLength": 1 } } },
+    "derivedFrom": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "format": "uuid" } },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "model": { "type": "object", "additionalProperties": false, "required": ["id", "version", "evidenceWeightingPolicy", "calibrationStatus", "calibrationAssessedAt"], "properties": { "id": { "type": "string", "minLength": 1 }, "version": { "type": "string", "minLength": 1 }, "evidenceWeightingPolicy": { "type": "string", "minLength": 1 }, "calibrationStatus": { "enum": ["not-assessed", "exploratory", "validated-for-declared-use"] }, "calibrationAssessedAt": { "type": "string", "format": "date-time" }, "supportRegion": { "type": "string" } } },
+    "estimate": { "type": "object", "additionalProperties": false, "required": ["kind", "value"], "properties": { "kind": { "enum": ["probability", "distribution", "interval", "categorical"] }, "value": {} } },
+    "uncertainty": { "type": "object", "additionalProperties": false, "required": ["kind", "summary", "limitations"], "properties": { "kind": { "enum": ["posterior", "sampling", "predictive", "qualitative", "not-estimable"] }, "summary": { "type": "string", "minLength": 1 }, "limitations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } } } },
+    "decisionBoundary": { "type": "object", "additionalProperties": false, "required": ["purpose", "stakes", "permittedInference", "prohibitedInference"], "properties": { "purpose": { "const": "E001 research analysis" }, "stakes": { "const": "low" }, "permittedInference": { "type": "string", "minLength": 1 }, "prohibitedInference": { "type": "string", "minLength": 1 } } },
+    "temporalPolicy": { "type": "object", "additionalProperties": false, "required": ["basis", "reviewAfter"], "properties": { "basis": { "enum": ["no-decay", "elapsed-time-model", "opportunity-order-model", "manual-review"] }, "modelVersion": { "type": "string" }, "reviewAfter": { "type": "string", "format": "date-time" }, "doNotUseAfter": { "type": "string", "format": "date-time" } } },
+    "governance": { "type": "object", "additionalProperties": false, "required": ["authorizedUses", "prohibitedUses", "authorizedUntil"], "properties": { "authorizedUses": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["pilot-analysis", "learner-review", "instrument-improvement"] } }, "prohibitedUses": { "type": "array", "minItems": 4, "uniqueItems": true, "items": { "enum": ["learner-ranking", "credentialing", "employment-decision", "silent-mastery-update", "diagnosis", "disciplinary-action"] } }, "authorizedUntil": { "type": "string", "format": "date-time" } } },
+    "status": { "enum": ["active", "superseded", "withdrawn"] },
+    "supersedes": { "type": "string", "format": "uuid" }
+  }
+}

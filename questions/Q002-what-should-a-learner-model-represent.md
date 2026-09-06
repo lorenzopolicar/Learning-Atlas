@@ -7,8 +7,8 @@
   "status": "open",
   "priority": "high",
   "topics": ["learner-modelling", "assessment-validity", "ethics-and-governance"],
-  "related_claims": ["C007", "C008"],
-  "last_reviewed": "2026-08-31"
+  "related_claims": ["C007", "C008", "C013"],
+  "last_reviewed": "2026-09-06"
 }
 ---
 
@@ -26,6 +26,10 @@ Compare knowledge tracing, cognitive diagnosis, competency/evidence models, long
 
 An architectural synthesis plus product experiments comparing transparent baselines with increasingly complex models on actual intervention and decision quality.
 
+## Current synthesis
+
+The first architecture pass supports separate observation, scored-observable and learner-state-inference records [S026, P002]. Observation events should retain purpose-minimal task, assistance and provenance context [S028]. Self-reported confidence is an observation with scale provenance; model uncertainty belongs to the inference. Retention, authorized use and inference review are separate clocks, and elapsed time should affect an estimate only through a validated policy [C013].
+
 ## Next search
 
-Begin with contemporary knowledge-tracing surveys, evidence-centred design, assessment validity, uncertainty communication, and learner-model ethics.
+Test the proposed boundary against current xAPI 2.0 and learner-model calibration work, then co-design assistance and contestability semantics with learners. Seek evidence on classification reliability, privacy burden, missingness, and whether the richer ledger improves decisions over a purpose-minimal no-history baseline.

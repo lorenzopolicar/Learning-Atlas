@@ -1,9 +1,16 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "0.2.0",
   "eventId": "ed2c6a8c-b282-4dcb-92a2-1f4da2f84003",
   "eventType": "correction",
   "occurredAt": "2026-09-01T03:00:00Z",
+  "recordedAt": "2026-09-01T03:00:02Z",
   "learnerRef": "psn_e001_001",
+  "observer": {
+    "id": "e001-research-instrument",
+    "type": "instrument",
+    "captureMethod": "mixed",
+    "profileVersion": "0.2.0"
+  },
   "objective": {
     "id": "objective-phishing-triage",
     "version": "1.0.0",
@@ -14,21 +21,25 @@
     "version": "1.0.0",
     "formId": "form-b",
     "trialId": "trial-004",
-    "rubricVersion": "1.0.1"
-  },
-  "intendedInference": {
-    "purpose": "E001 research pilot",
-    "stakes": "low",
-    "permittedUses": ["pilot-analysis", "learner-review", "instrument-improvement"],
-    "prohibitedUses": ["learner-ranking", "credentialing", "employment-decision", "silent-mastery-update", "diagnosis"],
-    "expiresAt": "2027-03-01T00:00:00Z"
+    "rubricVersion": "1.0.1",
+    "conditions": {
+      "deliveryMode": "online",
+      "language": "en-AU",
+      "timeLimitSeconds": 900,
+      "resourcePolicyVersion": "ai-assisted-1.0.0"
+    }
   },
   "evidenceLane": "ai-assisted",
   "assistanceEnvelope": {
     "accessibleBaseline": ["screen-reader", "keyboard-navigation"],
     "functions": ["access-restoration", "substantive-cognitive-delegation"],
     "toolsAllowed": ["screen-reader", "controlled-advice-panel"],
-    "toolsUsed": ["screen-reader", "controlled-advice-panel"],
+    "toolsAvailable": ["screen-reader", "controlled-advice-panel"],
+    "toolsDeclaredUsed": ["screen-reader", "controlled-advice-panel"],
+    "toolsObservedUsed": ["screen-reader", "controlled-advice-panel"],
+    "useEvidenceBasis": "mixed",
+    "classificationStatus": "disputed",
+    "classificationAssertedBy": "e001-research-instrument",
     "substantiveGenerationState": "used"
   },
   "systemProvenance": {
@@ -43,7 +54,16 @@
   "preAdvice": {
     "responseDigest": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
     "judgment": "correct",
-    "confidence": 0.62
+    "selfReportedConfidence": {
+      "value": 0.62,
+      "scaleMin": 0,
+      "scaleMax": 1,
+      "scaleVersion": "e001-confidence-1.0.0",
+      "elicitationMethod": "slider-after-initial-response"
+    },
+    "assertedBy": "e001-authored-rubric-scorer",
+    "evidenceRuleVersion": "phishing-triage-rule-1.0.1",
+    "scoredAt": "2026-09-01T03:00:01Z"
   },
   "intervention": {
     "ordering": "self-first",
@@ -54,7 +74,13 @@
   },
   "postAdvice": {
     "responseDigest": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
-    "confidence": 0.74,
+    "selfReportedConfidence": {
+      "value": 0.74,
+      "scaleMin": 0,
+      "scaleMax": 1,
+      "scaleVersion": "e001-confidence-1.0.0",
+      "elicitationMethod": "slider-after-final-response"
+    },
     "disposition": "edited",
     "acceptedElementRefs": [],
     "rejectedElementRefs": ["advice-element-1"]
@@ -65,8 +91,15 @@
     "score": 0.8,
     "correctness": "partial",
     "severityWeightedError": 0.4,
+    "scoringAssertion": {
+      "assertedBy": "e001-authored-rubric-scorer",
+      "rubricVersion": "1.0.1",
+      "evidenceRuleVersion": "phishing-triage-rule-1.0.1",
+      "scoredAt": "2026-09-01T03:00:03Z"
+    },
     "delaySeconds": 0,
-    "transferDistance": "immediate",
+    "timeHorizon": "immediate",
+    "transferDistance": "same-task",
     "supportState": "ai-assisted"
   },
   "accessibility": {
@@ -74,13 +107,11 @@
     "classificationReviewedByLearner": true,
     "barrierNote": "The learner reported that the original response control obscured one selected element."
   },
-  "inferenceBoundary": {
-    "permittedInference": "This corrected event replaces the original event in pilot analysis while preserving its history.",
-    "prohibitedInference": "Neither version establishes a stable learner trait; this event does not support ranking, mastery or employment inference.",
-    "uncertainty": "The correction changes the rubric-scored outcome and must trigger analysis recomputation.",
-    "validUntil": "2027-03-01T00:00:00Z"
-  },
   "governance": {
+    "collectionPurpose": "E001 research pilot",
+    "stakes": "low",
+    "permittedUses": ["pilot-analysis", "learner-review", "instrument-improvement"],
+    "prohibitedUses": ["learner-ranking", "credentialing", "employment-decision", "silent-mastery-update", "diagnosis"],
     "consentVersion": "e001-consent-1.0.0",
     "learnerVisible": true,
     "contestable": true,

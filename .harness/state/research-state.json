@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "last_weekly_scout": "2026-09-01",
+  "last_weekly_scout": "2026-09-06",
   "last_monthly_synthesis": "2026-08-31",
   "last_quarterly_review": "2026-08-31",
   "active_review": "R001",
-  "current_queue_item": 1,
+  "current_queue_item": 3,
   "scheduled_run_observation": {
     "target": 3,
-    "actual_scheduled_runs_observed": 0,
+    "actual_scheduled_runs_observed": 1,
     "supervised_shadow_cycles": 2,
-    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass exercised scheduled research controls under supervision. Neither is counted as an actual scheduler execution."
+    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass were supervised shadows and remain excluded. The 2026-09-06 weekly research scout is the first actual scheduler execution."
   },
   "runs": [
     {
@@ -67,6 +67,14 @@
       "sources_added": ["S023", "S024", "S025"],
       "briefing": "briefings/weekly/2026-09-01-assisted-independent-outcomes.md",
       "note": "Human-directed supervised shadow pass admitted one null/inconclusive one-week contrast, one fragile positive access-timing study and one authentic clinical null; held two abstract-only candidates."
+    },
+    {
+      "date": "2026-09-06",
+      "kind": "scheduled-capability-evidence-lifecycle",
+      "question": "Q002",
+      "sources_added": ["S026", "S027", "S028"],
+      "briefing": "briefings/weekly/2026-09-06-capability-evidence-lifecycle.md",
+      "note": "First actual scheduled run. Three independent lanes converged on separating observations and inferences; admitted an assessment architecture, an empirical time-model contradiction and an interoperability standard."
     }
   ]
 }

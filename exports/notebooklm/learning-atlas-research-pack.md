@@ -1193,6 +1193,132 @@ Supports [C012](../../claims/C012-minimal-ai-access-did-not-improve-bedside-perf
 
 The public anonymized dataset is registered at Zenodo DOI 10.5281/zenodo.17459336. Funding came in whole or part from the Gates Foundation; the authors reported no potential conflict.
 
+## S026 — A Brief Introduction to Evidence-Centered Design
+
+Type: source
+Status: reviewed
+Topics: assessment-validity, learner-modelling, evidence-centred-design
+Technology dependence: model-independent
+Canonical path: `sources/notes/S026-mislevy-evidence-centred-design.md`
+
+# S026 — Evidence-centred design
+
+## Why it matters
+
+Evidence-centred design provides the clearest inspected foundation for keeping what a learner did, how that work was interpreted, and the resulting learner-state estimate distinct. It makes task conditions part of the evidentiary argument rather than decoration around a score.
+
+## Identity and provenance
+
+- Canonical identifier: DOI 10.1002/j.2333-8504.2003.tb01908.x; ETS Research Report RR-03-16.
+- Version inspected: the 2004 CRESST reissue, *CSE Report 632*, 33 pages; the canonical report is 2003.
+- Content inspected: complete PDF, including the assessment argument, conceptual assessment framework and four-process architecture.
+- Access and rights: public CRESST report; ERIC ED483399.
+- Retrieval: gateway candidate `cand_3e95e3d1af71775e`; PDF SHA-256 `33021d4d020c70c70a3661fc731ec2ed533edf0c95b4e4e98a549c520c0525b7`.
+- Locator convention: printed report page.
+
+## Argument
+
+- Pages 1–5 frame assessment as reasoning from the things learners say, do or make to claims about what they know or can do. The assessment argument coordinates the claims, observations and situations needed to support them.
+- Pages 6–10 separate the student, evidence and task models. In the four-process architecture, a work product is processed into observable evidence, which then updates beliefs represented in the student model.
+- The student-model variables are not directly observed and are represented probabilistically. Evidence rules identify observable features; a measurement model accumulates those features into distributions over learner-model variables.
+
+## Implication for the Atlas
+
+A captured task event should preserve the task, conditions, work-product reference and provenance. Rubric or scorer judgments should remain identifiable as response-processing assertions. A capability estimate should be a separately versioned inference linked back to those records. Assistance conditions belong with the task context; they do not themselves establish capability.
+
+## Limitations and boundary conditions
+
+- This is a foundational design framework, not a causal evaluation of any event schema or learner model.
+- It does not determine an AI-assistance taxonomy, privacy policy, confidence scale or expiry period.
+- The framework can make an inference chain explicit without making the inference valid; empirical validity evidence is still required for the intended use.
+
+## Candidate claims
+
+Strengthens [C007](../../claims/C007-learner-models-are-probabilistic-inferences.md) and the observation–inference boundary in [P002](../../principles/P002-use-an-evidence-ledger.md).
+
+## S027 — Does Time Matter? Modeling the Effect of Time with Bayesian Knowledge Tracing
+
+Type: source
+Status: reviewed
+Topics: learner-modelling, knowledge-tracing, forgetting, assessment-validity
+Technology dependence: model-independent
+Canonical path: `sources/notes/S027-qiu-time-aware-bkt.md`
+
+# S027 — Time-aware Bayesian knowledge tracing
+
+## Why it matters
+
+This paper is a useful null and contradiction for any universal evidence-expiry rule. Adding elapsed-time functions to knowledge tracing produced context-dependent results rather than a generally better model.
+
+## Identity and provenance
+
+- Authors: Yumeng Qiu, Yingmei Qi, Hanyuan Lu, Zachary Pardos and Neil Heffernan.
+- Publication: *Proceedings of the 4th International Conference on Educational Data Mining*, 2011, pp. 139–148. No DOI was located; DBLP key `conf/edm/QiuQLPH11` provides a stable bibliographic identity.
+- Content inspected: complete paper inside the 390-page open ERIC proceedings.
+- Retrieval: official EDM/ERIC proceedings PDF; SHA-256 `048f4f189ea558965b7580355ec2f9f87d838e882610593cfce23950dfd00192`.
+- Locator convention: paper page and table.
+
+## Study
+
+The authors compared standard Bayesian Knowledge Tracing with variants whose forgetting or slip probabilities depended on elapsed time. They evaluated prediction on Cognitive Tutor and ASSISTments data, including new-day predictions.
+
+## Findings
+
+- Time-aware variants improved some Cognitive Tutor predictions.
+- They did not improve the new-day prediction setting and underperformed standard BKT on the ASSISTments data.
+- The result is evidence against treating elapsed time as a universally monotonic, portable decay rule. Whether time helps depends on the dataset, model form and prediction target.
+
+## Limitations and boundary conditions
+
+- The study is old, uses two tutoring-system datasets and evaluates predictive fit rather than learning, transfer or a general capability construct.
+- Model comparisons do not establish an individual learner's true forgetting curve.
+- A null or reversal in these settings does not show that elapsed time is never informative. It shows that the temporal policy must be estimated and validated for its context and decision.
+
+## Candidate claims
+
+Supports [C013](../../claims/C013-time-does-not-create-a-universal-evidence-expiry-rule.md): preserve observation time, but apply decay or staleness only in a versioned, validated inference.
+
+## S028 — Caliper Analytics Specification 1.2
+
+Type: source
+Status: reviewed
+Topics: learner-modelling, interoperability, provenance, learning-analytics
+Technology dependence: model-independent
+Canonical path: `sources/notes/S028-caliper-event-provenance.md`
+
+# S028 — Caliper event provenance
+
+## Why it matters
+
+Caliper is an authoritative interoperability precedent for a compact learning-activity event and a separate transmission envelope. It sharpens the provenance missing from E001 without pretending that an event standard supplies construct validity.
+
+## Identity and provenance
+
+- Publisher and version: 1EdTech Consortium, final release 1.2, issued 27 March 2020.
+- Canonical URL: `https://www.imsglobal.org/spec/caliper/v1p2/`.
+- Content inspected: full public HTML, especially §2.1 Event and §5.2 Envelope.
+- Retrieval: gateway candidate `cand_99cac240601e14e3`; content SHA-256 `9b3b18abaa9dea7dd614ecf006cf1d6ac318e74628e1cc7eb4bf3306e7b1d311`; normalized content SHA-256 `2171990eb4c1e08f6868e04c021d07874266af05a6397717244b4f3dcee81a63`.
+
+## Standard
+
+- Section 2.1 defines an event around identity, actor, action, object and event time, with contextual links such as profile, application, target, group, membership and session.
+- Section 5.2 separates the transport envelope's sensor, send time and data version from the enclosed event data.
+- Caliper's tool-use vocabulary records that software was used. It does not determine what function the tool served or whether the recorded activity supports a capability inference.
+
+## Implication for the Atlas
+
+E001 should distinguish occurrence time from record or send time and identify the observer, sensor or asserting application. Event and profile versions should travel with the record. Tool availability, declared use and observed use need separate fields because a generic tool-use event does not establish assistance function.
+
+## Limitations and boundary conditions
+
+- Caliper specifies interoperability, not the truth of an assertion, the validity of a learner construct, calibrated confidence, privacy sufficiency or evidence expiry.
+- Version 1.2 is a design precedent, not a requirement that Orqestra serialize the E001 pilot as Caliper.
+- The standard's generic activity vocabulary is intentionally less specific than the pilot's assessment argument.
+
+## Candidate claims
+
+Supports the provenance and event-envelope patterns in [P002](../../principles/P002-use-an-evidence-ledger.md). It is not supporting evidence for a claim about learner capability.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -1352,7 +1478,7 @@ Canonical path: `claims/C007-learner-models-are-probabilistic-inferences.md`
 
 ## Evidence and reasoning
 
-Knowledge tracing infers latent mastery through assumptions about skills, learning, guesses, slips, and observation sequences [S011]. Validity attaches to the interpretation and use of evidence, not to a score in isolation [S013]. Therefore a learner model cannot responsibly be represented as a context-free fact about a person.
+Knowledge tracing infers latent mastery through assumptions about skills, learning, guesses, slips, and observation sequences [S011]. Validity attaches to the interpretation and use of evidence, not to a score in isolation [S013]. Evidence-centred design likewise separates work products, scored observables and probabilistic student-model variables [S026]. Therefore a learner model cannot responsibly be represented as a context-free fact about a person.
 
 ## Boundary conditions
 
@@ -1360,7 +1486,7 @@ This does not make learner modelling futile. It makes transparency, calibration,
 
 ## Product relevance
 
-Use an evidence ledger: observation, context, assistance state, time, model version, inference, uncertainty, and permitted uses. Let later evidence revise rather than merely accumulate on top of earlier estimates.
+Use an evidence ledger that links but does not collapse the observation, response-processing assertion and learner-state inference. Let later evidence revise or supersede an inference without rewriting what was observed.
 
 ## C008 — Trustworthy capability judgments need multiple evidence channels
 
@@ -1500,6 +1626,29 @@ GPT-4o is historical-system evidence for current product decisions. More capable
 ## Product relevance
 
 Orqestra should represent tool access, assistance state and stewardship actions separately. A human–AI capability experiment should teach and manipulate a workflow, preserve the learner's pre-advice state, and measure both immediate assisted quality and later accessible-independent performance.
+
+## C013 — Elapsed time does not create a universal evidence-expiry rule
+
+Type: claim
+Status: provisional
+Topics: learner-modelling, knowledge-tracing, assessment-validity
+Canonical path: `claims/C013-time-does-not-create-a-universal-evidence-expiry-rule.md`
+
+# C013 — Elapsed time does not create a universal evidence-expiry rule
+
+## Evidence and reasoning
+
+Qiu et al. compared standard Bayesian Knowledge Tracing with time-aware forgetting and slip variants [S027]. Time-aware models helped some Cognitive Tutor predictions, did not improve new-day prediction, and underperformed standard BKT on ASSISTments. This mixed result contradicts a portable rule in which evidence loses validity monotonically after a fixed duration.
+
+The warranted claim is narrow: record when an observation occurred, then let a separately versioned and validated inference policy decide whether and how recency changes its weight. Historical observations remain part of the audit trail even when an inference is superseded or no longer appropriate for a decision.
+
+## Boundary conditions
+
+The evidence does not show that time is irrelevant. It does not estimate decay for broad capabilities, credentials or modern AI-mediated work. Other models and domains may find elapsed time, opportunity order or intervention history predictive.
+
+## Product relevance
+
+Separate three clocks: `retentionUntil` for governance, `reviewAfter` or `doNotUseAfter` for an inference, and any learned decay function used by a particular model. Do not label the underlying observation as expired capability.
 
 ## B001 — Optimize durable capability, not completion
 
@@ -1717,24 +1866,27 @@ Canonical path: `principles/P002-use-an-evidence-ledger.md`
 
 ## Principle
 
-Record the observation and the inference as different objects. Every consequential learner-state estimate should be answerable to: what happened, under which conditions, when, with what assistance, which model interpreted it, how certain is the estimate, and what may it be used for?
+Record the observation, any scored assertion about it, and the learner-state inference as different objects. Every consequential estimate should be answerable to: what happened, which observer or rule asserted an observable, under which task and assistance conditions, which model interpreted it, how certain the estimate is, and what decision may use it?
 
 ## Rationale
 
-Learner models are probabilistic and construct-dependent [C007]. Trustworthy judgment requires a portfolio whose evidence remains interpretable [C008]. This infrastructure makes the learner model a compounding asset without converting it into unchallengeable surveillance [B003].
+Learner models are probabilistic and construct-dependent [C007]. Evidence-centred design separates work products, observables and student-model variables [S026], while time-aware knowledge tracing does not support a universal expiry rule [C013]. Trustworthy judgment requires a portfolio whose evidence remains interpretable [C008]. This infrastructure makes the learner model a compounding asset without converting it into unchallengeable surveillance [B003].
 
 ## Product patterns
 
-- append-only observation events with correction records;
-- versioned inferences and confidence;
+- append-only observation events with occurrence time, recorded time and observer or sensor provenance [S028];
+- typed, correctable scoring assertions with rubric or evidence-rule provenance;
+- versioned inferences with model identity, evidence links, typed uncertainty, calibration boundary and supersession;
 - separate accessible-independent, AI-assisted and supervisory/recovery evidence, including assistance function [B004];
+- assistance permission, declaration, observation and classification basis kept distinct;
 - provenance links from recommendation back to observations;
-- retention limits and user contestability;
-- decision-specific permissions.
+- optional self-reported confidence with scale and elicitation provenance, never confused with model uncertainty;
+- distinct controls for inference review or staleness, authorized use, and record retention;
+- purpose-minimal collection, decision-specific permissions and user contestability.
 
 ## Falsifiers and measures
 
-Audit calibration, reversal after new evidence, explanation accuracy, user correction rates, privacy burden, and whether decisions improve against a simpler no-history baseline.
+Audit calibration, reversal after new evidence, explanation accuracy, scorer and assistance-classification disagreement, user correction rates, privacy burden, and whether decisions improve against a simpler no-history baseline. Drop fields whose marginal decision value does not justify their measurement or privacy cost.
 
 ## P003 — Adapt and fade guidance with evidence
 
@@ -1930,9 +2082,13 @@ Compare knowledge tracing, cognitive diagnosis, competency/evidence models, long
 
 An architectural synthesis plus product experiments comparing transparent baselines with increasingly complex models on actual intervention and decision quality.
 
+## Current synthesis
+
+The first architecture pass supports separate observation, scored-observable and learner-state-inference records [S026, P002]. Observation events should retain purpose-minimal task, assistance and provenance context [S028]. Self-reported confidence is an observation with scale provenance; model uncertainty belongs to the inference. Retention, authorized use and inference review are separate clocks, and elapsed time should affect an estimate only through a validated policy [C013].
+
 ## Next search
 
-Begin with contemporary knowledge-tracing surveys, evidence-centred design, assessment validity, uncertainty communication, and learner-model ethics.
+Test the proposed boundary against current xAPI 2.0 and learner-model calibration work, then co-design assistance and contestability semantics with learners. Seek evidence on classification reliability, privacy burden, missingness, and whether the richer ledger improves decisions over a purpose-minimal no-history baseline.
 
 ## Q003 — What is worth learning in an AI-rich world?
 
