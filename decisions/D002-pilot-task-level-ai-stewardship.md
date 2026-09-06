@@ -22,14 +22,14 @@ Orqestra needs a way to reason about capability when learners use AI. The phrase
 
 Use **capability sovereignty** only as a normative design lens. Use **AI-mediated task stewardship** as the provisional operational language for observable task evidence.
 
-Run [E001] before adding a durable learner-model field. The pilot will keep accessible independent, AI-assisted and supervisory/recovery evidence separate; record assistance function; and expose a reviewable evidence portfolio. It will not create a `capabilitySovereigntyScore`, overload Bloom taxonomy, update a high-stakes mastery estimate, or infer dependence from tool presence or frequency.
+Run [E001] before adding a durable learner-model field. The pilot will keep accessible independent, AI-assisted and supervisory/recovery evidence separate; record assistance permission, use, function and classification basis; and expose a reviewable evidence portfolio. Observation events, scored assertions and model inferences remain linked but separate [P002]. It will not create a `capabilitySovereigntyScore`, overload Bloom taxonomy, update a high-stakes mastery estimate, or infer dependence from tool presence or frequency.
 
 The full design brief is [Orqestra design brief — AI-mediated task stewardship](../bridges/orqestra-ai-mediated-stewardship.md).
 
 ## Evidence and principles
 
 - Final outcomes alone hide the distinction between correct adoption and correct resistance [C010].
-- Capability estimates must retain provenance, context, uncertainty and permitted use [C007, P002].
+- Capability estimates must retain evidence links, model and calibration provenance, context, typed uncertainty and permitted use without rewriting the observations they interpret [C007, C013, P002].
 - Trustworthy judgments require multiple construct-relevant channels [C008, P006].
 - Learning claims require delayed performance after substantive assistance is removed, while necessary access support remains [P005].
 - Disabled learners report both meaningful access/autonomy benefits and overreliance concerns, so assistance function is indispensable [S022].

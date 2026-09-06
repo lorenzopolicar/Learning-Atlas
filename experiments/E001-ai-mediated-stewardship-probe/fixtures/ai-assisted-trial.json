@@ -1,9 +1,16 @@
 {
-  "schemaVersion": "0.1.0",
+  "schemaVersion": "0.2.0",
   "eventId": "7d409708-19f3-4bb4-a691-b9a1232f4b01",
   "eventType": "observation",
   "occurredAt": "2026-09-01T02:00:00Z",
+  "recordedAt": "2026-09-01T02:00:02Z",
   "learnerRef": "psn_e001_001",
+  "observer": {
+    "id": "e001-research-instrument",
+    "type": "instrument",
+    "captureMethod": "mixed",
+    "profileVersion": "0.2.0"
+  },
   "objective": {
     "id": "objective-phishing-triage",
     "version": "1.0.0",
@@ -14,21 +21,25 @@
     "version": "1.0.0",
     "formId": "form-b",
     "trialId": "trial-004",
-    "rubricVersion": "1.0.0"
-  },
-  "intendedInference": {
-    "purpose": "E001 research pilot",
-    "stakes": "low",
-    "permittedUses": ["pilot-analysis", "learner-review", "instrument-improvement"],
-    "prohibitedUses": ["learner-ranking", "credentialing", "employment-decision", "silent-mastery-update", "diagnosis"],
-    "expiresAt": "2027-03-01T00:00:00Z"
+    "rubricVersion": "1.0.0",
+    "conditions": {
+      "deliveryMode": "online",
+      "language": "en-AU",
+      "timeLimitSeconds": 900,
+      "resourcePolicyVersion": "ai-assisted-1.0.0"
+    }
   },
   "evidenceLane": "ai-assisted",
   "assistanceEnvelope": {
     "accessibleBaseline": ["screen-reader", "keyboard-navigation"],
     "functions": ["access-restoration", "substantive-cognitive-delegation"],
     "toolsAllowed": ["screen-reader", "controlled-advice-panel"],
-    "toolsUsed": ["screen-reader", "controlled-advice-panel"],
+    "toolsAvailable": ["screen-reader", "controlled-advice-panel"],
+    "toolsDeclaredUsed": ["screen-reader", "controlled-advice-panel"],
+    "toolsObservedUsed": ["screen-reader", "controlled-advice-panel"],
+    "useEvidenceBasis": "mixed",
+    "classificationStatus": "learner-confirmed",
+    "classificationAssertedBy": "e001-research-instrument",
     "substantiveGenerationState": "used"
   },
   "systemProvenance": {
@@ -43,7 +54,16 @@
   "preAdvice": {
     "responseDigest": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
     "judgment": "correct",
-    "confidence": 0.62,
+    "selfReportedConfidence": {
+      "value": 0.62,
+      "scaleMin": 0,
+      "scaleMax": 1,
+      "scaleVersion": "e001-confidence-1.0.0",
+      "elicitationMethod": "slider-after-initial-response"
+    },
+    "assertedBy": "e001-authored-rubric-scorer",
+    "evidenceRuleVersion": "phishing-triage-rule-1.0.0",
+    "scoredAt": "2026-09-01T02:00:01Z",
     "rationaleDigest": "sha256:2222222222222222222222222222222222222222222222222222222222222222"
   },
   "intervention": {
@@ -55,7 +75,13 @@
   },
   "postAdvice": {
     "responseDigest": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
-    "confidence": 0.78,
+    "selfReportedConfidence": {
+      "value": 0.78,
+      "scaleMin": 0,
+      "scaleMax": 1,
+      "scaleVersion": "e001-confidence-1.0.0",
+      "elicitationMethod": "slider-after-final-response"
+    },
     "disposition": "rejected",
     "acceptedElementRefs": [],
     "rejectedElementRefs": ["advice-element-1"],
@@ -67,21 +93,26 @@
     "score": 1,
     "correctness": "correct",
     "severityWeightedError": 0,
+    "scoringAssertion": {
+      "assertedBy": "e001-authored-rubric-scorer",
+      "rubricVersion": "1.0.0",
+      "evidenceRuleVersion": "phishing-triage-rule-1.0.0",
+      "scoredAt": "2026-09-01T02:00:03Z"
+    },
     "delaySeconds": 0,
-    "transferDistance": "immediate",
+    "timeHorizon": "immediate",
+    "transferDistance": "same-task",
     "supportState": "ai-assisted"
   },
   "accessibility": {
     "accessSupportsPreserved": true,
     "classificationReviewedByLearner": true
   },
-  "inferenceBoundary": {
-    "permittedInference": "Behaviour on this versioned, low-stakes trial may contribute to an aggregate pilot analysis.",
-    "prohibitedInference": "This event does not establish general mastery, intelligence, employability, disability, or a stable stewardship trait.",
-    "uncertainty": "A single controlled disagreement trial has high sampling and measurement uncertainty.",
-    "validUntil": "2027-03-01T00:00:00Z"
-  },
   "governance": {
+    "collectionPurpose": "E001 research pilot",
+    "stakes": "low",
+    "permittedUses": ["pilot-analysis", "learner-review", "instrument-improvement"],
+    "prohibitedUses": ["learner-ranking", "credentialing", "employment-decision", "silent-mastery-update", "diagnosis"],
     "consentVersion": "e001-consent-1.0.0",
     "learnerVisible": true,
     "contestable": true,

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "0.1.0",
+  "inferenceId": "224e7067-a505-48d4-a6d3-31e461667900",
+  "learnerRef": "psn_e001_001",
+  "target": {
+    "constructId": "ai-mediated-task-stewardship",
+    "constructVersion": "pilot-0.1.0",
+    "scope": "low-stakes phishing-triage trials"
+  },
+  "derivedFrom": [
+    "7d409708-19f3-4bb4-a691-b9a1232f4b01",
+    "ed2c6a8c-b282-4dcb-92a2-1f4da2f84003",
+    "b542ba66-34e7-4778-942f-6e5177a75002"
+  ],
+  "createdAt": "2026-09-08T03:00:00Z",
+  "model": {
+    "id": "e001-descriptive-pilot-view",
+    "version": "0.1.0",
+    "evidenceWeightingPolicy": "Resolve correction chains, keep evidence lanes separate, and apply no temporal decay.",
+    "calibrationStatus": "not-assessed",
+    "calibrationAssessedAt": "2026-09-08T03:00:00Z",
+    "supportRegion": "Synthetic fixture only; no population support established."
+  },
+  "estimate": {
+    "kind": "categorical",
+    "value": "insufficient-evidence"
+  },
+  "uncertainty": {
+    "kind": "not-estimable",
+    "summary": "Three synthetic events cannot estimate a learner capability.",
+    "limitations": [
+      "The events are synthetic.",
+      "One corrected assisted trial and one delayed item do not establish reliability, calibration, or transfer."
+    ]
+  },
+  "decisionBoundary": {
+    "purpose": "E001 research analysis",
+    "stakes": "low",
+    "permittedInference": "Exercise the event-to-inference contract and learner review surface.",
+    "prohibitedInference": "This record does not establish mastery, intelligence, employability, disability, or a stable stewardship trait."
+  },
+  "temporalPolicy": {
+    "basis": "no-decay",
+    "reviewAfter": "2026-10-08T03:00:00Z",
+    "doNotUseAfter": "2027-03-08T00:00:00Z"
+  },
+  "governance": {
+    "authorizedUses": ["pilot-analysis", "learner-review", "instrument-improvement"],
+    "prohibitedUses": ["learner-ranking", "credentialing", "employment-decision", "silent-mastery-update", "diagnosis"],
+    "authorizedUntil": "2027-03-08T00:00:00Z"
+  },
+  "status": "active"
+}

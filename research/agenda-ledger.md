@@ -55,3 +55,14 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Bias and novelty risk: recent work is more likely to be preprint-only, underpowered, under-replicated or benchmark-driven. Methodological quality and outcome relevance remain separate from freshness.
 - Review horizon and success signal: review monthly; success means `atlas.py freshness` exposes no unlabeled model-dependent source and product briefs distinguish current, recent and historical systems.
 - Human decision: accepted by direct instruction on 2 September 2026.
+
+### 2026-09-06 — Capability-evidence lifecycle signal
+
+- Proposal and decision: keep learner modelling at queue priority 3, but replace the monolithic E001 event contract with linked observation and inference records before learner co-design [Q002, D002, P002]. No programme or north-star change is proposed.
+- Triggering signals: evidence-centred design separates work products, scored observables and probabilistic learner-state variables [S026]; a time-aware knowledge-tracing comparison produced gains, nulls and reversals rather than a universal decay rule [S027, C013]; Caliper separates event time and activity context from transport provenance [S028].
+- Method and source-lane change: the next pass should test current xAPI 2.0 and calibration conventions, then measure classification disagreement, missingness, privacy burden and incremental decision value in co-design. Event fields must earn their collection cost rather than accumulate by default.
+- Product implication: Orqestra should keep task observations immutable, make scorer and assistance assertions contestable, and recompute versioned inferences. Retention, use authorization and inference review are separate controls.
+- Opportunity cost: broad learner-model surveying and portable credential standards remain held while the pilot contract is falsified against a simpler no-history baseline.
+- Bias and novelty risk: a more explicit schema can still create surveillance and false precision. Standards establish interoperability, not validity, and the inspected time-aware study is historical and narrow.
+- Review horizon and success signal: revisit after learner/domain/accessibility co-design or the next monthly synthesis. Success requires comprehensible records, reliable classifications and better decisions without disproportionate burden.
+- Human decision: pending review of the draft pull request; no product implementation is authorized by this research update.

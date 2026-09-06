@@ -14,7 +14,7 @@
 
 # E001 — Low-stakes AI-mediated task stewardship probe
 
-**Implementation readiness:** contract-ready for learner/domain/accessibility co-design; not approved for product deployment. See the [implementation package](E001-ai-mediated-stewardship-probe/pilot-package.md), [event schema](E001-ai-mediated-stewardship-probe/event.schema.json), and synthetic [fixtures](E001-ai-mediated-stewardship-probe/fixtures/).
+**Implementation readiness:** contract-ready for learner/domain/accessibility co-design; not approved for product deployment. See the [implementation package](E001-ai-mediated-stewardship-probe/pilot-package.md), separate [event](E001-ai-mediated-stewardship-probe/event.schema.json) and [inference](E001-ai-mediated-stewardship-probe/inference.schema.json) schemas, and synthetic fixtures.
 
 ## Evidence rationale
 
@@ -60,7 +60,7 @@ Secondary analyses compare assisted gain, final output quality, time, and subgro
 - Formative, voluntary and low stakes; no ranking, credential, employment decision or silent mastery update.
 - Never remove screen readers, transcription, alternative expression or other access-restoring support merely to create an “independent” condition.
 - Warn participants that some advice may be imperfect; debrief every planted error and repair any misconception.
-- Minimize retained text, hash or redact sensitive content, set expiry and permitted-use fields, and let learners inspect, correct and contest their record.
+- Minimize retained text, hash or redact sensitive content, and let learners inspect, correct and contest their record. Keep observation retention, inference review or staleness, and use authorization as distinct controls [C013, P002].
 - Review error severity and exclusions with domain and accessibility experts before deployment.
 
 ## Analysis plan

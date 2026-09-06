@@ -35,19 +35,20 @@ The review surface must use observation language, not trait language:
 
 > This record shows what happened on a small set of practice tasks. It does not establish your general mastery, intelligence, employability or a permanent ability to work with AI.
 
-For every event, show the task and instrument versions, assistance lane, support classification, observed action/outcome, permitted use, expiry, uncertainty and a **correct or contest this record** action. A correction appends a new event that refers to the original; it never silently overwrites history.
+For every event, show the task and instrument versions, assistance lane, support classification and its basis, observed action, scored assertion and a **correct or contest this record** action. Show any derived inference separately with its evidence links, model version, uncertainty, review date and authorized use. A correction appends a new record that refers to the original; it never silently overwrites history.
 
 After the last planted-error trial, debrief which advice was controlled, identify every planted error, explain the safer reasoning and offer misconception repair. Let a learner withdraw future use where the consent model permits it.
 
 ## Storage contract
 
-[`event.schema.json`](event.schema.json) is JSON Schema draft 2020-12, version `0.1.0`. The fixtures demonstrate:
+[`event.schema.json`](event.schema.json) is JSON Schema draft 2020-12, version `0.2.0`; [`inference.schema.json`](inference.schema.json) is the separate versioned-inference contract. The fixtures demonstrate:
 
 - an AI-assisted disagreement trial with provenance and pre/post judgments;
 - a delayed accessible-independent outcome that retains a screen reader;
-- an append-only learner-contested correction.
+- an append-only learner-contested correction;
+- a deliberately insufficient inference that links the events without rewriting them.
 
-The contract deliberately stores digests rather than response text by default. Any separately retained content needs its own purpose, encryption, access and deletion policy. `learnerRef` must be pilot-pseudonymous.
+The observation contract distinguishes occurrence from recording time; tool permission, availability, declaration and observed use; learner-reported confidence from model uncertainty; and scoring assertions from raw responses. The inference contract separates model staleness review and use authorization from the event's retention deadline. The contracts deliberately store digests rather than response text by default. Any separately retained content needs its own purpose, encryption, access and deletion policy. `learnerRef` must be pilot-pseudonymous.
 
 ## Orqestra seam
 
@@ -59,7 +60,7 @@ The current product summary models are the wrong persistence seam:
 | `AssessmentResult` answer/correctness and Bloom/category aggregates | immediate assessment reporting | provenance, reliance, verification, recovery or durable learning |
 | `maxBloomLevelAchieved` | explicitly coarse, non-gating descriptive roll-up | a stewardship trait or learner rank |
 
-For the pilot, add a separate append-only research event table or research-data service with the raw JSON event plus indexed `tenantId`, `pilotId`, pseudonymous `learnerRef`, `eventId`, `eventType`, `occurredAt`, `evidenceLane`, `task.id`, and `governance.correctionOf`. Keep the identity lookup separately permissioned. Build analysis as a versioned view that resolves correction chains without deleting originals.
+For the pilot, add separate append-only observation and scored-assertion records plus a versioned inference view or store. Index only the purpose-minimal fields needed for the pilot, including `tenantId`, `pilotId`, pseudonymous `learnerRef`, `eventId`, `eventType`, `occurredAt`, `recordedAt`, `evidenceLane`, `task.id`, and `governance.correctionOf`. Keep the identity lookup separately permissioned. Resolve correction chains without deleting originals.
 
 ## Delivery sequence
 
@@ -77,6 +78,9 @@ Repository validation:
 uvx check-jsonschema \
   --schemafile experiments/E001-ai-mediated-stewardship-probe/event.schema.json \
   experiments/E001-ai-mediated-stewardship-probe/fixtures/*.json
+uvx check-jsonschema \
+  --schemafile experiments/E001-ai-mediated-stewardship-probe/inference.schema.json \
+  experiments/E001-ai-mediated-stewardship-probe/inference.fixture.json
 python3 -m unittest tests.test_e001_contract -v
 ```
 
@@ -96,6 +100,6 @@ No analysis should produce a leaderboard, credential, employment signal, silent 
 
 - a learner/domain/accessibility co-design group has not reviewed the task and event vocabulary;
 - the product cannot preserve ordinary access supports across conditions;
-- event visibility, correction, expiry and prohibited-use enforcement are only policy text rather than testable behaviour;
+- event visibility, correction, retention and prohibited-use enforcement are only policy text rather than testable behaviour;
 - a controlled error could cause real-world harm or persist beyond debrief and repair;
 - the team cannot separate pilot research data from operational learner scoring.

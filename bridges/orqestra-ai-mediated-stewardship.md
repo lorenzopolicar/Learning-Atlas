@@ -6,7 +6,7 @@
 
 **Repository snapshot inspected:** `/Users/lorenzo.policar/Developer/emtech-noema`, branch `learning-upgrade`, 1 September 2026. The checkout had substantial user-owned changes; both inspections were read-only.
 
-**Implementation package:** [E001 pilot package](../experiments/E001-ai-mediated-stewardship-probe/pilot-package.md), JSON Schema `0.1.0`, synthetic fixtures and invariant tests.
+**Implementation package:** [E001 pilot package](../experiments/E001-ai-mediated-stewardship-probe/pilot-package.md), observation JSON Schema `0.2.0`, separate inference schema, synthetic fixtures and invariant tests.
 
 ## Product decision in one sentence
 
@@ -44,16 +44,16 @@ Create append-only observations with corrections rather than mutating a learner 
 | Field group | Minimum content | Why |
 |---|---|---|
 | identity and version | event ID, learner/pseudonymous actor, objective ID/version, task/form ID/version, timestamp | prevents evidence from floating free of the construct and instrument |
-| intended inference | target capability, stakes, purpose, permitted uses, expiry/retention | constrains downstream claims [C007, P002] |
+| collection governance | low-stakes purpose, permitted and prohibited uses, consent version, retention | constrains collection and retention without embedding a learner inference [C007, P002] |
 | evidence lane | `accessible-independent`, `ai-assisted`, `supervisory-recovery` | prevents assisted output from silently becoming independent mastery [B004] |
-| assistance envelope | tools allowed/used, assistance function, accessible baseline, substantive-generation state | distinguishes access restoration from delegation [S022] |
+| assistance envelope | accessible baseline; tools allowed, available, declared used and observed used; classification source and status; assistance function | distinguishes access restoration from delegation without treating availability as use [S022, S028] |
 | system provenance | provider/model/version, prompt or advice version, retrieval/source provenance, known uncertainty | makes changing AI conditions interpretable |
-| pre-advice state | initial response or decision, confidence, rationale when proportionate | enables two-sided reliance measures [C010] |
+| pre-advice state | initial response or decision, optional self-reported confidence with scale/elicitation provenance, rationale when proportionate | enables two-sided reliance measures without confusing self-report and model uncertainty [C010] |
 | intervention | advice content/hash, correctness or rubric state where defensible, ordering, explanation/provenance cues | records what the learner actually encountered |
-| post-advice state | final response, confidence, rationale, accepted/rejected/edited elements | distinguishes outcome and decision process |
+| post-advice state | final response, optional self-reported confidence, rationale, accepted/rejected/edited elements | distinguishes outcome and decision process |
 | stewardship actions | verification, source checks, repair, tool switching, human escalation, uncertainty escalation, contest action | captures responsible recovery beyond solitary completion |
-| outcome and delay | correctness/rubric with severity, immediate result, delayed accessible independent result, transfer distance | separates performance from learning [P005] |
-| inference record | model/version, estimate, uncertainty, boundary, evidence links, correction/supersession | keeps inference separate and revisable [P002] |
+| scored assertion and outcome | scorer, rubric and evidence-rule versions; correctness/severity; separate time horizon and transfer distance | keeps response processing visible and separates performance from learning [S026, P005] |
+| inference record | model/version, estimate, typed uncertainty, calibration status, evidence links, temporal policy, authorized use and supersession | keeps inference separate and revisable [C013, P002] |
 
 Do not record a disability diagnosis merely to classify an assistance function. Let learners retain ordinary access supports, declare what support did in context, and review or contest classifications.
 
@@ -67,7 +67,7 @@ For a sufficiently repeated, objectively scored task family, a review surface ma
 - overreliance and underreliance cases, separated by error severity;
 - confidence discrimination (for example AUROC2) only with enough labelled trials [S021];
 - verification, repair and escalation patterns;
-- coverage gaps and evidence expiry.
+- coverage gaps and inference staleness or review status.
 
 Every view should expose the supporting events and say what it cannot establish. Do not rank learners, issue credentials, trigger employment action, or update an overall mastery score from the pilot.
 
