@@ -18,7 +18,7 @@
 
 ## Evidence rationale
 
-[S024] provides fragile, same-session evidence that requiring early performance before AI access can outperform always-on access, so E001 uses a transparent self-first sequence as the main measurement baseline rather than beginning with an opaque adaptive policy [C011, P001]. It also randomizes order on matched tasks because eliciting an initial judgment may itself change the construct.
+[S024] provides fragile, same-session evidence about a binary direct-answer access gate, not a progressive hint policy. New component evidence shows stronger support for post-error recovery than for delayed learning [C028], while rigid answer withholding can also reduce learning and persistence [C029]. E001 therefore retains a transparent self-first sequence as a **measurement baseline**, not as evidence for a universal product gate, and randomizes order on matched tasks because eliciting an initial judgment may itself change the construct. Any learner-facing implementation must retain a fast, visible reveal and access-restoring or worked-example-first exceptions [C011, P001].
 
 [S023] found a large supported programming advantage but an inconclusive absolute one-week retest contrast, while [S025] found high perceived helpfulness without improved unaided bedside performance. Neither validates stewardship as a construct. Together they strengthen the requirement to separate supported output, later accessible-independent performance, perceived usefulness and process evidence [C001, C012, P005].
 

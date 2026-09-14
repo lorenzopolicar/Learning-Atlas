@@ -24,7 +24,7 @@
     },
     {
       "id": "EV004",
-      "query": "How should the learning engine adapt and fade guidance by expertise while scheduling retrieval and spacing?",
+      "query": "How should we adapt and fade guidance by expertise and retrieve and space important capabilities using retrieval and spacing?",
       "types": ["claim", "belief", "principle"],
       "expected_ids": ["C003", "C004", "C005", "P003", "P004"],
       "required_concepts": ["expertise", "retrieval", "spacing"]

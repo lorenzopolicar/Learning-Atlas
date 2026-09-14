@@ -127,6 +127,20 @@
       "path": "claims/C013-time-does-not-create-a-universal-evidence-expiry-rule.md"
     },
     {
+      "id": "C028",
+      "type": "claim",
+      "title": "Post-error AI support improves retry quality more clearly than delayed learning",
+      "status": "provisional",
+      "path": "claims/C028-post-error-support-outpaces-delayed-evidence.md"
+    },
+    {
+      "id": "C029",
+      "type": "claim",
+      "title": "Rigid answer withholding can impair immediate learning and persistence",
+      "status": "provisional",
+      "path": "claims/C029-rigid-answer-withholding-can-backfire.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
@@ -426,6 +440,27 @@
       "title": "Caliper Analytics Specification 1.2",
       "status": "reviewed",
       "path": "sources/notes/S028-caliper-event-provenance.md"
+    },
+    {
+      "id": "S042",
+      "type": "source",
+      "title": "Making AI Tutoring Productive: Evidence from a Mastery-Based Math Practice Experiment",
+      "status": "reviewed",
+      "path": "sources/notes/S042-oreopoulos-productive-ai-tutoring.md"
+    },
+    {
+      "id": "S043",
+      "type": "source",
+      "title": "AI tutoring can safely and effectively support students: An exploratory RCT in UK classrooms",
+      "status": "reviewed",
+      "path": "sources/notes/S043-learnlm-eedi-exploratory-rct.md"
+    },
+    {
+      "id": "S044",
+      "type": "source",
+      "title": "Socrates went Nuclear: Comparing Interaction Strategies for AI systems in a Learning Context using Brain Sensing",
+      "status": "reviewed",
+      "path": "sources/notes/S044-deffarges-socrates-went-nuclear.md"
     }
   ],
   "edges": [
@@ -646,6 +681,11 @@
     },
     {
       "source": "C011",
+      "target": "S044",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C011",
       "target": "S024",
       "relation": "supporting_sources"
     },
@@ -657,6 +697,36 @@
     {
       "source": "C013",
       "target": "S027",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C028",
+      "target": "S044",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C028",
+      "target": "S042",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C028",
+      "target": "S043",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C029",
+      "target": "S042",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C029",
+      "target": "S043",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C029",
+      "target": "S044",
       "relation": "supporting_sources"
     },
     {
@@ -802,6 +872,16 @@
     {
       "source": "P001",
       "target": "C011",
+      "relation": "based_on"
+    },
+    {
+      "source": "P001",
+      "target": "C028",
+      "relation": "based_on"
+    },
+    {
+      "source": "P001",
+      "target": "C029",
       "relation": "based_on"
     },
     {

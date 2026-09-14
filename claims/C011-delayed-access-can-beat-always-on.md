@@ -8,10 +8,10 @@
   "confidence": "low",
   "topics": ["scaffolding", "learning-vs-performance", "metacognition", "ai-tutoring"],
   "supporting_sources": ["S024"],
-  "contradicting_sources": [],
+  "contradicting_sources": ["S044"],
   "boundary_conditions": ["One brief text-comprehension topic and an eight-item same-session test.", "Conditions were assigned by workshop session rather than individual randomization and workshop clustering was not modelled.", "The delayed policy bundled multiple reward components and 43.2% of that condition never used AI."],
   "product_relevance": "Test access timing as an explicit intervention, beginning with a transparent attempt threshold before considering an opaque adaptive or RL policy.",
-  "last_reviewed": "2026-09-01"
+  "last_reviewed": "2026-09-14"
 }
 ---
 
@@ -33,6 +33,8 @@ Assignment occurred at workshop level, gender balance differed, zero scorers wer
 
 [S015] shows that always-available off-the-shelf AI can improve one-week unaided learning under fixed time in a different task. These findings are not direct contradictions because the learners, activities, assistance use and horizons differ. [S023] finds a large Copilot-assisted advantage but an inconclusive one-week absolute retest difference. The correct synthesis is conditional, not a default verdict for or against access.
 
+[S044] is a direct technology-current warning against rigid withholding: its no-answer Socratic condition underperformed unrestricted access on an immediate test and generated substantial disengagement. It cannot adjudicate delayed retention, but it makes pacing and learner-controlled reveal part of the intervention rather than mere usability details.
+
 ## Product relevance
 
-Compare an attempt-before-access rule with always-on and never-on conditions using delayed independent and transfer outcomes. Only add learner-model or RL complexity if it beats the transparent rule and passes fairness, gaming and explainability checks.
+Compare a low-burden attempt-before-access rule with immediate worked-example or answer access using delayed independent and transfer outcomes. Include a fast reveal path. Only add learner-model or RL complexity if it beats the transparent rule and passes pacing, fairness, gaming and explainability checks.

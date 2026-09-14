@@ -1319,6 +1319,214 @@ E001 should distinguish occurrence time from record or send time and identify th
 
 Supports the provenance and event-envelope patterns in [P002](../../principles/P002-use-an-evidence-ledger.md). It is not supporting evidence for a claim about learner capability.
 
+## S042 — Making AI Tutoring Productive: Evidence from a Mastery-Based Math Practice Experiment
+
+Type: source
+Status: reviewed
+Topics: ai-tutoring, scaffolding, feedback, retrieval-and-spacing, learning-vs-performance
+Technology dependence: model-dependent
+Technology context: NUMI guard-railed LLM tutor / not reported; study=23 March to 3 April 2026; temporal relevance=unknown; review due=2026-12-14
+Canonical path: `sources/notes/S042-oreopoulos-productive-ai-tutoring.md`
+
+# S042 — Making AI Tutoring Productive
+
+## Why it matters
+
+This large randomized field experiment tests a mastery rule, a guard-railed LLM tutor and their interaction in ordinary middle-school mathematics. It directly separates next-attempt recovery from a brief one-week assessment and shows that a platform-defined streak is not equivalent to delayed learning.
+
+## Identity and provenance
+
+- Canonical identifier: NBER Working Paper 35621; DOI `10.3386/w35621`; trial `AEARCTR-0018678`.
+- Version inspected: August 2026 working paper, 72-page publisher PDF.
+- Content inspected: complete PDF, including design, tables 1–9, implementation appendix, tutor prompts, robustness analyses and limitations.
+- Access and rights: publisher-open NBER working-paper PDF; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_27108bd6986bc001`; PDF SHA-256 `c49eea71b7a24936f7cab34a231c0ddfa8e0bbc8a6727ef49e06401301730ca2`.
+- Locator convention: numbered section and table in the August 2026 working paper.
+
+## Study
+
+- Population and setting: 6,997 grade 6–8 students who logged into NUMI across 20 Hamilton County, Tennessee schools and just under 100 teachers; about 90% took the assessment one week later.
+- Intervention and comparator: individual 2 × 2 × 2 randomization to one of two topic bundles, AI or CAL-only support, and mastery or non-mastery progression. CAL-only supplied videos, practice, correctness feedback and worked solutions. The AI bundle added a first-step reasoning prompt, post-error walkthroughs and step explanations while withholding final answers.
+- Mastery manipulation: three correct answers in a row before progression versus a learner choice to continue or move on after three attempts.
+- Outcomes and timing: platform progression, practice accuracy and time, post-mistake recovery, and four unassisted assessment items approximately one week later covering practiced and unpracticed topic types.
+
+## Findings
+
+- Mastery raised the probability of three correct answers in a row on Exercise 1 by 28.7 percentage points and increased practice, but did not itself improve any delayed outcome (sections 4.3–4.4; table 5).
+- Among mastery students who made an observed error, assignment to AI increased next-attempt correctness by 8.5 percentage points, reduced attempts to the next correct answer by 0.96, and increased elapsed time by 2.88 minutes (section 5.3; table 8). Because the analysis conditions on post-treatment mistakes, this is mechanism evidence rather than the primary causal learning estimate.
+- Among mastery students, practiced Exercise 1 correctness one week later was 40.2% with AI versus 37.0% with CAL-only, a 3.2-point estimate with `p=.065`; the corresponding unpracticed item was essentially unchanged (section 5.5; table 9). The brief, noisy outcome and marginal precision support a signal, not a deployment claim.
+- AI slowed progress and reduced exposure to later questions. The study therefore identifies a pace–quality trade-off rather than a uniformly superior workflow.
+- No demographic subgroup interaction was statistically distinguishable. This does not establish equal impact because subgroup estimates were exploratory and often imprecise (appendix table A3).
+
+## Limitations and boundary conditions
+
+- The tutor is a bundle: first-step prompts, post-error walkthroughs, worked-solution review, guardrails and quality control are not independently randomized.
+- The exact LLM and snapshot are not reported, blocking model-specific technology directness.
+- The intervention is one class period and the delayed measure has only four items, one per exercise/topic cell.
+- Treatment changes time and exposure; Exercise 2 comparisons are especially selected and difficult to interpret.
+- The CAL comparator already supplies worked solutions, so the estimate is value added over structured software rather than over answer-first generic AI.
+- The working paper is preregistered but not yet peer reviewed.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | high | Individual factorial randomization and preregistration; mechanism analyses condition on treatment-affected mistakes |
+| Directness | high | Tests structured post-error support and an unassisted one-week outcome in a real classroom workflow |
+| Consistency | moderate | Aligns with structured-tutoring evidence, while strict withholding and mastery-only results are mixed |
+| Replication | low | One working paper; components are not isolated |
+| Magnitude | low-moderate | Large immediate recovery differences but only a 3.2-point marginal delayed signal |
+| Duration | moderate-low | Approximately one week after a single session |
+| Transfer | low | Novel items of practiced types; no far transfer |
+| Ecological validity | high | Twenty schools, ordinary class periods and a large heterogeneous district sample |
+| Technology directness | unclear | Recent deployment, but model/version is unreported |
+
+## Candidate claims
+
+Supports [C028](../../claims/C028-post-error-support-outpaces-delayed-evidence.md): structured AI can improve recovery after errors, but its delayed value is modest, bundled and time-costly. It does not isolate an attempt-before-answer rule or a progressive hint ladder.
+
+## Notes
+
+The study's most durable warning is measurement-related: forcing three correct answers in a row raised platform mastery without raising delayed learning. Orqestra should never treat a retry streak as durable capability without a later independent check.
+
+## S043 — AI tutoring can safely and effectively support students: An exploratory RCT in UK classrooms
+
+Type: source
+Status: reviewed
+Topics: ai-tutoring, scaffolding, feedback, transfer, learning-vs-performance
+Technology dependence: model-dependent
+Technology context: LearnLM / most recent trial version fine-tuned from Gemini 2.0 Flash; study=13 May to 30 June 2025; temporal relevance=recent-system; review due=2027-03-14
+Canonical path: `sources/notes/S043-learnlm-eedi-exploratory-rct.md`
+
+# S043 — LearnLM/Eedi exploratory RCT
+
+## Why it matters
+
+This trial compares a static hint with interactive tutoring after a learner's first wrong answer, then randomizes interactive sessions between a human tutor and a human-supervised pedagogical model. It is close to the progressive-assistance question, but every condition already required an attempt and the AI was not autonomous.
+
+## Identity and provenance
+
+- Canonical identifier: arXiv:2512.23633v1; title-page short link `goo.gle/LearnLM-Nov25`.
+- Version inspected: 29 December 2025 preprint, 31-page publisher PDF.
+- Content inspected: complete PDF, including design, figures 1–3, model description, exact prompt, statistical appendix, safety audit and tutor interviews.
+- Access and rights: publisher-open arXiv PDF linked as CC BY 4.0; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_d2b1e128d78bbc89`; PDF SHA-256 `a0ee40ce7e3b52a75f8a36c665badfb738ae49593c604b60229e7ffa9de04d50`.
+- Locator convention: page, figure, table and appendix in v1.
+
+## Study
+
+- Population and setting: 165 Year 9–10 students aged 13–15 across five UK secondary schools, using Eedi over seven weeks; 17 expert human tutors delivered or supervised interactive support.
+- Intervention and comparator: students who answered a study unit's diagnostic item incorrectly were randomized to a static misconception-specific hint or interactive tutoring. Tutoring sessions were separately randomized to a human tutor or LearnLM with human review of every drafted message.
+- Model and pedagogy: the trial used the then-current LearnLM fine-tuned from Gemini 2.0 Flash and instructed to use Socratic dialogue, guide learners to identify their mistake and avoid revealing the answer.
+- Outcomes: correctness on the next attempt, resolution within two attempts on the same topic, and correctness on the first item in the next topic. These are immediate and near-transfer outcomes, not delayed independent assessments.
+
+## Findings
+
+- Estimated next-attempt correctness was 65.4% after a static hint, 91.2% after human tutoring and 93.0% after supervised LearnLM tutoring (figure 3; appendix table B1).
+- Same-topic misconception resolution was 86.8%, 94.9% and 95.4%, respectively. Interactive tutoring outperformed static hints; LearnLM and human tutoring were not meaningfully separated on this measure.
+- On the next topic's first item, adjusted success was 56.2% after a static hint, 60.7% after human tutoring and 66.2% after supervised LearnLM. The LearnLM–human difference was 5.5 points with a 95% interval from -1.4 to 12.4, so superiority over a human tutor is uncertain.
+- Human supervisors changed 25.6% of model drafts. Pacing was the largest edit category, 44.3% of edits, commonly because continued Socratic questioning risked exasperating a learner (pages 5–6; appendix E).
+
+## Limitations and boundary conditions
+
+- All conditions followed an incorrect attempt, so the study cannot estimate attempt-before-help versus immediate help.
+- Interactive tutoring bundles dialogue, personalization, time and relationship; it does not isolate hint granularity or escalation order.
+- Human review of every message is both a safety strength and a major boundary for autonomous product use.
+- The next-topic item is near transfer in the same platform, not delayed retention or external performance.
+- Session-level crossover may have transferred lessons from model-supervised sessions into tutors' human-only sessions.
+- The report is authored by the teams building LearnLM and Eedi and is a preprint; product incentives require explicit consideration.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-high | Two-stage randomization and baseline adjustment; session crossover and intervention cancellation complicate estimates |
+| Directness | high for post-error support | Direct static-hint comparison after a real error; no attempt-first or autonomous-AI contrast |
+| Consistency | moderate | Supports interactive repair but documents a pacing boundary consistent with disengagement evidence |
+| Replication | low | One product-team preprint |
+| Magnitude | moderate | Large immediate remediation advantage; smaller and uncertain next-topic advantage over humans |
+| Duration | low | Outcomes occur in the same or next platform unit |
+| Transfer | moderate-low | A distinct next topic, but within one mathematics platform and no delay |
+| Ecological validity | moderate-high | Seven-week deployment in five schools with real tutors and platform use |
+| Technology directness | moderate | Recent model family, but human supervision and newer generations limit autonomous-product transfer |
+
+## Candidate claims
+
+Supports [C028](../../claims/C028-post-error-support-outpaces-delayed-evidence.md): interactive support after an error improves immediate repair more clearly than it establishes delayed independent learning. Its pacing edits also constrain [P001](../../principles/P001-progressive-assistance.md).
+
+## Notes
+
+The correct product inference is not that a model should withhold indefinitely. Human supervisors added value mainly by knowing when to stop asking questions, adjust tone, or let the learner move on.
+
+## S044 — Socrates went Nuclear: Comparing Interaction Strategies for AI systems in a Learning Context using Brain Sensing
+
+Type: source
+Status: reviewed
+Topics: ai-tutoring, scaffolding, learning-vs-performance, motivation-and-agency
+Technology dependence: model-dependent
+Technology context: OpenAI / GPT-5.2; study=not reported; temporal relevance=current-system; review due=2027-03-14
+Canonical path: `sources/notes/S044-deffarges-socrates-went-nuclear.md`
+
+# S044 — Socrates went Nuclear
+
+## Why it matters
+
+This is a direct current-generation counterexample to universal answer withholding. With the same chatbot interface and model, a strict Socratic policy that never supplied the final answer produced lower immediate gains and more abandonment than unrestricted access.
+
+## Identity and provenance
+
+- Canonical identifier: arXiv:2609.00584v1; proceedings DOI `10.1145/3841580.3841620` for HAI 2026.
+- Version inspected: 1 September 2026 preprint, 11-page complete PDF.
+- Content inspected: design, conditions, prompt appendix, tables 1–3, interaction analysis, results and limitations.
+- Access and rights: publisher-open arXiv PDF, CC BY-NC-ND 4.0; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_69640316b57e80c9`; PDF SHA-256 `b0118b5d9c9f4902edd89a5b2fdb372b774dd563e7a5022c72f15465f2f6ec01`.
+- Locator convention: section, table and page in v1.
+
+## Study
+
+- Population and setting: 50 adults allocated sequentially across unrestricted chatbot (`n=17`), Socratic chatbot (`n=17`) and adaptive non-conversational tutor (`n=16`) conditions in a laboratory nuclear-safety lesson.
+- Intervention and comparator: the unrestricted and Socratic conditions used the same interface and GPT-5.2. The unrestricted bot could answer directly. The Socratic prompt never gave a final answer and instead used questions, targeted hints and restatement. The third condition added EEG-adaptive subquestions and visual feedback.
+- Outcomes and timing: pretest, ten open-ended assisted assessment questions, immediate post-test, EEG engagement, interaction strategies, perceived learning, difficulty and helpfulness.
+- Grading: GPT-5.2 graded answers against a fixed rubric; informal human spot checks were not retained as independent ratings.
+
+## Findings
+
+- Mean pre-to-post gain was 20.12 in the unrestricted condition, 10.52 in Socratic and 11.20 in adaptive. Unrestricted outperformed Socratic (`p=.025`, `d=.80`) and adaptive (`p=.021`, `d=.85`); Socratic and adaptive did not differ (table 1; section 5.2).
+- Socratic learners' chatbot and EEG engagement declined later in the session. Fifty-eight percent of their exercises that abandoned dialogue did not reach the platform's 80% threshold (sections 5.3–5.4).
+- Learners rated unrestricted support more helpful than Socratic support, 8.62 versus 5.67 out of 10 (`p<.0001`, `d=1.75`).
+- The authors explicitly warn that the immediate test can reward recently viewed complete answers and does not establish deeper or long-term learning.
+
+## Limitations and boundary conditions
+
+- Fifty participants across three cells provide exploratory evidence only; allocation was sequential rather than clearly concealed randomization.
+- The post-test was immediate and closely matched to the lesson. There was no delayed retention or transfer assessment.
+- Model-generated grading has no recorded human inter-rater reliability.
+- The Socratic policy was absolute: it could not reveal an answer or flexibly exit. The result challenges rigid withholding, not calibrated progressive help with a learner-controlled reveal.
+- Topic interest was low and the task was a short artificial nuclear-safety lesson.
+- The proceedings event occurs after this review date; the inspected artifact is a preprint.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-low | Same model/interface for the main contrast, but small sequential groups and unvalidated model grading |
+| Directness | high | Directly compares unrestricted answers with strict question-and-hint withholding |
+| Consistency | low-moderate | Aligns with pacing concerns in S043 but conflicts with simple productive-struggle predictions |
+| Replication | low | One exploratory preprint |
+| Magnitude | moderate | Large immediate performance and helpfulness differences in a small sample |
+| Duration | low | Immediate post-test only |
+| Transfer | low | Closely matched task and content |
+| Ecological validity | low | Artificial topic, laboratory interface and short exposure |
+| Technology directness | moderate-high | Current-generation model, but not an Orqestra deployment and exact study dates are unreported |
+
+## Candidate claims
+
+Supports [C029](../../claims/C029-rigid-answer-withholding-can-backfire.md) and challenges overgeneralization from [C011](../../claims/C011-delayed-access-can-beat-always-on.md). It does not establish that answer-first support improves durable learning.
+
+## Notes
+
+The useful contradiction is policy-shaped: an escape hatch and pacing logic may be constitutive parts of progressive assistance, not optional usability polish.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -1592,9 +1800,11 @@ Assignment occurred at workshop level, gender balance differed, zero scorers wer
 
 [S015] shows that always-available off-the-shelf AI can improve one-week unaided learning under fixed time in a different task. These findings are not direct contradictions because the learners, activities, assistance use and horizons differ. [S023] finds a large Copilot-assisted advantage but an inconclusive one-week absolute retest difference. The correct synthesis is conditional, not a default verdict for or against access.
 
+[S044] is a direct technology-current warning against rigid withholding: its no-answer Socratic condition underperformed unrestricted access on an immediate test and generated substantial disengagement. It cannot adjudicate delayed retention, but it makes pacing and learner-controlled reveal part of the intervention rather than mere usability details.
+
 ## Product relevance
 
-Compare an attempt-before-access rule with always-on and never-on conditions using delayed independent and transfer outcomes. Only add learner-model or RL complexity if it beats the transparent rule and passes fairness, gaming and explainability checks.
+Compare a low-burden attempt-before-access rule with immediate worked-example or answer access using delayed independent and transfer outcomes. Include a fast reveal path. Only add learner-model or RL complexity if it beats the transparent rule and passes pacing, fairness, gaming and explainability checks.
 
 ## C012 — Minimal AI training and access did not improve authentic bedside performance
 
@@ -1649,6 +1859,62 @@ The evidence does not show that time is irrelevant. It does not estimate decay f
 ## Product relevance
 
 Separate three clocks: `retentionUntil` for governance, `reviewAfter` or `doNotUseAfter` for an inference, and any learned decay function used by a particular model. Do not label the underlying observation as expired capability.
+
+## C028 — Post-error AI support improves retry quality more clearly than delayed learning
+
+Type: claim
+Status: provisional
+Topics: ai-tutoring, scaffolding, feedback, learning-vs-performance
+Canonical path: `claims/C028-post-error-support-outpaces-delayed-evidence.md`
+
+# C028 — Post-error AI support improves retry quality more clearly than delayed learning
+
+## Claim
+
+Interactive or structured AI support can help a learner recover after an error, but current evidence is much stronger for the next response than for durable independent learning [S042, S043].
+
+## Evidence and reasoning
+
+In NUMI, randomized AI assignment inside a mastery workflow improved observed next-attempt recovery after mistakes and reduced attempts to the next correct answer, while increasing time. The cleanest one-week estimate was only 3.2 percentage points on one practiced item and was marginally significant [S042]. In Eedi, human-supervised LearnLM and human tutoring sharply improved next-attempt and same-topic correction over a static hint; the next-topic result was still immediate and within the same platform [S043].
+
+These studies support intervening at a diagnosed error. They do not establish that every learner must attempt before receiving any substantive help, that hints should always precede worked examples, or that adaptive/RL selection beats a transparent rule.
+
+## Counterevidence and uncertainty
+
+A small current-system experiment found that a rigid Socratic bot underperformed unrestricted answers on an immediate post-test and caused substantial abandonment [S044]. That result cannot adjudicate delayed learning, but it shows that withholding and pacing can dominate the intended mechanism.
+
+## Product relevance
+
+Log the initial attempt, error type, help level, reveal choice, recovery, time and later independent outcome separately. Do not infer mastery from a corrected retry or a three-in-a-row platform threshold.
+
+## C029 — Rigid answer withholding can impair immediate learning and persistence
+
+Type: claim
+Status: provisional
+Topics: ai-tutoring, scaffolding, motivation-and-agency, learning-vs-performance
+Canonical path: `claims/C029-rigid-answer-withholding-can-backfire.md`
+
+# C029 — Rigid answer withholding can impair immediate learning and persistence
+
+## Claim
+
+Absolute Socratic withholding is not a safe default. In one direct same-model comparison, learners with unrestricted GPT-5.2 access gained more on an immediate test and rated the tool more helpful than learners whose tutor never revealed the final answer [S044].
+
+## Evidence and reasoning
+
+The unrestricted group improved 20.12 points from pre- to post-test versus 10.52 under Socratic withholding (`d=.80`). Socratic dialogue and EEG engagement declined, and many abandoned exercises never reached the platform threshold [S044].
+
+## Boundary conditions
+
+The study is small, exploratory, immediate and model-graded. Complete answers may have advantaged short-term recall, exactly as the authors argue. The result therefore challenges rigid refusal and uncompensated friction; it does not show that answers produce better retention or transfer.
+
+## Counterevidence and uncertainty
+
+Large and authentic field studies show that structured support after mistakes can improve recovery and sometimes near outcomes [S042, S043]. Those interventions include pacing controls, worked-solution access or human overrides that the rigid Socratic condition lacked.
+
+## Product relevance
+
+Set both a friction floor and a friction ceiling. Let learners request a worked example or answer after a short diagnostic attempt, and treat repeated non-response, frustration or accessibility burden as evidence to escalate—not as a reason to ask another question indefinitely.
 
 ## B001 — Optimize durable capability, not completion
 
@@ -1827,33 +2093,38 @@ Canonical path: `principles/P001-progressive-assistance.md`
 
 ## Principle
 
-In deliberate learning, ask the learner to think, retrieve, predict, choose, or attempt before the system supplies the full solution. Escalate assistance based on evidence, and reveal the answer when further struggle is unlikely to be productive.
+In deliberate learning, first offer a low-burden opportunity to think, retrieve, predict, choose, diagnose or attempt when the learner has enough prerequisite knowledge and the action is accessible. Escalate assistance based on observable need, and keep a fast learner-controlled route to a worked example or answer when further struggle is unlikely to be productive.
 
 ## Rationale
 
 Unrestricted assistance can improve the current artifact while weakening later independent performance [C001]. Structured tutoring changes outcomes [C002], and the appropriate amount of guidance varies with expertise [C003].
 
-One narrow controlled study also found that delaying access matched a no-access condition and beat always-on access on an immediate independent test [C011]. Its limitations justify a comparative pilot, not a universal gate or an opaque RL policy.
+One narrow controlled study found that delaying access matched a no-access condition and beat always-on access on an immediate independent test [C011]. Newer field evidence shows that structured post-error help improves retry quality more consistently than delayed learning [C028], while a small current-system study shows that absolute answer withholding can reduce immediate performance and cause disengagement [C029]. Together these results justify a calibrated comparative pilot, not a universal gate or an opaque RL policy.
 
 ## Apply when
 
-The goal is capability development, the learner has enough prior knowledge to attempt, and errors are safe and recoverable.
+The goal is capability development, the learner has enough domain-specific prior knowledge to make the attempt informative, the attempt itself is accessible, and errors are safe and recoverable.
 
 ## Do not apply blindly when
 
-The user is explicitly in performance-support mode, the situation is urgent or safety critical, or the action creates construct-irrelevant accessibility barriers.
+The user is explicitly in performance-support mode, the situation is urgent or safety critical, a novice needs a worked example to acquire a schema, or the action creates construct-irrelevant linguistic, executive or accessibility burden.
 
 ## Product patterns
 
 - intent switch: learn, assess, or accomplish;
-- attempt before reveal;
-- progressive hints with learner-controlled escalation;
+- one low-burden attempt or diagnosis before substantive help;
+- progressive hints with learner-controlled escalation and a visible reveal option;
 - self-explanation after a worked example;
-- assistance-state logging.
+- pacing thresholds that escalate when repeated questioning produces no progress;
+- assistance-state, time, reveal and later-outcome logging.
 
 ## Falsifiers and measures
 
-Compare against an answer-first condition using delayed independent performance, transfer, completion, frustration, and differential impact—not immediate task success alone.
+Compare a low-burden attempt with immediate worked-example or core-answer access, crossed with transparent fixed versus adaptive escalation. Hold model, content and time constant where possible; measure delayed independent performance, transfer, completion, external-tool switching, frustration and differential impact—not immediate task success alone.
+
+## Revision history
+
+- 2026-09-14: narrowed the attempt default, added worked-example and diagnostic exceptions, and required a fast reveal path after S042–S044 showed strong retry evidence, weak delayed evidence and a rigid-withholding failure mode.
 
 ## P002 — Use an evidence ledger for learner inferences
 
