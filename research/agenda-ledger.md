@@ -56,6 +56,17 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Review horizon and success signal: review monthly; success means `atlas.py freshness` exposes no unlabeled model-dependent source and product briefs distinguish current, recent and historical systems.
 - Human decision: accepted by direct instruction on 2 September 2026.
 
+### 2026-09-14 — Progressive assistance boundary sharpened
+
+- Proposal: retain progressive assistance as a conditional intervention-policy direction, but replace a universal attempt gate with a falsifiable comparison between one low-burden attempt and immediate worked-example/core-answer access. Cross that with transparent fixed versus adaptive escalation and keep a one-click reveal.
+- Triggering signals: [S042] found strong post-error recovery but only a marginal one-week gain in one mastery condition; [S043] found that interactive support beat static hints while human supervisors frequently corrected pacing; [S044] found that rigid answer withholding reduced immediate gains and provoked disengagement.
+- Evidence change: [C028] distinguishes retry recovery from delayed learning, and [C029] makes rigid refusal a credible failure mode. No study isolates the full [P001] sequence.
+- Source lanes: prioritize current-model factorial trials and credible worked-example counterpositions. Continue to sample public practitioner and media positions only when they lead to original evidence or expose an implementation boundary.
+- Opportunity cost: defer another generic AI-tutor efficacy paper in favour of component isolation, time-equated comparisons and delayed transfer.
+- Bias and novelty risk: current-system preprints are direct but small and immature; large field trials bundle multiple product decisions and may hide model versions.
+- Review horizon and success signal: revisit after a preregistered Orqestra-like factorial or an independent replication with at least one-week unaided near transfer, pacing/dropout and accessibility subgroup outcomes.
+- Human decision: pending review of the draft pull request; no Orqestra implementation is authorized by this agenda proposal.
+
 ### 2026-09-06 — Capability-evidence lifecycle signal
 
 - Proposal and decision: keep learner modelling at queue priority 3, but replace the monolithic E001 event contract with linked observation and inference records before learner co-design [Q002, D002, P002]. No programme or north-star change is proposed.
