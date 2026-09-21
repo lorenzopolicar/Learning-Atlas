@@ -8,10 +8,10 @@
   "confidence": "moderate",
   "topics": ["human-ai-collaboration", "assessment-validity", "metacognition", "product-measurement"],
   "supporting_sources": ["S020", "S021"],
-  "contradicting_sources": [],
-  "boundary_conditions": ["The task must have defensible ground truth, an initial human judgment before advice, and enough human-AI disagreement cases for stable estimates.", "Evidence comes from sequential classification tasks, not open-ended generative collaboration or an educational intervention.", "The formal complementarity result assumes a specified arbitration model and does not show that learners can learn or transfer the rule."],
+  "contradicting_sources": ["S047"],
+  "boundary_conditions": ["The task must have defensible ground truth, an initial human judgment before advice, and enough human-AI disagreement cases for stable estimates.", "Evidence comes from sequential classification tasks, not open-ended generative collaboration or an educational intervention.", "The formal complementarity result assumes a specified arbitration model and does not show that learners can learn or transfer the rule.", "Confidence elicitation can change monitoring and control, so its timing and frequency are part of the intervention rather than a neutral measurement choice."],
   "product_relevance": "For suitable low-stakes tasks, preserve initial and final judgments and report correct adoption and correct resistance separately; never infer supervisory capability from final accuracy, agreement, or raw confidence alone.",
-  "last_reviewed": "2026-08-31"
+  "last_reviewed": "2026-09-22"
 }
 ---
 
@@ -27,7 +27,7 @@ Together, the sources support a narrow measurement claim: when correctness and p
 
 RAIR and RSR are conditional rates whose denominators depend on initial human accuracy, AI accuracy and disagreements. Sparse denominators make them unstable. Asking for an initial answer can also anchor the learner, so the measure changes the interaction it observes.
 
-The claim does not cover creative, normative or social work whose quality is plural or delayed. It does not establish authorship, responsibility, justice, durable learning, or the teachability of evaluative control.
+The claim does not cover creative, normative or social work whose quality is plural or delayed. It does not establish authorship, responsibility, justice, durable learning, or the teachability of evaluative control. Repeatedly asking for confidence can itself alter monitoring and strategy [S047], so a dense confidence trace is not automatically a more valid one.
 
 ## Product relevance
 

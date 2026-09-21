@@ -7,10 +7,10 @@
   "status": "adopted",
   "confidence": "moderate",
   "topics": ["assessment-validity", "human-ai-collaboration", "learner-modelling"],
-  "derived_from": ["C001", "C007", "C008", "C010"],
+  "derived_from": ["C001", "C007", "C008", "C010", "C030"],
   "counterarguments": ["AI-assisted work may become the authentic unit of capability in many domains.", "Separate estimates increase measurement burden and can imply a false binary."],
   "would_change_my_mind": ["Evidence that assistance conditions do not materially affect interpretation for the decisions at issue.", "A superior representation that captures human-AI capability without losing independent-capability information."],
-  "last_reviewed": "2026-08-31"
+  "last_reviewed": "2026-09-22"
 }
 ---
 
@@ -18,7 +18,7 @@
 
 ## Position
 
-Independent capability and effective human-AI collaboration are both valuable and neither should erase the other. A single score cannot responsibly answer both questions. “Independent” means without substantive AI delegation, not without the access-restoring technology a learner needs to encounter or express the target construct.
+Independent capability and effective human-AI collaboration are both valuable and neither should erase the other. A single score cannot responsibly answer both questions. “Independent” means without substantive AI delegation, not without the access-restoring technology a learner needs to encounter or express the target construct. Independence is an observation condition, not a synonym for autonomy or a moral rank [C030].
 
 ## Why we believe this
 
@@ -34,9 +34,10 @@ We would replace this separation with a richer model if it preserved the same in
 
 ## Implications
 
-Tag every observation with assistance conditions and function. Model task-level AI-mediated stewardship—verification, judgment, repair, escalation and contestability—alongside the target domain capability. Preserve a portfolio rather than aggregating these signals into a universal sovereignty score.
+Tag every observation with assistance conditions and function. Model task-level AI-mediated stewardship—verification, judgment, repair, escalation and contestability—alongside the target domain capability. Measure self-endorsement and meaningful choice separately from assistance frequency. Preserve a portfolio rather than aggregating these signals into a universal sovereignty score.
 
 ## Revision history
 
 - 2026-08-31: adopted as a founding belief.
 - 2026-08-31: clarified accessible baselines, assistance function and task-level supervisory evidence after [S020]–[S022].
+- 2026-09-22: clarified that independence is a capability context, not an agency proxy, after [C030].

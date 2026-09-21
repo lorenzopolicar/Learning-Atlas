@@ -6,7 +6,7 @@
   "status": "draft",
   "date": "2026-09-01",
   "topics": ["human-ai-collaboration", "assessment-validity", "metacognition", "product-measurement", "ethics-and-governance"],
-  "tests_claims": ["C010", "C011"],
+  "tests_claims": ["C010", "C011", "C030", "C031", "C032"],
   "tests_beliefs": ["B004"],
   "tests_principles": ["P001", "P002", "P005", "P006"]
 }
@@ -20,7 +20,7 @@
 
 [S024] provides fragile, same-session evidence about a binary direct-answer access gate, not a progressive hint policy. New component evidence shows stronger support for post-error recovery than for delayed learning [C028], while rigid answer withholding can also reduce learning and persistence [C029]. E001 therefore retains a transparent self-first sequence as a **measurement baseline**, not as evidence for a universal product gate, and randomizes order on matched tasks because eliciting an initial judgment may itself change the construct. Any learner-facing implementation must retain a fast, visible reveal and access-restoring or worked-example-first exceptions [C011, P001].
 
-[S023] found a large supported programming advantage but an inconclusive absolute one-week retest contrast, while [S025] found high perceived helpfulness without improved unaided bedside performance. Neither validates stewardship as a construct. Together they strengthen the requirement to separate supported output, later accessible-independent performance, perceived usefulness and process evidence [C001, C012, P005].
+[S023] found a large supported programming advantage but an inconclusive absolute one-week retest contrast, while [S025] found high perceived helpfulness without improved unaided bedside performance. Neither validates stewardship as a construct. Together they strengthen the requirement to separate supported output, later accessible-independent performance, perceived usefulness and process evidence [C001, C012, P005]. Independence is not an agency proxy [C030], help-process conformity does not establish learning [C031], and confidence prompts can change monitoring and control [C032].
 
 ## Hypotheses
 
@@ -40,7 +40,7 @@ Use matched task forms and preserve every learner's access-restoring support in 
 
 - **Measurement control:** learner gives an initial answer and confidence, sees controlled advice without extra stewardship cues, and may revise the answer.
 - **Stewardship scaffold:** learner follows the same sequence but receives provenance/uncertainty cues and gives a short acceptance, rejection, verification or escalation rationale.
-- **Order-reactivity subset:** randomize self-first versus advice-first ordering on separate matched tasks to estimate how much the measurement procedure changes performance and later learning. Do not compute RAIR/RSR for advice-first trials.
+- **Measurement-reactivity subset:** on separate matched tasks, randomize self-first versus advice-first ordering and dense versus sparse/no confidence elicitation. Estimate how ordering and confidence prompts change performance, strategy and later learning. Do not compute RAIR/RSR for advice-first trials.
 
 Across repeated bounded trials, counterbalance correct, incomplete and plausible incorrect advice and error severity. Add one open-ended transfer task as a qualitative boundary check; do not compute RAIR/RSR for it unless a defensible scoring model exists.
 
@@ -51,7 +51,8 @@ Across repeated bounded trials, counterbalance correct, incomplete and plausible
 - Record verification actions, human/tool escalation, recovery, and unresolved uncertainty.
 - Estimate confidence discrimination only when there are enough labelled correct and incorrect trials; do not substitute mean confidence.
 - Measure accessible delayed independent performance after substantive AI generation is removed, plus near transfer, approximately one week later.
-- Collect learner-reported autonomy, workload, accessibility, psychological safety and contestability.
+- Collect learner-reported self-endorsement, meaningful choice, workload, accessibility, psychological safety and contestability. Keep these separate from unaided performance and assistance frequency.
+- For help-seeking opportunities, distinguish recognized need, source, timing, instrumental versus answer-seeking help, escalation, verification and later learning; do not optimize request counts.
 
 Secondary analyses compare assisted gain, final output quality, time, and subgroup patterns. They must not convert descriptive disability or accommodation data into a learner score.
 
@@ -67,7 +68,7 @@ Secondary analyses compare assisted gain, final output quality, time, and subgro
 
 Pre-register task exclusions, missing-data handling and the estimand for each outcome. Use hierarchical models or participant-level uncertainty appropriate to repeated trials. Model RAIR and RSR separately; inspect their trade-off rather than optimizing agreement. Compare the richer portfolio against baselines using domain accuracy alone and domain accuracy plus raw confidence.
 
-Audit ordering effects, denominator stability, measurement invariance, differential burden and missingness. Treat post-hoc subgroup results as exploratory unless powered and predeclared.
+Audit ordering and confidence-prompt effects, denominator stability, measurement invariance, differential burden and missingness. Compare dense, sparse and no-prompt conditions before using confidence in a learner inference. Treat post-hoc subgroup results as exploratory unless powered and predeclared.
 
 ## Falsification and stop rules
 
@@ -75,6 +76,7 @@ The operational approach should be rejected or narrowed if any of the following 
 
 - the portfolio adds no useful prediction or decision quality beyond domain accuracy and raw confidence;
 - self-first ordering materially changes the construct being inferred;
+- confidence elicitation materially changes monitoring, control or learning at an unacceptable burden;
 - RAIR/RSR denominators are too sparse or unstable at an acceptable task burden;
 - the measures do not predict delayed accessible-independent or authentic outcomes;
 - accessibility or invariance audits reveal construct-irrelevant group penalties;

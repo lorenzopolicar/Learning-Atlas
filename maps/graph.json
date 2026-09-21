@@ -141,6 +141,27 @@
       "path": "claims/C029-rigid-answer-withholding-can-backfire.md"
     },
     {
+      "id": "C030",
+      "type": "claim",
+      "title": "Autonomy is not the inverse of dependence",
+      "status": "provisional",
+      "path": "claims/C030-autonomy-is-not-independence.md"
+    },
+    {
+      "id": "C031",
+      "type": "claim",
+      "title": "Improved help-seeking behaviour does not establish learning",
+      "status": "provisional",
+      "path": "claims/C031-help-seeking-behaviour-is-not-learning.md"
+    },
+    {
+      "id": "C032",
+      "type": "claim",
+      "title": "Confidence elicitation can change monitoring and control",
+      "status": "provisional",
+      "path": "claims/C032-confidence-elicitation-can-be-reactive.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
@@ -461,6 +482,27 @@
       "title": "Socrates went Nuclear: Comparing Interaction Strategies for AI systems in a Learning Context using Brain Sensing",
       "status": "reviewed",
       "path": "sources/notes/S044-deffarges-socrates-went-nuclear.md"
+    },
+    {
+      "id": "S045",
+      "type": "source",
+      "title": "Autonomy in Family Decision Making for Chinese Adolescents: Disentangling the Dual Meaning of Autonomy",
+      "status": "reviewed",
+      "path": "sources/notes/S045-chen-autonomy-not-independence.md"
+    },
+    {
+      "id": "S046",
+      "type": "source",
+      "title": "Improving students' help-seeking skills using metacognitive feedback in an intelligent tutoring system",
+      "status": "reviewed",
+      "path": "sources/notes/S046-roll-help-seeking-behaviour-not-learning.md"
+    },
+    {
+      "id": "S047",
+      "type": "source",
+      "title": "Reactivity to confidence ratings in older individuals performing the Latin square task",
+      "status": "reviewed",
+      "path": "sources/notes/S047-double-confidence-rating-reactivity.md"
     }
   ],
   "edges": [
@@ -542,6 +584,11 @@
     {
       "source": "B004",
       "target": "C010",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B004",
+      "target": "C030",
       "relation": "derived_from"
     },
     {
@@ -671,6 +718,11 @@
     },
     {
       "source": "C010",
+      "target": "S047",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C010",
       "target": "S020",
       "relation": "supporting_sources"
     },
@@ -727,6 +779,26 @@
     {
       "source": "C029",
       "target": "S044",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C030",
+      "target": "S045",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C031",
+      "target": "S046",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C032",
+      "target": "S021",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C032",
+      "target": "S047",
       "relation": "supporting_sources"
     },
     {
@@ -792,6 +864,21 @@
     {
       "source": "E001",
       "target": "C011",
+      "relation": "tests_claims"
+    },
+    {
+      "source": "E001",
+      "target": "C030",
+      "relation": "tests_claims"
+    },
+    {
+      "source": "E001",
+      "target": "C031",
+      "relation": "tests_claims"
+    },
+    {
+      "source": "E001",
+      "target": "C032",
       "relation": "tests_claims"
     },
     {
