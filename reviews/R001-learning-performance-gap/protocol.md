@@ -6,7 +6,7 @@
   "status": "active",
   "topics": ["learning-vs-performance", "ai-tutoring", "assessment-validity", "transfer"],
   "related_questions": ["Q001"],
-  "last_reviewed": "2026-09-14"
+  "last_reviewed": "2026-09-22"
 }
 ---
 
@@ -46,7 +46,7 @@ Primary outcome categories:
 3. near transfer;
 4. far transfer or authentic capability.
 
-Secondary outcomes include assisted task performance, time, engagement, motivation, calibration, agency, help-seeking, dependence, equity, and adverse effects.
+Secondary outcomes include assisted task performance, time, engagement, motivation, calibration, agency, help-seeking, dependence, equity, and adverse effects. Keep these as distinct constructs: independence is not agency [C030], preferred help behaviour is not learning [C031], and elicited confidence may be reactive [C032].
 
 ## Planned process
 
@@ -65,7 +65,7 @@ Use RoB 2 for randomized trials when a mature synthesis requires formal appraisa
 
 ## Current status
 
-The orientation set now includes direct assisted/independent contrasts [S001, S015, S023, S024], structured tutoring and programme studies [S002, S005, S042, S043], a current-system rigid-withholding counterexample [S044], the authentic point-of-care trial [S025], and the pre-GenAI tutoring review [S014]. The 2026-09-14 targeted update found that post-error recovery evidence is stronger than delayed evidence and that strict Socratic refusal can cause pacing failure. This remains a seed synthesis, not a database-complete review. The next run must complete reproducible database and citation-chain searches, resolve the full text of the 275-participant Bassner et al. null RCT, and formally appraise risk of bias.
+The orientation set now includes direct assisted/independent contrasts [S001, S015, S023, S024], structured tutoring and programme studies [S002, S005, S042, S043], a current-system rigid-withholding counterexample [S044], the authentic point-of-care trial [S025], and the pre-GenAI tutoring review [S014]. The 2026-09-22 outcome-construct pass added model-independent boundaries: agency is not independence [S045], changed help behaviour is not a learning outcome [S046], and confidence elicitation may change monitoring and control [S047]. This remains a seed synthesis, not a database-complete review. The next run must complete reproducible database and citation-chain searches, resolve the full text of the 275-participant Bassner et al. null RCT, and formally appraise risk of bias.
 
 ## Governance
 

@@ -1527,6 +1527,196 @@ Supports [C029](../../claims/C029-rigid-answer-withholding-can-backfire.md) and 
 
 The useful contradiction is policy-shaped: an escape hatch and pacing logic may be constitutive parts of progressive assistance, not optional usability polish.
 
+## S045 — Autonomy in Family Decision Making for Chinese Adolescents: Disentangling the Dual Meaning of Autonomy
+
+Type: source
+Status: reviewed
+Topics: motivation-and-agency, assessment-validity, product-measurement
+Technology dependence: model-independent
+Canonical path: `sources/notes/S045-chen-autonomy-not-independence.md`
+
+# S045 — Autonomy is not independence
+
+## Why it matters
+
+This study directly tests a construct distinction that AI-product measurement can easily erase: acting independently is not the same as acting autonomously. Learners may willingly use or defer to support, while unsupported action can still be pressured or controlled.
+
+## Identity and provenance
+
+- Canonical identifier: DOI `10.1177/0022022113480038`; *Journal of Cross-Cultural Psychology* 44(7), 1184–1209.
+- Version inspected: complete author-submitted manuscript from Université libre de Bruxelles.
+- Content inspected: full text, measures, structural models, results and limitations.
+- Access and rights: lawful institutional-repository copy; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_23d9353262e064ce`; PDF SHA-256 `de4640d1c11716dce0d72e462083f54f5783af449ed0a2847d82c1f930ac9b5e`.
+- Locator convention: journal page and named section.
+
+## Study
+
+- Population and setting: 573 adolescents from urban and rural middle schools in China.
+- Construct comparison: behavioural independence in family decisions versus self-endorsed motives for both independent and dependent decisions.
+- Outcomes: basic psychological need satisfaction and psychological well-being.
+- Design: cross-sectional questionnaire study with structural modelling and tests of collectivist-orientation moderation.
+
+## Findings
+
+- More self-endorsed motives for both independent and dependent family decision-making had unique positive associations with well-being, with basic-need satisfaction as an intervening variable (pp. 1194–1203).
+- The degree of independent decision-making itself had no significant association with need satisfaction or well-being.
+- Individual differences in collectivist orientation did not moderate these associations in this sample.
+
+## Limitations and boundary conditions
+
+- This is a correlational family-decision study, not an AI-use, classroom-intervention or learning-outcome study.
+- The sample is culturally and developmentally specific. The result motivates separating constructs; it does not prove that the same paths hold in every culture, age or task.
+- Self-report and shared-method variance limit causal interpretation, and well-being is not academic learning.
+- “Dependence” here means family participation in decisions, not compulsive or harmful technology dependence.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-low | Clear construct separation, but cross-sectional self-report cannot establish causality |
+| Directness | moderate | Direct for autonomy versus independence; indirect for AI-supported learning |
+| Consistency | moderate | Fits self-determination theory and cited cross-cultural work, but no independent replication was appraised here |
+| Replication | low | One study inspected |
+| Magnitude | unclear | Structural associations are informative but not intervention effects |
+| Duration | low | One measurement occasion |
+| Transfer | low | Family decision-making does not automatically transfer to tool use or learning |
+| Ecological validity | moderate | Real adolescents and family decisions, but questionnaire measures |
+
+## Candidate claims
+
+Supports [C030](../../claims/C030-autonomy-is-not-independence.md). It is a construct-validity warning, not evidence that AI assistance is benign or that dependence cannot become harmful.
+
+## Notes
+
+For Orqestra, assistance frequency and unaided performance may be useful contextual measures, but neither is an agency score. Ask who endorsed the goal and support, whether meaningful choices existed, and whether the learner could revise or refuse.
+
+## S046 — Improving students' help-seeking skills using metacognitive feedback in an intelligent tutoring system
+
+Type: source
+Status: reviewed
+Topics: metacognition, scaffolding, product-measurement, learner-modelling, learning-vs-performance
+Technology dependence: mechanism-oriented
+Canonical path: `sources/notes/S046-roll-help-seeking-behaviour-not-learning.md`
+
+# S046 — Help-seeking behaviour is not learning
+
+## Why it matters
+
+This is a rare intervention that changes observable help-seeking while checking whether those changes transfer or improve learning. It shows why fewer answer-seeking requests or more model-conforming help actions cannot stand in for durable understanding.
+
+## Identity and provenance
+
+- Canonical identifier: DOI `10.1016/j.learninstruc.2010.07.004`; *Learning and Instruction* 21(2), 267–280.
+- Version inspected: complete author-hosted manuscript.
+- Content inspected: full methods, help-seeking model, both studies, results and discussion.
+- Access and rights: author-hosted public copy; publisher rights were not inferred and no full text is stored in Git.
+- Retrieval: gateway candidate `cand_c5457467251e115e` was metadata-only. The author PDF's TLS certificate was expired, so the same URL was streamed once with certificate verification disabled into local `pdftotext`; no binary was retained or admitted on that basis.
+- Locator convention: journal page, study and named outcome.
+
+## Studies
+
+- Study 1: 58 grade 10–11 students used a geometry Cognitive Tutor with or without Help Tutor metacognitive feedback. Outcomes included faulty help actions and transfer to paper-based help-seeking scenarios.
+- Study 2: 67 students used a bundled revised Help Tutor, instruction and self-assessment intervention over longer use, with within-tutor and far-transfer measures.
+- The model distinguishes help needed, choice to seek help, informational versus bottom-out requests, and correct application after help.
+
+## Findings
+
+- In Study 1, feedback reduced faulty help requests from 36% to 26% and bottom-out hint requests from 70% to 48%; model errors correlated with independent paper measures (pp. 270–276).
+- These behavioural improvements did not produce domain-learning gains.
+- In Study 2, some help-seeking effects appeared after extended use and transferred within the tutor, but not to far-transfer measures; again, no domain-learning gain was established (pp. 276–279).
+
+## Limitations and boundary conditions
+
+- Both studies are small, use an older rule-based geometry tutor, and test a specific normative help model rather than LLM conversation.
+- Study 2 bundles feedback, instruction and self-assessment, limiting component attribution.
+- Log conformity can miss covert reasoning, accessibility needs, affect, productive direct help and help obtained outside the system.
+- Null learning results are imprecise and should not be read as proof that help-seeking instruction never improves learning.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate | Comparative intervention with independent measures; second study bundles components |
+| Directness | high | Directly separates help-process change from domain learning and transfer |
+| Consistency | moderate | Similar behavioural pattern across two studies, but learning effects remained absent |
+| Replication | moderate-low | Two related studies from one research programme |
+| Magnitude | moderate | Material reductions in specified undesirable help actions |
+| Duration | moderate | Extended use in Study 2, without durable domain outcome |
+| Transfer | low | Limited within-tutor transfer and no far-transfer effect |
+| Ecological validity | moderate | Classroom-like tutor use, but historical geometry software |
+
+## Candidate claims
+
+Supports [C031](../../claims/C031-help-seeking-behaviour-is-not-learning.md). It also motivates treating help-seeking as a conditional process—need, source, timing, kind, use and later outcome—rather than a request count.
+
+## Notes
+
+The useful lesson transfers at the measurement level: a product can optimize its own preferred interaction pattern without improving what the learner can later do.
+
+## S047 — Reactivity to confidence ratings in older individuals performing the Latin square task
+
+Type: source
+Status: reviewed
+Topics: metacognition, assessment-validity, product-measurement
+Technology dependence: model-independent
+Canonical path: `sources/notes/S047-double-confidence-rating-reactivity.md`
+
+# S047 — Confidence ratings can change what they measure
+
+## Why it matters
+
+Confidence is often treated as a harmless label attached to performance. This randomized study shows that repeatedly eliciting it can change monitoring and control, making the prompt part of the intervention rather than a passive observation.
+
+## Identity and provenance
+
+- Canonical identifier: DOI `10.1007/s11409-018-9186-5`; *Metacognition and Learning* 14, 307–324.
+- Version inspected: complete published open-access PDF.
+- Content inspected: full methods, randomized conditions, measures, analyses, results and discussion.
+- Access and rights: CC BY.
+- Retrieval: gateway candidate `cand_0af50bd451fcecdc`; PDF SHA-256 `8c87ac7ab351b763ea518bce141a2e1aa1ada87102821a87dcffbb7a7062b8eb`.
+- Locator convention: journal page, figure and named analysis.
+
+## Study
+
+- Population and setting: 89 community participants in Australia, mean age 64.18 (range 27–84), 82% women, completing an online timed Latin-square reasoning task.
+- Intervention and comparator: 43 participants rated confidence after every item; 46 controls saw a time-matched blank screen. Assignment was randomized.
+- Outcomes: task performance, response-time strategy, retrospective self-appraisal and squared miscalibration.
+
+## Findings
+
+- The confidence-rating group was more miscalibrated than controls (`M=642.36` versus `351.53`) in the adjusted monitoring model (pp. 318–320).
+- Eliciting confidence changed response-time control conditional on prior self-confidence: higher-confidence participants persisted longer, while lower-confidence participants responded faster (pp. 317–320).
+- Short-term item efficiency changed for some participants, but there was no overall timed-task performance benefit. The authors interpret repeated ratings as shifting attention and strategy toward immediate performance.
+
+## Limitations and boundary conditions
+
+- This is one timed abstract-reasoning task in an older, predominantly female community sample; it is not an educational AI task.
+- The reported moderation is conditional on prospective self-confidence and should not be simplified into a universal direction of performance effect.
+- Retrospective appraisal and squared calibration are participant-level measures; they do not replace item-level discrimination such as AUROC2 where enough labelled trials exist.
+- The result establishes possible measurement reactivity, not the optimal confidence-prompt frequency or interface.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate | Randomized, time-matched comparison; modest and demographically skewed sample |
+| Directness | high | Direct for confidence-prompt reactivity, indirect for learning and AI collaboration |
+| Consistency | moderate-low | Authors cite mixed prior effects across tasks and populations |
+| Replication | low | One inspected study |
+| Magnitude | moderate | Monitoring and control changed, but overall performance did not |
+| Duration | low | Single online session |
+| Transfer | low | No learning, retention or domain transfer test |
+| Ecological validity | low-moderate | Real remote participants, artificial timed reasoning task |
+
+## Candidate claims
+
+Supports [C032](../../claims/C032-confidence-elicitation-can-be-reactive.md) and adds a measurement-reactivity boundary to [C010](../../claims/C010-appropriate-reliance-has-distinct-components.md).
+
+## Notes
+
+E001 should estimate the burden and behavioural effect of asking for confidence, not assume that denser confidence data is automatically better evidence.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -1769,7 +1959,7 @@ Together, the sources support a narrow measurement claim: when correctness and p
 
 RAIR and RSR are conditional rates whose denominators depend on initial human accuracy, AI accuracy and disagreements. Sparse denominators make them unstable. Asking for an initial answer can also anchor the learner, so the measure changes the interaction it observes.
 
-The claim does not cover creative, normative or social work whose quality is plural or delayed. It does not establish authorship, responsibility, justice, durable learning, or the teachability of evaluative control.
+The claim does not cover creative, normative or social work whose quality is plural or delayed. It does not establish authorship, responsibility, justice, durable learning, or the teachability of evaluative control. Repeatedly asking for confidence can itself alter monitoring and strategy [S047], so a dense confidence trace is not automatically a more valid one.
 
 ## Product relevance
 
@@ -1916,6 +2106,93 @@ Large and authentic field studies show that structured support after mistakes ca
 
 Set both a friction floor and a friction ceiling. Let learners request a worked example or answer after a short diagnostic attempt, and treat repeated non-response, frustration or accessibility burden as evidence to escalate—not as a reason to ask another question indefinitely.
 
+## C030 — Autonomy is not the inverse of dependence
+
+Type: claim
+Status: provisional
+Topics: motivation-and-agency, assessment-validity, product-measurement
+Canonical path: `claims/C030-autonomy-is-not-independence.md`
+
+# C030 — Autonomy is not the inverse of dependence
+
+## Claim
+
+Agency is about self-endorsed action under meaningful options, not simply acting alone. In a bounded family-decision study, adolescents could act dependently for autonomous reasons and benefit; independent decisions did not by themselves predict well-being [S045].
+
+## Evidence and reasoning
+
+Chen et al. explicitly separated behavioural independence from the reasons underlying both independent and dependent decisions. Self-endorsed motives had the expected association with need satisfaction and well-being in each decision mode. Behavioural independence did not. That pattern rejects a one-dimensional independence–agency scale.
+
+## Boundary conditions
+
+The design cannot establish causal effects, and family decisions are not AI-mediated study. The source therefore changes construct interpretation, not the estimated benefit or harm of AI use. Harmful dependence can still involve loss of control, capability, access or well-being; those require their own evidence.
+
+## Counterevidence and uncertainty
+
+Some domains legitimately require unaided performance, and repeated delegation may erode capability. Those are decision- and learning-relevant outcomes, but they are not definitions of agency. The claim would narrow if validated AI-learning measures showed that independence captures self-endorsement after controlling for choice, pressure and access.
+
+## Product relevance
+
+Keep three questions separate: what the learner can do with and without substantive AI, whether the learner endorsed the goal and support, and whether reliance causes avoidable harm. Report them as a portfolio rather than a virtue-ranked continuum.
+
+## C031 — Improved help-seeking behaviour does not establish learning
+
+Type: claim
+Status: provisional
+Topics: metacognition, scaffolding, product-measurement, learning-vs-performance
+Canonical path: `claims/C031-help-seeking-behaviour-is-not-learning.md`
+
+# C031 — Improved help-seeking behaviour does not establish learning
+
+## Claim
+
+A learner can display more model-conforming help behaviour without learning more. Roll et al. changed several help actions and achieved limited process transfer, but did not establish domain-learning gains [S046].
+
+## Evidence and reasoning
+
+The first Help Tutor study reduced faulty and bottom-out requests, and its model had some correspondence with independent scenarios. The longer second study found some delayed within-tutor help-process change. Neither pattern yielded domain-learning improvement, and far transfer remained absent.
+
+## Boundary conditions
+
+The evidence concerns a pre-LLM geometry tutor, not conversational help ecosystems. A direct answer can be avoidance, legitimate novice scaffolding or an accessibility need; no log event identifies that meaning by itself. Off-platform and covert help are also invisible.
+
+## Counterevidence and uncertainty
+
+Help-seeking is plausibly a learning mechanism, and larger or better-targeted interventions may affect learning. Current LLM studies also show that learners choose among AI, peers and teachers in ways old tutor logs cannot capture. The bounded claim is only that process improvement is not outcome validation.
+
+## Product relevance
+
+Condition analyses on an opportunity or need for help. Record source selection, escalation, instrumental versus answer-seeking support, verification and application, then test whether the pattern predicts delayed accessible-independent and transfer outcomes.
+
+## C032 — Confidence elicitation can change monitoring and control
+
+Type: claim
+Status: provisional
+Topics: metacognition, assessment-validity, product-measurement
+Canonical path: `claims/C032-confidence-elicitation-can-be-reactive.md`
+
+# C032 — Confidence elicitation can change monitoring and control
+
+## Claim
+
+The act of requesting confidence can alter the cognition it is intended to observe. Double and Birney found worse retrospective calibration and different time-allocation strategies under repeated confidence ratings [S047].
+
+## Evidence and reasoning
+
+Random assignment and a time-matched blank-screen control make measurement reactivity a credible explanation within this task. The interaction with prior self-confidence also explains why the same prompt can appear helpful for some participants and harmful for others.
+
+## Boundary conditions
+
+This is not evidence that every confidence question harms learning or calibration. It is a one-session abstract-reasoning result in a specific population. Item-level correctness/confidence remains useful when the task, trial count and decision justify it [S021]; the contradiction is that elicitation cannot be assumed neutral.
+
+## Counterevidence and uncertainty
+
+S021 shows the analytical value of metacognitive sensitivity for bounded human–AI arbitration, but uses previously observed confidence rather than testing prompt reactivity. Different timing, sparse sampling or learner-initiated confidence could reduce reactivity. Those are empirical questions.
+
+## Product relevance
+
+Pre-register a confidence-elicitation policy, compare it with a no-prompt or sparse-prompt condition, and estimate changes in performance, strategy, burden and later learning before treating confidence as a stable learner attribute.
+
 ## B001 — Optimize durable capability, not completion
 
 Type: belief
@@ -2026,7 +2303,7 @@ Canonical path: `beliefs/B004-separate-independent-and-assisted-capability.md`
 
 ## Position
 
-Independent capability and effective human-AI collaboration are both valuable and neither should erase the other. A single score cannot responsibly answer both questions. “Independent” means without substantive AI delegation, not without the access-restoring technology a learner needs to encounter or express the target construct.
+Independent capability and effective human-AI collaboration are both valuable and neither should erase the other. A single score cannot responsibly answer both questions. “Independent” means without substantive AI delegation, not without the access-restoring technology a learner needs to encounter or express the target construct. Independence is an observation condition, not a synonym for autonomy or a moral rank [C030].
 
 ## Why we believe this
 
@@ -2042,12 +2319,13 @@ We would replace this separation with a richer model if it preserved the same in
 
 ## Implications
 
-Tag every observation with assistance conditions and function. Model task-level AI-mediated stewardship—verification, judgment, repair, escalation and contestability—alongside the target domain capability. Preserve a portfolio rather than aggregating these signals into a universal sovereignty score.
+Tag every observation with assistance conditions and function. Model task-level AI-mediated stewardship—verification, judgment, repair, escalation and contestability—alongside the target domain capability. Measure self-endorsement and meaningful choice separately from assistance frequency. Preserve a portfolio rather than aggregating these signals into a universal sovereignty score.
 
 ## Revision history
 
 - 2026-08-31: adopted as a founding belief.
 - 2026-08-31: clarified accessible baselines, assistance function and task-level supervisory evidence after [S020]–[S022].
+- 2026-09-22: clarified that independence is a capability context, not an agency proxy, after [C030].
 
 ## B005 — Personalization must earn its complexity
 

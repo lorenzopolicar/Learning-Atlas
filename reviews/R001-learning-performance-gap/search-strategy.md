@@ -1,7 +1,7 @@
 # R001 search strategy
 
-Last searched: 2026-09-14
-Coverage status: targeted current-evidence and progressive-assistance update; not yet database-complete.
+Last searched: 2026-09-22
+Coverage status: targeted outcome-construct validity update; not yet database-complete.
 
 ## Concept blocks
 
@@ -116,6 +116,32 @@ Question: which progressive-hint and attempt-before-answer policies have causal 
 ### Coverage boundary
 
 This was a bounded falsification pass, not a complete systematic search. No admitted study isolates the full P001 sequence, and only S042 measures beyond the same session. Database exports, formal RoB 2 adjudication and publication-bias assessment remain open.
+
+## 2026-09-22 targeted outcome-construct update
+
+Question: which outcomes capture learner agency, dependence, calibration and help-seeking without collapsing them into an omnibus score?
+
+### Providers, queries and citation chain
+
+- Bounded Atlas query: `learner agency dependence calibration help-seeking outcomes`, limited to claims and principles; freshness audit run before external search.
+- Atlas gateway/OpenAlex/Crossref: `agentic engagement student agency scale Reeve Tseng`; `academic help seeking instrumental executive avoidance validated scale`; `generative AI student reliance calibration help seeking behavior`; exact DOI resolution for `10.1177/0022022113480038`, `10.1016/j.learninstruc.2010.07.004` and `10.1007/s11409-018-9186-5`.
+- Native web: `validated student agentic engagement scale Reeve Tseng 2011 DOI full text`; `metacognitive calibration measures absolute accuracy bias discrimination`; `2025 2026 generative AI students dependence overreliance calibration help seeking behavioral experiment unassisted performance`; `AI as First Stop academic help-seeking STEM students`.
+- Citation chaining began from C010/S021, E001, B004 and R001 secondary outcomes, then followed construct-validation and measurement-reactivity references rather than another generic reliance scale.
+- Public LinkedIn positions from Olga Viberg (activity `7434141258266222592`), Paula de Barba (`7494711063209246720`) and Sam Illingworth (`7489957017382531072`) and *The Atlantic* podcast episode “Why Learn Something That a Machine Can Do for You?” were sampled as perspective/discovery leads. Original research was followed where available; none was admitted as empirical evidence.
+
+### Admission decisions
+
+- Include [S045] after complete manuscript inspection: self-endorsed motives, not behavioural independence, predicted need satisfaction and well-being in 573 Chinese adolescents. Use only to separate agency from independence.
+- Include [S046] after complete author-manuscript inspection: Help Tutor feedback reduced specified faulty help actions but did not establish domain learning or far transfer. Use to prevent help-process proxies from becoming outcome claims.
+- Include [S047] after complete CC BY paper inspection: randomized confidence elicitation worsened retrospective calibration and changed response-time control in one timed-reasoning task. Use to treat confidence prompts as a potentially reactive intervention.
+- Hold Reeve and Tseng, DOI `10.1016/j.cedpsych.2011.05.002`: strong agentic-engagement scale candidate, but it measures constructive classroom contribution by self-report and adds less decision-changing evidence than the autonomy distinction under the three-source cap.
+- Hold Zheng et al., DOI `10.1609/aies.v8i3.36760`: useful current behavioural reliance taxonomy, but one short single-institution quiz and no delayed learning or dependence outcome.
+- Hold Viberg et al., DOI `10.20851/ll.v8.60`: useful four-stage LLM help-seeking process from 20 interviews; proposed survey items are preliminary and the publisher PDF endpoint returned HTTP 404 in this run.
+- Reject pathological/general-use AI-dependence scales for product inference where cross-sectional self-report cannot establish capability loss, causation or learning. Hold the Goh et al. scale as a bounded harm signal only.
+
+### Coverage boundary
+
+This was a bounded construct-falsification pass, not a psychometric systematic review. No admitted source validates a composite of agency, dependence, calibration and help-seeking, and no source justifies diagnosing a learner from product logs. Cross-cultural measurement invariance, longitudinal criterion validity, learner co-design, disability/accessibility interpretation and current-system predictive validation remain open.
 
 ## Required search log
 

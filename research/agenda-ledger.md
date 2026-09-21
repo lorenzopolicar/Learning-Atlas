@@ -77,3 +77,15 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Bias and novelty risk: a more explicit schema can still create surveillance and false precision. Standards establish interoperability, not validity, and the inspected time-aware study is historical and narrow.
 - Review horizon and success signal: revisit after learner/domain/accessibility co-design or the next monthly synthesis. Success requires comprehensible records, reliable classifications and better decisions without disproportionate burden.
 - Human decision: pending review of the draft pull request; no product implementation is authorized by this research update.
+
+### 2026-09-22 — Outcome constructs separated before instrumentation
+
+- Proposal: keep queue item 5 active, but replace “identify measures” with validation of a non-composite portfolio spanning self-endorsement and choice, support-withdrawal and harm, correctness-confidence discrimination, conditional help process, and delayed accessible-independent/transfer outcomes.
+- Triggering signals: [S045] separates autonomy from behavioural independence; [S046] changes help-process behaviour without domain learning; [S047] shows that confidence elicitation can alter monitoring and control. Existing [S021] remains the calibration anchor but does not establish that prompts are neutral.
+- Evidence change: [C030] rejects independence as an agency proxy, [C031] rejects help-log conformity as learning, and [C032] makes confidence-prompt reactivity a falsifiable part of E001. No composite score or maturity promotion is proposed.
+- Source lanes: next prioritize learner and disability-community co-design, cross-cultural measurement invariance, current-system behavioural validation and longitudinal support-withdrawal outcomes. Use self-report, logs and performance as converging views rather than substitutes.
+- Product implication: Orqestra should preserve distinct outcome fields and randomize dense versus sparse/no confidence elicitation before using confidence in learner inference. Assistance frequency may describe context, but should not rank agency.
+- Opportunity cost: defer another general GenAI dependence scale and another classroom-agency self-report instrument until the admitted distinctions are operationally falsified.
+- Bias and novelty risk: the three admitted studies are model-independent and decision-changing, but two are historical and none validates an AI-learning battery. Cross-cultural, age, accessibility and task transfer remain uncertain.
+- Review horizon and success signal: revisit after E001 co-design or a current-system study with assisted, withdrawal, delayed and transfer outcomes. Success requires incremental validity over simple domain performance without disproportionate burden or measurement reactivity.
+- Human decision: pending review of the draft pull request; no product instrumentation, learner scoring or diagnostic use is authorized.

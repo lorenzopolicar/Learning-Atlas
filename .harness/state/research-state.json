@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "last_weekly_scout": "2026-09-14",
+  "last_weekly_scout": "2026-09-22",
   "last_monthly_synthesis": "2026-08-31",
   "last_quarterly_review": "2026-08-31",
   "active_review": "R001",
-  "current_queue_item": 4,
+  "current_queue_item": 5,
   "scheduled_run_observation": {
     "target": 3,
-    "actual_scheduled_runs_observed": 2,
+    "actual_scheduled_runs_observed": 3,
     "supervised_shadow_cycles": 2,
-    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass were supervised shadows and remain excluded. The 2026-09-06 and 2026-09-14 weekly research scouts are the first two actual scheduler executions."
+    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass were supervised shadows and remain excluded. The 2026-09-06, 2026-09-14 and 2026-09-22 weekly research scouts are the first three actual scheduler executions."
   },
   "runs": [
     {
@@ -83,6 +83,14 @@
       "sources_added": ["S042", "S043", "S044"],
       "briefing": "briefings/weekly/2026-09-14-progressive-assistance-evidence.md",
       "note": "Second actual scheduled run. Admitted a large mastery-workflow field experiment, a supervised interactive-tutoring RCT and a current-system rigid-withholding counterexample; narrowed P001 without claiming that any study isolated a complete hint policy."
+    },
+    {
+      "date": "2026-09-22",
+      "kind": "scheduled-outcome-construct-validity",
+      "question": "queue-item-5",
+      "sources_added": ["S045", "S046", "S047"],
+      "briefing": "briefings/weekly/2026-09-22-outcome-construct-validity.md",
+      "note": "Third actual scheduled run. Admitted construct and measurement falsifiers showing that autonomy is not independence, help-process improvement is not learning, and confidence elicitation can change monitoring and control; kept the proposed outcome portfolio non-composite."
     }
   ]
 }

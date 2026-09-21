@@ -19,3 +19,6 @@
 | [C013](../claims/C013-time-does-not-create-a-universal-evidence-expiry-rule.md) | Elapsed time does not create a universal evidence-expiry rule | provisional | low | learner-modelling, knowledge-tracing, assessment-validity |
 | [C028](../claims/C028-post-error-support-outpaces-delayed-evidence.md) | Post-error AI support improves retry quality more clearly than delayed learning | provisional | moderate | ai-tutoring, scaffolding, feedback, learning-vs-performance |
 | [C029](../claims/C029-rigid-answer-withholding-can-backfire.md) | Rigid answer withholding can impair immediate learning and persistence | provisional | low | ai-tutoring, scaffolding, motivation-and-agency, learning-vs-performance |
+| [C030](../claims/C030-autonomy-is-not-independence.md) | Autonomy is not the inverse of dependence | provisional | moderate | motivation-and-agency, assessment-validity, product-measurement |
+| [C031](../claims/C031-help-seeking-behaviour-is-not-learning.md) | Improved help-seeking behaviour does not establish learning | provisional | moderate | metacognition, scaffolding, product-measurement, learning-vs-performance |
+| [C032](../claims/C032-confidence-elicitation-can-be-reactive.md) | Confidence elicitation can change monitoring and control | provisional | moderate | metacognition, assessment-validity, product-measurement |
