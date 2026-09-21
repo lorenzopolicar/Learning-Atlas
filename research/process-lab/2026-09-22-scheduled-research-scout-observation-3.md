@@ -41,8 +41,8 @@ Held: Reeve and Tseng's agentic-engagement measure, Zheng's current reliance tax
 
 - `python3 scripts/atlas.py index` and `python3 scripts/atlas.py export notebooklm` regenerated ten canonical views and the NotebookLM pack.
 - Strict validation passed for 72 artifacts with 0 errors and 0 warnings. All 6 retrieval contracts and all 34 unit tests passed. The freshness audit still reports 10 explicitly classified model-dependent sources, and `git diff --check` passed.
-- The repository exposed neither a `codex` nor a `codex-automation` label at the previous stack handoff; availability is checked again after PR creation.
-- Human review is requested on the construct separation, the decision to admit falsifiers over candidate instruments, and the E001 confidence-prompt randomization. No Orqestra implementation, learner scoring or merge is authorized.
+- Draft PR #3 was opened against the PR #2 head. Its Atlas integrity check completed successfully; the stack was clean and it had no comments or reviews at first handoff. The repository again exposed neither a `codex` nor a `codex-automation` label, so neither could be applied.
+- Human review is requested on the construct separation, the decision to admit falsifiers over candidate instruments, and the E001 confidence-prompt randomization. No auto-merge was enabled. No Orqestra implementation, learner scoring or merge is authorized.
 
 ## Process lesson
 
