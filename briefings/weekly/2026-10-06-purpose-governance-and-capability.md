@@ -146,5 +146,8 @@ The process lesson is epistemic: a learner-facing safety can still individualize
 - Both E001 JSON Schemas validated against their fixtures with `check-jsonschema`.
 - Model-dependent freshness register: 10 sources, all explicitly classified.
 - `git diff --check`: passed.
+- Initial research commit: `b8f02ce`.
+- Draft PR: [#4 — Research: distribute capability governance](https://github.com/lorenzopolicar/Learning-Atlas/pull/4), stacked on #3, clean, unreviewed and unmerged. GitHub's Atlas integrity check passed on the initial head.
+- The repository exposes neither a `codex` nor `codex-automation` label, so no automation label was available to add.
 
 No product implementation, learner-data collection, merge or maturity promotion is authorized by this briefing.
