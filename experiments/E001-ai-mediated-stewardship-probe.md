@@ -22,6 +22,10 @@
 
 [S023] found a large supported programming advantage but an inconclusive absolute one-week retest contrast, while [S025] found high perceived helpfulness without improved unaided bedside performance. Neither validates stewardship as a construct. Together they strengthen the requirement to separate supported output, later accessible-independent performance, perceived usefulness and process evidence [C001, C012, P005]. Independence is not an agency proxy [C030], help-process conformity does not establish learning [C031], and confidence prompts can change monitoring and control [C032].
 
+## Purpose and governance boundary
+
+E001 tests a bounded evidence procedure; it does not validate an educational purpose, measure subjectification, establish substantive freedom or authorize institutional AI adoption. Before recruitment, learner and educator co-design must include at least one material design or use decision participants can change, a credible non-AI or differently mediated route, and explicit allocation of verification, explanation and recovery duties across learner, educator, institution and vendor [S048, S049, S050, N001]. Record correction alone is not democratic voice.
+
 ## Hypotheses
 
 Primary: on bounded tasks with defensible correctness and the same self-first measurement sequence, adding uncertainty/provenance cues and a brief justification prompt improves correct resistance to plausible AI errors without reducing correct adoption of useful advice.
@@ -63,6 +67,7 @@ Secondary analyses compare assisted gain, final output quality, time, and subgro
 - Warn participants that some advice may be imperfect; debrief every planted error and repair any misconception.
 - Minimize retained text, hash or redact sensitive content, and let learners inspect, correct and contest their record. Keep observation retention, inference review or staleness, and use authorization as distinct controls [C013, P002].
 - Review error severity and exclusions with domain and accessibility experts before deployment.
+- Report teacher/facilitator workload, material-resource constraints, provider/evidence portability and use of exit or alternative routes; do not recode these institutional conditions as learner deficits.
 
 ## Analysis plan
 
@@ -82,6 +87,9 @@ The operational approach should be rejected or narrowed if any of the following 
 - accessibility or invariance audits reveal construct-irrelevant group penalties;
 - learners cannot understand, correct or contest the evidence;
 - privacy, anxiety or interaction costs exceed the product value.
+- participants cannot change a material design/use decision, use a credible alternative or exit without punitive loss;
+- the pilot shifts institutional or vendor verification and recovery obligations onto learners or educators without support;
+- results are used to claim subjectification, substantive capability or an institutional mandate that the protocol did not test.
 
 ## Result and interpretation
 

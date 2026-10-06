@@ -5,8 +5,8 @@
   "title": "Learning, directing, and orchestrating AI",
   "status": "draft",
   "topics": ["human-ai-collaboration", "motivation-and-agency", "assessment-validity", "institutional-design"],
-  "sources": ["S015", "S016", "S017", "S018", "S019", "S020", "S021", "S022"],
-  "last_reviewed": "2026-08-31"
+  "sources": ["S015", "S016", "S017", "S018", "S019", "S020", "S021", "S022", "S048", "S049", "S050"],
+  "last_reviewed": "2026-10-06"
 }
 ---
 
@@ -14,15 +14,18 @@
 
 ## Perspective
 
-The useful question is not whether education should preserve every pre-AI task or replace foundational learning with prompt fluency. It is which capabilities must be independently available, which are legitimately collaborative, and which kinds of direction require enough understanding to notice when the system is wrong.
+The useful question is not whether education should preserve every pre-AI task or replace foundational learning with prompt fluency. It is which purposes, relationships and capabilities communities should sustain when AI assistance is available, unequal, contestable or institutionally imposed; which capabilities must be independently available or legitimately collaborative; and who has authority to decide.
 
-## Five live positions
+## Eight live positions
 
 1. **Substitution:** scarce learning time should move from reproducing work AI can do toward specifying aims, directing AI and judging consequences [S017].
 2. **Orchestration:** worthwhile capability is the regulated coordination of human, AI and artefacts across cognitive, epistemic and ethical dimensions; process visibility is not judgment [S018].
 3. **Outcome-specific hybridity:** the same AI action can be desirable when writing is a means of learning and undesirable when writing is the capability being learned. Institutions should define the outcome first [S019].
 4. **Civic and developmental AI literacy:** learners should progressively engage, create, manage and shape AI, retaining agency and critical judgment rather than merely operating tools [S016].
 5. **Accessibility and capability justice:** AI may perform learning-relevant cognition, but it may also restore access to material, expression, organization or communication. Capability must be judged relative to an accessible baseline and the function of assistance—not tool presence alone [S022].
+6. **Educational purpose and subjecthood:** education always acts across qualification, socialization and subjectification. A system may improve measurable qualification while silently socializing learners into its categories or turning first-person freedom into a scored object [S048].
+7. **Substantive capability:** tools, outputs and observed choices are resources or functionings, not proof that people have real opportunities to pursue educational ends they have reason to value. Conversion conditions and collective participation matter [S049].
+8. **Collective governance and refusal:** AI adoption is not a neutral inevitability. Institutions and communities choose infrastructure, labour arrangements, data practices and alternatives, and those choices distribute dependency and burden [S050].
 
 ## Tensions and counterpositions
 
@@ -31,14 +34,17 @@ The useful question is not whether education should preserve every pre-AI task o
 - Process logs can reveal decisions but also create surveillance, proxy gaming and false confidence. Credible evidence needs a construct-specific validity argument.
 - AI access can either improve or harm later independent performance depending on the setting [S015, S001]. Therefore neither “ban AI” nor “AI literacy solves it” is an empirical conclusion.
 - AI literacy contains durable candidates—task judgment, verification, agency, ethical reasoning—and fast-decaying tool procedures. Curricula need different update cadences for each.
+- “Learner ownership” can become pseudo-empowerment when a system makes learners monitor and repair themselves while institutions retain control over purpose, infrastructure and consequences [S048, S050].
+- Equal AI access or equal artifact quality can conceal unequal conversion conditions, adapted preferences, compulsory participation and missing alternatives [S049].
+- Refusal is not sufficient: a nostalgic or blanket ban can reproduce inequality and leave private access untouched. A critique owes an affirmative, materially resourced educational alternative [S050].
 
 ## Construct audit and emerging position
 
-Treat **capability sovereignty** as a normative, relational lens—not a latent trait or score. It asks whether a learner has meaningful control over AI-mediated work: enough domain-grounded evaluative control to choose, verify, reject, repair, escalate and contest consequential delegations; access to alternative human or technical support; and a legitimate voice in how capability is inferred. Sovereignty does not require tool abstinence or reproducing inaccessible processes unaided.
+Treat **capability sovereignty** as a normative, relational and institutionally distributed lens—not a latent trait or score. It asks whether learners and affected communities have meaningful authority over educational purposes and AI-mediated work: enough domain-grounded evaluative control to choose, verify, reject, repair, escalate and contest consequential delegations; real access to human, technical and non-AI alternatives; influence over how capability is defined and inferred; and meaningful exit without punitive loss. Sovereignty does not require tool abstinence or reproducing inaccessible processes unaided. Nor can competent individual use compensate for a compulsory, surveillant or dependency-producing institution [S048, S049, S050].
 
 For operational product language, use **AI-mediated task stewardship**. This modest phrase points to observable conduct without claiming a new validated construct. Capability sovereignty overlaps self-regulated learning, metacognition, appropriate reliance, AI literacy, epistemic agency, resilience, authorship, meaningful human control and contestability. The overlap is a reason to decompose and test it, not to manufacture a composite score.
 
-A useful design question is: *What must the learner be able to notice, decide, explain and recover from for this delegation to be responsible?* The answer determines which knowledge must be internalized, which can remain externally scaffolded and what collaborative evidence counts.
+A useful task-level design question is: *What must the learner be able to notice, decide, explain and recover from for this delegation to be responsible?* A separate governance question is: *What must learners, educators, institutions and vendors each be able to decide, refuse, guarantee and remain accountable for?* Neither question settles education's purposes by itself.
 
 ## What it makes us notice in product design
 
@@ -52,6 +58,11 @@ A useful design question is: *What must the learner be able to notice, decide, e
 - Make curricula and capability models versioned: durable judgment changes slowly; tool-specific procedures may change each term.
 - Let the learner inspect and contest inferences about dependence, judgment and mastery.
 - Never aggregate these signals into a universal `capabilitySovereigntyScore`.
+- Declare the intended effects on qualification, socialization and subjectification; never score subjectification or treat interface choice as first-person freedom [S048].
+- Compare observed functioning with substantive alternatives and conversion conditions, including accessibility, time, language, material resources, teacher support and institutional policy [S049].
+- Keep providers, models and evidence portable enough to support exit; provide a credible non-AI or differently mediated route where participation is consequential.
+- Treat record correction as procedural contestability, not democratic voice. Co-design must include agenda-setting, revision authority and explicit decisions that participants can change.
+- Audit whether verification, explanation and error-recovery duties have been shifted from vendors or institutions onto learners and teachers [S050].
 
 ## Measurement cautions
 
@@ -62,4 +73,4 @@ A useful design question is: *What must the learner be able to notice, decide, e
 
 ## Empirical claims, if any
 
-The discourse note makes no aggregate causal claim. [C009] captures one positive one-week experiment, [C001] preserves the broader measurement warning, and [C010] is deliberately limited to bounded reliance tasks. Capability sovereignty remains a direction to criticize with learners and affected communities. AI-mediated task stewardship is a candidate product framing that still requires construct validation, measurement-invariance work and longitudinal tests.
+The discourse note makes no aggregate causal claim. [C009] captures one positive one-week experiment, [C001] preserves the broader measurement warning, and [C010] is deliberately limited to bounded reliance tasks. Capability sovereignty remains a direction to criticize with learners and affected communities. AI-mediated task stewardship is a candidate product framing that still requires construct validation, measurement-invariance work and longitudinal tests. Even a successful task-level pilot would not validate an educational purpose, establish subjectification, prove substantive freedom or authorize institutional adoption.

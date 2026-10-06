@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "last_weekly_scout": "2026-09-22",
+  "last_weekly_scout": "2026-10-06",
   "last_monthly_synthesis": "2026-08-31",
   "last_quarterly_review": "2026-08-31",
   "active_review": "R001",
-  "current_queue_item": 5,
+  "current_queue_item": 6,
   "scheduled_run_observation": {
     "target": 3,
     "actual_scheduled_runs_observed": 3,
@@ -91,6 +91,14 @@
       "sources_added": ["S045", "S046", "S047"],
       "briefing": "briefings/weekly/2026-09-22-outcome-construct-validity.md",
       "note": "Third actual scheduled run. Admitted construct and measurement falsifiers showing that autonomy is not independence, help-process improvement is not learning, and confidence elicitation can change monitoring and control; kept the proposed outcome portfolio non-composite."
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "scheduled-purposes-and-power",
+      "question": "Q003",
+      "sources_added": ["S048", "S049", "S050"],
+      "briefing": "briefings/weekly/2026-10-06-purpose-governance-and-capability.md",
+      "note": "Fourth actual scheduled run. Added philosophical, capability-approach and current critical-edtech constraints; made capability sovereignty institutionally distributed and kept task stewardship explicitly narrower than educational purpose or governance."
     }
   ]
 }

@@ -503,6 +503,27 @@
       "title": "Reactivity to confidence ratings in older individuals performing the Latin square task",
       "status": "reviewed",
       "path": "sources/notes/S047-double-confidence-rating-reactivity.md"
+    },
+    {
+      "id": "S048",
+      "type": "source",
+      "title": "Risking Ourselves in Education: Qualification, Socialization, and Subjectification Revisited",
+      "status": "reviewed",
+      "path": "sources/notes/S048-biesta-risking-ourselves.md"
+    },
+    {
+      "id": "S049",
+      "type": "source",
+      "title": "The Capability Approach: Its Potential for Work in Education",
+      "status": "reviewed",
+      "path": "sources/notes/S049-walker-unterhalter-capability-education.md"
+    },
+    {
+      "id": "S050",
+      "type": "source",
+      "title": "Present Company Excepted",
+      "status": "reviewed",
+      "path": "sources/notes/S050-watters-present-company-excepted.md"
     }
   ],
   "edges": [
@@ -939,6 +960,21 @@
     {
       "source": "N001",
       "target": "S022",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S048",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S049",
+      "relation": "sources"
+    },
+    {
+      "source": "N001",
+      "target": "S050",
       "relation": "sources"
     },
     {

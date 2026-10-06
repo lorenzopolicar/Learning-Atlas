@@ -24,6 +24,8 @@ Use **capability sovereignty** only as a normative design lens. Use **AI-mediate
 
 Run [E001] before adding a durable learner-model field. The pilot will keep accessible independent, AI-assisted and supervisory/recovery evidence separate; record assistance permission, use, function and classification basis; and expose a reviewable evidence portfolio. Observation events, scored assertions and model inferences remain linked but separate [P002]. It will not create a `capabilitySovereigntyScore`, overload Bloom taxonomy, update a high-stakes mastery estimate, or infer dependence from tool presence or frequency.
 
+The pilot is also not a referendum on educational purpose or institutional AI adoption. Record correction is procedural contestability, not democratic voice; co-design must expose a material decision participants can change. A learner's observed stewardship cannot compensate for missing alternatives, unequal conversion conditions, vendor opacity or an institution that shifts its own verification and repair obligations onto learners and educators [S048, S049, S050, N001].
+
 The full design brief is [Orqestra design brief — AI-mediated task stewardship](../bridges/orqestra-ai-mediated-stewardship.md).
 
 ## Evidence and principles
@@ -33,6 +35,9 @@ The full design brief is [Orqestra design brief — AI-mediated task stewardship
 - Trustworthy judgments require multiple construct-relevant channels [C008, P006].
 - Learning claims require delayed performance after substantive assistance is removed, while necessary access support remains [P005].
 - Disabled learners report both meaningful access/autonomy benefits and overreliance concerns, so assistance function is indispensable [S022].
+- Educational subjecthood cannot be manufactured or scored by the intervention [S048].
+- Equal resources or outcomes can conceal unequal substantive opportunity [S049].
+- Technology infrastructure and burden allocation remain collective governance choices [S050].
 
 ## Alternatives considered
 
