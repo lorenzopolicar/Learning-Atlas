@@ -4,7 +4,7 @@ This package turns [E001](../E001-ai-mediated-stewardship-probe.md) into a revie
 
 ## Decision boundary
 
-Implement E001 behind a research flag and in a dedicated pilot store. Do not add its fields to `CourseEnrollment`, reinterpret `AssessmentResult`, or derive a permanent person-level score. Promote nothing to a learner profile until the protocol's validity, accessibility, learner-understanding and decision-value gates pass.
+Implement E001 behind a research flag and in a dedicated pilot store. Do not add its fields to `CourseEnrollment`, reinterpret `AssessmentResult`, or derive a permanent person-level score. Promote nothing to a learner profile until the protocol's validity, accessibility, learner-understanding and decision-value gates pass. A successful pilot would still not establish an educational purpose, measure subjectification or authorize institutional AI adoption [S048, S049, S050].
 
 ## Pilot unit
 
@@ -64,7 +64,7 @@ For the pilot, add separate append-only observation and scored-assertion records
 
 ## Delivery sequence
 
-1. Co-design the support vocabulary, burden, review copy and contest flow with a varied learner advisory group that includes disabled learners.
+1. Co-design the support vocabulary, burden, review copy and contest flow with a varied learner and educator advisory group that includes disabled learners. Give the group authority to change at least one material design/use decision and review a credible non-AI or differently mediated route.
 2. Domain-review the task/rubric/advice bank and planted-error severity; pre-register exclusions, estimands, timing and minimum information thresholds.
 3. Run schema fixtures through the implementation's chosen JSON Schema validator and keep the repository invariant tests green.
 4. Instrument only the research-flag path and conduct an internal dry run with synthetic identities.
@@ -103,3 +103,5 @@ No analysis should produce a leaderboard, credential, employment signal, silent 
 - event visibility, correction, retention and prohibited-use enforcement are only policy text rather than testable behaviour;
 - a controlled error could cause real-world harm or persist beyond debrief and repair;
 - the team cannot separate pilot research data from operational learner scoring.
+- participants cannot refuse or exit without punitive loss, or the proposed alternative is not materially usable;
+- provider and evidence portability, teacher workload and institutional verification/recovery obligations have no accountable owner.

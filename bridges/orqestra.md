@@ -6,6 +6,8 @@ Learning Atlas supplies the evidence and design reasoning for the learning engin
 
 Orqestra can connect person, context, work, observed gaps, intervention, later performance, and an updated learner model. The scarce asset is an evidence-backed representation of capability and how it changes—not generated course volume.
 
+That asset does not authorize Orqestra to define educational purpose. Evidence protects against false mastery only when the intended purpose is explicit, learners and educators can change consequential choices, assistance can be converted into substantive opportunity, and a credible exit or alternative prevents infrastructure from becoming compulsory [S048, S049, S050, N001].
+
 ## Current map
 
 | Orqestra concern | Atlas guidance | Design question |
@@ -18,6 +20,7 @@ Orqestra can connect person, context, work, observed gaps, intervention, later p
 | product analytics | [C001], [P005] | Are completion, engagement, and assisted correctness being mistaken for learning? |
 | human-AI capability | [B004], [C010], [N001], [D002] | What must the learner notice, decide, justify, verify, repair, escalate, and contest for delegation to count as responsible capability? |
 | AI literacy coverage | [S016], [N001] | Does the experience develop critical engagement, creation, task allocation, evaluation, agency, and the ability to shape systems—not only tool fluency? |
+| educational purpose and governance | [S048], [S049], [S050], [N001] | Who chooses the purpose, what real alternatives and conversion conditions exist, which burdens belong to the learner, educator, institution and vendor, and can participants refuse or exit without penalty? |
 
 ## Consult from Noema
 
@@ -58,3 +61,4 @@ No learner-identifiable data enters the public atlas. A product result should in
 3. Learner evidence ledger versus current state representation, evaluated for auditability, correction, and recommendation quality [P002].
 4. Separate independent and AI-assisted capability estimates, evaluated for calibration and decision usefulness [B004, P006].
 5. Run the low-stakes [AI-mediated task stewardship probe](../experiments/E001-ai-mediated-stewardship-probe.md), preserving access-restoring support and reporting a portfolio rather than a sovereignty score [C008, C010, D002]. See the [implementation-facing design brief](orqestra-ai-mediated-stewardship.md).
+6. Before any institutional adoption, rehearse a purpose-and-governance decision in which learners and educators can change at least one material design choice, use a credible non-AI or differently mediated route, and test teacher workload, portability, exit and unequal conversion conditions [S048, S049, S050].

@@ -1717,6 +1717,142 @@ Supports [C032](../../claims/C032-confidence-elicitation-can-be-reactive.md) and
 
 E001 should estimate the burden and behavioural effect of asking for confidence, not assume that denser confidence data is automatically better evidence.
 
+## S048 — Risking Ourselves in Education: Qualification, Socialization, and Subjectification Revisited
+
+Type: source
+Status: reviewed
+Topics: institutional-design, motivation-and-agency, ethics-and-governance
+Technology dependence: model-independent
+Canonical path: `sources/notes/S048-biesta-risking-ourselves.md`
+
+# S048 — Risking Ourselves in Education
+
+## Why it matters
+
+Biesta prevents the Atlas from turning educational purpose into a product objective or learner trait. Qualification, socialization and subjectification are intertwined domains of purpose; subjectification concerns a person's first-person freedom to act or refrain, not another outcome for an optimization or scoring system to manufacture.
+
+## Identity and provenance
+
+- DOI: `10.1111/edth.12411`; *Educational Theory* 70(1), 89–104.
+- Version inspected: complete publisher version of record from Edinburgh Research Explorer; CC BY.
+- Content inspected: full article, including the three domains, subjectification, self-objectification and the conclusion on educational power and risk.
+- Retrieval: gateway candidate `cand_0b9423958fe04701`; PDF SHA-256 `b7fb4583f2829c0b6d84013cf44a67e29dbba4213a2a0a8acbc4adf47e8c1163`.
+- Provider path: Crossref and OpenAlex metadata; Wiley PDF returned HTTP 403, so the lawful Edinburgh repository copy was used. Docling did not return a bounded extraction; deterministic `pdftotext` supplied page-located navigation.
+- Locator convention: printed journal pages and named sections.
+
+## Argument
+
+- **Purpose before optimization:** “learning” alone is an empty process term unless content, reasons and educational relationships are made explicit. Education always works across qualification, socialization and subjectification (pp. 91–93).
+- **Subjecthood is not a product:** subjectification concerns whether a person can say yes or no, participate or resist, and exist as the subject rather than the object of another's intervention (pp. 93–95).
+- **Agency is not self-management:** personality, identity, opinion and externally observable learner self-regulation are not substitutes for subjecthood. Systems that make learners manage themselves can offload institutional responsibility and create pseudo-empowerment (pp. 99–101).
+- **Education retains risk and power:** removing every possibility that learners reject an educator's intention turns education into reproduction. Educational intentions are acts of power even when well meant, and learners must remain able to refuse or transform them (pp. 102–104).
+
+## Boundaries and counterposition
+
+- This is a philosophical argument, not an empirical estimate of AI's effects or a validated measurement model.
+- Freedom is not unrestricted preference satisfaction. Biesta explicitly locates subjecthood in relation to a shared world and other people.
+- Qualification and socialization remain necessary; the article does not justify abandoning knowledge, instruction, standards or educational intention.
+- The framework names domains of purpose but does not decide their content for Orqestra. That decision remains public, contextual and contestable.
+
+## Candidate contribution
+
+Revises [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md) and [Q003](../../questions/Q003-what-is-worth-learning-in-an-ai-world.md). AI-mediated task stewardship may test bounded conduct, but it must not claim to measure subjectification or validate an educational purpose.
+
+## S049 — The Capability Approach: Its Potential for Work in Education
+
+Type: source
+Status: reviewed
+Topics: motivation-and-agency, institutional-design, ethics-and-governance, assessment-validity
+Technology dependence: model-independent
+Canonical path: `sources/notes/S049-walker-unterhalter-capability-education.md`
+
+# S049 — The Capability Approach: Its Potential for Work in Education
+
+## Why it matters
+
+Walker and Unterhalter make the word “capability” harder to misuse. Resources, observed functioning and substantive capability are different: equal access to an AI system or equal output quality does not establish equal freedom to pursue lives and educational purposes people have reason to value.
+
+## Identity and provenance
+
+- Authors: Melanie Walker and Elaine Unterhalter.
+- Chapter 1 in *Amartya Sen's Capability Approach and Social Justice in Education*, edited by Walker and Unterhalter, Palgrave Macmillan, 2007, pp. 1–18.
+- DOI: `10.1057/9780230604810_1`; ISBN-13 `978-1-349-53573-6`.
+- Version inspected: complete author accepted manuscript from UCL Discovery.
+- Rights and access: UCL marks the accepted version openly available subject to publisher reuse terms.
+- Retrieval: gateway candidates `cand_a3d24827fd39d782` and `cand_01297a7059074fe2`; PDF SHA-256 `76f5b772a70619ecbbaab4106dae23255bbc8014ac7fa7beec4231f315e42f24`.
+- Extraction: Docling did not return a bounded extraction; deterministic `pdftotext` was used. Locator convention is accepted-manuscript page.
+
+## Page-located observations
+
+| Page | Observation | Epistemic role | Product consequence |
+|---|---|---|---|
+| 1–3 | Capability asks what real opportunities people have to achieve valuable beings and doings, not merely which resources or qualifications they possess. | Theoretical argument | AI access, content and credentials are inputs, not proof of educational capability. |
+| 4–6 | Equal achieved functioning can conceal unequal opportunity, coercion, support and choice. | Theoretical argument | Do not infer equivalent capability from equivalent artifact quality or task completion. |
+| 7–8 | Agency includes individual and collective action, while preferences may adapt to constrained social and political circumstances. | Normative argument | A learner accepting the available system is not by itself evidence of meaningful choice. |
+| 10–13 | Personal, relational, institutional and material conversion factors determine whether resources become substantive freedoms; disability illustrates the relational character of disadvantage. | Theoretical argument | Preserve access supports and audit institutional conditions instead of assigning all recovery work to the learner. |
+| 14–16 | Sen's deliberately incomplete framework requires public participation in selecting valued capabilities and resists a fixed universal list. | Normative argument | A product-authored capability taxonomy or composite sovereignty score cannot settle educational purpose. |
+| 17–18 | Education still requires substantive judgment about what is worth learning, especially for children; choice alone is insufficient. | Counterposition | Democratic co-design does not remove the need for educational judgment, safeguards or developmental responsibility. |
+
+## Counterarguments and omissions
+
+- This is a conceptual synthesis of Sen, Nussbaum and education scholarship, not an empirical validation of one capability list or instrument.
+- Sen's open, participatory route and Nussbaum's more specified capabilities create a real internal tension. The chapter does not provide a turnkey governance procedure.
+- The argument predates generative AI. Its mechanism-level distinction between resources, functionings and opportunities transfers; technology-specific burdens require current learner and community evidence.
+- Public deliberation can reproduce power unless participation, access, representation and decision authority are designed explicitly.
+
+## Candidate contribution
+
+Deepens the accessibility boundary in [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md), [B004](../../beliefs/B004-separate-independent-and-assisted-capability.md) and [Q003](../../questions/Q003-what-is-worth-learning-in-an-ai-world.md). Capability sovereignty should describe distributed conditions for meaningful action and contestation, not a learner-owned trait or observed functioning.
+
+## S050 — Present Company Excepted
+
+Type: source
+Status: reviewed
+Topics: institutional-design, ethics-and-governance, teacher-practice, human-ai-collaboration
+Technology dependence: system-dependent
+Canonical path: `sources/notes/S050-watters-present-company-excepted.md`
+
+# S050 — Present Company Excepted
+
+## Why it matters
+
+Watters challenges the premise that generative AI is an exogenous, permanent condition to which education must adapt. Her argument moves agency from individual tool use to collective choices about infrastructure, labour, public institutions, surveillance and the distribution of burdens.
+
+## Identity and provenance
+
+- Author: Audrey Watters, long-running independent historian and critic of education technology.
+- Publication: *Second Breakfast* newsletter, 2 October 2026.
+- Retrieval: public publisher page on 6 October 2026; gateway candidate `cand_91e453989dac43db`.
+- Raw page SHA-256: `6b507ca25551794e3c4c38a96c0dd7a965dbca6f43dd8bd56de1f7a1b869a5dd`; normalized content SHA-256: `a1758b6d87ac5fe5957b2a4661430421bfdfd70d7a2d80fa8bfa379fbe1af7c1`.
+- Scope inspected: complete essay and its linked-source list. Links were treated as discovery leads unless separately resolved.
+- Locator convention: essay paragraph groups and the final Ursula Franklin epigraph.
+- Snapshot limitation: the web essay and linked pages may be edited; hashes preserve the inspected snapshot identity, not future page state.
+
+## Position
+
+- **Inevitability is a political claim:** paragraphs 1–3 argue that AI permanence is speculation and that cultural, financial and political choices shape which technologies persist.
+- **Refusal needs an affirmative vision:** paragraph 6 rejects both passive adoption and nostalgic return. Critics still owe a defensible account of what education should become.
+- **Burdens are institutionally distributed:** paragraph 8 emphasizes teacher labour and unequal material conditions; identical technology policies play out differently where schools lack books, staffing or other public infrastructure.
+- **Products are not the whole system:** paragraphs 9–10 connect platforms, management, surveillance and testing to dependency-producing infrastructures. Replacing digital products without changing those relations can reproduce the same educational harms in analogue form.
+- **Conviviality test:** the closing Ursula Franklin epigraph locates domination not in artefacts alone but in infrastructures that facilitate use and dependency.
+
+## Strongest counterposition
+
+Generative AI capabilities are already widely available and can expand access, feedback and productive collaboration. Refusal, moratoria or institutional alternatives may also entrench unequal private access or leave learners unprepared. The essay does not supply comparative outcome evidence or a governance design that resolves these trade-offs.
+
+## Linked originals to resolve
+
+- Jennifer Berkshire on a progressive public-education agenda;
+- school and campus surveillance reporting;
+- Ursula Franklin's account of technology and dependency;
+- contemporaneous school moratoria, public-platform charters and educator accounts.
+
+These remain discovery leads. The newsletter supports a discourse position, not empirical prevalence, causal efficacy or a product-effect claim.
+
+## Candidate contribution
+
+Revises [Q003](../../questions/Q003-what-is-worth-learning-in-an-ai-world.md) so AI availability is contingent, unequal and contestable. Revises [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md) so capability sovereignty includes collective authority, meaningful exit and non-AI alternatives rather than assigning verification and repair duties only to learners.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -2654,12 +2790,12 @@ Optimizing learning is incoherent without a position on the capabilities worth d
 
 ## Scope and definitions
 
-Consider foundational knowledge, judgment, verification, tool selection, problem framing, creativity, collaboration, self-regulation, civic agency, and the capacity to act without particular tools. Distinguish education’s economic, democratic, personal, and cultural purposes.
+Consider foundational knowledge, judgment, verification, tool selection, problem framing, creativity, collaboration, self-regulation, civic agency, collective efficacy, meaningful refusal and the capacity to act without particular tools. Distinguish education’s economic, democratic, personal and cultural purposes. Treat AI availability and persistence as governed conditions, not facts of nature [S050].
 
 ## What would answer it
 
-No single study will. The atlas should triangulate philosophy of education, labour and technology evidence, disciplinary practice, learner voices, and democratic deliberation while keeping value judgments explicit.
+No single study will. The atlas should triangulate philosophy of education, labour and technology evidence, disciplinary practice, learner and educator voices, institutional power and democratic deliberation while keeping value judgments explicit. Observed output and tool use are functionings, not complete evidence of substantive freedom [S049].
 
 ## Next search
 
-Continue [N001](../discourse/N001-learning-directing-and-orchestrating-ai.md) with Papert, Biesta, critical edtech scholarship, capability approaches, non-Western learner voices and disciplinary cases. The first construct audit retained capability sovereignty only as a normative relational lens and proposed task-level AI-mediated stewardship for falsifiable product work; test whether either framing adds value beyond its constituent constructs.
+The first purposes-and-power pass added Biesta's warning against turning subjecthood into an educational product [S048], the capability approach's distinction among resources, functionings and substantive opportunity [S049], and Watters's challenge to technological inevitability and dependency-producing infrastructure [S050]. Continue [N001](../discourse/N001-learning-directing-and-orchestrating-ai.md) with Papert, Illich, critical edtech political economy, non-Western and non-English learner and educator voices, public digital-infrastructure governance and disciplinary cases. Test whether task stewardship adds value beyond its constituent constructs without shifting institutional failure onto learners or turning evidence into compulsory legibility.

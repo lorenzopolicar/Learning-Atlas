@@ -2,7 +2,7 @@
 
 **Status:** evidence-backed proposal for product discovery and a low-stakes pilot, not an implementation instruction or validated learner score
 
-**Atlas basis:** [C001], [C002], [C007], [C008], [C010], [C011], [C012], [B004], [P001], [P002], [P005], [P006], [N001], [D002], [E001]
+**Atlas basis:** [C001], [C002], [C007], [C008], [C010], [C011], [C012], [B004], [P001], [P002], [P005], [P006], [N001], [D002], [E001], [S048], [S049], [S050]
 
 **Repository snapshot inspected:** `/Users/lorenzo.policar/Developer/emtech-noema`, branch `learning-upgrade`, 1 September 2026. The checkout had substantial user-owned changes; both inspections were read-only.
 
@@ -22,6 +22,8 @@ The product therefore needs two distinctions:
 2. **Assistance function:** access restoration, representation, expression, executive support, substantive cognitive delegation, or mixed.
 
 These are descriptions of an observation, not moral rankings. The intended construct and decision stakes determine what each observation can support.
+
+The distinctions are still narrower than educational agency or purpose. Qualification, socialization and subjectification cannot be collapsed into one product objective, and subjectification must not become a score [S048]. Observed output and tool use are functionings, not proof of substantive capability without real alternatives and conversion conditions [S049]. Adoption, provider choice and data infrastructure are governed decisions, not an inevitable environment that shifts verification and repair duties onto learners and teachers [S050].
 
 ## Current-system gap
 
@@ -94,6 +96,10 @@ Proceed from research pilot to product capability only if:
 - accessibility and measurement-invariance audits do not reveal systematic construct-irrelevant penalties;
 - learners can understand and successfully contest the record;
 - the marginal value justifies privacy and implementation cost.
+- learners and educators can change at least one material design or use decision rather than merely comment on wording;
+- a credible non-AI or differently mediated route, provider/evidence portability and meaningful exit exist where participation is consequential;
+- teacher workload, institutional capacity and unequal conversion conditions have been assessed rather than treated as learner attributes;
+- task evidence is not presented as validation of educational purpose, subjectification, substantive freedom or institutional adoption.
 
 If these gates fail, retain the conceptual distinction between evidence lanes and assistance functions but do not persist a stewardship inference.
 
@@ -105,3 +111,6 @@ If these gates fail, retain the conceptual distinction between evidence lanes an
 - Does eliciting confidence create accessibility, anxiety or anchoring burdens?
 - Can compact authentic traces predict the same outcomes as repeated artificial disagreement trials?
 - Which product decisions, if any, are legitimate uses of this evidence?
+- Who has authority to set the educational purpose and revise the capability vocabulary?
+- Which choices are genuinely available, and which are interface options inside a compulsory infrastructure?
+- Can a learner or institution exit, take the evidence elsewhere, or use a non-AI path without punitive loss?
