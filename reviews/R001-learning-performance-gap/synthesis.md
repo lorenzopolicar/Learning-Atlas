@@ -4,11 +4,13 @@ Status: provisional orientation synthesis; not exhaustive.
 
 ## What we can say now
 
-Seven comparative studies now make the early picture more heterogeneous. Unrestricted AI assistance can create large supported-performance gains while weakening later unaided performance [S001]. Yet ordinary GPT-4o access also improved immediate and one-week unaided performance in a time-held learning task [S015]. In programming, Copilot created a large supported speed/completion advantage without a reliable absolute advantage when the same learners repeated tasks alone one week later [S023]. A tightly designed AI tutor can improve short-term learning relative to a specific active-learning lesson [S002], and a structured, teacher-supported programme can produce meaningful assessment gains in a low-resource secondary context [S005].
+Eight comparative GenAI studies now make the early picture more heterogeneous. Unrestricted AI assistance can create large supported-performance gains while weakening later unaided performance [S001]. Yet ordinary GPT-4o access also improved immediate and one-week unaided performance in a time-held learning task [S015]. In programming, Copilot created a large supported speed/completion advantage without a reliable absolute advantage when the same learners repeated tasks alone one week later [S023]. A tightly designed AI tutor can improve short-term learning relative to a specific active-learning lesson [S002], and a structured, teacher-supported programme can produce meaningful assessment gains in a low-resource secondary context [S005].
 
 The first direct access-timing study reports that delayed access beat always-on access on an immediate independent test while matching no access [S024], but session assignment, exclusion and clustering problems make this a low-confidence component signal. In an authentic four-hospital South African clinical trial, minimally trained point-of-care GPT-4o access did not improve blinded bedside assessment performance despite high perceived helpfulness [S025]. This is evidence about workflow-bound performance, not a test of a practiced tutor or durable learning.
 
 The synthesis is therefore not “AI helps” or “AI harms,” nor is it “guardrails always beat general access.” The more defensible early claims are that assisted output cannot establish learning [C001], general access can produce short-delay learning under bounded conditions [C009], and task, incentive, population, interaction and institutional structure are plausible moderators that require direct tests.
+
+A current five-month field RCT adds a more specific component result: learner-state reinforcement-learning sequencing improved an independent written Python exam by 0.15 standard deviations over the same GenAI tutor with a fixed sequence [S051]. Historical personalized review similarly beat an equal-opportunity generic spacing policy on a 28-day exam [S052]. But a structurally matched 2026 mathematics experiment found no value from 30 minutes of default-parameter BKT difficulty adaptation [S053]. The defensible inference is not that personalization works by default. Repeated learner-item evidence can make sequencing useful [C033], while short, poorly calibrated or coverage-restricting adaptation can add nothing [C034].
 
 ## Candidate mechanisms
 
@@ -36,6 +38,7 @@ Build and test an explicit assistance policy rather than a monolithic chatbot. L
 - which guardrail components cause benefit;
 - how learners adapt strategically over repeated use;
 - whether a simple attempt threshold replicates the access-timing result and whether any adaptive policy adds value beyond it;
+- which learner-state signals add decision value over transparent fixed and learner-controlled sequencing, after exposure, content coverage, calibration and subgroup errors are held accountable;
 - whether dependence, calibration, and agency can be measured reliably;
 - whether the positive one-week effect in [S015] replicates in ordinary coursework, longer horizons and less selective populations;
 - the publication-bias and null-results landscape;
