@@ -7,3 +7,4 @@
 | [Q001](../questions/Q001-when-does-ai-performance-become-learning.md) | When does AI-assisted performance become durable learning? | open |  | learning-vs-performance, ai-tutoring, transfer, assessment-validity |
 | [Q002](../questions/Q002-what-should-a-learner-model-represent.md) | What should a trustworthy learner model represent? | open |  | learner-modelling, assessment-validity, ethics-and-governance |
 | [Q003](../questions/Q003-what-is-worth-learning-in-an-ai-world.md) | What is worth learning in an AI-rich world? | open |  | human-ai-collaboration, institutional-design, ethics-and-governance, motivation-and-agency |
+| [Q004](../questions/Q004-when-does-personalization-earn-complexity.md) | When does learner-model personalization earn its complexity? | open |  | learner-modelling, scaffolding, product-measurement, ai-tutoring |

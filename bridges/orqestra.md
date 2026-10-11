@@ -15,7 +15,7 @@ That asset does not authorize Orqestra to define educational purpose. Evidence p
 | learning generation | [P001], [P003], [P004] | Does generated material preserve the work required for the target capability and adapt/fade support? |
 | learning domain and capability model | [P002], [P006], [B003], [B004] | Are observations separated from inferences, including assistance state, context, uncertainty, and permitted use? |
 | learning runtime | [P001], [P004], [P005] | Does orchestration support attempts, retrieval, revisits, and later independent checks? |
-| personalization | [P003], [B005] | Does adaptation beat a strong transparent default on a declared outcome? |
+| personalization | [P003], [B005], [C033], [C034], [Q004] | Does adaptation beat matched transparent and learner-controlled policies on independent and delayed outcomes after calibration, coverage, subgroup harm and delivery cost are counted? |
 | assessment and evidence | [P005], [P006] | Are supported performance, independent capability, delay, and transfer visibly distinguished? |
 | product analytics | [C001], [P005] | Are completion, engagement, and assisted correctness being mistaken for learning? |
 | human-AI capability | [B004], [C010], [N001], [D002] | What must the learner notice, decide, justify, verify, repair, escalate, and contest for delegation to count as responsible capability? |
@@ -57,7 +57,7 @@ No learner-identifiable data enters the public atlas. A product result should in
 ## First product experiments
 
 1. A low-burden attempt versus immediate worked-example/core-answer support, crossed with transparent fixed versus adaptive escalation and a one-click reveal; stratify by prior knowledge and accessibility need, and measure a later unaided near-transfer task [C028, C029, P001, P005].
-2. Simple fixed scaffold versus evidence-based fading [P003, B005].
+2. Transparent fixed response rule versus learner-model adaptation versus learner-controlled support [Q004, P003, B005]; hold content, interface, feedback and exposure constant, then measure independent immediate, delayed and transfer outcomes plus calibration, content coverage and subgroup false-promotion/false-hold.
 3. Learner evidence ledger versus current state representation, evaluated for auditability, correction, and recommendation quality [P002].
 4. Separate independent and AI-assisted capability estimates, evaluated for calibration and decision usefulness [B004, P006].
 5. Run the low-stakes [AI-mediated task stewardship probe](../experiments/E001-ai-mediated-stewardship-probe.md), preserving access-restoring support and reporting a portfolio rather than a sovereignty score [C008, C010, D002]. See the [implementation-facing design brief](orqestra-ai-mediated-stewardship.md).

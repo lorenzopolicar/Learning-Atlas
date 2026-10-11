@@ -1853,6 +1853,191 @@ These remain discovery leads. The newsletter supports a discourse position, not 
 
 Revises [Q003](../../questions/Q003-what-is-worth-learning-in-an-ai-world.md) so AI availability is contingent, unequal and contestable. Revises [N001](../../discourse/N001-learning-directing-and-orchestrating-ai.md) so capability sovereignty includes collective authority, meaningful exit and non-AI alternatives rather than assigning verification and repair duties only to learners.
 
+## S051 — Effective Personalized AI Tutors via LLM-Guided Reinforcement Learning
+
+Type: source
+Status: reviewed
+Topics: learner-modelling, ai-tutoring, scaffolding, learning-vs-performance, programming-education
+Technology dependence: model-dependent
+Technology context: GPT-4o tutor and problem generation with Claude-based revision inside a POMDP/reinforcement-learning sequencer / exact model snapshots not reported; study=January to June 2025; temporal relevance=recent-system; review due=2027-04-11
+Canonical path: `sources/notes/S051-chung-personalized-ai-tutors.md`
+
+# S051 — Personalized GenAI sequencing field RCT
+
+## Why it matters
+
+This is the most direct current evidence located for whether learner-state personalization adds value beyond a transparent fixed sequence. Both groups received the same course, platform, problem bank and GenAI tutor; only the practice-problem sequence was randomized.
+
+## Identity and provenance
+
+- Authors: Angel Tsai-Hsuan Chung, Botong Zhang, Ling-Chieh Kung, Hamsa Bastani and Osbert Bastani.
+- Version inspected: arXiv:2608.16907v1, dated 10 July 2026, 99-page preprint.
+- Content inspected: complete PDF, including the preregistration, sample construction, attrition tests, exam, robustness analyses and prior-literature review.
+- Access and rights: arXiv CC BY 4.0 PDF; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_40a2557c3182977d`; PDF SHA-256 `783f7a5fea6da8e1845b4503e33e0a5154baf3e2831fac65cfa4a41f5da7552b`.
+- Locator convention: preprint page, figure, table and supplement section in v1.
+
+## Study
+
+- Population and setting: 1,047 learners enrolled in a five-month Python course across ten Taipei high schools; the preregistered main analysis included 770 after excluding programme dropouts, suspected exam cheating and a senior accelerated track with a non-comparable schedule and exam.
+- Intervention: a particle-filter learner-state model and reinforcement-learning/POMDP policy used attempts, code edits and LLM-scored tutor interactions to choose practice-problem difficulty.
+- Comparator: a fixed easy-to-hard sequence. Both groups used the same lectures, content and GPT-4o tutor and had the same minimum exposure to two medium, two hard and two very-hard problems per module.
+- Outcome: an in-person, handwritten certification exam completed without digital devices. It assessed conceptual understanding and code reasoning after the course.
+
+## Findings
+
+- Adaptive sequencing improved the unadjusted exam score by 0.156 standard deviations and the covariate-adjusted score by 0.150 standard deviations; both were reported at p < .05 (figure 2; table 1; supplement E.4).
+- The estimated gain was 0.215 standard deviations for self-described Python beginners (p = .012) and 0.008 for learners with prior Python experience (p = .941). This subgroup pattern is suggestive, not proof that expertise caused the difference.
+- Completion and attrition did not differ detectably by arm. Engagement mediation is non-causal because engagement was not randomized.
+
+## Limitations and boundary conditions
+
+- The adaptive package combines state estimation, LLM-based features, planning and difficulty sequencing; it does not identify which component caused the gain.
+- Twenty-six percent of enrolled learners were excluded from the main analysis. Attrition was balanced, but balanced exclusion does not remove all selection risk.
+- The outcome was independent and consequential, but not delayed beyond course end and not a far-transfer programming task.
+- One city, one voluntary course and one subject limit transfer. The positive result was concentrated among beginners.
+- Exact GPT-4o and Claude snapshots were not reported. The paper is a preprint produced by the system's developers.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-high | Individual randomization, matched platform and preregistered analysis; bundled adaptive mechanism and exclusions remain |
+| Directness | high | Direct adaptive-versus-fixed sequence comparison in the same GenAI tutor |
+| Consistency | moderate | Aligns with long-horizon personalized review evidence but conflicts with short isolated difficulty adaptation [S053] |
+| Replication | low | One developer-team preprint |
+| Magnitude | small | 0.15 SD overall, larger for beginners |
+| Duration | moderate-high | Five-month intervention; no delayed follow-up |
+| Transfer | moderate | Independent written certification exam, but within the taught Python course |
+| Ecological validity | high | Ten-school field deployment with normal instruction |
+| Technology directness | moderate-high | Recent GenAI system, but exact snapshots are unreported |
+
+## Candidate claims
+
+Supports [C033](../../claims/C033-personalized-sequencing-can-beat-fixed-practice.md): learner-state sequencing can improve independent outcomes when it reallocates repeated practice over a long horizon. [S053] supplies the direct null boundary.
+
+## S052 — Improving Students' Long-Term Knowledge Retention Through Personalized Review
+
+Type: source
+Status: reviewed
+Topics: learner-modelling, spacing, retrieval-practice, retention
+Technology dependence: model-independent
+Canonical path: `sources/notes/S052-lindsey-personalized-review.md`
+
+# S052 — Personalized review over a semester
+
+## Why it matters
+
+This study directly compares a learner-by-item memory scheduler with a strong generic spaced schedule while holding review opportunities constant, then measures retention in two proctored exams. It tests whether personalization adds value beyond spacing itself.
+
+## Identity and provenance
+
+- Authors: Robert V. Lindsey, Jeff D. Shroyer, Harold Pashler and Michael C. Mozer.
+- Publication: *Psychological Science*, 25(3), 639–647; DOI `10.1177/0956797613504302`.
+- Version inspected: complete 30-page author manuscript dated 16 August 2013, including supplementary methods and analyses.
+- Access and rights: lawful author manuscript; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_646289600c60178b`; PDF SHA-256 `54c06870d177afc25dcd3fad0ba052bb03cde1e6e979ff61606d3b20a0f58a22`.
+- Locator convention: author-manuscript page, figure and supplement section.
+
+## Study
+
+- Population and setting: 179 eighth-grade learners in third-semester Spanish at one suburban US middle school.
+- Design: within-student random assignment of one third of each chapter's items to each scheduler. Every scheduler received the same number of review trials and each item had equal opportunity for selection.
+- Intervention: DASH, a Bayesian learner-by-item memory model, scheduled review using inferred ability, item difficulty and study history.
+- Comparators: a transparent one-week generic spaced schedule and a massed current-chapter schedule.
+- Outcomes: two proctored cumulative translation exams, one at semester end and one 28 days later, each covering a randomized half of the material without corrective feedback.
+
+## Findings
+
+- On the semester-end exam, personalized review exceeded generic spacing by 8.3 percentage points (d = 1.05) and massed review by 12.4 points (d = 1.38).
+- On the exam 28 days later, personalized review exceeded generic spacing by 10.0 points (d = 0.88) and massed review by 16.5 points (d = 1.42).
+- The result shows incremental value over a credible fixed spacing rule, not merely the familiar spacing advantage over massing.
+
+## Limitations and boundary conditions
+
+- The task was vocabulary and short-sentence translation in one school; transfer to complex skills is untested.
+- Each learner experienced all three schedules, so cross-condition study habits or interference may have reduced independence among comparisons.
+- Personalization altered both learner-item targeting and the temporal distribution of review, so their separate contributions are not identified.
+- The system is historical and non-generative. Its relevance is mechanism-oriented, not evidence about current LLM quality.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-high | Randomized within learner and time/opportunity matched; possible cross-condition contamination |
+| Directness | high for personalized review | Direct model-based versus generic spaced and massed schedules |
+| Consistency | moderate | Supports [S051] over a long horizon; short isolated adaptation is null in [S053] |
+| Replication | low-moderate | One school, but aligned with broader spacing and adaptive-practice mechanisms |
+| Magnitude | large | 8.3–10.0 percentage-point advantage over generic spacing |
+| Duration | high | Semester-long intervention and 28-day follow-up |
+| Transfer | low | Tested the practiced language items |
+| Ecological validity | moderate-high | Embedded in a real course with proctored exams |
+
+## Candidate claims
+
+Supports [C033](../../claims/C033-personalized-sequencing-can-beat-fixed-practice.md): repeated learner-item evidence can improve long-term retention over a strong transparent schedule.
+
+## S053 — Effectiveness of Adaptive Versus Non-Adaptive Intelligent Tutoring Systems in Early Primary Mathematics
+
+Type: source
+Status: reviewed
+Topics: learner-modelling, knowledge-tracing, scaffolding, mathematics
+Technology dependence: model-independent
+Canonical path: `sources/notes/S053-sibley-adaptive-versus-fixed-math.md`
+
+# S053 — Isolated difficulty adaptation versus a matched fixed tutor
+
+## Why it matters
+
+This is a direct falsifier for any claim that adaptivity is inherently superior. The experiment held content, interface, feedback and graduated hints constant and changed only whether task difficulty followed a learner model or a textbook-like fixed sequence.
+
+## Identity and provenance
+
+- Authors: Leonie Sibley, Tobias Berner and Thomas Schmalfeldt.
+- Publication: *Computers and Education Open*, 11, 100420; DOI `10.1016/j.caeo.2026.100420`.
+- Version inspected: complete eight-page version of record from Zenodo record `22256219`.
+- Access and rights: CC BY 4.0; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_0b08f775f6c0ab28`; PDF SHA-256 `a33ca478bee3a2da7d7ad5aa69c54d6c6f796aa9f358ea1ad4baadc835eb4359`.
+- Locator convention: version-of-record page, table and appendix.
+
+## Study
+
+- Population and setting: 132 second-grade learners in 11 Swiss classes during ordinary mathematics instruction.
+- Design: randomized two-group pretest–posttest field experiment; adaptive n = 65 and fixed n = 67.
+- Intervention: CTAT's “Sequential Mastery Learning — Easier First” used default Bayesian Knowledge Tracing parameters to skip skills estimated as mastered and retain learners on unmastered skills.
+- Comparator: the same tutor, arithmetic content, immediate feedback and graduated audio hints in a fixed textbook-like order across 13 skills.
+- Outcome: an immediate 15-item parallel paper posttest after one 30-minute practice session.
+
+## Findings
+
+- Adaptive and fixed sequences did not differ on the primary posttest: adjusted F(1,124) = 0.32, p = .574, partial eta squared = .00; means were 10.30 and 9.98 of 15 (table 1; page 5).
+- There was no condition effect on mental effort, subjective difficulty or enjoyment, and no learning-performance moderation by prior knowledge or the exploratory learner profiles.
+- Fixed-sequence learners reached higher intervention-derived mastery probabilities, 0.67 versus 0.58, F(1,128) = 7.85, p = .006. An exploratory model controlling this post-treatment quantity favoured adaptation, but the authors correctly reject a causal interpretation.
+
+## Limitations and boundary conditions
+
+- Thirty minutes may be too short for a learner model to accumulate decision-useful evidence. The study has no delayed retention or transfer outcome.
+- Default BKT parameters were not calibrated for this population. Mastery gating may have reduced curricular progression for the adaptive group.
+- The sample is limited to young learners and structured arithmetic. A null here does not contradict long-horizon personalized spacing or richer sequencing policies.
+- The fixed comparator was strong and structurally matched, making the null especially relevant to incremental-value claims.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | high for the primary contrast | Randomized and matched except for task selection |
+| Directness | high | Isolates adaptive difficulty selection from a transparent fixed sequence |
+| Consistency | moderate-low | Direct null against positive long-horizon results [S051, S052] |
+| Replication | low | One short field experiment |
+| Magnitude | null | Partial eta squared was .00 |
+| Duration | low | One 30-minute session and immediate posttest |
+| Transfer | low | Parallel arithmetic test without delay |
+| Ecological validity | moderate-high | Regular classrooms across 11 classes |
+
+## Candidate claims
+
+Supports [C034](../../claims/C034-short-difficulty-adaptation-can-add-no-value.md): isolated, short-horizon difficulty adaptation can add no learning value over a matched fixed sequence. It contradicts any unconditional reading of [C033](../../claims/C033-personalized-sequencing-can-beat-fixed-practice.md).
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -1928,7 +2113,7 @@ Canonical path: `claims/C003-guidance-should-vary-with-expertise.md`
 
 ## Evidence and reasoning
 
-The expertise-reversal literature documents interactions in which guidance that helps novices becomes redundant or harmful for experienced learners [S009]. This makes adaptive support a learning requirement, not merely a preference feature.
+The expertise-reversal literature documents interactions in which guidance that helps novices becomes redundant or harmful for experienced learners [S009]. This establishes a heterogeneity problem, not that a complex learner model is necessarily the best solution. Direct adaptive-versus-fixed comparisons are conditional: long-horizon sequencing can help [C033], while short isolated difficulty adaptation can be null [C034].
 
 ## Boundary conditions and uncertainty
 
@@ -1936,7 +2121,7 @@ Expertise cannot be safely inferred from confidence, job title, or a few correct
 
 ## Product relevance
 
-Represent support decisions as hypotheses tied to learner evidence. Fade support gradually, preserve an override, and test whether independent outcomes improve.
+Represent support decisions as hypotheses tied to learner evidence. Start with an inspectable rule, fade support gradually, preserve an override, and test whether adaptation improves independent outcomes beyond the rule.
 
 ## C004 — Retrieval practice supports delayed retention and some transfer
 
@@ -2329,6 +2514,66 @@ S021 shows the analytical value of metacognitive sensitivity for bounded human�
 
 Pre-register a confidence-elicitation policy, compare it with a no-prompt or sparse-prompt condition, and estimate changes in performance, strategy, burden and later learning before treating confidence as a stable learner attribute.
 
+## C033 — Personalized sequencing can outperform a fixed practice sequence
+
+Type: claim
+Status: provisional
+Topics: learner-modelling, scaffolding, retention, ai-tutoring
+Canonical path: `claims/C033-personalized-sequencing-can-beat-fixed-practice.md`
+
+# C033 — Personalized sequencing can outperform fixed practice
+
+## Claim
+
+Personalization earns its complexity when learner evidence changes which practice exposure is selected and the advantage survives a matched fixed baseline after support is removed.
+
+## Evidence and reasoning
+
+In a five-month Python course, a learner-state reinforcement-learning policy improved an independent written exam by 0.15 standard deviations over the same GPT-4o tutor with a fixed sequence [S051]. In semester-long Spanish review, a learner-by-item memory scheduler improved retention by 8.3 points at semester end and 10.0 points 28 days later over a generic spaced schedule with equal review opportunities [S052].
+
+These results share a plausible boundary: repeated observations let the system reallocate a scarce practice budget across learner-item pairs. They do not establish that every personalization mechanism or richer model is useful.
+
+## Boundary conditions
+
+[S053] isolated task-difficulty adaptation for 30 minutes and found no posttest advantage over a structurally matched fixed tutor. Long enough observation, calibrated signals, recoverable state errors, adequate content coverage and a decision that genuinely differs by learner are candidate preconditions, not established universal moderators.
+
+## Counterevidence and uncertainty
+
+The current field RCT bundles LLM-scored signals, particle filtering, reinforcement learning and difficulty choice. The historical retention study bundles item targeting with temporal distribution. Neither isolates which model feature is necessary, and neither demonstrates far transfer.
+
+## Product relevance
+
+Begin with a strong inspectable sequence. Add adaptation only through a randomized incremental-value test that holds the tutor, content, feedback and opportunity constant and measures unassisted retention or transfer.
+
+## C034 — Short-horizon difficulty adaptation can add no learning value
+
+Type: claim
+Status: provisional
+Topics: learner-modelling, knowledge-tracing, scaffolding, product-measurement
+Canonical path: `claims/C034-short-difficulty-adaptation-can-add-no-value.md`
+
+# C034 — Short-horizon difficulty adaptation can add no value
+
+## Claim
+
+Adaptivity is a policy to test, not a property that makes instruction better by definition. A learner model may lack enough evidence to improve a decision, and mastery gating can change coverage in harmful ways.
+
+## Evidence and reasoning
+
+[S053] randomized second-grade learners between two otherwise identical tutors. Adaptive task selection had a primary posttest effect of partial eta squared .00, while fixed-sequence learners progressed further by the platform's own mastery measure. The study therefore passes the strong-comparator test but fails to show incremental learning value.
+
+## Boundary conditions
+
+The result does not show that adaptation never works. [S051] and [S052] report positive independent or delayed outcomes after months of learner evidence. The direct conclusion is narrower: short, uncalibrated difficulty adaptation cannot be presumed to outperform a transparent sequence.
+
+## Counterevidence and uncertainty
+
+The experiment had no delayed outcome and may have been too brief for BKT to converge. Its null could reflect implementation choices rather than an inherent limit of learner modelling. That possibility strengthens the need for calibration and ablation rather than rescuing the policy by assumption.
+
+## Product relevance
+
+Use a transparent policy until the learner model has enough validated evidence to change a consequential decision. Compare fixed, learner-model adaptive and learner-controlled policies with predefined equivalence bounds and coverage checks.
+
 ## B001 — Optimize durable capability, not completion
 
 Type: belief
@@ -2478,7 +2723,7 @@ Personalization is a causal claim: because the system knows something about this
 
 ## Why we believe this
 
-Guidance effectiveness can reverse with expertise [C003], making some adaptation necessary. But learner states are uncertain inferences [C007], making unnecessary complexity risky.
+Guidance effectiveness can reverse with expertise [C003], creating a real heterogeneity problem. Repeated learner-item evidence can make adaptive sequencing useful [C033], but a matched short-horizon trial found no incremental learning value [C034]. Learner states remain uncertain inferences [C007], so heterogeneity does not automatically justify model complexity.
 
 ## Strongest counterarguments
 
@@ -2490,11 +2735,12 @@ We would accept personalization without measurable learning gain where a clearly
 
 ## Implications
 
-Begin with rules a human can inspect. Introduce model-driven adaptation only with an explicit decision, evaluation plan, calibration checks, and fallback.
+Begin with the least complex policy a human can inspect. Introduce model-driven adaptation only with an explicit decision, sufficient evidence horizon, evaluation plan, calibration and coverage checks, learner override, and fallback. Count maintenance, explanation, privacy, fairness and delivery burden alongside learning benefit.
 
 ## Revision history
 
 - 2026-08-31: adopted as a founding belief.
+- 2026-10-11: retained at moderate confidence; added direct positive and null comparative evidence and made the transparent baseline an incremental-value requirement.
 
 ## P001 — Use progressive assistance
 
@@ -2584,23 +2830,23 @@ Canonical path: `principles/P003-adapt-and-fade-guidance.md`
 
 ## Principle
 
-Make scaffolding conditional on the target knowledge component, demonstrated performance, assistance history, confidence, and recentness. Fade one dimension at a time and verify independent success.
+Start with a transparent, response-contingent sequence. Make scaffolding conditional on the target knowledge component, demonstrated performance, assistance history and recentness only when those signals are calibrated for the decision. Fade one dimension at a time, expose the reason and override, and verify independent success.
 
 ## Rationale
 
-Guidance can reverse in value as expertise develops [C003], but the state used to adapt is uncertain [C007]. Personalization must therefore beat a transparent default rather than merely sound individualized [B005].
+Guidance can reverse in value as expertise develops [C003], but the state used to adapt is uncertain [C007]. Semester-scale sequencing has beaten credible fixed policies [C033], while isolated 30-minute difficulty adaptation did not [C034]. Personalization must therefore beat a matched transparent or learner-controlled policy rather than merely sound individualized [B005].
 
 ## Product patterns
 
 - worked example → completion problem → independent problem;
 - assistance budgets per capability;
-- confidence-aware fallback when state evidence is weak;
+- fixed-policy fallback while state evidence is sparse or poorly calibrated;
 - learner override and reason for adaptation;
 - periodic unscaffolded probes.
 
 ## Falsifiers and measures
 
-Evaluate independent learning, calibration, help misuse, frustration, fairness across groups, and the incremental effect over a well-designed fixed sequence.
+Evaluate independent immediate, delayed and transfer outcomes; state calibration; false promotion and false hold; content coverage; help misuse; frustration; fairness across groups; teacher and maintenance burden; and the incremental effect over well-designed fixed and learner-controlled sequences. Hold content, feedback, interface, exposure budget and assessment constant.
 
 ## P004 — Retrieve and space important capabilities
 
@@ -2799,3 +3045,28 @@ No single study will. The atlas should triangulate philosophy of education, labo
 ## Next search
 
 The first purposes-and-power pass added Biesta's warning against turning subjecthood into an educational product [S048], the capability approach's distinction among resources, functionings and substantive opportunity [S049], and Watters's challenge to technological inevitability and dependency-producing infrastructure [S050]. Continue [N001](../discourse/N001-learning-directing-and-orchestrating-ai.md) with Papert, Illich, critical edtech political economy, non-Western and non-English learner and educator voices, public digital-infrastructure governance and disciplinary cases. Test whether task stewardship adds value beyond its constituent constructs without shifting institutional failure onto learners or turning evidence into compulsory legibility.
+
+## Q004 — When does learner-model personalization earn its complexity?
+
+Type: question
+Status: open
+Topics: learner-modelling, scaffolding, product-measurement, ai-tutoring
+Canonical path: `questions/Q004-when-does-personalization-earn-complexity.md`
+
+# Q004 — When does personalization earn its complexity?
+
+## Why this matters
+
+Orqestra can build increasingly rich learner models, but prediction quality is not the same as better instructional decisions. Personalization also creates calibration, privacy, fairness, explanation and maintenance costs.
+
+## Scope and definitions
+
+Compare transparent fixed or response-contingent rules, learner-controlled policies and model-driven adaptation while holding content, interface, feedback, exposure budget and assessment constant. Separate task selection, spacing, hint fading, answer access and presentation personalization rather than treating “adaptive” as one intervention.
+
+## Current synthesis
+
+Long-horizon sequencing can improve independent or delayed outcomes over credible fixed policies [C033], but isolated short-horizon difficulty adaptation can produce no added learning value [C034]. Learner state is probabilistic [C007], and expertise heterogeneity [C003] does not by itself prove that a complex model is the best policy.
+
+## Next search and experiment
+
+Pre-register a three-arm Orqestra-like trial: transparent fixed response rule, learner-model adaptive policy and learner-controlled/on-demand policy. Hold the tutor, content, feedback and exposure budget constant; power immediate independent, delayed and transfer outcomes; report state calibration, false promotion/hold, content coverage, burden and subgroup effects. Ablate learner-state features before attributing gains to the model.

@@ -22,3 +22,5 @@
 | [C030](../claims/C030-autonomy-is-not-independence.md) | Autonomy is not the inverse of dependence | provisional | moderate | motivation-and-agency, assessment-validity, product-measurement |
 | [C031](../claims/C031-help-seeking-behaviour-is-not-learning.md) | Improved help-seeking behaviour does not establish learning | provisional | moderate | metacognition, scaffolding, product-measurement, learning-vs-performance |
 | [C032](../claims/C032-confidence-elicitation-can-be-reactive.md) | Confidence elicitation can change monitoring and control | provisional | moderate | metacognition, assessment-validity, product-measurement |
+| [C033](../claims/C033-personalized-sequencing-can-beat-fixed-practice.md) | Personalized sequencing can outperform a fixed practice sequence | provisional | moderate | learner-modelling, scaffolding, retention, ai-tutoring |
+| [C034](../claims/C034-short-difficulty-adaptation-can-add-no-value.md) | Short-horizon difficulty adaptation can add no learning value | provisional | moderate | learner-modelling, knowledge-tracing, scaffolding, product-measurement |

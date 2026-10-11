@@ -162,6 +162,20 @@
       "path": "claims/C032-confidence-elicitation-can-be-reactive.md"
     },
     {
+      "id": "C033",
+      "type": "claim",
+      "title": "Personalized sequencing can outperform a fixed practice sequence",
+      "status": "provisional",
+      "path": "claims/C033-personalized-sequencing-can-beat-fixed-practice.md"
+    },
+    {
+      "id": "C034",
+      "type": "claim",
+      "title": "Short-horizon difficulty adaptation can add no learning value",
+      "status": "provisional",
+      "path": "claims/C034-short-difficulty-adaptation-can-add-no-value.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
@@ -258,6 +272,13 @@
       "title": "What is worth learning in an AI-rich world?",
       "status": "open",
       "path": "questions/Q003-what-is-worth-learning-in-an-ai-world.md"
+    },
+    {
+      "id": "Q004",
+      "type": "question",
+      "title": "When does learner-model personalization earn its complexity?",
+      "status": "open",
+      "path": "questions/Q004-when-does-personalization-earn-complexity.md"
     },
     {
       "id": "R001",
@@ -524,6 +545,27 @@
       "title": "Present Company Excepted",
       "status": "reviewed",
       "path": "sources/notes/S050-watters-present-company-excepted.md"
+    },
+    {
+      "id": "S051",
+      "type": "source",
+      "title": "Effective Personalized AI Tutors via LLM-Guided Reinforcement Learning",
+      "status": "reviewed",
+      "path": "sources/notes/S051-chung-personalized-ai-tutors.md"
+    },
+    {
+      "id": "S052",
+      "type": "source",
+      "title": "Improving Students' Long-Term Knowledge Retention Through Personalized Review",
+      "status": "reviewed",
+      "path": "sources/notes/S052-lindsey-personalized-review.md"
+    },
+    {
+      "id": "S053",
+      "type": "source",
+      "title": "Effectiveness of Adaptive Versus Non-Adaptive Intelligent Tutoring Systems in Early Primary Mathematics",
+      "status": "reviewed",
+      "path": "sources/notes/S053-sibley-adaptive-versus-fixed-math.md"
     }
   ],
   "edges": [
@@ -620,6 +662,16 @@
     {
       "source": "B005",
       "target": "C007",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B005",
+      "target": "C033",
+      "relation": "derived_from"
+    },
+    {
+      "source": "B005",
+      "target": "C034",
       "relation": "derived_from"
     },
     {
@@ -820,6 +872,36 @@
     {
       "source": "C032",
       "target": "S047",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C033",
+      "target": "S053",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C033",
+      "target": "S051",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C033",
+      "target": "S052",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C034",
+      "target": "S051",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C034",
+      "target": "S052",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C034",
+      "target": "S053",
       "relation": "supporting_sources"
     },
     {
@@ -1049,6 +1131,16 @@
     },
     {
       "source": "P003",
+      "target": "C033",
+      "relation": "based_on"
+    },
+    {
+      "source": "P003",
+      "target": "C034",
+      "relation": "based_on"
+    },
+    {
+      "source": "P003",
       "target": "B005",
       "relation": "based_on"
     },
@@ -1165,6 +1257,26 @@
     {
       "source": "Q003",
       "target": "C010",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q004",
+      "target": "C003",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q004",
+      "target": "C007",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q004",
+      "target": "C033",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q004",
+      "target": "C034",
       "relation": "related_claims"
     }
   ]

@@ -1,7 +1,7 @@
 # R001 search strategy
 
-Last searched: 2026-09-22
-Coverage status: targeted outcome-construct validity update; not yet database-complete.
+Last searched: 2026-10-11
+Coverage status: targeted learner-model personalization update; not yet database-complete.
 
 ## Concept blocks
 
@@ -146,3 +146,30 @@ This was a bounded construct-falsification pass, not a psychometric systematic r
 ## Required search log
 
 For every database: platform, full query, filters, date searched, result count, export filename, and deduplication count. Store citation metadata in Zotero and screening decisions in `screening.csv`.
+
+## 2026-10-11 targeted personalization update
+
+Question: when does learner-model personalization outperform a transparent rule-based sequence?
+
+### Providers, queries and citation chain
+
+- Bounded Atlas query: `adaptive feedback learner evidence delayed transfer`, limited to claims, beliefs and principles; freshness audit run before external search.
+- Atlas gateway/OpenAlex: `adaptive personalized review fixed schedule randomized learner model`; `mastery learning learner model heuristic comparison`; direct DOI resolution for `10.1016/j.caeo.2026.100420`, `10.1177/0956797613504302`, `10.1038/s41539-021-00105-8` and `10.1145/3079628.3079667`.
+- Native web: `2025 2026 randomized adaptive fixed AI tutor sequence`; `adaptive instruction learner model compared fixed sequence randomized trial knowledge tracing`; `learner model personalization rule-based education experiment`; exact-title and repository searches for current field RCTs, matched nulls and delayed personalized-review studies.
+- Backward and forward OpenAlex citation chains around Chung et al., Lindsey et al. and Pelánek and Řihák; direct full-text inspection through arXiv, Zenodo and lawful author or institutional manuscripts.
+- Public LinkedIn activity `7439676051057786881` and the *AI in Education Podcast* episode “More A’s, More Fails: What AI Is Really Doing to Student Performance” were sampled as perspective/discovery leads. The original Chung study was followed; neither derivative source was admitted.
+
+### Admission decisions
+
+- Include [S051] after complete 99-page preprint inspection: five-month, ten-school current GenAI field RCT comparing learner-state reinforcement-learning sequencing with a fixed sequence and measuring an in-person device-free written exam.
+- Include [S052] as historical mechanism evidence after complete author-manuscript inspection: within-student, equal-review-opportunity comparison of personalized scheduling with generic spacing and massing, measured at semester end and 28 days later.
+- Include [S053] after complete CC BY version-of-record inspection: direct same-tutor ablation where 30 minutes of default-parameter BKT difficulty adaptation produced no posttest advantage over a textbook-like fixed sequence.
+- Hold van Klaveren et al., DOI `10.1016/j.econedurev.2017.04.003`: large year-long field null and adverse higher-ability subgroup, but [S053] is the more current, cleaner single-mechanism falsifier under the three-source cap.
+- Hold Mettler et al., DOI `10.1037/xge0000170`: useful equal-dose and yoked scheduling experiments, but small atomic geography samples add less field directness than the admitted portfolio.
+- Hold Pelánek and Řihák, DOI `10.1145/3079628.3079667`: important evidence that simple mastery rules can approximate BKT decisions, but it predicts decisions rather than measuring randomized learning outcomes.
+- Reject Upadhyay et al., DOI `10.1038/s41539-021-00105-8`, from admission in this pass: the large randomized scheduler result relies on extensive post-randomization exclusions and in-app/model-derived forgetting rather than an independent assessment.
+- Reject the LinkedIn and podcast candidates as empirical evidence because they add no independently inspectable result beyond the original study.
+
+### Coverage boundary
+
+This was a bounded comparative and falsification pass, not a complete adaptive-learning systematic review. Three read-only agents disagreed over emphasis: the scout prioritized current and delayed positive field studies, the evidence analyst prioritized large field nulls and dose-yoked ablations, and the contrarian argued that a direct matched null should narrow P003 now. The integrated portfolio retains one current GenAI positive result, one delayed-retention positive mechanism study and one current direct null. No meta-analysis, formal RoB 2 adjudication, current-system independent replication, learner-controlled comparison or fairness audit was completed.
