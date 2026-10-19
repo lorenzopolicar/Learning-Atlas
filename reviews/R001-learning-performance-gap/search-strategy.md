@@ -173,3 +173,35 @@ Question: when does learner-model personalization outperform a transparent rule-
 ### Coverage boundary
 
 This was a bounded comparative and falsification pass, not a complete adaptive-learning systematic review. Three read-only agents disagreed over emphasis: the scout prioritized current and delayed positive field studies, the evidence analyst prioritized large field nulls and dose-yoked ablations, and the contrarian argued that a direct matched null should narrow P003 now. The integrated portfolio retains one current GenAI positive result, one delayed-retention positive mechanism study and one current direct null. No meta-analysis, formal RoB 2 adjudication, current-system independent replication, learner-controlled comparison or fairness audit was completed.
+
+## 2026-10-19 targeted institutional-transfer update
+
+Question: what institutional conditions determine whether AI tutoring evidence transfers to normal teaching practice?
+
+### Providers, queries and citation chain
+
+- Bounded Atlas query: `institutional conditions teacher orchestration AI tutoring transfer normal teaching practice`, limited to claims and principles; freshness audit run before external search.
+- Atlas gateway/OpenAlex/Crossref: `intelligent tutoring systems scale-up implementation teacher training organizational conditions classroom`; `teacher intervention K-12 AI instruction implementation feasibility orchestration systematic review`; `adaptive tutoring normal teaching practice implementation fidelity dosage teacher professional development randomized trial`.
+- Native web: `intelligent tutoring systems scale-up implementation teacher training organizational conditions randomized trial school classroom`; `AI tutoring teacher orchestration classroom implementation institutional infrastructure study`; `generative AI tutor normal classroom implementation teacher workload infrastructure professional development study`; `education technology scale-up trial null implementation fidelity teacher workload intelligent tutoring systems`.
+- Falsification searches: `intelligent tutoring at scale randomized trial schools implementation teacher first year null`; `Institutions implementation and program effectiveness rural China randomized evaluation`; `Access is Not Enough Human Support Improves Engagement with AI Tutoring`; `Mindspark adapting for scale experimental evidence technology aided instruction India`.
+- Social discovery: public LinkedIn activities from the Stanford AI Hub, Qiao Jin, Jeremy Roschelle and Dan Meyer were sampled. They led to originals or implementation questions but were not treated as effect evidence. No stable relevant X result survived identity verification.
+- Podcast/media discovery: *When AI Can Teach, What Is the Teacher For?*, *Will AI Tutors Change the Classroom?*, and an official Sal Khan interview transcript were sampled. Missing feed/GUID or derivative status prevented admission; no audio-derived empirical claim was used.
+- Backward and forward OpenAlex citation chains were run around Tutor CoPilot, Mo et al. and current implementation reviews. Full texts were inspected through official working-paper, publisher, NBER and lawful author copies.
+
+### Admission decisions
+
+- Include [S054] after complete 28-page working-paper inspection: two randomized implementations show that scheduled access produced only minutes of weekly AI-tutor use and that engagement-focused human support increased use without reaching adequate dose or learning.
+- Include [S055] after complete journal-manuscript inspection: the same CAL programme produced a positive independent outcome under an NGO implementer and a null under government implementation. The implementer contrast is causal; substitution and monitoring explanations are correlational.
+- Include [S056] after complete 76-page working-paper inspection: an 18-month public-school PAL scale-up retained independent gains only as a redesigned service bundle with timetable, infrastructure, support staff, teacher orchestration and monitoring.
+- Hold Liu et al., DOI `10.26300/y3f8-vh05`: highly relevant current university GenAI-tutor RCT with low take-up and adverse grade/engagement estimates, but [S054] is the more direct ordinary-school support randomization under the cap.
+- Hold Aston et al., EEF/NFER *Maths-Whizz Intelligent Tutoring Programme*: large current school RCT and process evaluation with a small positive effect and substantial device, dosage and method-alignment barriers; [S056] supplies the stronger positive scale counterweight and longer experimental horizon.
+- Hold Glave et al., DOI `10.1596/1813-9450-11476`: strong 390-school teacher-capacity RCT showing that licensing, training and follow-up improved adoption and output evaluation but not time savings. It measures teacher skill rather than tutoring or student learning.
+- Hold Wang et al., arXiv `2410.03017`: Tutor CoPilot raised same-session exit-ticket passing by four percentage points in one seven-week vendor programme; treatment-specific training, 29% tool use and no standardized end-of-year gain limit institutional-transfer inference.
+- Hold Utterberg Modén et al., DOI `10.24251/HICSS.2021.186`: valuable two-school abandonment case about teacher control and accountability, but small historical qualitative evidence adds less causal leverage than [S055].
+- Hold Lee, DOI `10.1186/s40561-026-00461-1`: current systematic review provides breadth on teacher intervention and orchestration, but its heterogeneous studies do not isolate institutional conditions causally.
+- Hold Ferman et al., MPRA `109063`: strong 157-school infrastructure and implementation null corroborator, displaced by the randomized implementer contrast under the cap.
+- Reject public social and podcast items as empirical evidence. Retain them as discovery or stakeholder-perspective snapshots only.
+
+### Agent disagreement and coverage boundary
+
+The scout prioritized the EEF/NFER process evaluation, an abandonment case and a teacher-intervention review. The evidence analyst prioritized the Peru teacher-capacity RCT and Tutor CoPilot and also identified material validity limits in existing [S005]. The contrarian prioritized a causal implementer comparison, a current access/support failure and a positive adapted scale-up. The integrated decision followed the contrarian ranking because it provides the strongest success/failure contrast on the exact transfer question. This was a bounded falsification pass, not a complete implementation review. No admitted source independently randomizes protected time, monitoring, infrastructure or teacher authority, and two of three admitted systems are pre-GenAI.

@@ -8,10 +8,10 @@
   "confidence": "moderate",
   "topics": ["ai-tutoring", "scaffolding", "teacher-practice", "learning-vs-performance"],
   "supporting_sources": ["S001", "S002", "S005", "S014", "S024"],
-  "contradicting_sources": [],
-  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, and additional time may contribute materially.", "The direct access-timing study is a preprint with non-random workshop-level assignment and no policy ablation.", "The evidence chain mixes historical GPT-4/4o-era systems with recent-system evidence and has no current-system anchor."],
-  "product_relevance": "Treat the pedagogical harness as the product, not as a prompt wrapped around a general chatbot.",
-  "last_reviewed": "2026-09-02"
+  "contradicting_sources": ["S054"],
+  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, additional time, infrastructure and monitoring may contribute materially.", "The direct access-timing study is a preprint with non-random workshop-level assignment and no policy ablation.", "Human support can increase use without creating adequate dose or learning when the wider delivery system remains weak.", "The evidence chain mixes historical GPT-4/4o-era systems with recent-system evidence and has no named current-system anchor."],
+  "product_relevance": "Treat the pedagogical and institutional delivery system as the product, not as a prompt or licence wrapped around a general chatbot.",
+  "last_reviewed": "2026-10-19"
 }
 ---
 
@@ -19,7 +19,7 @@
 
 ## Claim
 
-The educational effect of generative AI depends materially on the surrounding pedagogical design. Structured, research-based tutor interactions and teacher-supported programmes have produced positive learning outcomes [S002, S005], while an unrestricted interface created a performance/learning gap that guardrails reduced [S001].
+The educational effect of generative AI depends materially on the surrounding pedagogical and institutional design. Structured, research-based tutor interactions and teacher-supported programmes have produced positive learning outcomes [S002, S005], while an unrestricted interface created a performance/learning gap that guardrails reduced [S001].
 
 ## Evidence and reasoning
 
@@ -29,14 +29,14 @@ The convergent pattern is promising across secondary mathematics, university phy
 
 ## Boundary conditions
 
-Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, and learner characteristics vary.
+Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, infrastructure, monitoring and learner characteristics vary. [C035] makes the institutional boundary explicit.
 
 The mechanism claim is more durable than any effect magnitude: the chain includes GPT-4/4o-era systems plus recent Mistral evidence, but no source is yet classified `current-system`. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
 
 ## Counterevidence and uncertainty
 
-Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. Independent replications and component studies are priorities.
+Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. [S054] also shows that engagement-focused human support can increase platform use without achieving adequate dose or learning. Independent replications and component studies are priorities.
 
 ## Product relevance
 
-Learning products should expose and test their pedagogical policy: when to ask, hint, explain, model, retrieve, delay, and hand control back. Model capability alone is not a learning architecture.
+Learning products should expose and test their pedagogical policy: when to ask, hint, explain, model, retrieve, delay, and hand control back. Institutional rollouts must also expose time, displacement, infrastructure, support labour and monitoring [P008]. Model capability alone is not a learning architecture.

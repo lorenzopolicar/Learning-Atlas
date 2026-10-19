@@ -10,16 +10,16 @@
   "status": "reviewed",
   "topics": ["ai-tutoring", "learning-vs-performance", "scaffolding"],
   "added": "2026-08-31",
-  "last_reviewed": "2026-08-31",
+  "last_reviewed": "2026-10-19",
   "technology_dependence": "model-dependent",
   "technology_context": {
     "system": "custom physics AI tutor",
-    "version": "exact model snapshot not captured in the inspected note",
-    "study_period": "not reported in the inspected note",
-    "assessed_as_of": "2026-09-02",
-    "temporal_relevance": "unknown",
-    "review_due": "2026-10-15",
-    "recency_note": "The instructional design remains directly relevant, but model and data-collection details must be recovered before treating the result as technology-current."
+    "version": "GPT-4; exact snapshot not reported",
+    "study_period": "Fall 2023 semester",
+    "assessed_as_of": "2026-10-19",
+    "temporal_relevance": "historical-system",
+    "review_due": "2027-01-19",
+    "recency_note": "The structured pedagogical design remains relevant, but the 2023 GPT-4 effect magnitude requires current-system replication."
   },
   "access": "open"
 }
@@ -30,6 +30,13 @@
 ## Why it matters
 
 It tests a deliberately structured AI tutor in an authentic university course rather than treating an unprompted chatbot as the intervention.
+
+## Identity and provenance
+
+- Version re-inspected: complete ten-page *Scientific Reports* article on 19 October 2026.
+- Study period: Fall 2023; the tutor used GPT-4 with exact snapshot unreported.
+- Retrieval: publisher PDF SHA-256 `afa6965dfd885fccdeb7ba48bec6a9e8293886db12a02860bbc388fa93e7ff72`.
+- Technology boundary: historical-system evidence for effect size; the prompt, scaffold and expert-authored-solution design remain mechanism-relevant.
 
 ## Study and findings
 

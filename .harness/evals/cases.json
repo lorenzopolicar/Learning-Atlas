@@ -42,6 +42,13 @@
       "types": ["claim", "belief", "decision", "experiment", "discourse"],
       "expected_ids": ["C008", "C010", "B004", "D002", "E001", "N001"],
       "required_concepts": ["accessible baseline", "correct resistance", "assistance function"]
+    },
+    {
+      "id": "EV007",
+      "query": "delivery system intervention tutoring institution normal teaching achieved dose displaced activity support labour",
+      "types": ["question", "claim", "principle"],
+      "expected_ids": ["Q005", "C035", "P008"],
+      "required_concepts": ["achieved dose", "displaced activity", "support labour"]
     }
   ]
 }

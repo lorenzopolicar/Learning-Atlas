@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "last_weekly_scout": "2026-10-11",
+  "last_weekly_scout": "2026-10-19",
   "last_monthly_synthesis": "2026-08-31",
   "last_quarterly_review": "2026-08-31",
   "active_review": "R001",
-  "current_queue_item": 7,
+  "current_queue_item": 8,
   "scheduled_run_observation": {
     "target": 3,
     "actual_scheduled_runs_observed": 3,
@@ -107,6 +107,14 @@
       "sources_added": ["S051", "S052", "S053"],
       "briefing": "briefings/weekly/2026-10-11-personalization-incremental-value.md",
       "note": "Fifth actual scheduled run. Added one current GenAI sequencing RCT, one delayed personalized-review study and one direct matched null; narrowed P003 to an incremental-value rule without increasing maturity or the completed 3-of-3 observation count."
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "scheduled-institutional-transfer",
+      "question": "Q005",
+      "sources_added": ["S054", "S055", "S056"],
+      "briefing": "briefings/weekly/2026-10-19-institutional-transfer.md",
+      "note": "Sixth actual scheduled run. Added a current AI-tutor access and support RCT, a randomized implementer comparison and a positive adapted public-school scale-up; established a provisional delivery-system transfer claim without increasing the completed 3-of-3 observation count."
     }
   ]
 }

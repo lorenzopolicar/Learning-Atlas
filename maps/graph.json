@@ -176,6 +176,13 @@
       "path": "claims/C034-short-difficulty-adaptation-can-add-no-value.md"
     },
     {
+      "id": "C035",
+      "type": "claim",
+      "title": "Tutoring effects belong to delivery systems, not software alone",
+      "status": "provisional",
+      "path": "claims/C035-tutoring-effects-belong-to-delivery-systems.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
@@ -253,6 +260,13 @@
       "path": "principles/P007-preserve-research-traceability.md"
     },
     {
+      "id": "P008",
+      "type": "principle",
+      "title": "Treat the delivery system as the intervention",
+      "status": "active",
+      "path": "principles/P008-treat-delivery-system-as-intervention.md"
+    },
+    {
       "id": "Q001",
       "type": "question",
       "title": "When does AI-assisted performance become durable learning?",
@@ -279,6 +293,13 @@
       "title": "When does learner-model personalization earn its complexity?",
       "status": "open",
       "path": "questions/Q004-when-does-personalization-earn-complexity.md"
+    },
+    {
+      "id": "Q005",
+      "type": "question",
+      "title": "When do tutoring effects transfer into institutions?",
+      "status": "open",
+      "path": "questions/Q005-when-do-tutoring-effects-transfer-to-institutions.md"
     },
     {
       "id": "R001",
@@ -318,7 +339,7 @@
     {
       "id": "S005",
       "type": "source",
-      "title": "From Chalkboards to Chatbots: Transforming Learning in Nigeria, One Prompt at a Time",
+      "title": "From Chalkboards to Chatbots: Evaluating the Impact of Generative AI on Learning Outcomes in Nigeria",
       "status": "reviewed",
       "path": "sources/notes/S005-world-bank-nigeria-chatbot-rct.md"
     },
@@ -566,6 +587,27 @@
       "title": "Effectiveness of Adaptive Versus Non-Adaptive Intelligent Tutoring Systems in Early Primary Mathematics",
       "status": "reviewed",
       "path": "sources/notes/S053-sibley-adaptive-versus-fixed-math.md"
+    },
+    {
+      "id": "S054",
+      "type": "source",
+      "title": "Access is Not Enough: Human Support Improves Engagement with AI Tutoring",
+      "status": "reviewed",
+      "path": "sources/notes/S054-robinson-access-is-not-enough.md"
+    },
+    {
+      "id": "S055",
+      "type": "source",
+      "title": "Institutions, Implementation, and Program Effectiveness: Evidence from a Randomized Evaluation of Computer-Assisted Learning in Rural China",
+      "status": "reviewed",
+      "path": "sources/notes/S055-mo-institutions-implementation-effectiveness.md"
+    },
+    {
+      "id": "S056",
+      "type": "source",
+      "title": "Adapting for Scale: Experimental Evidence on Technology-Aided Instruction in India",
+      "status": "reviewed",
+      "path": "sources/notes/S056-muralidharan-adapting-for-scale.md"
     }
   ],
   "edges": [
@@ -693,6 +735,11 @@
       "source": "C001",
       "target": "S023",
       "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S054",
+      "relation": "contradicting_sources"
     },
     {
       "source": "C002",
@@ -902,6 +949,26 @@
     {
       "source": "C034",
       "target": "S053",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C035",
+      "target": "S054",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C035",
+      "target": "S055",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C035",
+      "target": "S056",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C035",
+      "target": "S005",
       "relation": "supporting_sources"
     },
     {
@@ -1215,6 +1282,21 @@
       "relation": "based_on"
     },
     {
+      "source": "P008",
+      "target": "C002",
+      "relation": "based_on"
+    },
+    {
+      "source": "P008",
+      "target": "C035",
+      "relation": "based_on"
+    },
+    {
+      "source": "P008",
+      "target": "P005",
+      "relation": "based_on"
+    },
+    {
       "source": "Q001",
       "target": "C001",
       "relation": "related_claims"
@@ -1277,6 +1359,16 @@
     {
       "source": "Q004",
       "target": "C034",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q005",
+      "target": "C002",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q005",
+      "target": "C035",
       "relation": "related_claims"
     }
   ]
