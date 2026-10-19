@@ -8,3 +8,4 @@
 | [Q002](../questions/Q002-what-should-a-learner-model-represent.md) | What should a trustworthy learner model represent? | open |  | learner-modelling, assessment-validity, ethics-and-governance |
 | [Q003](../questions/Q003-what-is-worth-learning-in-an-ai-world.md) | What is worth learning in an AI-rich world? | open |  | human-ai-collaboration, institutional-design, ethics-and-governance, motivation-and-agency |
 | [Q004](../questions/Q004-when-does-personalization-earn-complexity.md) | When does learner-model personalization earn its complexity? | open |  | learner-modelling, scaffolding, product-measurement, ai-tutoring |
+| [Q005](../questions/Q005-when-do-tutoring-effects-transfer-to-institutions.md) | When do tutoring effects transfer into institutions? | open |  | ai-tutoring, institutional-design, teacher-practice, transfer, product-measurement |

@@ -16,6 +16,7 @@ That asset does not authorize Orqestra to define educational purpose. Evidence p
 | learning domain and capability model | [P002], [P006], [B003], [B004] | Are observations separated from inferences, including assistance state, context, uncertainty, and permitted use? |
 | learning runtime | [P001], [P004], [P005] | Does orchestration support attempts, retrieval, revisits, and later independent checks? |
 | personalization | [P003], [B005], [C033], [C034], [Q004] | Does adaptation beat matched transparent and learner-controlled policies on independent and delayed outcomes after calibration, coverage, subgroup harm and delivery cost are counted? |
+| institutional delivery | [C035], [P008], [Q005] | Can the tenant preserve adequate use without harmful displacement, and who owns access, recovery, teacher authority, motivation, monitoring, workload and cost? |
 | assessment and evidence | [P005], [P006] | Are supported performance, independent capability, delay, and transfer visibly distinguished? |
 | product analytics | [C001], [P005] | Are completion, engagement, and assisted correctness being mistaken for learning? |
 | human-AI capability | [B004], [C010], [N001], [D002] | What must the learner notice, decide, justify, verify, repair, escalate, and contest for delegation to count as responsible capability? |
@@ -62,3 +63,4 @@ No learner-identifiable data enters the public atlas. A product result should in
 4. Separate independent and AI-assisted capability estimates, evaluated for calibration and decision usefulness [B004, P006].
 5. Run the low-stakes [AI-mediated task stewardship probe](../experiments/E001-ai-mediated-stewardship-probe.md), preserving access-restoring support and reporting a portfolio rather than a sovereignty score [C008, C010, D002]. See the [implementation-facing design brief](orqestra-ai-mediated-stewardship.md).
 6. Before any institutional adoption, rehearse a purpose-and-governance decision in which learners and educators can change at least one material design choice, use a credible non-AI or differently mediated route, and test teacher workload, portability, exit and unequal conversion conditions [S048, S049, S050].
+7. For institutional tutoring, compare a software-only rollout with an explicit readiness-and-support bundle while holding tutor and content constant. Gate expansion on achieved dose, displaced activity, failure recovery, teacher net workload, subgroup take-up, total cost and independent delayed or institution-aligned outcomes [Q005, C035, P008].

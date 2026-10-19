@@ -24,3 +24,4 @@
 | [C032](../claims/C032-confidence-elicitation-can-be-reactive.md) | Confidence elicitation can change monitoring and control | provisional | moderate | metacognition, assessment-validity, product-measurement |
 | [C033](../claims/C033-personalized-sequencing-can-beat-fixed-practice.md) | Personalized sequencing can outperform a fixed practice sequence | provisional | moderate | learner-modelling, scaffolding, retention, ai-tutoring |
 | [C034](../claims/C034-short-difficulty-adaptation-can-add-no-value.md) | Short-horizon difficulty adaptation can add no learning value | provisional | moderate | learner-modelling, knowledge-tracing, scaffolding, product-measurement |
+| [C035](../claims/C035-tutoring-effects-belong-to-delivery-systems.md) | Tutoring effects belong to delivery systems, not software alone | provisional | moderate | ai-tutoring, institutional-design, teacher-practice, transfer, product-measurement |

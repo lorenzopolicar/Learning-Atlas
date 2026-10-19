@@ -12,6 +12,8 @@ The synthesis is therefore not “AI helps” or “AI harms,” nor is it “gu
 
 A current five-month field RCT adds a more specific component result: learner-state reinforcement-learning sequencing improved an independent written Python exam by 0.15 standard deviations over the same GenAI tutor with a fixed sequence [S051]. Historical personalized review similarly beat an equal-opportunity generic spacing policy on a 28-day exam [S052]. But a structurally matched 2026 mathematics experiment found no value from 30 minutes of default-parameter BKT difficulty adaptation [S053]. The defensible inference is not that personalization works by default. Repeated learner-item evidence can make sequencing useful [C033], while short, poorly calibrated or coverage-restricting adaptation can add nothing [C034].
 
+Institutional transfer is a separate causal problem. Scheduled access to a current AI literacy tutor produced only minutes of use per week; engagement-focused human tutors raised use but did not create adequate dose or learning [S054]. When the same historical CAL programme was randomized across implementers, the NGO implementation improved an independent English outcome while government implementation did not [S055]. Conversely, a personalized adaptive system retained meaningful effects over 18 months and roughly 6,500 public-school learners only after its operating model was redesigned around labs, timetable slots, support staff, teacher accompaniment and monitoring [S056]. Positive tutoring effects therefore belong to enacted delivery systems, not software alone [C035].
+
 ## Candidate mechanisms
 
 - answer provision may bypass retrieval, generation, error detection, and self-explanation;
@@ -41,6 +43,8 @@ Build and test an explicit assistance policy rather than a monolithic chatbot. L
 - which learner-state signals add decision value over transparent fixed and learner-controlled sequencing, after exposure, content coverage, calibration and subgroup errors are held accountable;
 - whether dependence, calibration, and agency can be measured reliably;
 - whether the positive one-week effect in [S015] replicates in ordinary coursework, longer horizons and less selective populations;
+- whether a current GenAI tutor retains independent learning effects when ordinary institutions—not research teams—own dose, displacement, infrastructure, support labour and monitoring;
+- which institutional components are causal moderators rather than correlates of successful or failed delivery;
 - the publication-bias and null-results landscape;
 - full appraisal of the 275-participant programming null RCT and the 45-day retention RCT whose lawful full texts were not inspectable in this pass.
 

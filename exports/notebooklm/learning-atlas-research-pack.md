@@ -58,7 +58,7 @@ Type: source
 Status: reviewed
 Topics: ai-tutoring, learning-vs-performance, scaffolding
 Technology dependence: model-dependent
-Technology context: custom physics AI tutor / exact model snapshot not captured in the inspected note; study=not reported in the inspected note; temporal relevance=unknown; review due=2026-10-15
+Technology context: custom physics AI tutor / GPT-4; exact snapshot not reported; study=Fall 2023 semester; temporal relevance=historical-system; review due=2027-01-19
 Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 
 # S002 — AI tutoring outperforms in-class active learning
@@ -66,6 +66,13 @@ Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 ## Why it matters
 
 It tests a deliberately structured AI tutor in an authentic university course rather than treating an unprompted chatbot as the intervention.
+
+## Identity and provenance
+
+- Version re-inspected: complete ten-page *Scientific Reports* article on 19 October 2026.
+- Study period: Fall 2023; the tutor used GPT-4 with exact snapshot unreported.
+- Retrieval: publisher PDF SHA-256 `afa6965dfd885fccdeb7ba48bec6a9e8293886db12a02860bbc388fa93e7ff72`.
+- Technology boundary: historical-system evidence for effect size; the prompt, scaffold and expert-authored-solution design remain mechanism-relevant.
 
 ## Study and findings
 
@@ -170,13 +177,13 @@ This is a broad institutional synthesis, not one homogeneous systematic review o
 
 Supports the framing of [C001] and the need for [P005]. Use underlying primary studies for narrower causal claims.
 
-## S005 — From Chalkboards to Chatbots: Transforming Learning in Nigeria, One Prompt at a Time
+## S005 — From Chalkboards to Chatbots: Evaluating the Impact of Generative AI on Learning Outcomes in Nigeria
 
 Type: source
 Status: reviewed
 Topics: ai-tutoring, teacher-practice, learning-vs-performance, institutional-design
 Technology dependence: model-dependent
-Technology context: Microsoft Copilot / GPT-4; study=not reported in the inspected note; temporal relevance=historical-system; review due=2026-12-01
+Technology context: Microsoft Copilot / GPT-4; study=May to July 2024; programme sessions 3 June to 11 July 2024; temporal relevance=historical-system; review due=2027-01-19
 Canonical path: `sources/notes/S005-world-bank-nigeria-chatbot-rct.md`
 
 # S005 — From Chalkboards to Chatbots
@@ -185,30 +192,43 @@ Canonical path: `sources/notes/S005-world-bank-nigeria-chatbot-rct.md`
 
 This study broadens the evidence beyond affluent universities and tests a structured, teacher-supported GenAI programme in a low-resource secondary-school setting.
 
+## Identity and provenance
+
+- Authors: Martin De Simone, Federico Tiberti, Maria Barron Rodriguez, Federico Manolio, Wuraola Mosuro and Eliot Jolomi Dikoru.
+- Version inspected: complete 51-page World Bank Policy Research Working Paper 11125.
+- Canonical identifier: DOI `10.1596/1813-9450-11125`.
+- Access: CC BY 3.0 IGO working paper and public reproducibility catalogue. Participant datasets are withheld from the public package, so the results are not independently rerunnable from that download.
+- Locator convention: printed page and table in the working paper.
+
 ## Study and findings
 
-A six-week after-school programme in Nigeria combined Microsoft Copilot/GPT-4 access with teacher facilitation and a structured curriculum. The randomized evaluation reports a 0.31 standard-deviation gain on a combined outcome and a 0.23 standard-deviation gain in English. The World Bank publishes a reproducibility package for the analysis.
+- Population: 1,328 interested SS1 students in nine Benin City schools selected for functioning computer labs; 657 were assigned to treatment and 671 to control. The main response sample was 422 treatment and 337 control students.
+- Intervention: up to twelve 1.5-hour after-school sessions over six weeks, with paired devices, curriculum-aligned prompts, teacher circulation, end-session reflection, a three-day teacher training, toolkits and real-time implementation monitoring. Control students received regular schooling only.
+- Immediate outcomes: the weighted composite increased by 0.310 SD and English by 0.238 SD; an existing same-term school English exam increased by 0.206 SD. Inverse-probability weighting attenuated several estimates, including the school exam to 0.134 SD (tables 2, 3 and 11).
+- These are immediate or same-term near outcomes. They do not establish delayed retention, far transfer or routine-classroom scalability.
 
 ## Limitations and boundary conditions
 
-The intervention is a bundle: technology, teacher support, structured sessions, additional time, and curriculum. Results do not identify the independent contribution of the model or generalize automatically to unsupervised use, other ages, or longer-term outcomes. Retention and transfer beyond the study measures require more evidence.
+The intervention is a bundle: GPT-4/Copilot, up to 18 hours of extra time, teacher support, paired work, curriculum and prompting structure, and active implementation monitoring. The regular-schooling comparator does not isolate any component.
+
+Endline completion was 57% overall and differential by assignment: about 64% in treatment and 50% in control. The authors report Lee bounds and weighting checks, but these rely on assumptions and do not remove selection risk. Student-level randomization within schools allowed spillover; some control students attended sessions. Schools and interested students were not representative draws. Power and internet outages and account-setup problems occurred. Heterogeneity and dose estimates are exploratory. Public computational exhibits were verified by World Bank reviewers, but withheld participant data prevent an external rerun.
 
 ## Evidence profile
 
 | Dimension | Rating | Reason |
 |---|---|---|
-| Internal validity | high | Randomized evaluation with public reproducibility materials |
+| Internal validity | moderate | Randomization is strengthened by robustness checks but weakened by large differential attrition, spillover and non-enforcement |
 | Directness | moderate | Relevant to structured AI learning, but the bundled intervention differs from a standalone product |
 | Consistency | moderate | Compatible with structured-tutor evidence |
 | Replication | low | Context-specific programme not independently replicated here |
-| Magnitude | moderate | Reported effects are educationally meaningful |
+| Magnitude | moderate | Main composite was 0.31 SD; weighted estimates were smaller |
 | Duration | low | Six-week programme with limited delayed evidence |
 | Transfer | low | Outcomes do not establish broad transfer |
 | Ecological validity | high | Real low-resource school setting and facilitation constraints |
 
 ## Candidate claims
 
-Supports [C002] with teacher mediation and structure as essential boundary conditions.
+Supports [C002] as a positive structured programme and [C035] as evidence that the working intervention included labs, power and connectivity contingencies, registration, teacher training, local prompts, oversight, monitoring and protected extra time. None is an independently estimated causal moderator.
 
 ## S006 — Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention
 
@@ -2038,6 +2058,193 @@ This is a direct falsifier for any claim that adaptivity is inherently superior.
 
 Supports [C034](../../claims/C034-short-difficulty-adaptation-can-add-no-value.md): isolated, short-horizon difficulty adaptation can add no learning value over a matched fixed sequence. It contradicts any unconditional reading of [C033](../../claims/C033-personalized-sequencing-can-beat-fixed-practice.md).
 
+## S054 — Access is Not Enough: Human Support Improves Engagement with AI Tutoring
+
+Type: source
+Status: reviewed
+Topics: ai-tutoring, teacher-practice, institutional-design, equity, product-measurement
+Technology dependence: system-dependent
+Canonical path: `sources/notes/S054-robinson-access-is-not-enough.md`
+
+# S054 — Scheduled access did not produce meaningful AI-tutor use
+
+## Why it matters
+
+This is a direct test of an often-hidden prerequisite for AI tutoring: whether ordinary scheduled access becomes actual use. It also randomizes a bounded form of human support instead of inferring its value from a successful programme.
+
+## Identity and provenance
+
+- Authors: Carly D. Robinson, David Gormley, Ana Trindade Ribeiro and Susanna Loeb.
+- Version inspected: EdWorkingPaper 26-1451, June 2026, complete 28-page PDF.
+- Canonical identifier: DOI `10.26300/pz7p-p388`.
+- Access: open publisher copy; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_6656854117f827f6`; PDF SHA-256 `58576cd8fa3bf208618d71b21bb2ccb620e3a7fc99367f407cc77d29b88ae6a2`.
+- Locator convention: PDF page, table and appendix table.
+
+## Study
+
+- Population and setting: 355 grades 1–5 students in two high-poverty US districts; one implementation was after school and the other in school.
+- Design: two stratified randomized trials. Students were assigned either to use an AI literacy platform independently or with an in-person tutor in groups of two to five.
+- Intervention: tutors did not teach reading. They supported check-ins, motivation, group norms, participation, reflection and technology troubleshooting after standardized training.
+- Intended exposure: at least two 30-minute sessions each week over 14–31 weeks. The provider identified 30 minutes of platform use per week as the threshold at which benefits typically begin.
+- Outcomes: preregistered weekly platform minutes and stories read; end-of-year district literacy assessments were exploratory.
+
+## Findings
+
+- Despite access and dedicated session time, only 60.7% and 53.3% of control students ever used the platform. Average control use was 2.18 and 5.23 minutes per week, and students used it in only about four weeks on average (pages 5–6; appendix table A4).
+- Human support added 1.0 minute per week in District A and 4.4 minutes in District B and increased stories read by 71% and 80% relative to small control means (pages 6–7; table 1).
+- The support did not significantly increase the probability of ever using the tutor. Use in both treatment arms remained well below the provider's 30-minute recommendation.
+- Exploratory literacy effects were negative and imprecise: -0.052 SD in District A and -0.129 SD in District B (table 1). These low-dose trials do not establish that the tutor would be ineffective at adequate exposure.
+- Among control students, users were less likely to receive special-education services and more likely to be higher achieving (pages 5 and 8; appendix table A5). These are observational participation differences, not treatment effects.
+
+## Limitations and boundary conditions
+
+- The platform and exact underlying model are unnamed, limiting technology transfer and reproducibility.
+- Human support was bundled across relational and operational functions; the trials do not identify which function changed engagement.
+- The achievement analyses were exploratory and underpowered, used different district measures and tested a very small achieved dose.
+- Treatment capacity differed across sites, and local implementation effects varied. The finding is about access, take-up and support labour, not the learning efficacy of an adequately used AI tutor.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-high for engagement | Randomized assignment and preregistered usage outcomes; small site samples and bundled support |
+| Directness | high for access and human support | Directly tests independent use versus engagement-focused human support |
+| Consistency | moderate | Aligns with low-take-up evidence, but current direct replications are limited |
+| Replication | low-moderate | Similar pattern across two small district trials in one paper |
+| Magnitude | small absolute dose | Large relative engagement changes came from very small control means |
+| Duration | moderate | Fourteen to 31 weeks, but use occurred in only about four weeks |
+| Transfer | low | Exploratory district literacy outcomes were null and imprecise |
+| Ecological validity | high | In-school and after-school implementations in high-poverty districts |
+
+## Candidate claims
+
+Supports [C035](../../claims/C035-tutoring-effects-belong-to-delivery-systems.md): access and scheduled time do not by themselves create adequate exposure, while motivation and troubleshooting are real delivery work. It adds an equity boundary: opt-in-like take-up can underserve students who already need more support.
+
+## S055 — Institutions, Implementation, and Program Effectiveness: Evidence from a Randomized Evaluation of Computer-Assisted Learning in Rural China
+
+Type: source
+Status: reviewed
+Topics: ai-tutoring, institutional-design, teacher-practice, transfer, product-measurement
+Technology dependence: model-independent
+Canonical path: `sources/notes/S055-mo-institutions-implementation-effectiveness.md`
+
+# S055 — The same tutoring software produced different effects under different implementers
+
+## Why it matters
+
+This is the cleanest located falsifier of software portability. It randomized the same computer-assisted English programme across an NGO implementer, a government implementer and no programme, so the institutional delivery system—not just the software—varied causally.
+
+## Identity and provenance
+
+- Authors: Di Mo, Yu Bai, Yaojiang Shi, Cody Abbey, Linxiu Zhang, Scott Rozelle and Prashant Loyalka.
+- Publication: *Journal of Development Economics*, 146, 102487; DOI `10.1016/j.jdeveco.2020.102487`.
+- Version inspected: complete ten-page author/publisher manuscript.
+- Access: lawful open author copy; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_2836d107b867d6b3`; PDF SHA-256 `feb50cc4b79a2ac003aa40f94f3c0c3d163206a582a9acd27f0ccd10cf28f7d7`.
+- Locator convention: journal PDF page and table.
+
+## Study
+
+- Population and setting: 5,574 grade 4 learners in 120 poor rural public schools in Qinghai, China; 5,253 contributed to the primary endline estimate.
+- Design: schools were randomized to the same English CAL programme implemented by an NGO, implemented by government education offices, or business-as-usual control for one academic year.
+- Programme: two 40-minute computer-lab sessions per week using identical curriculum, software and training materials. The protocol expected computer teachers to supervise sessions in addition to regular English instruction.
+- Outcome: a proctored standardized English test containing items that did not overlap with the software exercises.
+
+## Findings
+
+- The NGO implementation improved English by 0.16–0.18 SD relative to control. The government implementation estimate was -0.07 SD and not significant (page 6; table 4).
+- Compared with NGO schools, government schools were 20 percentage points more likely to replace regular English classes with CAL, 30 points more likely to assign English teachers instead of computer teachers to supervise it, and 50 points less likely to receive a call or visit monitoring progress (page 7; table 6).
+- Substitution and direct monitoring correlated with test scores, but these intermediate mechanisms were not randomized. The paper explicitly treats that explanation as tentative (pages 7–8; table 7).
+- The positive NGO effect could reflect CAL plus additional English time, or even additional instruction time alone. The study therefore establishes an implementer effect, not the independent effect of monitoring or software.
+
+## Limitations and boundary conditions
+
+- This is historical computer-assisted learning, not GenAI. Use it for institutional mechanism and external-validity boundaries, not current-model effect size.
+- The government-versus-NGO contrast is causal, but the proposed substitution, staffing and monitoring mechanisms are post-randomization and correlational.
+- The study covers one subject, grade, province and governance context. It does not establish that government delivery is generally inferior.
+- Hardware was treated as a sunk public investment, which narrows cost transfer to institutions without existing labs.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | high for implementer contrast | Cluster randomization of identical software across two implementers and control |
+| Directness | high for institutional transfer | Directly varies the delivery institution; not GenAI-specific |
+| Consistency | moderate | Converges with scale-up and access evidence, but few studies randomize implementer |
+| Replication | low | One province and programme |
+| Magnitude | small-to-moderate versus null | NGO +0.18 SD; government -0.07 SD and nonsignificant |
+| Duration | high | One academic year |
+| Transfer | moderate | Independent standardized subject test; no delayed follow-up or far transfer |
+| Ecological validity | high | Ordinary rural public schools and government implementation |
+
+## Candidate claims
+
+Supports [C035](../../claims/C035-tutoring-effects-belong-to-delivery-systems.md): a bounded efficacy result cannot be carried across institutions as a software property. It also requires the claim to distinguish the causal implementer effect from correlational explanations about substitution and monitoring.
+
+## S056 — Adapting for Scale: Experimental Evidence on Technology-Aided Instruction in India
+
+Type: source
+Status: reviewed
+Topics: ai-tutoring, learner-modelling, institutional-design, teacher-practice, scaling
+Technology dependence: system-dependent
+Canonical path: `sources/notes/S056-muralidharan-adapting-for-scale.md`
+
+# S056 — A positive tutoring scale-up required an adapted operating model
+
+## Why it matters
+
+This is the positive counterweight to implementation failures. A personalized adaptive system retained meaningful effects at more than twenty times the proof-of-concept scale, but only after the delivery model was redesigned for public-school infrastructure, schedules, staffing and teacher work.
+
+## Identity and provenance
+
+- Authors: Karthik Muralidharan and Abhijeet Singh.
+- Version inspected: NBER Working Paper 34205, September 2025, revised November 2025, complete 76-page PDF.
+- Registration: AEA RCT Registry `AEARCTR-0002546`.
+- Access: public NBER working paper; no full text is stored in Git.
+- Retrieval: gateway candidate `cand_90e88f6355cbc29a`; PDF SHA-256 `6bf913ef4a11d3b51b410a9c12a6c12842745f2db14fac70d3f21eaf654fdd81`.
+- Locator convention: working-paper page, section and table.
+
+## Study
+
+- Population and setting: approximately 6,500 grade 1–8 learners in 80 relatively well-resourced integrated public schools across four Rajasthan districts; 40 schools were randomized to treatment and 40 to control.
+- Intervention: 18 months of Mindspark personalized adaptive learning embedded in the school day. The package included computer labs, extended-battery laptops, a locally hired lab-in-charge, teacher orientation and dashboards, six weekly lab periods and teacher accompaniment. Students shared devices when needed.
+- Scheduling: Mindspark replaced about 25% of targeted-subject time in primary grades and 40–50% in middle grades. Treated schools sometimes added subject time elsewhere, and some non-target subjects were displaced.
+- Outcomes: independently administered, IRT-linked mathematics and Hindi tests; school examinations and platform use were secondary.
+
+## Findings
+
+- After about six months, effects were 0.15 SD in mathematics and 0.11 SD in Hindi. After 18 months, effects rose to 0.22 and 0.20 SD (pages 14–15; table 2).
+- A restricted comparison among grade-by-stratum cells without increased scheduled subject time produced similar effects, which weakens but does not eliminate the added-time explanation (page 18; table 6).
+- Official grade-level school-exam effects were null with negative point estimates, consistent with tension between instruction at actual learning level and curriculum-aligned examinations (pages 18–19; table 7).
+- In year three, reducing one lab-in-charge per school to one across three or four schools caused an initial sharp usage drop; usage partially recovered after monitoring alerted implementers. The year-three staffing comparison is observational, not randomized (pages 20–22).
+- The adapted service cost about USD 78 per pupil over two experimental years. Hardware, repairs, staff, training and engagement were material parts of the intervention (pages 22–24).
+
+## Limitations and boundary conditions
+
+- The trial estimates a redesigned service bundle, not software alone. Teacher support, staffing, infrastructure, scheduling and monitoring cannot be separated causally.
+- Schools were larger and better resourced than stand-alone primary schools and were the public schools most likely to absorb hardware-intensive technology.
+- More targeted-subject time in some treated grades and displacement of other subjects complicate productivity and opportunity-cost claims.
+- Mindspark is a historical personalized adaptive system rather than a current generative model. The institutional mechanisms may transfer; the effect size may not.
+- The third-year lower-staffing results and dose-response estimates are nonexperimental. The paper's developers and government partners participated in the implementation.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-high for the service bundle | Cluster randomization and independent tests; bundle and timetable adaptation limit attribution |
+| Directness | high for adapted public-school scale | Tests normal-timetable delivery at large scale; not current GenAI |
+| Consistency | moderate | Positive counterweight to government and low-take-up failures |
+| Replication | low-moderate | One 80-school trial followed an earlier small efficacy trial |
+| Magnitude | moderate | 0.22 SD mathematics and 0.20 SD Hindi after 18 months |
+| Duration | high | Eighteen-month experimental period, plus nonexperimental year three |
+| Transfer | moderate | Independent broad-range tests positive; official grade-level exams null |
+| Ecological validity | high within eligible schools | Public-school timetable and staff, but relatively well-resourced schools |
+
+## Candidate claims
+
+Supports [C035](../../claims/C035-tutoring-effects-belong-to-delivery-systems.md): successful scale required a tested operating model with protected time, infrastructure, support labour and monitoring. It also shows why implementation logs cannot substitute for independent and curriculum-aligned outcomes.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -2080,7 +2287,7 @@ Canonical path: `claims/C002-pedagogical-structure-changes-ai-learning-outcomes.
 
 ## Claim
 
-The educational effect of generative AI depends materially on the surrounding pedagogical design. Structured, research-based tutor interactions and teacher-supported programmes have produced positive learning outcomes [S002, S005], while an unrestricted interface created a performance/learning gap that guardrails reduced [S001].
+The educational effect of generative AI depends materially on the surrounding pedagogical and institutional design. Structured, research-based tutor interactions and teacher-supported programmes have produced positive learning outcomes [S002, S005], while an unrestricted interface created a performance/learning gap that guardrails reduced [S001].
 
 ## Evidence and reasoning
 
@@ -2090,17 +2297,17 @@ The convergent pattern is promising across secondary mathematics, university phy
 
 ## Boundary conditions
 
-Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, and learner characteristics vary.
+Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, infrastructure, monitoring and learner characteristics vary. [C035] makes the institutional boundary explicit.
 
 The mechanism claim is more durable than any effect magnitude: the chain includes GPT-4/4o-era systems plus recent Mistral evidence, but no source is yet classified `current-system`. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
 
 ## Counterevidence and uncertainty
 
-Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. Independent replications and component studies are priorities.
+Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. [S054] also shows that engagement-focused human support can increase platform use without achieving adequate dose or learning. Independent replications and component studies are priorities.
 
 ## Product relevance
 
-Learning products should expose and test their pedagogical policy: when to ask, hint, explain, model, retrieve, delay, and hand control back. Model capability alone is not a learning architecture.
+Learning products should expose and test their pedagogical policy: when to ask, hint, explain, model, retrieve, delay, and hand control back. Institutional rollouts must also expose time, displacement, infrastructure, support labour and monitoring [P008]. Model capability alone is not a learning architecture.
 
 ## C003 — Effective guidance varies with learner expertise
 
@@ -2574,6 +2781,39 @@ The experiment had no delayed outcome and may have been too brief for BKT to con
 
 Use a transparent policy until the learner model has enough validated evidence to change a consequential decision. Compare fixed, learner-model adaptive and learner-controlled policies with predefined equivalence bounds and coverage checks.
 
+## C035 — Tutoring effects belong to delivery systems, not software alone
+
+Type: claim
+Status: provisional
+Topics: ai-tutoring, institutional-design, teacher-practice, transfer, product-measurement
+Canonical path: `claims/C035-tutoring-effects-belong-to-delivery-systems.md`
+
+# C035 — Tutoring effects belong to delivery systems, not software alone
+
+## Claim
+
+A tutoring system does not carry an efficacy result into a school or tenant by itself. The relevant unit is an enacted service: technology, schedule, people, authority, infrastructure, monitoring and the instruction it replaces.
+
+## Evidence and reasoning
+
+[S055] provides the strongest causal portability test. The same English CAL programme improved an independent outcome under an NGO implementer but not under a government implementer. The institutions also differed in instructional substitution and direct monitoring, although those mechanisms were not themselves randomized.
+
+[S054] shows a nearer current-system failure boundary. Students had accounts and scheduled sessions, yet roughly two in five never used the AI tutor and average exposure was only minutes per week. Engagement-focused tutors raised use but did not generate the intended dose or learning effect.
+
+[S056] supplies the positive counterweight. A personalized adaptive system produced independent gains after 18 months in public schools, but the scale-up was deliberately redesigned around labs, protected timetable slots, a lab support role, teacher accompaniment and monitoring. Reducing support staffing initially reduced usage. Existing [S005] is also a positive but bundled after-school programme rather than evidence that one ingredient is sufficient.
+
+## Boundary conditions
+
+The evidence does not justify a universal checklist of causal moderators. It supports a readiness hypothesis and the rejection of software-only transfer. Current GenAI replications, active comparators and component randomization are still missing. “Implementation fidelity” is also too narrow: successful scaling may require adapting the service while preserving the learning mechanism.
+
+## Counterevidence and uncertainty
+
+[S056] shows that ordinary-system scale is possible and that some instructional substitution can coexist with independent gains. That prevents the claim from becoming “technology must only be additive.” The open question is whether the replacement is better than the displaced activity for the declared outcome and whether other curriculum goals are harmed.
+
+## Product relevance
+
+Before rollout, record intended and achieved dose, displaced activity, devices and recovery paths, staff roles and net workload, teacher visibility and override, monitoring ownership, subgroup participation and full cost. Continue only when those conditions and independent learning outcomes clear predefined thresholds.
+
 ## B001 — Optimize durable capability, not completion
 
 Type: belief
@@ -2967,6 +3207,36 @@ Inference without provenance becomes brittle authority [C007]. Multiple evidence
 
 Measure time to audit or correct a claim, rate of broken references, reviewer comprehension, decision reversibility, and retrieval usefulness to coding agents.
 
+## P008 — Treat the delivery system as the intervention
+
+Type: principle
+Status: active
+Topics: ai-tutoring, institutional-design, teacher-practice, product-measurement
+Canonical path: `principles/P008-treat-delivery-system-as-intervention.md`
+
+# P008 — Treat the delivery system as the intervention
+
+## Principle
+
+For institutional tutoring, specify, test and cost the service that will actually run. Accounts and model capability are inputs; they are not implementation or learning outcomes.
+
+## Rationale
+
+The same tutoring software can produce different effects under different implementers [S055, C035]. Scheduled access can fail to generate meaningful use [S054], while a successful public-school scale-up required adaptation of timetable, staffing, infrastructure, teacher work and monitoring [S056]. Learning must still be measured independently after assistance [P005].
+
+## Product patterns
+
+- a readiness gate for protected time, displaced activity, devices, connectivity and recovery;
+- named owners for motivation, troubleshooting, monitoring and escalation;
+- teacher visibility, rationale, defer, reject and override controls;
+- intended-versus-achieved dose and attention-coverage dashboards;
+- subgroup take-up, accessibility, workload and full-cost measures;
+- a de-support phase that tests whether the service persists after vendor or research help withdraws.
+
+## Falsifiers and measures
+
+Compare software-only rollout with an explicit support bundle while holding tutor and content constant. Measure achieved dose, displacement, failure recovery, staff workload, subgroup participation, total cost and independent delayed and institution-aligned outcomes. Retire conditions that do not predict or cause better delivery.
+
 ## Q001 — When does AI-assisted performance become durable learning?
 
 Type: question
@@ -3070,3 +3340,28 @@ Long-horizon sequencing can improve independent or delayed outcomes over credibl
 ## Next search and experiment
 
 Pre-register a three-arm Orqestra-like trial: transparent fixed response rule, learner-model adaptive policy and learner-controlled/on-demand policy. Hold the tutor, content, feedback and exposure budget constant; power immediate independent, delayed and transfer outcomes; report state calibration, false promotion/hold, content coverage, burden and subgroup effects. Ablate learner-state features before attributing gains to the model.
+
+## Q005 — When do tutoring effects transfer into institutions?
+
+Type: question
+Status: open
+Topics: ai-tutoring, institutional-design, teacher-practice, transfer, product-measurement
+Canonical path: `questions/Q005-when-do-tutoring-effects-transfer-to-institutions.md`
+
+# Q005 — When do tutoring effects transfer into institutions?
+
+## Why this matters
+
+A positive efficacy trial identifies an intervention that worked under one delivery system. It does not show that access to the software will preserve dose, teacher time, infrastructure, equity or learning when another institution operates it.
+
+## Scope and definitions
+
+Treat the intervention as the software plus its enacted delivery system: protected and actually achieved dose; displaced instruction; devices, connectivity and recovery from failure; teacher and support-staff roles; motivation and accountability; monitoring ownership; curriculum alignment; subgroup take-up; and full delivery cost. Separate implementation outcomes from independent, delayed, transfer and institution-aligned learning outcomes.
+
+## Current synthesis
+
+Access and scheduled time can still produce very low use [S054]. The same software can yield positive versus null effects under different randomized implementers [S055]. A positive large public-school scale-up required redesigned schedules, infrastructure, support staff, teacher co-orchestration and monitoring [S056]. These studies identify delivery-system boundaries, not independently estimated causal effects for every listed component [C035].
+
+## Next search and experiment
+
+Prioritize a multisite current-system trial that holds tutor and content constant while randomizing an explicit institutional support package. Compare against equal-time normal instruction or transparent non-AI practice. Measure achieved dose, displaced activity, staff workload, failure and recovery, subgroup participation, total cost, independent delayed transfer and institution-aligned outcomes for at least one year and after support withdrawal.

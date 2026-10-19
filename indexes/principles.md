@@ -11,3 +11,4 @@
 | [P005](../principles/P005-measure-learning-after-assistance.md) | Measure learning after assistance is removed | active | high | learning-vs-performance, assessment-validity, product-measurement |
 | [P006](../principles/P006-triangulate-capability-evidence.md) | Triangulate capability evidence | active | moderate | assessment-validity, human-ai-collaboration, ethics-and-governance |
 | [P007](../principles/P007-preserve-research-traceability.md) | Preserve traceability from source to decision | active | high | ethics-and-governance, product-measurement, institutional-design |
+| [P008](../principles/P008-treat-delivery-system-as-intervention.md) | Treat the delivery system as the intervention | active | moderate | ai-tutoring, institutional-design, teacher-practice, product-measurement |
