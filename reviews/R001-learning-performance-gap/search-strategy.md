@@ -1,6 +1,6 @@
 # R001 search strategy
 
-Last searched: 2026-09-01
+Last searched: 2026-10-26
 Coverage status: targeted current-evidence update; not yet database-complete.
 
 ## Concept blocks
@@ -84,6 +84,41 @@ Question: which post-2025 controlled studies report an AI-supported activity and
 ### Coverage boundary
 
 This was a deliberately bounded live update, not an exhaustive database search. It sampled null, adverse/inconclusive, positive-policy and authentic-performance results, admitted the three-source maximum, and preserved access failures. No meta-analysis, RoB 2 adjudication, trial-registry sweep or publication-bias assessment was completed.
+
+## 2026-10-25/26 current-generation withdrawal and retention update
+
+Question: which current-generation controlled studies report both AI-assisted activity and an outcome after substantive assistance is removed, and what design features change that relationship?
+
+### Bounded retrieval and capabilities
+
+- Atlas query: `current-generation controlled studies assisted later unassisted GenAI outcomes`, restricted to claims, principles, questions and reviews. This returned the existing C001/C002/C009/C011, P005, Q001 and R001 evidence chain before external discovery.
+- Gateway capabilities: OpenAlex and Crossref available; Unpaywall unavailable because `UNPAYWALL_EMAIL` was unset; Podcast Index, YouTube and OpenAI transcription unavailable; Docling installed but returned no usable thesis extraction; Exa was configured separately but not callable in this run.
+- Gateway/OpenAlex queries: `generative AI assisted performance delayed unassisted learning randomized retention`; `generative AI learning delayed posttest unassisted randomized controlled trial`; `ChatGPT retention transfer without AI experiment students`; `AI tutor delayed learning unassisted posttest randomized 2025`; `LLM cognitive offloading learning retention experiment`; and the exact title `AI Assistance Reduces Persistence and Hurts Independent Performance`. Searches used the 2025–2026 window where supported and limits of 5–15.
+- Native web queries: `2026 LLM assistance "unaided test" experiment learning`; `2026 ChatGPT "48 hours" retention students experiment`; `2026 GPT-5 learning retention randomized trial students unaided`; and `2026 generative AI "subsequent test" without assistance experiment learning`.
+- Exact-title/arXiv resolution and lawful publisher-open PDF fetches completed for arXiv:2604.04721v6, arXiv:2609.20143v1 and arXiv:2609.21194v1. Candidate staging remained separate from admission.
+
+### Citation chain and lane sampling
+
+- Backward chaining from Maier et al. surfaced Bassner, Bastani, Liu, Shen and Tamkin, and Rismanchian. Liu's forward-citation results were mostly conceptual or commentary work rather than delayed replications.
+- The useful empirical chain was `Bastani / Barcauí / Shen and Tamkin -> Liu -> Maier`: answer-ready assistance shows an immediate withdrawal penalty, while explicit-request friction and contextual feedback produce a null/intervention boundary.
+- Public professional discourse was sampled deliberately. Rohan Paul's LinkedIn post, stable activity ID `7477277198882590720`, amplified Rismanchian's large quasi-experiment and linked to the original; Peter Slattery's LinkedIn post, stable activity ID `7479927204328603648`, amplified Strömberg's observational longitudinal result. Both were discovery/perspective only.
+- Podcast discourse was sampled through APA *Speaking of Psychology* episode 389 with Brooke Macnamara. Its official transcript argues that the function and degree of offloading matter and recommends unaided self-testing. Episode feed/GUID resolution failed, so it was retained as contextual perspective rather than admitted.
+
+### Admission decisions
+
+- Include [S057]: three randomized GPT-5 experiments show improved assisted performance followed by lower immediate independent accuracy after withdrawal; the latter two reduce important exclusion/interface confounds. Do not infer durability.
+- Include [S058]: a preregistered current-system factorial trial preserves an AI-only null under explicit-request friction and shows that contextual metacognitive feedback reduces answer offloading and modestly improves an immediate unaided test. Do not infer which bundled feedback component is active.
+- Include [S059]: a small pseudo-randomized programming study reports higher assisted coding scores and lower immediate/48-hour recall. Treat as a lower-confidence delayed acquisition signal, not accelerated forgetting or independent coding transfer.
+- Hold Barcauí, DOI `10.1016/j.ssaho.2025.102287`: the randomized 45-day result remains highly relevant, but ScienceDirect and SSRN full-text endpoints returned robots/403 in the integrating lane. Indexed or agent-inspected text was not substituted for a stable lawful extraction.
+- Hold Bassner et al., DOI `10.1016/j.caeai.2025.100537`: metadata and public Zenodo analyses were resolved, but the publisher article was blocked. The reported null is informative, while substantial attrition and post-treatment non-use exclusions require full-paper appraisal.
+- Hold Autor et al., NBER working paper 35720: the official abstract reports a three-month patent-drafting RCT with later unaided redlining, but NBER/SSRN full text returned reset/403 responses.
+- Hold Rismanchian et al., arXiv:2605.21629: large proctored-retention signal, but AI use is inferred from task susceptibility rather than observed or randomized.
+- Hold the 2026 programming meta-analysis: its no-AI-assessment subgroup is null overall, but the search ends in 2025, heterogeneity is high and it collapses assistance designs and delays that matter to this question.
+- Reject the 13-person programming thesis as too imbalanced and underpowered for claim revision; reject the nursing trial for this run because ChatGPT-3.5 is bundled with peer discussion, guidelines, instructor correction and hands-on practice.
+
+### Failures and coverage boundary
+
+The broad native web search hung once and was terminated; focused searches succeeded. ScienceDirect and SSRN presented robot/CAPTCHA or 403 barriers and were not bypassed. Docling did not extract the thesis, so local `pdftotext` was used on the lawfully fetched document. Podcast feed resolution failed. This was a bounded update with at most three admissions, not a database-complete search, RoB 2 adjudication, trial-registry sweep or publication-bias assessment.
 
 ## Required search log
 

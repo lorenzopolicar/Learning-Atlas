@@ -12,3 +12,5 @@
 10. What harms arise from withdrawing assistance solely for measurement?
 11. When AI increases learning per unit of time, how do learners reallocate saved time outside a laboratory?
 12. Which randomized interface or incentive changes move learners from automation toward augmentation, rather than merely classifying their choices afterward?
+13. Does the immediate GPT-5 withdrawal penalty persist on delayed novel tasks, or does it attenuate once interface surprise and expectation shifts pass?
+14. Which element of metacognitive feedback—process mirror, practice explanation, monitoring cue, or visualization—changes offloading and independent performance?
