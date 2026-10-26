@@ -398,6 +398,27 @@
       "title": "AI at the bedside: Randomised controlled trial of ChatGPT's impact on student performance in real-patient clinical exams",
       "status": "reviewed",
       "path": "sources/notes/S025-saloojee-ai-at-bedside.md"
+    },
+    {
+      "id": "S057",
+      "type": "source",
+      "title": "AI Assistance Reduces Persistence and Hurts Independent Performance",
+      "status": "reviewed",
+      "path": "sources/notes/S057-liu-ai-assistance-persistence.md"
+    },
+    {
+      "id": "S058",
+      "type": "source",
+      "title": "Designing Against Deskilling: Metacognitive Feedback Reduces Cognitive Offloading to LLM Assistants",
+      "status": "reviewed",
+      "path": "sources/notes/S058-maier-metacognitive-feedback.md"
+    },
+    {
+      "id": "S059",
+      "type": "source",
+      "title": "Your Programming Students' Cognition with ChatGPT: Higher Performance, Lower Retention, and Reduced Ownership",
+      "status": "reviewed",
+      "path": "sources/notes/S059-bergh-programming-cognition.md"
     }
   ],
   "edges": [
@@ -512,6 +533,16 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C001",
+      "target": "S057",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C001",
+      "target": "S059",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "C002",
       "target": "S001",
       "relation": "supporting_sources"
@@ -534,6 +565,11 @@
     {
       "source": "C002",
       "target": "S024",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S058",
       "relation": "supporting_sources"
     },
     {

@@ -58,7 +58,7 @@ Type: source
 Status: reviewed
 Topics: ai-tutoring, learning-vs-performance, scaffolding
 Technology dependence: model-dependent
-Technology context: custom physics AI tutor / exact model snapshot not captured in the inspected note; study=not reported in the inspected note; temporal relevance=unknown; review due=2026-10-15
+Technology context: custom physics AI tutor / GPT-4; exact snapshot not reported; study=Fall 2023 semester; temporal relevance=historical-system; review due=2027-01-19
 Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 
 # S002 — AI tutoring outperforms in-class active learning
@@ -66,6 +66,13 @@ Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 ## Why it matters
 
 It tests a deliberately structured AI tutor in an authentic university course rather than treating an unprompted chatbot as the intervention.
+
+## Identity and provenance
+
+- Version re-inspected: complete ten-page *Scientific Reports* article on 19 October 2026.
+- Study period: Fall 2023; the tutor used GPT-4 with exact snapshot unreported.
+- Retrieval: publisher PDF SHA-256 `afa6965dfd885fccdeb7ba48bec6a9e8293886db12a02860bbc388fa93e7ff72`.
+- Technology boundary: historical-system evidence for effect size; the prompt, scaffold and expert-authored-solution design remain mechanism-relevant.
 
 ## Study and findings
 
@@ -1193,6 +1200,212 @@ Supports [C012](../../claims/C012-minimal-ai-access-did-not-improve-bedside-perf
 
 The public anonymized dataset is registered at Zenodo DOI 10.5281/zenodo.17459336. Funding came in whole or part from the Gates Foundation; the authors reported no potential conflict.
 
+## S057 — AI Assistance Reduces Persistence and Hurts Independent Performance
+
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, cognitive-offloading, assessment-validity, human-ai-collaboration
+Technology dependence: model-dependent
+Technology context: OpenAI GPT-5 / GPT-5 snapshot not reported; study=not reported; UCLA protocol IRB-25-2012; temporal relevance=current-system; review due=2027-04-25
+Canonical path: `sources/notes/S057-liu-ai-assistance-persistence.md`
+
+# S057 — AI assistance reduces persistence and independent performance
+
+## Why it matters
+
+This is the strongest current-generation causal evidence in the review that assisted success can reverse immediately after support is removed. Three randomized experiments used GPT-5 during brief arithmetic or reading tasks and then tested the same outcome family without AI.
+
+## Identity and provenance
+
+- Canonical identifiers: arXiv:2604.04721v6; DOI 10.48550/arXiv.2604.04721; COLM 2026 conference paper
+- Version inspected: 13 October 2026
+- Content inspected: complete PDF, experiments 1–3, appendices relevant to assignment and attrition, conclusion and limitations
+- Access and rights: publisher-open arXiv PDF
+- Retrieval: gateway candidate `cand_a0445cb4aa5eeb75`; PDF SHA-256 `6025a4b27ad25f12056da64f756b6d626a500420618575de762fc3a45eb415e9`
+- Locator convention: numbered experiment/section, figure and page in v6
+
+## Study
+
+- Population and setting: 1,222 US Prolific adults recruited across three short online experiments; analyzed samples were 305, 585 and 168 after exclusions.
+- Intervention and comparator: GPT-5 was preloaded with each problem and solution and could return a complete answer from a minimal prompt; controls completed the same items without AI.
+- Outcomes and timing: learning-phase solve/skip rates followed by three immediate independent problems after the sidebar was removed without warning.
+- Design: individually randomized experiments on fraction arithmetic and SAT-style reading comprehension. Experiment 2 added a pretest and matched the sidebar-removal interface transition to address experiment 1's selective-exclusion and interface confounds.
+
+## Findings
+
+- AI improved assisted solve rates and reduced skipping during the learning phase in the fraction experiments.
+- Experiment 1 independent fraction performance was lower with prior AI access: solve rate .57 versus .74 (d=-.45, p<.001); skip rate .20 versus .11 (d=.27, p=.020). Its post-randomization exclusion could selectively retain lower-skill AI users.
+- Experiment 2 preserved the independent solve-rate penalty after pretest-based exclusions and a matched interface shift: .71 versus .77 (d=-.20, p=.019). The aggregate skip-rate difference was not significant.
+- Experiment 3 replicated the withdrawal pattern in reading: solve rate .76 versus .89 (d=-.42, p=.007); skip rate .08 versus .01 (d=.42, p=.008).
+- Usage-category contrasts, including the poorer outcomes of self-reported direct-answer users, are post-treatment and cannot identify a causal mechanism.
+
+## Limitations and boundary conditions
+
+- Exposure lasted only about 10–15 minutes and the independent test followed immediately; the paper cannot establish retained learning loss, durable deskilling or cumulative harm.
+- The assistant was maximally helpful and answer-ready, and support disappeared without warning. Effects may partly reflect acute withdrawal, changed expectations or the specific direct-answer interaction.
+- Each independent outcome contained only three items, and online adult microtasks have limited educational and ecological coverage.
+- Study dates and the exact GPT-5 snapshot were not reported.
+- Persistence was operationalized as skipping despite no penalty for an incorrect answer. It is consequential behaviour, but not a stable motivational trait.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-high | Three randomized experiments; the latter two address major exclusion and interface confounds |
+| Directness | high | Manipulates AI availability and measures performance after removal |
+| Consistency | moderate-high | Direction replicates across arithmetic and reading, with a mixed persistence result |
+| Replication | moderate-low | Internal replication only; one research programme |
+| Magnitude | small-moderate | Independent-performance effects d=-.20 to -.45 |
+| Duration | low | Immediate withdrawal only |
+| Transfer | low | New items in the same task families |
+| Ecological validity | low | Brief Prolific microtasks with an unusually answer-ready assistant |
+
+## Candidate claims
+
+Supports [C001](../../claims/C001-assisted-performance-is-not-learning.md): strong assisted performance is not evidence of independent capability. The narrow inference is an immediate post-removal penalty under answer-ready GPT-5 assistance, not durable deskilling.
+
+## Notes
+
+A decisive replication would randomize answer-ready versus hint-first assistance, match time and interface transitions, and add delayed novel independent tasks over multiple sessions.
+
+## S058 — Designing Against Deskilling: Metacognitive Feedback Reduces Cognitive Offloading to LLM Assistants
+
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, cognitive-offloading, metacognition, scaffolding
+Technology dependence: model-dependent
+Technology context: OpenAI GPT-OSS-120B through Amazon Bedrock / openai.gpt-oss-120b-1:0; study=August 2026; temporal relevance=current-system; review due=2027-04-25
+Canonical path: `sources/notes/S058-maier-metacognitive-feedback.md`
+
+# S058 — Metacognitive feedback reduces answer offloading
+
+## Why it matters
+
+This preregistered component experiment supplies both current-system null evidence and a design intervention. It separates AI access from how a learner requests help: an explicit-request assistant did not significantly reduce immediate unaided performance, while contextual feedback reduced repeated complete-answer requests and modestly improved the independent test.
+
+## Identity and provenance
+
+- Canonical identifiers: arXiv:2609.20143v1; DOI 10.48550/arXiv.2609.20143
+- Version inspected: 17 September 2026
+- Content inspected: complete PDF, preregistration description, system validation, methods, tables 2–3, results, discussion and limitations
+- Access and rights: publisher-open arXiv PDF
+- Retrieval: gateway candidate `cand_646b583210877a07`; PDF SHA-256 `e9640db7b96cbb7d09ed9cab0c9a06cc476c804f2bbbd91bce91639b6f11e3ee`
+- Locator convention: numbered section, table and page in v1
+
+## Study
+
+- Population and setting: 704 UK Prolific adults aged 18–80 after five non-completions and eleven honesty-check exclusions.
+- Intervention and comparator: five randomized conditions—no AI, AI only, metacognitive feedback, symbolic effort reward, or both interventions—during ten fraction-arithmetic learning items.
+- Assistance policy: GPT-OSS-120B offered guidance by default and complete solutions only when explicitly requested. The system, request classifier and frozen prompts were validated before deployment.
+- Outcomes and timing: logged complete-answer offloading across nine measured learning items and six immediate unaided near-transfer items with new operands and expressions.
+
+## Findings
+
+- AI only did not significantly underperform no AI on the unaided test: .62 versus .65; OR .80, 95% CI [.42, 1.51], one-sided p=.244.
+- Metacognitive feedback reduced complete-answer offloading (OR .47, 95% CI [.22, 1.00], one-sided p=.026) and improved unaided item accuracy (OR 1.51, 95% CI [.98, 2.33], one-sided p=.030).
+- The symbolic effort reward changed neither offloading nor unaided accuracy significantly.
+- A ten-percentage-point increase in offloading was associated with 32% lower odds of later correctness, but offloading was not randomized; this relationship is observational.
+- Feedback reduced repeated offloading after an offloaded item without measurably improving the study's metacognitive-accuracy or sensitivity measures.
+
+## Limitations and boundary conditions
+
+- The assessment was immediate after one brief arithmetic session; durability and far transfer are unknown.
+- Confirmatory tests were one-sided and the two-sided intervals for both feedback effects touched or crossed the null.
+- The assistant already made answer offloading deliberate. Results need not generalize to default answer-giving systems.
+- The feedback bundled a process mirror, practice explanation, monitoring cue and visualization. No ablation identifies the active component.
+- The offloading–performance association is correlational and may reflect prior ability or disposition.
+- The study is a single preprint using adult microtasks rather than an authentic course.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate-high | Preregistered randomized factorial design, exact system and logged behaviour; one-sided borderline tests limit confidence |
+| Directness | high | Manipulates interaction design and removes AI for the outcome |
+| Consistency | moderate | Reconciles current harm findings through an explicit-request boundary; independent replication absent |
+| Replication | low | One preprint |
+| Magnitude | small-moderate | Feedback OR 1.51 for unaided correctness with wide uncertainty |
+| Duration | low | Same-session outcome |
+| Transfer | moderate-low | New operands and expressions, same fraction procedures |
+| Ecological validity | low | One short online arithmetic task |
+
+## Candidate claims
+
+Supports [C002](../../claims/C002-pedagogical-structure-changes-ai-learning-outcomes.md) as a current-system interaction-policy signal. It does not show that metacognitive feedback prevents durable deskilling or that explicit-request friction alone caused the AI-only null.
+
+## Notes
+
+The appropriate Orqestra test is an ablation with two-sided inference and a delayed independent assessment: explicit request alone, process mirror alone, practice explanation alone, monitoring cue alone, and combinations.
+
+## S059 — Your Programming Students' Cognition with ChatGPT: Higher Performance, Lower Retention, and Reduced Ownership
+
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, programming-education, knowledge-retention, human-ai-collaboration
+Technology dependence: model-dependent
+Technology context: OpenAI ChatGPT / ChatGPT-4.5 with memory disabled; study=not reported; temporal relevance=historical-system; review due=2027-01-25
+Canonical path: `sources/notes/S059-bergh-programming-cognition.md`
+
+# S059 — Programming cognition with ChatGPT
+
+## Why it matters
+
+This small authentic programming experiment reports the clearest inspected delayed signal in the current search: higher code-production scores with ChatGPT-4.5 but lower cued recall both immediately and 48 hours later. The stable gap, however, formed during the task and did not widen over the delay.
+
+## Identity and provenance
+
+- Canonical identifier: arXiv:2609.21194v1
+- Version inspected: 18 September 2026
+- Content inspected: complete PDF, methods, tables 2–4, results, discussion, limitations and funding statement
+- Access and rights: publisher-open arXiv PDF
+- Retrieval: gateway candidate `cand_975ec0ad114eebbd`; PDF SHA-256 `fedfae3936ad7c097a370a130460fff174e5dc46addcd1f3e0f0c50982a03bb6`
+- Locator convention: numbered section, table and page in v1
+
+## Study
+
+- Population and setting: 59 first-year computer-science students at one Australian university; 55 were analyzed after physiological-quality and task-use exclusions.
+- Intervention and comparator: gender-balanced pseudo-random assignment to ChatGPT-4.5 or conventional Google/web search with AI features disabled during three introductory C programming tasks in the familiar EdStem environment.
+- Outcomes and timing: 30-minute coding score, self-report and physiology, followed by the same ten open-ended cued-recall questions immediately and 48 hours later without access to submitted code.
+- Use heterogeneity: 15 of 29 AI participants copied task material and accepted generated responses; 14 primarily wrote code and used ChatGPT for validation or debugging. This was not randomized or prespecified.
+
+## Findings
+
+- ChatGPT-assisted coding performance was 89% versus 69% without AI (Hedges' g=1.24, Holm-adjusted p<.001).
+- No-AI participants recalled more immediately: .53 versus .41 (g=.71, Holm-adjusted p=.011).
+- The difference remained at 48 hours: .52 versus .39 (g=.77, Holm-adjusted p=.011).
+- The group-by-time interaction was not significant (p=.391). The result is an acquisition/encoding gap that persisted for 48 hours, not evidence of faster forgetting.
+- No-AI participants spent 24.1 minutes on average versus 16.4 minutes with AI; this exposure difference was descriptive and not experimentally equalized.
+
+## Limitations and boundary conditions
+
+- The small, self-selected, single-site cohort and pseudo-random allocation limit internal and external validity; no baseline knowledge test was reported.
+- Assistance mode was uncontrolled and split between answer acceptance and validation/debugging, so the study cannot identify which interaction produced the gap.
+- Time on task differed materially. The total treatment includes reduced exposure and cannot isolate cognitive offloading as a mechanism.
+- Cued recall of code content is near-task retention, not delayed independent coding transfer.
+- Task order was fixed, study dates were unreported, and ChatGPT-4.5 is now a historical system.
+- The preprint reports Google.org grant support.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | low-moderate | Controlled pseudo-random comparison; no baseline, unequal exposure and uncontrolled use |
+| Directness | high | Authentic supported task plus immediate and 48-hour unsupported recall |
+| Consistency | moderate | Aligns with performance–learning divergence; delayed current-system replication absent |
+| Replication | low | One preprint and 55 analyzed participants |
+| Magnitude | large | Assisted g=1.24 and recall gaps g=.71–.77 |
+| Duration | moderate-low | 48 hours |
+| Transfer | low | Cued recall of the same code/task content |
+| Ecological validity | moderate | Real students and familiar environment; constrained laboratory session |
+
+## Candidate claims
+
+Supports [C001](../../claims/C001-assisted-performance-is-not-learning.md) as a delayed authentic-task signal. It does not establish a durable capability loss, accelerated forgetting, or a mechanism attributable to answer delegation.
+
+## Notes
+
+The most informative replication would randomize answer generation versus debugging/validation, equalize exposure, include a baseline, and test delayed novel coding performance rather than only recall.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -1212,13 +1425,17 @@ The immediate/delayed divergence is not unique to AI: restudy can look effective
 
 In a small programming study, Copilot produced a large assisted speed/completion advantage, but not a reliable absolute advantage when participants repeated the task pools alone one week later [S023]. Its much larger assisted-to-retest drop is descriptive of the proxy failure; because the absolute retest contrast was imprecise, it is not evidence of a general Copilot learning penalty.
 
+Three brief randomized experiments now provide a current-system causal anchor: answer-ready GPT-5 increased assisted success, then reduced immediate independent accuracy after withdrawal across fraction arithmetic and reading [S057]. The replicated result is bounded to acute post-removal performance. It does not establish retained learning loss or cumulative deskilling.
+
+In a small authentic programming experiment, ChatGPT-4.5 raised coding scores while cued recall was lower immediately and 48 hours later [S059]. The gap did not widen over the delay, so the defensible interpretation is poorer acquisition or encoding under that treatment—not faster forgetting. Pseudo-random assignment, unequal exposure and uncontrolled assistance strategies make this a lower-confidence delayed signal.
+
 ## Boundary conditions
 
-This is not the claim that assistance necessarily harms learning. Structured tutoring can improve measured learning [S002, S005]. Effects depend on the interaction, learner, task, duration, and what is measured after support is removed.
+This is not the claim that assistance necessarily harms learning. Structured tutoring can improve measured learning [S002, S005]. A current-system experiment in which complete answers required an explicit request found no significant AI-only penalty [S058]. Effects depend on the interaction, learner, task, duration, and what is measured after support is removed.
 
 ## Counterevidence and uncertainty
 
-Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
+Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. [S058] adds a current-system null under explicit-request friction. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
 
 ## Product relevance
 
@@ -1243,15 +1460,17 @@ The convergent pattern is promising across secondary mathematics, university phy
 
 [S024] narrows one potentially causal design dimension: its delayed-access policy beat always-on access on an immediate unassisted test. Because conditions were assigned by workshop and the adaptive reward was bundled, this strengthens the access-timing hypothesis without establishing the superiority of RL or any specific component.
 
+[S058] supplies the first current-system component anchor in this chain. With complete solutions available only on explicit request, AI-only did not significantly reduce immediate unaided performance. Contextual metacognitive feedback reduced repeat complete-answer offloading and modestly improved the immediate test, while a symbolic effort reward changed neither outcome. Because the feedback combined several elements and the confirmatory tests were one-sided, this is a promising interaction-policy result rather than a validated recipe.
+
 ## Boundary conditions
 
 Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, and learner characteristics vary.
 
-The mechanism claim is more durable than any effect magnitude: the chain includes GPT-4/4o-era systems plus recent Mistral evidence, but no source is yet classified `current-system`. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
+The mechanism claim is more durable than any effect magnitude. The chain now includes current-system GPT-OSS-120B evidence [S058] alongside GPT-4/4o-era systems and recent Mistral evidence, but no current-system study reports a delayed outcome. Current-model replications should test whether stronger generation changes the value of guardrails, explicit-request friction and feedback rather than assuming transfer.
 
 ## Counterevidence and uncertainty
 
-Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. Independent replications and component studies are priorities.
+Novelty, extra time, unusually intensive author-led design, aligned assessments and one-sided inference may inflate results. The AI-only null in [S058] also shows that access alone is not deterministically harmful. Independent delayed replications and component ablations are priorities.
 
 ## Product relevance
 
@@ -1907,7 +2126,7 @@ A cumulative set of credible comparative studies, preferably with delayed unassi
 
 ## Next search
 
-Update the structured search in `reviews/R001-learning-performance-gap/search-strategy.md`, prioritizing studies published after the current cutoff and backward/forward citation searching around [S001] and [S002].
+Pre-register a current-system, multi-session comparison of answer-ready assistance, explicit-request friction and contextual metacognitive feedback. Equalize exposure and interface transitions, then measure immediate and delayed novel independent tasks. Continue resolving the held 45-day and programming-null studies for historical triangulation.
 
 ## Q002 — What should a trustworthy learner model represent?
 

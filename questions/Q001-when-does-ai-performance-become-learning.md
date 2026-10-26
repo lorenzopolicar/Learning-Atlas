@@ -8,7 +8,7 @@
   "priority": "high",
   "topics": ["learning-vs-performance", "ai-tutoring", "transfer", "assessment-validity"],
   "related_claims": ["C001", "C002"],
-  "last_reviewed": "2026-08-31"
+  "last_reviewed": "2026-10-26"
 }
 ---
 
@@ -28,4 +28,4 @@ A cumulative set of credible comparative studies, preferably with delayed unassi
 
 ## Next search
 
-Update the structured search in `reviews/R001-learning-performance-gap/search-strategy.md`, prioritizing studies published after the current cutoff and backward/forward citation searching around [S001] and [S002].
+Pre-register a current-system, multi-session comparison of answer-ready assistance, explicit-request friction and contextual metacognitive feedback. Equalize exposure and interface transitions, then measure immediate and delayed novel independent tasks. Continue resolving the held 45-day and programming-null studies for historical triangulation.

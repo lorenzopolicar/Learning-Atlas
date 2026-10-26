@@ -53,7 +53,7 @@ No learner-identifiable data enters the public atlas. A product result should in
 
 ## First product experiments
 
-1. Progressive hints versus answer-first support, measured on a later unaided task [P001, P005].
+1. Answer-ready support versus explicit-request friction and contextual metacognitive feedback, measured immediately and on a delayed unaided novel task [C001, C002, S057, S058, P001, P005].
 2. Simple fixed scaffold versus evidence-based fading [P003, B005].
 3. Learner evidence ledger versus current state representation, evaluated for auditability, correction, and recommendation quality [P002].
 4. Separate independent and AI-assisted capability estimates, evaluated for calibration and decision usefulness [B004, P006].

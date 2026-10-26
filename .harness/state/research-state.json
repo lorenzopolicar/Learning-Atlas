@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "last_weekly_scout": "2026-09-01",
+  "last_weekly_scout": "2026-10-26",
   "last_monthly_synthesis": "2026-08-31",
   "last_quarterly_review": "2026-08-31",
   "active_review": "R001",
-  "current_queue_item": 1,
+  "current_queue_item": 2,
   "scheduled_run_observation": {
     "target": 3,
-    "actual_scheduled_runs_observed": 0,
+    "actual_scheduled_runs_observed": 3,
     "supervised_shadow_cycles": 2,
-    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass exercised scheduled research controls under supervision. Neither is counted as an actual scheduler execution."
+    "note": "The supervised 2026-08-31 and 2026-09-01 cycles remain excluded. The first three actual scheduler observations were completed on 2026-09-06, 2026-09-14 and 2026-09-22 in the open research PR stack; this branch reconciles the stale origin/main counter and does not count the current run as a fourth observation."
   },
   "runs": [
     {
@@ -67,6 +67,14 @@
       "sources_added": ["S023", "S024", "S025"],
       "briefing": "briefings/weekly/2026-09-01-assisted-independent-outcomes.md",
       "note": "Human-directed supervised shadow pass admitted one null/inconclusive one-week contrast, one fragile positive access-timing study and one authentic clinical null; held two abstract-only candidates."
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "scheduled-current-generation-independent-outcomes",
+      "question": "Q001",
+      "sources_added": ["S057", "S058", "S059"],
+      "briefing": "briefings/weekly/2026-10-26-current-generation-independent-outcomes.md",
+      "note": "Seventh actual scheduled run. Added a replicated immediate GPT-5 withdrawal penalty, a current-system explicit-request null plus metacognitive-feedback intervention, and a weaker 48-hour programming-retention signal; no durable deskilling claim was made."
     }
   ]
 }

@@ -55,3 +55,14 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Bias and novelty risk: recent work is more likely to be preprint-only, underpowered, under-replicated or benchmark-driven. Methodological quality and outcome relevance remain separate from freshness.
 - Review horizon and success signal: review monthly; success means `atlas.py freshness` exposes no unlabeled model-dependent source and product briefs distinguish current, recent and historical systems.
 - Human decision: accepted by direct instruction on 2 September 2026.
+
+### 2026-10-26 — Immediate current-system evidence, delayed replication gap
+
+- Decision: keep the learning-versus-performance question at queue priority 2, but shift its next action from another broad scout to a falsifiable delayed component experiment.
+- Triggering signals: current-system GPT-5 trials show an immediate post-removal penalty under answer-ready assistance [S057], while current-system explicit-request assistance shows no significant AI-only penalty and contextual metacognitive feedback improves an immediate unaided test [S058]. The only newly inspected delayed signal uses historical ChatGPT-4.5, a small pseudo-randomized sample and cued recall [S059].
+- Method change: compare answer-ready access, explicit-request friction and feedback under matched exposure and interface transitions; include immediate and delayed novel independent outcomes. Treat usage categories as post-treatment unless assistance mode is randomized.
+- Source lanes: prioritize preregistered trials and replications with delayed current-system outcomes; retain nulls, historical delayed studies, non-Western contexts and public expert discourse as distinct roles.
+- Opportunity cost: defer another broad current-evidence search until the held publisher papers or a genuinely new delayed current-system trial can change the synthesis.
+- Bias and novelty risk: all three additions are from 2026 and two are preprints. Recency must not outrank design quality, duration or transfer distance.
+- Review horizon and success signal: revisit when a current-system study measures delayed novel independent performance or when the proposed component experiment is preregistered.
+- Human decision: requested in the draft research pull request; no Orqestra implementation is authorized by this agenda signal.
