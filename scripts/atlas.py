@@ -61,7 +61,7 @@ SOURCE_PROFILE_TEMPLATES = {
 }
 
 REQUIRED = {
-    "source": ("id", "type", "title", "citation_key", "source_kind", "year", "url", "status", "topics", "added", "last_reviewed", "technology_dependence"),
+    "source": ("id", "type", "title", "citation_key", "source_kind", "epistemic_roles", "year", "url", "status", "topics", "added", "last_reviewed", "technology_dependence"),
     "claim": ("id", "type", "title", "statement", "status", "confidence", "topics", "supporting_sources", "contradicting_sources", "boundary_conditions", "product_relevance", "last_reviewed"),
     "belief": ("id", "type", "title", "statement", "status", "confidence", "topics", "derived_from", "counterarguments", "would_change_my_mind", "last_reviewed"),
     "principle": ("id", "type", "title", "statement", "status", "confidence", "topics", "based_on", "applies_to", "exceptions", "falsifiers", "last_reviewed"),
@@ -79,11 +79,13 @@ REFERENCE_FIELDS = {
     "based_on",
     "principles",
     "related_claims",
+    "related_questions",
     "tests_claims",
     "tests_beliefs",
     "tests_principles",
     "sources",
     "supersedes",
+    "tension_with",
 }
 
 DATE_FIELDS = {"added", "last_reviewed", "date"}
@@ -118,6 +120,9 @@ SYNONYM_GROUPS = (
     {"delay", "delayed", "later", "long-term", "durable"},
     {"adapt", "adaptive", "personalization", "personalized"},
     {"practice", "retrieve", "retrieval", "schedule", "scheduling", "space", "spaced", "spacing"},
+    {"institution", "institutional", "implementation", "teacher", "procurement", "governance", "workplace"},
+    {"accessibility", "disabled", "disability", "non-english", "non-western", "underserved", "voices"},
+    {"agency", "critical", "power", "purpose", "purposes", "refusal"},
 )
 
 

@@ -5,6 +5,7 @@
   "title": "Validity of Psychological Assessment",
   "citation_key": "messick1995validity",
   "source_kind": "validity-theory",
+  "epistemic_roles": ["theoretical-argument"],
   "year": 1995,
   "url": "https://doi.org/10.1037/0003-066X.50.9.741",
   "status": "reviewed",

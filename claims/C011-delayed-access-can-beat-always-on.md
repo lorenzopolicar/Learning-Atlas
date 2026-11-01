@@ -9,6 +9,7 @@
   "topics": ["scaffolding", "learning-vs-performance", "metacognition", "ai-tutoring"],
   "supporting_sources": ["S024"],
   "contradicting_sources": [],
+  "tension_with": ["C009"],
   "boundary_conditions": ["One brief text-comprehension topic and an eight-item same-session test.", "Conditions were assigned by workshop session rather than individual randomization and workshop clustering was not modelled.", "The delayed policy bundled multiple reward components and 43.2% of that condition never used AI."],
   "product_relevance": "Test access timing as an explicit intervention, beginning with a transparent attempt threshold before considering an opaque adaptive or RL policy.",
   "last_reviewed": "2026-09-01"

@@ -24,10 +24,12 @@ Read `references/multimedia-provenance.md` when a source is audio, video, an int
 
 Then query the repository for the selected question. Do not load every artifact.
 
+Before selecting work, fetch `origin/main` and inspect open Atlas research pull requests, their bases, and artifact-ID reservations. Treat a cumulative draft stack as unpublished evidence, not as absent work. If the stack already addresses the gap or human-review burden is accumulating, stop new source admission and propose consolidation, closure, metadata repair, or an integrity task instead.
+
 ## Run
 
-1. Select one unblocked queue item and state the existing evidence gap.
-2. Call `research_capabilities`. Choose source lanes because they can change the question—not to satisfy a media quota. For contested future-facing questions, deliberately sample a strong social/practitioner position and follow its linked originals.
+1. Select one unblocked queue item only after reconciling canonical `origin/main` with open research heads. State both the merged gap and any pending draft coverage.
+2. Call `research_capabilities`. If the project MCP is not exposed, run `python3 scripts/research_gateway.py capabilities`, record the exposure failure and documented provider fallbacks, and continue only when the required boundary remains verifiable. Choose source lanes because they can change the question—not to satisfy a media quota. For contested future-facing questions, deliberately sample a strong social/practitioner position and follow its linked originals.
 3. Search broadly with native web and Exa, then use the Atlas research MCP to resolve identity, citation context, lawful access, content hashes, pages/timestamps, and transcript provenance.
 4. Stage promising normalized candidates with `candidate_inbox(action=stage)`. Staging is a reversible inbox action, not atlas admission.
 5. Inspect the actual source. An abstract screens a paper; a transcript navigates media. Neither alone is enough for a promoted empirical claim.
@@ -48,6 +50,8 @@ Then query the repository for the selected question. Do not load every artifact.
 - Never commit full podcast/video transcripts or media. Keep bounded excerpts and precise timestamps in Git; keep lawful working copies in the local inbox or approved private storage.
 - Treat expert perspective and firsthand testimony as valuable in their own right. Do not call them weak papers; do not call them experiments.
 - Record access failure, missing credentials, automatic-transcript uncertainty, and provider fallback explicitly.
+- Do not allocate an artifact ID already used or reserved on an open research head. A green draft is not merged, but its identifiers and human-review cost are operational state.
+- Pause autonomous intake when unresolved draft work already covers the queue item or when another source pass would increase an unreviewed cumulative stack.
 - Stop at `seed` when methods or outcomes remain inaccessible.
 
 ## Return

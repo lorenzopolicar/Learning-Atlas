@@ -5,6 +5,7 @@
   "title": "From Chalkboards to Chatbots: Transforming Learning in Nigeria, One Prompt at a Time",
   "citation_key": "deSimone2025nigeria",
   "source_kind": "randomized-controlled-trial-working-paper",
+  "epistemic_roles": ["empirical-study"],
   "year": 2025,
   "url": "https://doi.org/10.1596/1813-9450-11125",
   "status": "reviewed",

@@ -5,6 +5,7 @@
   "title": "Generative AI without guardrails can harm learning outcomes",
   "citation_key": "bastani2025generative",
   "source_kind": "randomized-controlled-trial",
+  "epistemic_roles": ["empirical-study"],
   "year": 2025,
   "url": "https://doi.org/10.1073/pnas.2422633122",
   "status": "reviewed",

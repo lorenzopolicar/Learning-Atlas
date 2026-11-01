@@ -5,6 +5,7 @@
   "title": "Transfer of Test-Enhanced Learning: Meta-Analytic Review and Synthesis",
   "citation_key": "pan2018transfer",
   "source_kind": "meta-analysis",
+  "epistemic_roles": ["research-synthesis"],
   "year": 2018,
   "url": "https://doi.org/10.1037/bul0000151",
   "status": "reviewed",

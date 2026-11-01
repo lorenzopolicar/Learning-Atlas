@@ -5,6 +5,7 @@
   "title": "Enacting Assessment Reform in a Time of Artificial Intelligence",
   "citation_key": "teqsa2025assessment",
   "source_kind": "sector-guidance-report",
+  "epistemic_roles": ["institutional-guidance"],
   "year": 2025,
   "url": "https://www.teqsa.gov.au/sites/default/files/2025-09/enacting-assessment-reform-in-a-time-of-artificial-intelligence.pdf",
   "status": "reviewed",
