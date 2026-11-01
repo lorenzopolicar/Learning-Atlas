@@ -16,3 +16,4 @@
 | [C010](../claims/C010-appropriate-reliance-has-distinct-components.md) | Appropriate reliance has distinct adoption and resistance components | provisional | moderate | human-ai-collaboration, assessment-validity, metacognition, product-measurement |
 | [C011](../claims/C011-delayed-access-can-beat-always-on.md) | Delayed AI access can outperform always-on access on an immediate independent test | provisional | low | scaffolding, learning-vs-performance, metacognition, ai-tutoring |
 | [C012](../claims/C012-minimal-ai-access-did-not-improve-bedside-performance.md) | Minimal AI training and access did not improve authentic bedside performance | provisional | moderate | human-ai-collaboration, assessment-validity, clinical-education |
+| [C036](../claims/C036-unrestricted-chatgpt-study-lowered-retention.md) | Unrestricted ChatGPT study lowered 45-day retention in one trial | provisional | low | learning-vs-performance, transfer, ai-tutoring |

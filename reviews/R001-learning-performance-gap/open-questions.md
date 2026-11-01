@@ -12,3 +12,6 @@
 10. What harms arise from withdrawing assistance solely for measurement?
 11. When AI increases learning per unit of time, how do learners reallocate saved time outside a laboratory?
 12. Which randomized interface or incentive changes move learners from automation toward augmentation, rather than merely classifying their choices afterward?
+13. How do conclusions change after independent duplicate RoB 2 or ROBINS-I signalling-question adjudication for each named result?
+14. Which registered or unpublished null and delayed studies are missing from the visible publication record?
+15. Does the 45-day adverse result replicate under current systems, monitored exposure, equalized opportunity to study, and novel transfer outcomes?

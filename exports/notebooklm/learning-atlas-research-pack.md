@@ -39,7 +39,7 @@ The work covers a particular mathematics curriculum, age group, implementation, 
 
 | Dimension | Rating | Reason |
 |---|---|---|
-| Internal validity | high | Preregistered randomized field design with a no-AI comparison |
+| Internal validity | moderate-high | Preregistered field design with ITT and a no-AI comparison; stochastic arm assignment and allocation concealment are not explicit enough to close the provisional RoB 2 allocation domain |
 | Directness | high | Directly compares AI-assisted practice with independent assessment |
 | Consistency | moderate | Direction aligns with the broader learning/performance distinction; exact intervention needs replication |
 | Replication | low | The specific treatment contrast is not yet independently replicated here |
@@ -58,7 +58,7 @@ Type: source
 Status: reviewed
 Topics: ai-tutoring, learning-vs-performance, scaffolding
 Technology dependence: model-dependent
-Technology context: custom physics AI tutor / exact model snapshot not captured in the inspected note; study=not reported in the inspected note; temporal relevance=unknown; review due=2026-10-15
+Technology context: custom physics AI tutor / OpenAI GPT-4 through PS2 Pal; exact snapshot not reported; study=Fall 2023; temporal relevance=historical-system; review due=2027-05-02
 Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 
 # S002 — AI tutoring outperforms in-class active learning
@@ -79,7 +79,7 @@ This was a single course, institution, set of lessons, and implementation. Outco
 
 | Dimension | Rating | Reason |
 |---|---|---|
-| Internal validity | high | Randomized comparison in an authentic course |
+| Internal validity | low-moderate | Randomized authentic comparison, but the analysed sample required both-condition participation and complete testing; sequence/period handling and preregistration were not fully reported |
 | Directness | high | Tests a structured AI tutor and learning outcomes |
 | Consistency | moderate | Compatible with tutoring research and other structured AI interventions |
 | Replication | low | The particular design requires independent replication |
@@ -90,7 +90,7 @@ This was a single course, institution, set of lessons, and implementation. Outco
 
 ## Candidate claims
 
-Supports [C002] while making the design of the pedagogical harness a necessary boundary condition.
+Supports [C002] while making the design of the pedagogical harness a necessary boundary condition. The provisional outcome-level appraisal in R001 rates the named immediate-learning result high risk of bias; this source note's profile also preserves directness and external-validity dimensions that RoB 2 does not cover.
 
 ## S003 — Building AI Companions that Prioritise Learning over Performance
 
@@ -1193,6 +1193,137 @@ Supports [C012](../../claims/C012-minimal-ai-access-did-not-improve-bedside-perf
 
 The public anonymized dataset is registered at Zenodo DOI 10.5281/zenodo.17459336. Funding came in whole or part from the Gates Foundation; the authors reported no potential conflict.
 
+## S060 — ChatGPT as a Cognitive Crutch: Evidence from a Randomized Controlled Trial on Knowledge Retention
+
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, transfer, ai-tutoring, cognitive-offloading
+Technology dependence: model-dependent
+Technology context: OpenAI ChatGPT web interface / GPT-4 label reported; exact snapshot not reported; study=not reported in the inspected article; temporal relevance=historical-system; review due=2027-05-02
+Canonical path: `sources/notes/S060-barcaui-cognitive-crutch.md`
+
+# S060 — ChatGPT as a cognitive crutch
+
+## Why it matters
+
+This is a rare randomized study with a surprise independent outcome after 45 days. Its direction challenges the positive one-week result in [S015], while its missing outcomes and unmonitored control compliance prevent a general causal verdict about unrestricted AI study.
+
+## Identity and provenance
+
+- Canonical identifiers: DOI 10.1016/j.ssaho.2025.102287; OpenAlex W4416818356; SSRN 5353041
+- Version inspected: published *Social Sciences & Humanities Open* article, volume 12, article 102287
+- Content inspected: published methods, conditions/materials, outcome, fidelity, results, limitations and appendices exposed through the publisher's open full-text page
+- Access and rights: publisher open access, CC BY-NC-ND 4.0; Atlas candidate `cand_bb02de15a31548dd`
+- Locator convention: sections 8.3, 8.5 and 8.6; tables 1 and 2; figure 5
+
+## Study
+
+- Population and setting: 120 Portuguese-speaking business-administration undergraduates aged 18–24 at one Brazilian university; 60 allocated per condition.
+- Intervention and comparator: unrestricted ChatGPT study using the free GPT-4-labelled web interface versus non-AI study using course materials, library databases, ordinary search, textbooks and articles.
+- Outcomes and timing: a proctored surprise conceptual-retention test about 45 days later; the 20-item instrument was machine scored and reported on a ten-point scale.
+- Design: individually randomized two-arm study. Topic assignment was block-randomized by difficulty band. The primary analysis used the 85 learners who completed the follow-up test.
+
+## Findings
+
+- Forty-three AI-assisted and 42 traditional-study learners completed the delayed test. Mean scores were 5.75 and 6.85 respectively; `t(83)=-3.19`, `p=.002`, reported Cohen's `d=.68`, 95% CI `[.24, 1.12]` (table 2).
+- Learners reported less study time in the AI condition, about 3.2 versus 5.8 hours. A covariate-adjusted analysis retained a smaller condition difference, but study time is post-treatment and cannot identify cognitive offloading as the mediator.
+- Prior AI familiarity did not show a reliable association with retention. This null moderator result is underpowered and does not establish invariance across expertise.
+
+## Limitations and boundary conditions
+
+- Thirty-five of 120 randomized learners had no primary outcome. Completion counts were balanced by arm, but reasons and outcomes for non-completers were unavailable; the outcome-level RoB 2 judgement is high.
+- Control-group AI non-use was not directly monitored, and the study did not report a preregistered analysis plan.
+- Time-on-task and study behaviour were self-reported. The experiment randomized access policy, not equal exposure, effort or a cognitive-offloading mechanism.
+- One institution, one course, familiar AI users and one conceptual test limit population and task generality. The test measured retention/near application, not far transfer or authentic capability.
+- The intervention used a historical GPT-4-labelled web interface and did not report the study dates or exact model snapshot.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | low-moderate | Random allocation and objective scoring, but 29% missing outcomes, unmonitored control compliance and no located preregistration |
+| Directness | high | AI study access was manipulated and the outcome was independently proctored after 45 days |
+| Consistency | low | Direction differs from the bounded positive one-week result in S015 and lacks independent replication |
+| Replication | low | One trial at one institution |
+| Magnitude | moderate | Reported standardized difference was `d=.68`, with substantial uncertainty from missing outcomes |
+| Duration | moderate | Forty-five days is unusually long for current GenAI learning research |
+| Transfer | low-moderate | Items tested conceptual application but stayed within the studied topic set |
+| Ecological validity | moderate | Ordinary study resources and a natural delay, but a controlled single-course protocol |
+
+## Candidate claims
+
+Supports low-confidence [C036](../../claims/C036-unrestricted-chatgpt-study-lowered-retention.md). It also supports [C001](../../claims/C001-assisted-performance-is-not-learning.md) only as a delayed negative access-policy result; it does not establish cognitive offloading as the mechanism.
+
+## Notes
+
+A decisive replication would use a current system, record both arms' exposure, preserve accessible study options, minimize and explain loss to follow-up, and test delayed novel transfer.
+
+## S061 — Generative AI and the Temporary Upskilling of Knowledge Workers
+
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, human-ai-collaboration, transfer, assessment-validity
+Technology dependence: model-dependent
+Technology context: OpenAI ChatGPT / GPT-4 available in March-April 2024; exact snapshot not reported; study=late March to early April 2024; temporal relevance=historical-system; review due=2027-05-02
+Canonical path: `sources/notes/S061-wiles-temporary-upskilling.md`
+
+# S061 — Temporary upskilling of knowledge workers
+
+## Why it matters
+
+This preregistered workplace experiment shows an especially clear capability boundary: ChatGPT extended nontechnical consultants' assisted data-science performance, but the randomized groups did not differ on an immediate unaided technical-knowledge probe. The result is relevant to Orqestra's distinction between AI-assisted and accessible-independent capability.
+
+## Identity and provenance
+
+- Canonical identifier: DOI 10.1038/s41562-026-02566-6; OpenAlex W7223706382
+- Version inspected: complete author-hosted working paper plus the 26 October 2026 *Nature Human Behaviour* landing page, final abstract, supplementary metadata and Crossmark status
+- Content inspected: design, preregistration, recruitment, attrition, tasks, primary outcomes, unaided knowledge results, appendices and limitations in the author manuscript; final publication identity and abstract
+- Version boundary: the final version of record is paywalled. The outcome used here is present in both the inspected author manuscript and final abstract, but final pagination and any unexposed textual changes were not verified.
+- Access and rights: public author manuscript inspected for research; no full text committed; Atlas candidate `cand_5ad864ea82b933ce`
+- Locator convention: working-paper sections 2.3 and 4.1–4.3; figure 3; table 1; appendix tables B1, B2, B7 and B14
+
+## Study
+
+- Population and setting: nontechnical consultants at Boston Consulting Group, all with at least bachelor's degrees; 986 registered workers were randomized and 487 submitted two assigned tasks for the main analysis.
+- Intervention and comparator: 15–20 minutes of ChatGPT prompting training and GPT-4 access versus training in Google, Stack Overflow, Khan Academy and other ordinary web resources.
+- Outcomes and timing: assisted performance on two of three 90-minute coding, statistical-understanding and prediction tasks; then five immediate technical questions completed without ChatGPT.
+- Design: preregistered, individually randomized trial stratified by gender, location, role, coding skill, degree and prior ChatGPT-for-coding experience. Task pair and order were randomized.
+
+## Findings
+
+- Treatment improved assisted performance on all three technical tasks by 49, 20 and 17 percentage points relative to controls; neither arm reached the data-scientist benchmark on two of the three tasks.
+- On five immediate technical questions without ChatGPT, the joint treatment test was null: `F(5,198)=0.83`, `p=.531`. Individual effects ranged from -7.7 to +4.8 percentage points; reported Bayes factors of .10, .18, .50, .13 and .62 ranged from moderate null evidence to weakly informative.
+- The experiment therefore identifies an assisted capability gain without evidence of an immediate knowledge gain in the observed completer sample. It does not show knowledge loss or long-term deskilling.
+
+## Limitations and boundary conditions
+
+- Only 487 of 986 randomized workers completed both tasks, and question-specific unaided-outcome samples ranged from 151 to 323. Attrition counts and observed covariates were broadly balanced, but the knowledge result remains at high risk from missing outcome data.
+- The paper's Lee-bound sensitivity checks protect the main assisted task results; they do not fully recover the missing post-experiment knowledge outcomes.
+- Participants and analysts were not blinded. Technical questions followed immediately and sampled a small set of task-adjacent concepts.
+- The highly educated consultant population, employer incentives, bespoke tasks and BCG/OpenAI involvement limit population and institutional transfer. Several authors were affiliated with BCG or OpenAI.
+- GPT-4 from March–April 2024 is historical-system evidence. Current systems may change assisted performance, but a stronger model does not by itself establish learning.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | low-moderate | Strong randomized and preregistered design, but roughly half the randomized sample and many question-level outcomes were missing |
+| Directness | high | Separates assisted task performance from an unaided knowledge probe |
+| Consistency | moderate | Aligns with several performance/learning dissociations, but the setting and outcome differ materially |
+| Replication | low | One employer-based study |
+| Magnitude | mixed | Large assisted gains; no credible immediate knowledge difference in the observed sample |
+| Duration | low | The independent probe was immediate |
+| Transfer | low-moderate | Technical questions were task-adjacent; authentic workplace performance beyond the experiment was not measured |
+| Ecological validity | moderate | Real knowledge workers and realistic tools, but bespoke incentivized tasks in one firm |
+
+## Candidate claims
+
+Supports [C001](../../claims/C001-assisted-performance-is-not-learning.md) as a workplace assisted/unaided dissociation. It does not support a claim that AI caused learning loss.
+
+## Notes
+
+The most informative replication would retain every randomized participant for a delayed, novel unaided task and compare answer-ready access with transparent effort-preserving support.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -1212,13 +1343,17 @@ The immediate/delayed divergence is not unique to AI: restudy can look effective
 
 In a small programming study, Copilot produced a large assisted speed/completion advantage, but not a reliable absolute advantage when participants repeated the task pools alone one week later [S023]. Its much larger assisted-to-retest drop is descriptive of the proxy failure; because the absolute retest contrast was imprecise, it is not evidence of a general Copilot learning penalty.
 
+The distinction now appears outside student programming tasks. In a preregistered workplace trial, ChatGPT produced large assisted gains on technical tasks but no detectable advantage on five immediate unaided knowledge questions [S061]. The high missing-outcome risk means this is a bounded dissociation, not proof that no learning occurred.
+
+A separate Brazilian trial found lower retention after 45 days under unrestricted ChatGPT study than under non-AI study [S060, C036]. That longer-horizon result is low confidence because 29% of randomized learners lacked the outcome and comparator compliance was unmonitored.
+
 ## Boundary conditions
 
 This is not the claim that assistance necessarily harms learning. Structured tutoring can improve measured learning [S002, S005]. Effects depend on the interaction, learner, task, duration, and what is measured after support is removed.
 
 ## Counterevidence and uncertainty
 
-Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
+Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. The provisional risk-of-bias appraisal in [R001](../reviews/R001-learning-performance-gap/risk-of-bias.md) also finds material concerns in most available effect estimates. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
 
 ## Product relevance
 
@@ -1251,7 +1386,7 @@ The mechanism claim is more durable than any effect magnitude: the chain include
 
 ## Counterevidence and uncertainty
 
-Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. Independent replications and component studies are priorities.
+Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. The provisional R001 appraisal finds material missingness, deviation, assignment or reporting concerns across most named results; even [S001] retains some concerns about allocation. Independent duplicate appraisal, replications and component studies are priorities.
 
 ## Product relevance
 
@@ -1500,6 +1635,37 @@ GPT-4o is historical-system evidence for current product decisions. More capable
 ## Product relevance
 
 Orqestra should represent tool access, assistance state and stewardship actions separately. A human–AI capability experiment should teach and manipulate a workflow, preserve the learner's pre-advice state, and measure both immediate assisted quality and later accessible-independent performance.
+
+## C036 — Unrestricted ChatGPT study lowered 45-day retention in one trial
+
+Type: claim
+Status: provisional
+Topics: learning-vs-performance, transfer, ai-tutoring
+Canonical path: `claims/C036-unrestricted-chatgpt-study-lowered-retention.md`
+
+# C036 — Unrestricted ChatGPT study lowered 45-day retention in one trial
+
+## Claim
+
+One randomized study found lower proctored conceptual-retention scores 45 days after unrestricted ChatGPT study than after non-AI study [S060]. This is a delayed negative result in a field where most independent outcomes are immediate or one week.
+
+## Evidence and reasoning
+
+The raw group difference was 1.10 points on the reported ten-point scale, with `d=.68`. Random assignment and machine scoring reduce several common biases, and the surprise delay makes assisted-output substitution an implausible explanation for the outcome itself.
+
+The trial does not establish its proposed cognitive-offloading mechanism. Learners in the AI arm reported less study time, but study time was post-treatment, self-reported and not experimentally equalized. Lower exposure, interaction design, strategy, model errors or other treatment-induced differences could explain the result.
+
+## Boundary conditions
+
+The outcome was available for 85 of 120 randomized learners, the no-AI rule was not directly monitored, and no preregistration was located. The study used a GPT-4-labelled web interface in one Brazilian business cohort and measured retention/near application rather than far transfer.
+
+## Counterevidence and uncertainty
+
+[S015] found a positive one-week unaided effect from ordinary GPT-4o access when laboratory time was held approximately fixed. The studies differ in population, task, model, time allocation, delay and assessment, so the opposing directions identify an unresolved moderator problem rather than a clean replication failure.
+
+## Product relevance
+
+Orqestra should not infer that ordinary AI access is harmless, nor turn this single study into a blanket restriction. Test answer-ready, effort-preserving and learner-controlled assistance under equal or recorded exposure, then measure delayed novel independent performance.
 
 ## B001 — Optimize durable capability, not completion
 
@@ -1907,7 +2073,7 @@ A cumulative set of credible comparative studies, preferably with delayed unassi
 
 ## Next search
 
-Update the structured search in `reviews/R001-learning-performance-gap/search-strategy.md`, prioritizing studies published after the current cutoff and backward/forward citation searching around [S001] and [S002].
+Duplicate the provisional result-level risk-of-bias appraisal, resolve the held Bassner methods, search registries for missing nulls, and prioritize current-system studies with delayed novel independent outcomes. Treat the 45-day adverse result [C036] as a replication target, not a general verdict.
 
 ## Q002 — What should a trustworthy learner model represent?
 

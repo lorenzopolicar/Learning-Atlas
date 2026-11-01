@@ -15,7 +15,7 @@ Orqestra can connect person, context, work, observed gaps, intervention, later p
 | learning runtime | [P001], [P004], [P005] | Does orchestration support attempts, retrieval, revisits, and later independent checks? |
 | personalization | [P003], [B005] | Does adaptation beat a strong transparent default on a declared outcome? |
 | assessment and evidence | [P005], [P006] | Are supported performance, independent capability, delay, and transfer visibly distinguished? |
-| product analytics | [C001], [P005] | Are completion, engagement, and assisted correctness being mistaken for learning? |
+| product analytics | [C001], [C036], [P005] | Are completion, engagement, assisted correctness, or reduced study time being mistaken for learning or its mechanism? |
 | human-AI capability | [B004], [C010], [N001], [D002] | What must the learner notice, decide, justify, verify, repair, escalate, and contest for delegation to count as responsible capability? |
 | AI literacy coverage | [S016], [N001] | Does the experience develop critical engagement, creation, task allocation, evaluation, agency, and the ability to shape systems—not only tool fluency? |
 
@@ -53,7 +53,7 @@ No learner-identifiable data enters the public atlas. A product result should in
 
 ## First product experiments
 
-1. Progressive hints versus answer-first support, measured on a later unaided task [P001, P005].
+1. Progressive hints versus answer-first support, with exposure recorded and measured on a delayed novel unaided task [C036, P001, P005].
 2. Simple fixed scaffold versus evidence-based fading [P003, B005].
 3. Learner evidence ledger versus current state representation, evaluated for auditability, correction, and recommendation quality [P002].
 4. Separate independent and AI-assisted capability estimates, evaluated for calibration and decision usefulness [B004, P006].

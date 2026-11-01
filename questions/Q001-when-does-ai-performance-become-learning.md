@@ -7,8 +7,8 @@
   "status": "open",
   "priority": "high",
   "topics": ["learning-vs-performance", "ai-tutoring", "transfer", "assessment-validity"],
-  "related_claims": ["C001", "C002"],
-  "last_reviewed": "2026-08-31"
+  "related_claims": ["C001", "C002", "C036"],
+  "last_reviewed": "2026-11-02"
 }
 ---
 
@@ -28,4 +28,4 @@ A cumulative set of credible comparative studies, preferably with delayed unassi
 
 ## Next search
 
-Update the structured search in `reviews/R001-learning-performance-gap/search-strategy.md`, prioritizing studies published after the current cutoff and backward/forward citation searching around [S001] and [S002].
+Duplicate the provisional result-level risk-of-bias appraisal, resolve the held Bassner methods, search registries for missing nulls, and prioritize current-system studies with delayed novel independent outcomes. Treat the 45-day adverse result [C036] as a replication target, not a general verdict.

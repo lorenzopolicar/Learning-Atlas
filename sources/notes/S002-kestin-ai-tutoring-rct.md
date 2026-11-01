@@ -10,16 +10,16 @@
   "status": "reviewed",
   "topics": ["ai-tutoring", "learning-vs-performance", "scaffolding"],
   "added": "2026-08-31",
-  "last_reviewed": "2026-08-31",
+  "last_reviewed": "2026-11-02",
   "technology_dependence": "model-dependent",
   "technology_context": {
     "system": "custom physics AI tutor",
-    "version": "exact model snapshot not captured in the inspected note",
-    "study_period": "not reported in the inspected note",
-    "assessed_as_of": "2026-09-02",
-    "temporal_relevance": "unknown",
-    "review_due": "2026-10-15",
-    "recency_note": "The instructional design remains directly relevant, but model and data-collection details must be recovered before treating the result as technology-current."
+    "version": "OpenAI GPT-4 through PS2 Pal; exact snapshot not reported",
+    "study_period": "Fall 2023",
+    "assessed_as_of": "2026-11-02",
+    "temporal_relevance": "historical-system",
+    "review_due": "2027-05-02",
+    "recency_note": "The instructional design remains directly relevant, but the Fall 2023 GPT-4 implementation is historical-system evidence and needs current-system replication."
   },
   "access": "open"
 }
@@ -43,7 +43,7 @@ This was a single course, institution, set of lessons, and implementation. Outco
 
 | Dimension | Rating | Reason |
 |---|---|---|
-| Internal validity | high | Randomized comparison in an authentic course |
+| Internal validity | low-moderate | Randomized authentic comparison, but the analysed sample required both-condition participation and complete testing; sequence/period handling and preregistration were not fully reported |
 | Directness | high | Tests a structured AI tutor and learning outcomes |
 | Consistency | moderate | Compatible with tutoring research and other structured AI interventions |
 | Replication | low | The particular design requires independent replication |
@@ -54,4 +54,4 @@ This was a single course, institution, set of lessons, and implementation. Outco
 
 ## Candidate claims
 
-Supports [C002] while making the design of the pedagogical harness a necessary boundary condition.
+Supports [C002] while making the design of the pedagogical harness a necessary boundary condition. The provisional outcome-level appraisal in R001 rates the named immediate-learning result high risk of bias; this source note's profile also preserves directness and external-validity dimensions that RoB 2 does not cover.
