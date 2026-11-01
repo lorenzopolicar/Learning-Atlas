@@ -2,14 +2,14 @@
   "schema_version": 1,
   "last_weekly_scout": "2026-09-01",
   "last_monthly_synthesis": "2026-08-31",
-  "last_quarterly_review": "2026-08-31",
+  "last_quarterly_review": "2026-11-02",
   "active_review": "R001",
   "current_queue_item": 1,
   "scheduled_run_observation": {
     "target": 3,
     "actual_scheduled_runs_observed": 0,
     "supervised_shadow_cycles": 2,
-    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass exercised scheduled research controls under supervision. Neither is counted as an actual scheduler execution."
+    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass were supervised shadows. The first three actual weekly scheduler runs remain on the open cumulative research pull-request stack; this quarterly branch does not silently publish their state."
   },
   "runs": [
     {
@@ -67,6 +67,14 @@
       "sources_added": ["S023", "S024", "S025"],
       "briefing": "briefings/weekly/2026-09-01-assisted-independent-outcomes.md",
       "note": "Human-directed supervised shadow pass admitted one null/inconclusive one-week contrast, one fragile positive access-timing study and one authentic clinical null; held two abstract-only candidates."
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "scheduled-quarterly-direction-review",
+      "question": "portfolio",
+      "sources_added": [],
+      "briefing": "briefings/quarterly/2026-11-02-direction-integrity-review.md",
+      "note": "First quarterly direction review. Added no sources; imposed a proposed human publication gate over seven draft research pull requests, repaired deterministic graph and retrieval coverage, and preserved all programme transitions for human decision."
     }
   ]
 }

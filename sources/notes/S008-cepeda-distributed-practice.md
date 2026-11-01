@@ -5,6 +5,7 @@
   "title": "Distributed Practice in Verbal Recall Tasks",
   "citation_key": "cepeda2006distributed",
   "source_kind": "meta-analysis",
+  "epistemic_roles": ["research-synthesis"],
   "year": 2006,
   "url": "https://doi.org/10.1037/0033-2909.132.3.354",
   "status": "reviewed",

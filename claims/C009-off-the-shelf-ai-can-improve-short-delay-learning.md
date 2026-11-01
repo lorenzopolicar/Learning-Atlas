@@ -9,6 +9,7 @@
   "topics": ["learning-vs-performance", "ai-tutoring", "human-ai-collaboration"],
   "supporting_sources": ["S015"],
   "contradicting_sources": [],
+  "tension_with": ["C011"],
   "boundary_conditions": ["One selective US undergraduate sample and three unfamiliar technical topics.", "The delay was approximately one week and transfer remained near.", "The lab largely held learning time fixed; ordinary time reallocation may reverse the net effect.", "Augmentation and automation modes were not randomized.", "The intervention used GPT-4o in Spring 2025; effect magnitude is historical-system evidence for a 2026 product."],
   "product_relevance": "Do not assume general chat access is educationally inert or harmful; measure later independent capability and instrument how assistance reallocates learner effort.",
   "last_reviewed": "2026-09-02"

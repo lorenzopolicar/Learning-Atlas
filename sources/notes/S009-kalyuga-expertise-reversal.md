@@ -5,6 +5,7 @@
   "title": "The Expertise Reversal Effect",
   "citation_key": "kalyuga2003expertise",
   "source_kind": "theoretical-review",
+  "epistemic_roles": ["research-synthesis", "theoretical-argument"],
   "year": 2003,
   "url": "https://doi.org/10.1207/S15326985EP3801_4",
   "status": "reviewed",

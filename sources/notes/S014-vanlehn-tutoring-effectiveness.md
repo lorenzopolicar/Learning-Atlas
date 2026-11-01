@@ -5,6 +5,7 @@
   "title": "The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems",
   "citation_key": "vanlehn2011tutoring",
   "source_kind": "research-review",
+  "epistemic_roles": ["research-synthesis"],
   "year": 2011,
   "url": "https://doi.org/10.1080/00461520.2011.611369",
   "status": "reviewed",

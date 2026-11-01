@@ -42,6 +42,27 @@
       "types": ["claim", "belief", "decision", "experiment", "discourse"],
       "expected_ids": ["C008", "C010", "B004", "D002", "E001", "N001"],
       "required_concepts": ["accessible baseline", "correct resistance", "assistance function"]
+    },
+    {
+      "id": "EV007",
+      "query": "institutional implementation teacher procurement governance workplace",
+      "types": ["source", "question", "principle", "decision"],
+      "expected_ids": ["S004", "S012", "P007"],
+      "required_concepts": ["institutional", "teacher", "governance"]
+    },
+    {
+      "id": "EV008",
+      "query": "disabled disability accessibility underserved voices",
+      "types": ["source", "discourse", "question", "claim"],
+      "expected_ids": ["S022", "Q003", "C008"],
+      "required_concepts": ["accessibility", "disabled", "independent"]
+    },
+    {
+      "id": "EV009",
+      "query": "educational purposes power refusal critical perspectives who decides",
+      "types": ["discourse", "question"],
+      "expected_ids": ["N001", "Q003"],
+      "required_concepts": ["agency", "independent", "ethical"]
     }
   ]
 }

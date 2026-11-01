@@ -5,6 +5,7 @@
   "title": "Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention",
   "citation_key": "roediger2006test",
   "source_kind": "controlled-experiments",
+  "epistemic_roles": ["empirical-study"],
   "year": 2006,
   "url": "https://doi.org/10.1111/j.1467-9280.2006.01693.x",
   "status": "reviewed",

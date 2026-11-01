@@ -66,10 +66,11 @@ Important boundaries should be written in prose and may also use these facets:
 
 ## Relationship vocabulary
 
-- `supports` / `challenges`: source-to-claim evidence relations
-- `derived_from`: claim-to-belief synthesis
-- `based_on`: claim/belief-to-principle reasoning
-- `applies`: principle-to-decision application
-- `tests`: experiment-to-claim/belief/principle falsification
+- `supporting_sources` / `contradicting_sources`: claim-to-source evidence relations in artifact metadata; prose may also preserve countervailing evidence that narrows a generalization without directly contradicting the atomic claim
+- `related_questions`: review-to-question scope relation
+- `derived_from`: belief-to-claim synthesis
+- `based_on`: principle-to-claim/belief reasoning
+- `principles`: decision-to-principle application
+- `tests_claims` / `tests_beliefs` / `tests_principles`: experiment-to-target falsification relations
 - `supersedes`: explicit replacement without deleting history
 - `tension_with`: unresolved contradiction worth preserving

@@ -5,6 +5,7 @@
   "title": "Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge",
   "citation_key": "corbett1995knowledge",
   "source_kind": "model-and-empirical-evaluation",
+  "epistemic_roles": ["empirical-study", "theoretical-argument"],
   "year": 1995,
   "url": "https://doi.org/10.1007/BF01099821",
   "status": "reviewed",

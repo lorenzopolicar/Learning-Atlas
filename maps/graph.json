@@ -602,6 +602,11 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C009",
+      "target": "C011",
+      "relation": "tension_with"
+    },
+    {
       "source": "C010",
       "target": "S020",
       "relation": "supporting_sources"
@@ -615,6 +620,11 @@
       "source": "C011",
       "target": "S024",
       "relation": "supporting_sources"
+    },
+    {
+      "source": "C011",
+      "target": "C009",
+      "relation": "tension_with"
     },
     {
       "source": "C012",
@@ -915,6 +925,11 @@
       "source": "Q003",
       "target": "C010",
       "relation": "related_claims"
+    },
+    {
+      "source": "R001",
+      "target": "Q001",
+      "relation": "related_questions"
     }
   ]
 }

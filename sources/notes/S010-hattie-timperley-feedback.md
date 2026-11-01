@@ -5,6 +5,7 @@
   "title": "The Power of Feedback",
   "citation_key": "hattie2007feedback",
   "source_kind": "research-synthesis",
+  "epistemic_roles": ["research-synthesis"],
   "year": 2007,
   "url": "https://doi.org/10.3102/003465430298487",
   "status": "reviewed",

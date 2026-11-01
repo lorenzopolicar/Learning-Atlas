@@ -5,6 +5,7 @@
   "title": "OECD Digital Education Outlook 2026",
   "citation_key": "oecd2026digital",
   "source_kind": "evidence-synthesis-report",
+  "epistemic_roles": ["research-synthesis", "institutional-guidance"],
   "year": 2026,
   "url": "https://doi.org/10.1787/062a7394-en",
   "status": "reviewed",

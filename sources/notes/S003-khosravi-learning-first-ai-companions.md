@@ -5,6 +5,7 @@
   "title": "Building AI Companions that Prioritise Learning over Performance",
   "citation_key": "khosravi2026companions",
   "source_kind": "preprint-framework",
+  "epistemic_roles": ["theoretical-argument"],
   "year": 2026,
   "url": "https://arxiv.org/abs/2605.04816",
   "status": "reviewed",

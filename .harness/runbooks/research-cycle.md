@@ -6,8 +6,8 @@ Convert a live research question into a small, reviewable improvement to the atl
 
 ## Weekly scout
 
-1. Read `AGENTS.md`, the epistemic policy, `research/queue.md`, and `.harness/state/research-state.json`.
-2. Select one ready question. Prefer an existing claim whose boundary or confidence could materially change.
+1. Read `AGENTS.md`, the epistemic policy, `research/queue.md`, and `.harness/state/research-state.json`. Fetch `origin/main`, then inventory open research pull requests, their base branches, pending agenda changes, and reserved artifact IDs.
+2. Select one ready question only after distinguishing merged state from unpublished draft work. Prefer an existing claim whose boundary or confidence could materially change. When an unresolved stack already addresses the gap, stop source admission and propose a publication decision or integrity repair.
 3. Query the atlas for existing work. State the gap before searching externally.
 4. Run `python3 scripts/atlas.py freshness`. For model-dependent questions, search the rolling 18-month window and current system generations first, then use older studies for mechanisms, stronger designs and citation chains. Search across the source lanes the question warrants: scholarly literature, citation chains, authoritative reports, books, standards, datasets, podcasts/interviews, talks, and public practitioner discourse including X and LinkedIn. Record exact queries, providers, dates, technology/date filters, sampling rationale, and result paths for an active review. Reach may sample a prominent position; it never supplies evidence weight.
 5. Call `research_capabilities`; use native web and Exa for discovery, then the Atlas research gateway for identity, provenance, locators, extraction, and local staging.
@@ -20,7 +20,7 @@ Convert a live research question into a small, reviewable improvement to the atl
 
 ## Monthly synthesis
 
-1. Review all changes since `last_monthly_synthesis` in state.
+1. Review all merged changes since `last_monthly_synthesis` in state and separately audit open research heads. Never silently synthesize a draft as canonical evidence or ignore it as absent work.
 2. Group evidence by claim and outcome—not by author or paper.
 3. Seek the strongest counterposition and contradictory sources.
 4. Propose belief and principle revisions with old/new wording and explicit reasons.
@@ -35,6 +35,8 @@ Convert a live research question into a small, reviewable improvement to the atl
 Assess whether the agenda still serves the north-star inquiry. Retire low-value questions, refresh stale artifacts, and review whether the atlas has become biased toward convenient outcomes, populations, disciplines, or optimistic AI results.
 
 Use `research/agenda-ledger.md` to record agenda changes and their signals. Programmes provide continuity; queue items, methods, source lanes, and priority weights should evolve whenever evidence gaps, product decisions, field changes, or falsification opportunities justify it.
+
+Audit publication flow as part of direction: open draft count, cumulative branch topology, pending source admissions, identifier collisions, review burden, and whether scheduler state can be reconciled to merged history. A per-run source cap does not control cumulative unpublished work.
 
 ## Stop conditions
 

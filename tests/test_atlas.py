@@ -1,3 +1,4 @@
+import json
 import subprocess
 import sys
 import unittest
@@ -83,6 +84,12 @@ class AtlasHarnessTests(unittest.TestCase):
         result = self.run_cli("eval")
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertIn("0 failed", result.stdout)
+
+    def test_graph_preserves_review_scope_and_claim_tensions(self) -> None:
+        graph = json.loads((ROOT / "maps" / "graph.json").read_text(encoding="utf-8"))
+        edges = {(edge["source"], edge["relation"], edge["target"]) for edge in graph["edges"]}
+        self.assertIn(("R001", "related_questions", "Q001"), edges)
+        self.assertIn(("C009", "tension_with", "C011"), edges)
 
 
 if __name__ == "__main__":
