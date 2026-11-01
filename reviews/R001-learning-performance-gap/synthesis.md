@@ -4,43 +4,45 @@ Status: provisional orientation synthesis; not exhaustive.
 
 ## What we can say now
 
-Seven comparative studies now make the early picture more heterogeneous. Unrestricted AI assistance can create large supported-performance gains while weakening later unaided performance [S001]. Yet ordinary GPT-4o access also improved immediate and one-week unaided performance in a time-held learning task [S015]. In programming, Copilot created a large supported speed/completion advantage without a reliable absolute advantage when the same learners repeated tasks alone one week later [S023]. A tightly designed AI tutor can improve short-term learning relative to a specific active-learning lesson [S002], and a structured, teacher-supported programme can produce meaningful assessment gains in a low-resource secondary context [S005].
+Nine comparative studies make the early picture heterogeneous. Unrestricted assistance can produce large supported gains followed by worse immediate independent performance [S001]. Ordinary GPT-4o access improved immediate and one-week unaided outcomes in a time-held learning task [S015]. Copilot accelerated assisted programming without a reliable absolute advantage when the same learners repeated tasks alone one week later [S023]. A structured tutor and a teacher-supported programme reported positive short-term outcomes [S002, S005], while access timing [S024] and point-of-care clinical use [S025] produced fragile positive-policy and authentic null signals.
 
-The first direct access-timing study reports that delayed access beat always-on access on an immediate independent test while matching no access [S024], but session assignment, exclusion and clustering problems make this a low-confidence component signal. In an authentic four-hospital South African clinical trial, minimally trained point-of-care GPT-4o access did not improve blinded bedside assessment performance despite high perceived helpfulness [S025]. This is evidence about workflow-bound performance, not a test of a practiced tutor or durable learning.
+Two new results sharpen the boundary without resolving it. A Brazilian randomized trial found lower proctored retention about 45 days after unrestricted GPT-4-labelled study than after non-AI study [S060, C036]. A preregistered workplace trial found large GPT-4-assisted technical-task gains but no detectable advantage on five immediate unaided knowledge questions [S061]. Both named results are high risk in the provisional appraisal because large shares of randomized outcomes were missing.
 
-The synthesis is therefore not “AI helps” or “AI harms,” nor is it “guardrails always beat general access.” The more defensible early claims are that assisted output cannot establish learning [C001], general access can produce short-delay learning under bounded conditions [C009], and task, incentive, population, interaction and institutional structure are plausible moderators that require direct tests.
+The formal pilot changes confidence more than direction. [S001, S005, S015, S025] have some concerns; [S002, S060, S061] are high risk; [S023] is moderate and [S024] serious risk under ROBINS-I V2. The final S001 and S023 ratings adopt the evidence analyst's more precise challenge to the initial integrating draft, while preserving the disagreement history. They still require duplicate signalling-question adjudication. No pooled effect is warranted.
+
+The defensible claims remain narrower than “AI helps” or “AI harms.” Assisted output cannot establish learning [C001]. Interaction and institutional structure plausibly change outcomes [C002], but existing comparisons bundle multiple components. Ordinary access can produce a positive one-week result under bounded conditions [C009]. One trial supports a low-confidence 45-day adverse claim [C036], not a general cognitive-offloading mechanism.
 
 ## Candidate mechanisms
 
-- answer provision may bypass retrieval, generation, error detection, and self-explanation;
-- access timing may preserve an initial problem representation and effort before offloading, but transparent fixed timing has not yet been separated from adaptive machinery;
-- progressive hints may preserve some of that cognitive work;
-- task structure can focus attention and prevent plausible but pedagogically unhelpful responses;
-- teacher facilitation may support prompting, interpretation, motivation, classroom management, and error correction;
-- increased time-on-task or novelty may contribute to positive programme results;
-- holding time fixed may reveal learning-per-unit-time gains that disappear when learners use AI to reduce total study time;
-- learner-selected augmentation and automation may mark different mechanisms, but post-treatment use categories cannot establish their causal effects;
-- assessments aligned closely to the intervention may overstate transfer.
+- answer provision may bypass retrieval, generation, error detection and self-explanation;
+- access timing may preserve initial effort, but transparent fixed timing has not been separated from adaptive machinery;
+- progressive hints may preserve productive work;
+- tutor and curriculum structure can focus attention and constrain plausible but pedagogically unhelpful responses;
+- teacher facilitation may support prompting, interpretation, motivation, classroom management and error correction;
+- extra time, novelty and aligned assessment may contribute to positive programme results;
+- holding time fixed may reveal learning-per-unit-time gains that disappear when learners use AI to reduce total exposure;
+- post-treatment usage categories cannot identify causal mechanisms;
+- task-aligned probes may overstate transfer.
 
-These are mechanism hypotheses, not yet established components.
+These are mechanism hypotheses. In [S060], lower self-reported study time is post-treatment and does not identify cognitive offloading as the mediator.
 
 ## Product direction
 
-Build and test an explicit assistance policy rather than a monolithic chatbot. Log support state. Evaluate after support is removed. Preserve a legitimate performance-support mode, but do not use its outputs as silent proof of independent capability [P001, P005].
+Build and test an explicit assistance policy rather than a monolithic chatbot. Record support state and exposure. Evaluate after support is removed using delayed, novel and access-aware measures. Preserve a legitimate performance-support mode, but do not use its outputs as silent proof of independent capability [P001, P005].
 
 ## What we do not know
 
-- durability over months rather than days or weeks;
-- far transfer and authentic performance;
-- differential effects by prior knowledge, language, disability, motivation, and socioeconomic context;
-- which guardrail components cause benefit;
-- how learners adapt strategically over repeated use;
-- whether a simple attempt threshold replicates the access-timing result and whether any adaptive policy adds value beyond it;
-- whether dependence, calibration, and agency can be measured reliably;
-- whether the positive one-week effect in [S015] replicates in ordinary coursework, longer horizons and less selective populations;
-- the publication-bias and null-results landscape;
-- full appraisal of the 275-participant programming null RCT and the 45-day retention RCT whose lawful full texts were not inspectable in this pass.
+- whether the 45-day adverse result replicates with current systems, monitored exposure and equal opportunity to study;
+- durability over months and far or authentic transfer;
+- effects by prior knowledge, language, disability, motivation and socioeconomic context;
+- which guardrail components cause benefit rather than add friction;
+- how learners adapt over repeated use;
+- whether a simple attempt threshold replicates the access-timing result;
+- whether dependence, calibration and agency can be measured reliably;
+- whether the positive one-week result in [S015] replicates in ordinary coursework and less selective populations;
+- the trial-registry, publication-bias and missing-null landscape;
+- the full methods and outcome-level risk of bias of the held Bassner null RCT.
 
 ## Next synthesis threshold
 
-Do not strengthen [C002] beyond `provisional` until the review completes reproducible database/citation searches, direct full-text appraisal of the held null/adverse studies, formal risk-of-bias assessment, and at least one independent replication or convergent component study for the relevant interaction policy.
+Do not strengthen [C002] or generalize [C036] until the review completes reproducible database and registry searches, independent duplicate risk-of-bias adjudication, direct full-text appraisal of held null studies, and at least one credible current-system delayed novel-transfer replication.

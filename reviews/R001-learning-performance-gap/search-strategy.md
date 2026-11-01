@@ -1,6 +1,6 @@
 # R001 search strategy
 
-Last searched: 2026-09-01
+Last searched: 2026-11-02
 Coverage status: targeted current-evidence update; not yet database-complete.
 
 ## Concept blocks
@@ -88,3 +88,34 @@ This was a deliberately bounded live update, not an exhaustive database search. 
 ## Required search log
 
 For every database: platform, full query, filters, date searched, result count, export filename, and deduplication count. Store citation metadata in Zotero and screening decisions in `screening.csv`.
+
+## 2026-11-02 delayed-outcome and risk-of-bias pass
+
+Question: what changes when held delayed/null candidates are inspected and one named result per included comparative study receives a provisional formal bias appraisal?
+
+### Providers and exact queries
+
+- Atlas OpenAlex/Crossref discovery gateway, 2026-11-02: `generative AI learning delayed unassisted randomized retention transfer`, years 2025–2026, limit 10.
+- Atlas OpenAlex/Crossref discovery gateway, 2026-11-02: `AI assisted learning independent performance after assistance removed randomized`, years 2025–2026, limit 10.
+- Atlas OpenAlex/Crossref discovery gateway, 2026-11-02: `generative AI programming retention unassisted controlled experiment`, years 2025–2026, limit 10.
+- Native web, 2026-11-02: `2025 2026 randomized generative AI learning delayed unassisted outcome` and exact-title/DOI resolution for Barcauí, Wiles and Bassner.
+- Forward citation chains through OpenAlex for [S001] (`W4411627694`) and [S002] (`W4411505840`), 20 citing records inspected per seed.
+- Public-discourse sampling: Hamsa Bastani's stable LinkedIn activity `7439636450142384128` and APA *Speaking of Psychology* episode 389 were used as perspective and discovery leads only; empirical claims were followed to original studies.
+
+### Capability and fallback log
+
+The project gateway exposed Crossref and OpenAlex resolution, candidate staging, lawful fetch and citation exploration. Unpaywall credentials, Podcast Index, YouTube and OpenAI transcription were unavailable; Exa was described as a separate connector but was not registered in this runtime. Zotero's local API was unavailable. Docling extraction timed out twice, so publisher HTML and `pdftotext` were used against lawfully fetched or author-hosted files. The APA episode identity was preserved by canonical episode number and publisher URL because feed/GUID resolution failed.
+
+### Admission decisions
+
+- Include [S060] after inspecting the published open article: a randomized 45-day adverse retention result, retained as a narrow low-confidence claim because 35 of 120 outcomes were missing and comparator compliance was unmonitored.
+- Include [S061] after inspecting the complete author manuscript and final publication identity: large GPT-4-assisted gains with no immediate unaided knowledge advantage, bounded by high missing-outcome risk and a historical March–April 2024 system.
+- Continue to hold Bassner et al., DOI `10.1016/j.caeai.2025.100537`: the lawful Zenodo v4 reproducibility package exposed tasks, data, exclusions and analysis code, but the version of record was blocked. The package shows 452 raw to 275 analytic participants, no delayed outcome, no located preregistration and no exact model identity. Those boundaries and 39.2% exclusions prevent admission from the package alone.
+- Hold Kreijkes et al., DOI `10.1016/j.compedu.2025.105514`, as a future three-day school-outcome lead; its GPT-3.5 intervention is historical and full-text access was not resolved in this pass.
+- Hold Liu et al., DOI `10.26300/y3f8-vh05`, for a later institutional-transfer update; low tutor uptake and section-level allocation do not answer the present assisted-versus-independent outcome question cleanly.
+- Reject Alam et al. from canonical admission in this pass: the small `N=13` exploratory sample is too fragile to change the answer.
+- Do not duplicate current-system sources already admitted on open draft PR #7. The branch separation is a publication-state boundary, not evidence that those records do not exist.
+
+### Coverage boundary
+
+This was a bounded update with three gateway searches, two seed citation chains, targeted full-text resolution and provisional result-level appraisal. It did not complete ERIC, PsycINFO, Scopus/Web of Science, trial-registry or publication-bias searches. Two of the three staged scholarly candidates were admitted; a third source was not manufactured to fill the cap.

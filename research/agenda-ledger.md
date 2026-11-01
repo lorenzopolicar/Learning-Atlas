@@ -55,3 +55,13 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Bias and novelty risk: recent work is more likely to be preprint-only, underpowered, under-replicated or benchmark-driven. Methodological quality and outcome relevance remain separate from freshness.
 - Review horizon and success signal: review monthly; success means `atlas.py freshness` exposes no unlabeled model-dependent source and product briefs distinguish current, recent and historical systems.
 - Human decision: accepted by direct instruction on 2 September 2026.
+
+### 2026-11-02 — Delayed-retention replication signal
+
+- Signal: [S060] supplies an unusually delayed 45-day adverse result, while [S061] supplies a workplace assisted/unaided dissociation; the provisional R001 appraisal rates both named results high risk because of missing outcomes.
+- Decision: retain Q001 at queue priority 2 and do not reweight the six-programme agenda. Convert the delayed adverse result into the narrow low-confidence [C036], not a general claim that AI harms learning.
+- Method and source-lane implication: prioritize current-system, multisite delayed novel-transfer replication; monitored exposure; accessible-independent outcomes; trial registries; and independent duplicate risk-of-bias adjudication. Continue sampling public professional and podcast positions only as contextual or discovery lanes.
+- Opportunity cost: spend less autonomous capacity accumulating additional immediate self-report or output-quality studies that cannot distinguish supported performance from independent capability.
+- Product implication: Orqestra should test answer-ready versus effort-preserving policies under recorded exposure rather than infer a mechanism from lower study time.
+- Review horizon and success signal: revisit after one credible current-system delayed replication or completion of the reproducible database and registry search. Success requires a claim-level conclusion that survives duplicate appraisal.
+- Human decision: requested for the proposed queue emphasis and the high-risk judgements in the draft PR; no programme or north-star change was made autonomously.

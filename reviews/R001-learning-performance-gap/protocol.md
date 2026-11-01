@@ -6,7 +6,7 @@
   "status": "active",
   "topics": ["learning-vs-performance", "ai-tutoring", "assessment-validity", "transfer"],
   "related_questions": ["Q001"],
-  "last_reviewed": "2026-09-01"
+  "last_reviewed": "2026-11-02"
 }
 ---
 
@@ -61,11 +61,11 @@ Secondary outcomes include assisted task performance, time, engagement, motivati
 
 ## Bias and quality appraisal
 
-Use RoB 2 for randomized trials when a mature synthesis requires formal appraisal. For other designs, use an appropriate design-specific tool. The atlas evidence profile complements but does not replace risk-of-bias assessment.
+Use RoB 2 for randomized trials when a mature synthesis requires formal appraisal. For other designs, use an appropriate design-specific tool. The atlas evidence profile complements but does not replace risk-of-bias assessment. The provisional result-level pilot is recorded in [risk-of-bias.md](risk-of-bias.md); it requires independent duplicate signalling-question adjudication before a mature causal synthesis.
 
 ## Current status
 
-The orientation set now includes direct assisted/independent contrasts [S001, S015, S023, S024], structured tutoring and programme studies [S002, S005], the authentic point-of-care trial [S025], and the pre-GenAI tutoring review [S014]. The 2026-09-01 targeted update added one null/inconclusive one-week programming contrast, one fragile positive access-timing contrast, and one authentic clinical null. This remains a seed synthesis, not a database-complete review. The next run must complete reproducible database and citation-chain searches, resolve the full text of the 275-participant Bassner et al. null RCT, and formally appraise risk of bias.
+The comparative set now contains nine studies: direct assisted/independent contrasts [S001, S015, S023, S024, S061], structured tutoring and programme studies [S002, S005], an authentic point-of-care trial [S025], and a 45-day adverse retention result [S060]. This remains a seed synthesis, not a database-complete review. The 2026-11-02 pass completed a provisional result-level risk-of-bias pilot, but not duplicate adjudication. The next run must complete reproducible database searches, resolve the full text of the 275-participant Bassner et al. null RCT, map trial-registry and publication-bias signals, and seek current-system delayed novel-transfer evidence.
 
 ## Governance
 

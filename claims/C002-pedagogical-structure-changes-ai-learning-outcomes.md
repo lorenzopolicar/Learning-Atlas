@@ -9,9 +9,9 @@
   "topics": ["ai-tutoring", "scaffolding", "teacher-practice", "learning-vs-performance"],
   "supporting_sources": ["S001", "S002", "S005", "S014", "S024"],
   "contradicting_sources": [],
-  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, and additional time may contribute materially.", "The direct access-timing study is a preprint with non-random workshop-level assignment and no policy ablation.", "The evidence chain mixes historical GPT-4/4o-era systems with recent-system evidence and has no current-system anchor."],
+  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, and additional time may contribute materially.", "The direct access-timing study is a preprint with non-random workshop-level assignment and no policy ablation.", "A provisional outcome-level risk-of-bias appraisal finds material concerns in most causal contrasts; even the strongest S001 result retains some concerns about allocation.", "The evidence chain mixes historical GPT-4/4o-era systems with recent-system evidence and has no current-system anchor on this branch."],
   "product_relevance": "Treat the pedagogical harness as the product, not as a prompt wrapped around a general chatbot.",
-  "last_reviewed": "2026-09-02"
+  "last_reviewed": "2026-11-02"
 }
 ---
 
@@ -35,7 +35,7 @@ The mechanism claim is more durable than any effect magnitude: the chain include
 
 ## Counterevidence and uncertainty
 
-Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. Independent replications and component studies are priorities.
+Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. The provisional R001 appraisal finds material missingness, deviation, assignment or reporting concerns across most named results; even [S001] retains some concerns about allocation. Independent duplicate appraisal, replications and component studies are priorities.
 
 ## Product relevance
 

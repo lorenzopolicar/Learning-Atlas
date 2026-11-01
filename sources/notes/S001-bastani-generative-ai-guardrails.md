@@ -10,7 +10,7 @@
   "status": "reviewed",
   "topics": ["learning-vs-performance", "ai-tutoring", "scaffolding", "assessment-validity"],
   "added": "2026-08-31",
-  "last_reviewed": "2026-08-31",
+  "last_reviewed": "2026-11-02",
   "technology_dependence": "model-dependent",
   "technology_context": {
     "system": "GPT-based tutoring interfaces",
@@ -47,7 +47,7 @@ The work covers a particular mathematics curriculum, age group, implementation, 
 
 | Dimension | Rating | Reason |
 |---|---|---|
-| Internal validity | high | Preregistered randomized field design with a no-AI comparison |
+| Internal validity | moderate-high | Preregistered field design with ITT and a no-AI comparison; stochastic arm assignment and allocation concealment are not explicit enough to close the provisional RoB 2 allocation domain |
 | Directness | high | Directly compares AI-assisted practice with independent assessment |
 | Consistency | moderate | Direction aligns with the broader learning/performance distinction; exact intervention needs replication |
 | Replication | low | The specific treatment contrast is not yet independently replicated here |

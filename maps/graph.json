@@ -120,6 +120,13 @@
       "path": "claims/C012-minimal-ai-access-did-not-improve-bedside-performance.md"
     },
     {
+      "id": "C036",
+      "type": "claim",
+      "title": "Unrestricted ChatGPT study lowered 45-day retention in one trial",
+      "status": "provisional",
+      "path": "claims/C036-unrestricted-chatgpt-study-lowered-retention.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
@@ -398,6 +405,20 @@
       "title": "AI at the bedside: Randomised controlled trial of ChatGPT's impact on student performance in real-patient clinical exams",
       "status": "reviewed",
       "path": "sources/notes/S025-saloojee-ai-at-bedside.md"
+    },
+    {
+      "id": "S060",
+      "type": "source",
+      "title": "ChatGPT as a Cognitive Crutch: Evidence from a Randomized Controlled Trial on Knowledge Retention",
+      "status": "reviewed",
+      "path": "sources/notes/S060-barcaui-cognitive-crutch.md"
+    },
+    {
+      "id": "S061",
+      "type": "source",
+      "title": "Generative AI and the Temporary Upskilling of Knowledge Workers",
+      "status": "reviewed",
+      "path": "sources/notes/S061-wiles-temporary-upskilling.md"
     }
   ],
   "edges": [
@@ -512,6 +533,16 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C001",
+      "target": "S060",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C001",
+      "target": "S061",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "C002",
       "target": "S001",
       "relation": "supporting_sources"
@@ -619,6 +650,16 @@
     {
       "source": "C012",
       "target": "S025",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C036",
+      "target": "S015",
+      "relation": "contradicting_sources"
+    },
+    {
+      "source": "C036",
+      "target": "S060",
       "relation": "supporting_sources"
     },
     {
@@ -884,6 +925,11 @@
     {
       "source": "Q001",
       "target": "C002",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q001",
+      "target": "C036",
       "relation": "related_claims"
     },
     {
