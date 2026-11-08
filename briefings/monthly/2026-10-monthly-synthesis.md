@@ -10,7 +10,7 @@ Decision state: draft for human review
 
 ## Verdict
 
-October produced four coherent research clusters, but none is canonical. Pull requests 4–6 form a cumulative stack on top of September pull requests 1–3, while pull request 7 independently branches from `main`. Pull request 8 was committed after the Brisbane calendar-month boundary and is treated as November context; pull request 9 is a November integrity review. All nine pull requests remain drafts without a human review decision.
+October produced four coherent research clusters, but none is canonical. Pull requests 4–6 form a cumulative stack on top of September pull requests 1–3, while pull request 7 independently branches from `main`. Pull request 8 was committed after the Brisbane calendar-month boundary and is treated as November context; pull request 9 is a November integrity review. A concurrent November research run opened pull request 10 after this evidence audit began; it is post-period operational context and is not synthesized here. Pull requests 1–10 remain drafts without a human review decision.
 
 The smallest defensible canonical change is therefore **no claim, belief, principle, confidence or maturity change**. This synthesis records the evidence map, contradictions, conditional revisions, product experiments, agenda signals and publication gate. Pending sources and IDs below are operational context, not published Atlas evidence.
 
@@ -109,7 +109,7 @@ The intent-level MCP remained unavailable, while the local gateway capability re
 
 ## Human decisions requested
 
-1. Consolidate, sequentially merge or close research PRs 1–8; hand-integrate independent PRs 7 and 8 rather than choosing one C001/C002 version.
+1. Consolidate, sequentially merge or close research PRs 1–8 and the post-period PR 10; hand-integrate independent PRs 7 and 8 rather than choosing one C001/C002 version.
 2. Review PR 9's taxonomy, graph, retrieval and preflight repairs as process integrity work, not empirical publication.
 3. Independently adjudicate the provisional RoB 2 and ROBINS-I judgements and tighten S057/S058 locators.
 4. Decide whether to narrow or contest B003 and whether P008 may move from `draft` to `active`.

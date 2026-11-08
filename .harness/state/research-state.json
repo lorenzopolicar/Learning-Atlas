@@ -9,7 +9,7 @@
     "target": 3,
     "actual_scheduled_runs_observed": 0,
     "supervised_shadow_cycles": 2,
-    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass were supervised shadows. Canonical main records zero actual scheduler observations; completed observations and later runs remain on draft PRs 1-8 and are not silently published by the October synthesis."
+    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass were supervised shadows. Canonical main records zero actual scheduler observations; completed observations and later runs remain on draft research PRs 1-8 and 10 and are not silently published by the October synthesis."
   },
   "runs": [
     {
