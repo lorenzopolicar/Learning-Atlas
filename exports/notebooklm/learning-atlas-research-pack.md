@@ -58,7 +58,7 @@ Type: source
 Status: reviewed
 Topics: ai-tutoring, learning-vs-performance, scaffolding
 Technology dependence: model-dependent
-Technology context: custom physics AI tutor / exact model snapshot not captured in the inspected note; study=not reported in the inspected note; temporal relevance=unknown; review due=2026-10-15
+Technology context: custom physics AI tutor / GPT-4-0613; study=Fall 2023; intervention during course weeks 9 and 10; temporal relevance=historical-system; review due=2027-05-02
 Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 
 # S002 — AI tutoring outperforms in-class active learning
@@ -66,6 +66,14 @@ Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 ## Why it matters
 
 It tests a deliberately structured AI tutor in an authentic university course rather than treating an unprompted chatbot as the intervention.
+
+## Identity and provenance
+
+- Version re-inspected: *Scientific Reports* version of record and publisher Supplementary Material 1 on 2 November 2026.
+- Study period: Fall 2023, during weeks 9 and 10 of Harvard Physical Sciences 2.
+- Tutor stack: custom TeachGPT physics tutor using `GPT-4-0613`, instructor-authored step-by-step solutions, question-specific prompts and sequential platform scaffolding.
+- Publication status: Crossmark reported the document current; no correction or retraction was listed.
+- Access boundary: the exact model snapshot is reported in Supplementary Material 1 rather than the main article. The result is historical-system evidence for effect size.
 
 ## Study and findings
 
