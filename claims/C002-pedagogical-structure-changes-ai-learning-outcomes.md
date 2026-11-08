@@ -7,11 +7,11 @@
   "status": "provisional",
   "confidence": "moderate",
   "topics": ["ai-tutoring", "scaffolding", "teacher-practice", "learning-vs-performance"],
-  "supporting_sources": ["S001", "S002", "S005", "S014", "S024"],
+  "supporting_sources": ["S001", "S002", "S005", "S014", "S024", "S062"],
   "contradicting_sources": [],
-  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, and additional time may contribute materially.", "The direct access-timing study is a preprint with non-random workshop-level assignment and no policy ablation.", "The evidence chain mixes historical GPT-4/4o-era systems with recent-system evidence and has no current-system anchor."],
+  "boundary_conditions": ["The studied interventions are bundled and context-specific.", "Evidence is stronger for short-term, near outcomes than long-term transfer.", "Teacher mediation, curriculum, and additional time may contribute materially.", "The direct access-timing study is a preprint with non-random workshop-level assignment and no policy ablation.", "The current-system anchor changed model endpoints during treatment and required human approval of every message."],
   "product_relevance": "Treat the pedagogical harness as the product, not as a prompt wrapped around a general chatbot.",
-  "last_reviewed": "2026-09-02"
+  "last_reviewed": "2026-11-09"
 }
 ---
 
@@ -27,11 +27,13 @@ The convergent pattern is promising across secondary mathematics, university phy
 
 [S024] narrows one potentially causal design dimension: its delayed-access policy beat always-on access on an immediate unassisted test. Because conditions were assigned by workshop and the adaptive reward was bundled, this strengthens the access-timing hypothesis without establishing the superiority of RL or any specific component.
 
+[S062] supplies a current-system anchor for a supervised tutoring bundle. It reports positive next-unit and repeated-item outcomes but a null broad assessment, so it supports the value of pedagogical structure without establishing which component caused benefit or that proximal gains accumulate into general attainment.
+
 ## Boundary conditions
 
 Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, and learner characteristics vary.
 
-The mechanism claim is more durable than any effect magnitude: the chain includes GPT-4/4o-era systems plus recent Mistral evidence, but no source is yet classified `current-system`. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
+The mechanism claim is more durable than any effect magnitude. The chain now includes a `current-system` source [S062], but its changing Gemini endpoints, expert review and implementation bug prevent a clean model or component estimate. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
 
 ## Counterevidence and uncertainty
 

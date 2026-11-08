@@ -88,3 +88,38 @@ This was a deliberately bounded live update, not an exhaustive database search. 
 ## Required search log
 
 For every database: platform, full query, filters, date searched, result count, export filename, and deduplication count. Store citation metadata in Zotero and screening decisions in `screening.csv`.
+
+## 2026-11-09 current-system transfer update
+
+Question: does any current-generation controlled study jointly measure a delayed, novel, independent outcome after substantive AI assistance is withdrawn?
+
+### Bounded Atlas retrieval
+
+The Atlas query for Q001 returned [C001], [C002], [C009], [C011] and [P005]. `research_gateway.py capabilities` reported OpenAlex and Crossref available; Unpaywall, Podcast Index and OpenAI transcription unavailable; Exa described as a separate MCP but not exposed in this runtime. The intent-level Atlas MCP tools were also absent, so the repository gateway plus native web were used.
+
+### Exact scholarly queries
+
+- `generative AI delayed novel transfer independent performance randomized`
+- `large language model assistance later unassisted transfer learning controlled experiment`
+- `ChatGPT AI tutor delayed retention novel task posttest randomized students`
+- `GPT-5 learning transfer without AI delayed test experiment`
+- `generative AI later unassisted posttest new task transfer experiment student`
+- `AI tutoring four week follow-up conceptual knowledge randomized ChatGPT`
+
+Filters prioritized 2025–2026 controlled studies, then manually verified model/version, study period, assistance state, delay and transfer distance. Native web added exact-title, registry, LinkedIn and podcast queries. Counts from heterogeneous native-web result pages are not reproducible and are not represented as database counts.
+
+### Citation and registry chains
+
+- 2025 Eedi/LearnLM exploratory RCT → `AEARCTR-0018079` → 29 October 2026 expanded report [S062].
+- [S001] → NUMI March 2026 experiment → EdWorkingPaper/NBER report → `AEARCTR-0018678`; the registry describes a later follow-on and does not preregister the reported March pilot.
+- Bassner DOI → Zenodo reproducibility package v5; its corrigendum changes the analytic sample and several results, so the stale v4 package cannot support admission.
+
+### Public discourse and audio sampling
+
+Stable LinkedIn activities `7502137944741302272` and `7509631823497498624` were inspected as competing practitioner framings. The first usefully distinguishes assisted from later independent performance; the second overstates durable harm. Leon Furze podcast episode 91 has Apple episode ID `1000770726396`, but no timestamped publisher transcript was available. No stable public X post added an original empirical lead. These records remain perspective or discovery material.
+
+### Admission decisions and coverage boundary
+
+Admit only [S062]. Hold the sport-skill RCT pending chronology clarification; hold Oreopoulos et al. pending model and registry resolution; hold corrected Bassner pending version-of-record/corrigendum inspection. Reject duplicated, indirect, bundled or inaccessible candidates for this cycle as recorded in `screening.csv`.
+
+This remains a bounded targeted update, not the protocol's reproducible database search. No current-system study located here combined delayed, novel, independent post-withdrawal performance. No meta-analysis or publication-bias assessment was attempted.

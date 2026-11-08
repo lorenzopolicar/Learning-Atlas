@@ -5,21 +5,22 @@
   "title": "AI tutoring outperforms in-class active learning",
   "citation_key": "kestin2025aitutoring",
   "source_kind": "randomized-controlled-trial",
+  "epistemic_roles": ["empirical-study"],
   "year": 2025,
   "url": "https://doi.org/10.1038/s41598-025-97652-6",
   "status": "reviewed",
   "topics": ["ai-tutoring", "learning-vs-performance", "scaffolding"],
   "added": "2026-08-31",
-  "last_reviewed": "2026-08-31",
+  "last_reviewed": "2026-11-09",
   "technology_dependence": "model-dependent",
   "technology_context": {
     "system": "custom physics AI tutor",
-    "version": "exact model snapshot not captured in the inspected note",
-    "study_period": "not reported in the inspected note",
-    "assessed_as_of": "2026-09-02",
-    "temporal_relevance": "unknown",
-    "review_due": "2026-10-15",
-    "recency_note": "The instructional design remains directly relevant, but model and data-collection details must be recovered before treating the result as technology-current."
+    "version": "OpenAI GPT-4 through PS2 Pal; exact snapshot not reported",
+    "study_period": "Fall 2023",
+    "assessed_as_of": "2026-11-09",
+    "temporal_relevance": "historical-system",
+    "review_due": "2027-05-09",
+    "recency_note": "The instructional design remains directly relevant, but the Fall 2023 GPT-4 implementation is historical-system evidence and needs current-system replication."
   },
   "access": "open"
 }
@@ -38,6 +39,8 @@ In a randomized controlled trial with 194 students in an undergraduate physics c
 ## Limitations and boundary conditions
 
 This was a single course, institution, set of lessons, and implementation. Outcomes were short-term and close to instruction. The study compares a particular tutor lesson with a particular active-learning lesson, not AI with all human teaching. The authors explicitly caution against universal extrapolation.
+
+The study ran in Fall 2023 using a GPT-4-based custom tutor. It is historical-system evidence for current product decisions; the pedagogical design may transfer more durably than the reported magnitude.
 
 ## Evidence profile
 

@@ -7,11 +7,11 @@
   "status": "provisional",
   "confidence": "high",
   "topics": ["learning-vs-performance", "assessment-validity", "ai-tutoring"],
-  "supporting_sources": ["S001", "S004", "S006", "S023"],
+  "supporting_sources": ["S001", "S004", "S006", "S023", "S062"],
   "contradicting_sources": [],
   "boundary_conditions": ["The harm result is not universal to every AI design or learner.", "Outcome claims must specify whether support is present and the delay and transfer distance."],
   "product_relevance": "Do not optimize or market an AI learning system on completion, assisted correctness, or output quality alone.",
-  "last_reviewed": "2026-09-01"
+  "last_reviewed": "2026-11-09"
 }
 ---
 
@@ -27,13 +27,15 @@ The immediate/delayed divergence is not unique to AI: restudy can look effective
 
 In a small programming study, Copilot produced a large assisted speed/completion advantage, but not a reliable absolute advantage when participants repeated the task pools alone one week later [S023]. Its much larger assisted-to-retest drop is descriptive of the proxy failure; because the absolute retest contrast was imprecise, it is not evidence of a general Copilot learning penalty.
 
+The current-system classroom trial [S062] sharpens the measurement boundary from the other direction: independently completed proximal outcomes improved, while broad standardized attainment did not. Neither the assisted interaction nor the near outcome can substitute for the more distant construct.
+
 ## Boundary conditions
 
 This is not the claim that assistance necessarily harms learning. Structured tutoring can improve measured learning [S002, S005]. Effects depend on the interaction, learner, task, duration, and what is measured after support is removed.
 
 ## Counterevidence and uncertainty
 
-Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
+Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. [S062] adds positive current-system proximal outcomes. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
 
 ## Product relevance
 

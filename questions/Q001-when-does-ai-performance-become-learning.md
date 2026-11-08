@@ -7,8 +7,8 @@
   "status": "open",
   "priority": "high",
   "topics": ["learning-vs-performance", "ai-tutoring", "transfer", "assessment-validity"],
-  "related_claims": ["C001", "C002"],
-  "last_reviewed": "2026-08-31"
+  "related_claims": ["C001", "C002", "C037", "C038"],
+  "last_reviewed": "2026-11-09"
 }
 ---
 
@@ -28,4 +28,4 @@ A cumulative set of credible comparative studies, preferably with delayed unassi
 
 ## Next search
 
-Update the structured search in `reviews/R001-learning-performance-gap/search-strategy.md`, prioritizing studies published after the current cutoff and backward/forward citation searching around [S001] and [S002].
+Complete the reproducible database search and seek a current-system trial that combines novel transfer, an AI-free outcome, and a post-intervention delay. Keep accessibility support available while removing substantive delegation.
