@@ -58,7 +58,7 @@ Type: source
 Status: reviewed
 Topics: ai-tutoring, learning-vs-performance, scaffolding
 Technology dependence: model-dependent
-Technology context: custom physics AI tutor / exact model snapshot not captured in the inspected note; study=not reported in the inspected note; temporal relevance=unknown; review due=2026-10-15
+Technology context: custom physics AI tutor / OpenAI GPT-4 through PS2 Pal; exact snapshot not reported; study=Fall 2023; temporal relevance=historical-system; review due=2027-05-09
 Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 
 # S002 — AI tutoring outperforms in-class active learning
@@ -74,6 +74,8 @@ In a randomized controlled trial with 194 students in an undergraduate physics c
 ## Limitations and boundary conditions
 
 This was a single course, institution, set of lessons, and implementation. Outcomes were short-term and close to instruction. The study compares a particular tutor lesson with a particular active-learning lesson, not AI with all human teaching. The authors explicitly caution against universal extrapolation.
+
+The study ran in Fall 2023 using a GPT-4-based custom tutor. It is historical-system evidence for current product decisions; the pedagogical design may transfer more durably than the reported magnitude.
 
 ## Evidence profile
 
@@ -1193,6 +1195,74 @@ Supports [C012](../../claims/C012-minimal-ai-access-did-not-improve-bedside-perf
 
 The public anonymized dataset is registered at Zenodo DOI 10.5281/zenodo.17459336. Funding came in whole or part from the Gates Foundation; the authors reported no potential conflict.
 
+## S062 — Measuring the impact of AI tutoring, from near transfer to standardised tests: An expanded RCT in UK mathematics classrooms
+
+Type: source
+Status: reviewed
+Topics: ai-tutoring, learning-vs-performance, transfer, scaffolding
+Technology dependence: model-dependent
+Technology context: Eedi tutor using Gemini models with expert review / Gemini 3.1 Pro, Gemini 3 Flash, then Gemini 3.5 Flash; study=2026-04-13 to 2026-07-07, after a preparatory test beginning 2026-03-23; temporal relevance=current-system; review due=2027-02-09
+Canonical path: `sources/notes/S062-learnlm-expanded-eedi-rct.md`
+
+# S062 — Expanded Eedi AI-tutoring RCT
+
+## Why it matters
+
+This preregistered classroom RCT traces one current-system intervention from immediate near transfer through a repeated-item delay and a broad standardized assessment. The positive proximal and null broad outcomes constrain claims that short-horizon tutoring gains necessarily accumulate into general attainment.
+
+## Identity and provenance
+
+- Canonical identity: LearnLM Team, Google and Eedi technical report, 29 October 2026; AEA RCT Registry `AEARCTR-0018079`, DOI `10.1257/rct.18079-1.1`.
+- Version inspected: 22-page publisher PDF created 29 October 2026; SHA-256 `c0aa30c31f65c99cab4f0368d5b68cd51ded93f857f56e533c084ab27207aa7f`.
+- Gateway provenance: candidate `cand_3e523124aab35f7c`; the registry was separately resolved as `cand_e75ac81eeb1e9c8f`.
+- Locators: trial and assistance state on pp. 2–5; proximal and delayed outcomes on pp. 7–8; broad outcome on pp. 8–9; dates and model routing on pp. 15–16.
+
+## Study
+
+- Population and setting: 1,179 students aged roughly 12–15 in 58 classes across 10 UK state-funded secondary schools already using Eedi.
+- Design: student-level four-arm randomization for seven to ten instructional weeks within a 12-calendar-week window. The report states that the design, hypotheses and analysis plan were preregistered.
+- Conditions: standard Eedi remediation; expert human tutoring; Gemini tutoring with question context; and Gemini tutoring with additional learning-history context.
+- Intervention fidelity: an expert tutor had to approve, regenerate or rewrite every AI draft before delivery. Tutors approved 94.7% of 94,385 reviewed drafts unchanged.
+- Technology: routing changed from Gemini 3.1 Pro to Gemini 3 Flash on 21 April, then to Gemini 3.5 Flash on 21 May. A bug prevented prior-chat summaries from reaching the personalized condition.
+- Outcomes: every named learning outcome was completed without concurrent AI or tutor help. Outcomes included immediate mistake correction, next-unit near transfer, an eight-question midtrial curriculum quiz, returning diagnostic questions after more than seven days, and externally administered Star Maths at baseline and endline.
+
+## Findings
+
+- Next-unit near-transfer accuracy was 58.4% and 58.3% in the two AI arms versus 50.5% under standard remediation; each directional posterior probability exceeded 99.9% (p. 7).
+- On an exploratory return of the same diagnostic question after more than seven days, accuracy was 59.9% and 59.0% versus 47.6%; this is delayed retention of a repeated item, not delayed novel transfer (pp. 7–8).
+- The midtrial curriculum quiz showed a small positive signal, strongest for personalized-context tutoring: 63.5% versus 59.6%, with 97.1% posterior probability of an advantage. The other tutor contrasts were weaker (p. 8).
+- The preregistered broad Star Maths contrast was null: question-context AI was `-0.01 SD` with 95% credible interval `[-0.15, +0.14]`, and personalized-context AI was `+0.02 SD [-0.12, +0.16]` relative to standard remediation (pp. 8–9).
+- Tutored learners covered fewer study units and constructs than standard-remediation learners. This plausible time/coverage explanation was exploratory and does not identify a causal mechanism for the broad null.
+
+## Limitations and boundary conditions
+
+- Google and Eedi developed and evaluated the intervention; the technical report is not peer reviewed and no independent replication was located.
+- The model changed twice during treatment, human supervisors reviewed every draft, and an implementation bug weakened the intended personalization contrast.
+- Standard remediation was a strong active comparator, not no instruction. All arms could request live help except while answering the second diagnostic question.
+- The delayed measure repeats an earlier diagnostic item. Near transfer occurs at the next unit, and the broad test occurs at endline rather than after a post-intervention withdrawal delay. The trial therefore does not close the delayed novel-transfer gap.
+- The report uses Bayesian directional probabilities. The Atlas preserves the reported estimands and does not translate them into frequentist significance claims.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate | Preregistered within-class randomization and independently scored broad outcome; developer report, exploratory delayed analysis, model rotation and incomplete implementation lower confidence |
+| Directness | high | Separates unaided proximal, delayed repeated-item and broad outcomes for an AI-tutoring policy |
+| Consistency | moderate | Positive proximal and null broad outcomes fit the wider heterogeneous record without resolving its moderators |
+| Replication | low | One developer-led implementation with no independent replication located |
+| Magnitude | outcome-specific | Clear proximal differences; small intermediate signal; broad effects centered near zero |
+| Duration | low-moderate | Seven to ten instructional weeks; only the repeated-item outcome explicitly exceeds seven days |
+| Transfer | moderate | Includes next-unit and broad standardized measures, but no delayed novel post-withdrawal endpoint |
+| Ecological validity | high | Authentic weekly mathematics lessons across 10 schools using an established platform |
+
+## Candidate claims
+
+Supports [C037](../../claims/C037-current-ai-tutoring-improved-proximal-outcomes.md) and [C038](../../claims/C038-proximal-ai-tutoring-gains-did-not-improve-broad-attainment.md). It also strengthens the measurement boundaries in [C001](../../claims/C001-assisted-performance-is-not-learning.md) and the provisional, bundled-policy evidence in [C002](../../claims/C002-pedagogical-structure-changes-ai-learning-outcomes.md).
+
+## Notes
+
+The decisive next study would keep model and supervision provenance stable, match instructional time and coverage, and measure novel independent tasks immediately and after one and four to six weeks without withdrawing access-restoring support.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -1212,13 +1282,15 @@ The immediate/delayed divergence is not unique to AI: restudy can look effective
 
 In a small programming study, Copilot produced a large assisted speed/completion advantage, but not a reliable absolute advantage when participants repeated the task pools alone one week later [S023]. Its much larger assisted-to-retest drop is descriptive of the proxy failure; because the absolute retest contrast was imprecise, it is not evidence of a general Copilot learning penalty.
 
+The current-system classroom trial [S062] sharpens the measurement boundary from the other direction: independently completed proximal outcomes improved, while broad standardized attainment did not. Neither the assisted interaction nor the near outcome can substitute for the more distant construct.
+
 ## Boundary conditions
 
 This is not the claim that assistance necessarily harms learning. Structured tutoring can improve measured learning [S002, S005]. Effects depend on the interaction, learner, task, duration, and what is measured after support is removed.
 
 ## Counterevidence and uncertainty
 
-Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
+Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. [S062] adds positive current-system proximal outcomes. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
 
 ## Product relevance
 
@@ -1243,11 +1315,13 @@ The convergent pattern is promising across secondary mathematics, university phy
 
 [S024] narrows one potentially causal design dimension: its delayed-access policy beat always-on access on an immediate unassisted test. Because conditions were assigned by workshop and the adaptive reward was bundled, this strengthens the access-timing hypothesis without establishing the superiority of RL or any specific component.
 
+[S062] supplies a current-system anchor for a supervised tutoring bundle. It reports positive next-unit and repeated-item outcomes but a null broad assessment, so it supports the value of pedagogical structure without establishing which component caused benefit or that proximal gains accumulate into general attainment.
+
 ## Boundary conditions
 
 Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, and learner characteristics vary.
 
-The mechanism claim is more durable than any effect magnitude: the chain includes GPT-4/4o-era systems plus recent Mistral evidence, but no source is yet classified `current-system`. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
+The mechanism claim is more durable than any effect magnitude. The chain now includes a `current-system` source [S062], but its changing Gemini endpoints, expert review and implementation bug prevent a clean model or component estimate. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
 
 ## Counterevidence and uncertainty
 
@@ -1500,6 +1574,66 @@ GPT-4o is historical-system evidence for current product decisions. More capable
 ## Product relevance
 
 Orqestra should represent tool access, assistance state and stewardship actions separately. A human–AI capability experiment should teach and manipulate a workflow, preserve the learner's pre-advice state, and measure both immediate assisted quality and later accessible-independent performance.
+
+## C037 — Current supervised AI tutoring improved proximal independent outcomes in one trial
+
+Type: claim
+Status: provisional
+Topics: ai-tutoring, learning-vs-performance, transfer, scaffolding
+Canonical path: `claims/C037-current-ai-tutoring-improved-proximal-outcomes.md`
+
+# C037 — Current supervised AI tutoring improved proximal outcomes
+
+## Claim
+
+In one current-system classroom RCT, two human-supervised Gemini tutoring policies improved next-unit near transfer and accuracy when earlier diagnostic questions returned after more than seven days relative to standard Eedi remediation [S062].
+
+## Evidence and reasoning
+
+Students were randomized within 58 classes, and all learning outcomes were completed without concurrent tutor or AI help. The two AI arms achieved roughly eight percentage points more next-unit accuracy and roughly 12 points more accuracy on returning questions than the active comparator.
+
+The result estimates assignment to a policy bundle, not an isolated model effect. The bundle includes a pedagogical prompt, an established interface, mandatory expert approval, live help access and changing Gemini versions.
+
+## Boundary conditions
+
+The next-unit outcome is same-session or short-horizon near transfer. The delayed outcome repeats an earlier item rather than testing novel transfer. The report was produced by the intervention developers, and independent replication was not located.
+
+## Counterevidence and uncertainty
+
+The same trial produced no broad Star Maths benefit [C038]. Across the larger review, controlled results include positive, null and adverse independent outcomes, so this study does not establish a generally beneficial interaction policy.
+
+## Product relevance
+
+Orqestra should log the model route, human edits, help tier, exposure and assessment assistance state. A proximal gain should trigger a later novel check, not promotion to a durable-capability estimate.
+
+## C038 — Proximal AI-tutoring gains did not improve broad attainment in one trial
+
+Type: claim
+Status: provisional
+Topics: ai-tutoring, learning-vs-performance, transfer, assessment-validity
+Canonical path: `claims/C038-proximal-ai-tutoring-gains-did-not-improve-broad-attainment.md`
+
+# C038 — Proximal gains did not improve broad attainment
+
+## Claim
+
+In [S062], strong proximal AI-tutoring results did not translate into a detectable advantage on the broad Star Maths assessment. The two AI estimates relative to standard remediation were `-0.01 SD [-0.15, +0.14]` and `+0.02 SD [-0.12, +0.16]`.
+
+## Evidence and reasoning
+
+Star Maths was externally administered and scored, making it more independent and less aligned to the Eedi tutoring interaction than the platform outcomes. The near-zero estimates contrast with the same trial's positive next-unit, returning-item and curriculum-quiz results.
+
+## Boundary conditions
+
+This is evidence of a null broad contrast, not proof that the intervention cannot affect broad attainment. Credible intervals include small effects, and the trial lasted only seven to ten instructional weeks. Tutored learners completed fewer study units, but the resulting coverage difference is post-treatment and cannot by itself explain the null.
+
+## Counterevidence and uncertainty
+
+Other bundled tutoring programmes report broader gains in different settings. Differences in exposure, comparator, duration, teacher role and assessment prevent a direct replication verdict.
+
+## Product relevance
+
+Orqestra should display proximal mastery, delayed novel transfer and broad attainment as separate evidence lanes. It should also record opportunity costs such as reduced curriculum coverage.
 
 ## B001 — Optimize durable capability, not completion
 
@@ -1907,7 +2041,7 @@ A cumulative set of credible comparative studies, preferably with delayed unassi
 
 ## Next search
 
-Update the structured search in `reviews/R001-learning-performance-gap/search-strategy.md`, prioritizing studies published after the current cutoff and backward/forward citation searching around [S001] and [S002].
+Complete the reproducible database search and seek a current-system trial that combines novel transfer, an AI-free outcome, and a post-intervention delay. Keep accessibility support available while removing substantive delegation.
 
 ## Q002 — What should a trustworthy learner model represent?
 

@@ -12,3 +12,5 @@
 10. What harms arise from withdrawing assistance solely for measurement?
 11. When AI increases learning per unit of time, how do learners reallocate saved time outside a laboratory?
 12. Which randomized interface or incentive changes move learners from automation toward augmentation, rather than merely classifying their choices afterward?
+13. Do current-system proximal tutoring gains survive on novel tasks one and four to six weeks after assistance ends?
+14. How should trials remove substantive delegation while preserving text-to-speech, alternate representation, extended time, and other access-restoring support?

@@ -55,3 +55,11 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Bias and novelty risk: recent work is more likely to be preprint-only, underpowered, under-replicated or benchmark-driven. Methodological quality and outcome relevance remain separate from freshness.
 - Review horizon and success signal: review monthly; success means `atlas.py freshness` exposes no unlabeled model-dependent source and product briefs distinguish current, recent and historical systems.
 - Human decision: accepted by direct instruction on 2 September 2026.
+
+### 2026-11-09 — Preserve the delayed novel-transfer gap
+
+- Signal: the current-system Eedi trial [S062] reports positive proximal and repeated-item outcomes but a broad null; independent lanes found positive, null and adverse counterexamples rather than one stable direction.
+- Decision: keep Q001/R001 active and prioritize the joint endpoint of delayed, novel, independent performance after assistance withdrawal. Do not promote a general harm theory or treat attempt-first friction as settled.
+- Method: require comparable instruction, practice opportunity and time where feasible; preserve access-restoring accommodations during nominally independent outcomes; log model routing, human edits and realized help dosage.
+- Opportunity cost: defer additional aligned immediate studies unless they isolate a component or materially challenge the current boundary.
+- Review horizon: reconsider after a preregistered current-system multisite replication or completion of the reproducible R001 search and duplicate bias appraisal.

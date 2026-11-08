@@ -1,14 +1,16 @@
 # R001 seed synthesis
 
-Status: provisional orientation synthesis; not exhaustive.
+Status: provisional living synthesis; targeted update through 2026-11-09; not exhaustive.
 
 ## What we can say now
 
 Seven comparative studies now make the early picture more heterogeneous. Unrestricted AI assistance can create large supported-performance gains while weakening later unaided performance [S001]. Yet ordinary GPT-4o access also improved immediate and one-week unaided performance in a time-held learning task [S015]. In programming, Copilot created a large supported speed/completion advantage without a reliable absolute advantage when the same learners repeated tasks alone one week later [S023]. A tightly designed AI tutor can improve short-term learning relative to a specific active-learning lesson [S002], and a structured, teacher-supported programme can produce meaningful assessment gains in a low-resource secondary context [S005].
 
+The first current-system classroom anchor [S062] makes the outcome gradient visible within one trial. Human-supervised Gemini tutoring improved next-unit near transfer and repeated-item performance after more than seven days, while broad Star Maths effects were centered near zero [C037, C038]. This does not contradict the proximal result; it shows that alignment, delay, novelty and breadth are distinct dimensions.
+
 The first direct access-timing study reports that delayed access beat always-on access on an immediate independent test while matching no access [S024], but session assignment, exclusion and clustering problems make this a low-confidence component signal. In an authentic four-hospital South African clinical trial, minimally trained point-of-care GPT-4o access did not improve blinded bedside assessment performance despite high perceived helpfulness [S025]. This is evidence about workflow-bound performance, not a test of a practiced tutor or durable learning.
 
-The synthesis is therefore not “AI helps” or “AI harms,” nor is it “guardrails always beat general access.” The more defensible early claims are that assisted output cannot establish learning [C001], general access can produce short-delay learning under bounded conditions [C009], and task, incentive, population, interaction and institutional structure are plausible moderators that require direct tests.
+The synthesis is therefore not “AI helps” or “AI harms,” nor is it “guardrails always beat general access.” The more defensible early claims are that assisted output cannot establish learning [C001], general access can produce short-delay learning under bounded conditions [C009], and task, incentive, population, interaction and institutional structure are plausible moderators that require direct tests. Attempt-first friction remains a hypothesis, not a default: independent positive evidence for unrestricted tutoring prevents promotion of a universal-harm theory.
 
 ## Candidate mechanisms
 
@@ -38,9 +40,11 @@ Build and test an explicit assistance policy rather than a monolithic chatbot. L
 - whether a simple attempt threshold replicates the access-timing result and whether any adaptive policy adds value beyond it;
 - whether dependence, calibration, and agency can be measured reliably;
 - whether the positive one-week effect in [S015] replicates in ordinary coursework, longer horizons and less selective populations;
+- whether any current-system intervention improves delayed novel independent transfer after withdrawal rather than only immediate or repeated-item outcomes;
+- whether nominally independent tests preserve text-to-speech, alternate representation and other access-restoring accommodations;
 - the publication-bias and null-results landscape;
 - full appraisal of the 275-participant programming null RCT and the 45-day retention RCT whose lawful full texts were not inspectable in this pass.
 
 ## Next synthesis threshold
 
-Do not strengthen [C002] beyond `provisional` until the review completes reproducible database/citation searches, direct full-text appraisal of the held null/adverse studies, formal risk-of-bias assessment, and at least one independent replication or convergent component study for the relevant interaction policy.
+Do not strengthen [C002] beyond `provisional` until the review completes reproducible database/citation searches, duplicate result-level risk-of-bias adjudication, and at least one independent replication or convergent component study for the relevant interaction policy. [S062] supplies a current-system anchor but not a clean component estimate.

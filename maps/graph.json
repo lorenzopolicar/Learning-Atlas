@@ -120,6 +120,20 @@
       "path": "claims/C012-minimal-ai-access-did-not-improve-bedside-performance.md"
     },
     {
+      "id": "C037",
+      "type": "claim",
+      "title": "Current supervised AI tutoring improved proximal independent outcomes in one trial",
+      "status": "provisional",
+      "path": "claims/C037-current-ai-tutoring-improved-proximal-outcomes.md"
+    },
+    {
+      "id": "C038",
+      "type": "claim",
+      "title": "Proximal AI-tutoring gains did not improve broad attainment in one trial",
+      "status": "provisional",
+      "path": "claims/C038-proximal-ai-tutoring-gains-did-not-improve-broad-attainment.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
@@ -398,6 +412,13 @@
       "title": "AI at the bedside: Randomised controlled trial of ChatGPT's impact on student performance in real-patient clinical exams",
       "status": "reviewed",
       "path": "sources/notes/S025-saloojee-ai-at-bedside.md"
+    },
+    {
+      "id": "S062",
+      "type": "source",
+      "title": "Measuring the impact of AI tutoring, from near transfer to standardised tests: An expanded RCT in UK mathematics classrooms",
+      "status": "reviewed",
+      "path": "sources/notes/S062-learnlm-expanded-eedi-rct.md"
     }
   ],
   "edges": [
@@ -512,6 +533,11 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C001",
+      "target": "S062",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "C002",
       "target": "S001",
       "relation": "supporting_sources"
@@ -534,6 +560,11 @@
     {
       "source": "C002",
       "target": "S024",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S062",
       "relation": "supporting_sources"
     },
     {
@@ -619,6 +650,16 @@
     {
       "source": "C012",
       "target": "S025",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C037",
+      "target": "S062",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C038",
+      "target": "S062",
       "relation": "supporting_sources"
     },
     {
@@ -884,6 +925,16 @@
     {
       "source": "Q001",
       "target": "C002",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q001",
+      "target": "C037",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q001",
+      "target": "C038",
       "relation": "related_claims"
     },
     {
