@@ -76,7 +76,7 @@ OpenAlex, Crossref and Docling were configured. Unpaywall, Podcast Index, YouTub
 
 Technology freshness and outcome horizon are separate evidence properties: [S064] is current but immediate and under-clustered; [S063] is delayed and multicentre but historical-system and nonrandom. A selective review can improve measurement vocabulary while still missing the decisive primary study.
 
-The first-three-run observation target was already completed on 2026-09-06, 2026-09-14 and 2026-09-22 in the open PR stack. This tenth actual scheduled execution reconciles `actual_scheduled_runs_observed` to 3 and correctly creates no fourth process-lab observation.
+The live scheduler record said `Last run: never`, so this execution is observation 1 of 3 even though older automation notes described later weekly cycles as scheduled. A comparable process-lab record covers worktree and branch behaviour, lane overlap and disagreement, provider failures, admissions, validation, PR churn and requested human decisions. The supervised 2026-08-31 and 2026-09-01 shadows remain excluded.
 
 ## Checks
 

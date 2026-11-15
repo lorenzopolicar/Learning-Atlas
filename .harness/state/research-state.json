@@ -7,9 +7,9 @@
   "current_queue_item": 2,
   "scheduled_run_observation": {
     "target": 3,
-    "actual_scheduled_runs_observed": 3,
+    "actual_scheduled_runs_observed": 1,
     "supervised_shadow_cycles": 2,
-    "note": "The supervised 2026-08-31 and 2026-09-01 cycles remain excluded. The first three actual scheduler observations were completed on 2026-09-06, 2026-09-14 and 2026-09-22 in the open research PR stack. This tenth scheduled run reconciles the stale origin/main counter and does not create a fourth observation."
+    "note": "The supervised 2026-08-31 and 2026-09-01 cycles remain excluded. Although older automation notes described later weekly cycles as scheduled, the scheduler record for this automation reported Last run: never. The 2026-11-15 to 2026-11-16 execution is therefore the first actual scheduler observation."
   },
   "runs": [
     {
@@ -74,7 +74,7 @@
       "question": "Q001",
       "sources_added": ["S063", "S064"],
       "briefing": "briefings/weekly/2026-11-15-q001-delayed-transfer-boundary.md",
-      "note": "Tenth actual scheduled run. Added one historical-system multicentre delayed-transfer association and one fragile current-system assisted/no-AI writing contrast; held a selective mini-review and preserved the full current-system outcome-chain gap."
+      "note": "First actual scheduler observation. Added one historical-system multicentre delayed-transfer association and one fragile current-system assisted/no-AI writing contrast; held a selective mini-review and preserved the full current-system outcome-chain gap."
     }
   ]
 }
