@@ -398,6 +398,20 @@
       "title": "AI at the bedside: Randomised controlled trial of ChatGPT's impact on student performance in real-patient clinical exams",
       "status": "reviewed",
       "path": "sources/notes/S025-saloojee-ai-at-bedside.md"
+    },
+    {
+      "id": "S063",
+      "type": "source",
+      "title": "Independent Engineering Transfer After Traceable Generative-AI-Assisted Learning: A Six-University Controlled Trial with Deterministic Cluster Allocation in Agricultural Engineering Education",
+      "status": "reviewed",
+      "path": "sources/notes/S063-syromiatnykov-independent-engineering-transfer.md"
+    },
+    {
+      "id": "S064",
+      "type": "source",
+      "title": "Layer-sensitive cognitive offloading in generative AI-assisted writing: supported performance and independent no-AI outcomes",
+      "status": "reviewed",
+      "path": "sources/notes/S064-chen-layer-sensitive-offloading.md"
     }
   ],
   "edges": [
@@ -512,6 +526,11 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C001",
+      "target": "S064",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "C002",
       "target": "S001",
       "relation": "supporting_sources"
@@ -534,6 +553,16 @@
     {
       "source": "C002",
       "target": "S024",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S063",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C002",
+      "target": "S064",
       "relation": "supporting_sources"
     },
     {

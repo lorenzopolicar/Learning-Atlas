@@ -12,3 +12,5 @@
 10. What harms arise from withdrawing assistance solely for measurement?
 11. When AI increases learning per unit of time, how do learners reallocate saved time outside a laboratory?
 12. Which randomized interface or incentive changes move learners from automation toward augmentation, rather than merely classifying their choices afterward?
+13. Does an attempt-first, compare-and-verify GenAI workflow beat a matched transparent non-AI scaffold after randomization, and which of timing, reflection, verification or adaptivity is responsible?
+14. Can a current frozen model reproduce both immediate and four-to-six-week novel independent transfer with verified assistance withdrawal and complete-follow-up sensitivity analysis?
