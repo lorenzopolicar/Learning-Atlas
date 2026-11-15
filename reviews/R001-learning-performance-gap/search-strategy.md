@@ -88,3 +88,59 @@ This was a deliberately bounded live update, not an exhaustive database search. 
 ## Required search log
 
 For every database: platform, full query, filters, date searched, result count, export filename, and deduplication count. Store citation metadata in Zotero and screening decisions in `screening.csv`.
+
+## 2026-11-15 delayed-transfer and current-system update
+
+Question: which controlled studies materially change the answer about assisted performance, immediate independent performance and delayed novel independent transfer?
+
+### Capabilities and bounded starting point
+
+`research_capabilities` reported OpenAlex, Crossref and Docling available. Unpaywall lacked `UNPAYWALL_EMAIL`; Podcast Index, YouTube and OpenAI transcription credentials were absent; Zotero remained a runtime probe. OpenAlex OA, Apple Podcasts/RSS, native web, publisher pages and `pdftotext` were the declared fallbacks. Exa was reported as a separately configured MCP but was not exposed in the integrating lane.
+
+Bounded Atlas queries retrieved [C001], [C002], [C009], [C011], [P001] and [P005]. The existing gap was stated before external search: no canonical current-system study combined separately scored assisted performance, immediate independent performance and delayed novel independent post-withdrawal transfer.
+
+### Exact discovery queries
+
+Native web, searched 2026-11-15 AEST:
+
+- `2026 randomized controlled trial generative AI learning delayed unassisted posttest students GPT-5`
+- `2026 generative AI tutoring independent learning post-withdrawal delayed transfer randomized study`
+- `2025 2026 ChatGPT learning retention unaided test randomized trial corrected preprint`
+- `site:osf.io OR site:aspredicted.org generative AI tutoring delayed transfer randomized preregistration 2026`
+- `2026 randomized controlled generative AI learning delayed unaided independent test transfer students GPT-5`
+- `site:arxiv.org 2026 generative AI assisted learning delayed retention unaided transfer randomized trial`
+- `"generative AI" learning "delayed" "unaided" experiment 2025 2026`
+- `"ChatGPT" "delayed post-test" learning randomized 2025 2026`
+
+OpenAlex through `discover_sources`, filters 2025–2026:
+
+- `generative AI assisted performance unaided retention delayed transfer randomized learning`
+- `generative AI independent no-AI outcomes post-intervention learning transfer`
+- `generative AI learning delayed retention unaided transfer randomized`
+- `independent performance after generative AI assistance controlled trial`
+- `ChatGPT delayed posttest learning retention transfer`
+
+Crossref/OpenAlex identity resolution was run for `10.3389/fpsyg.2026.2029407`, `10.3389/fpsyg.2026.1906199`, `10.3390/app16188949` and `10.1080/00220485.2026.2695361`. The Syromiatnykov citation chain linked the current candidate to [S001], structured-tutoring work and active-learning/ICAP mechanisms; its forward citation path was still sparse.
+
+### Social and podcast sampling
+
+The future-facing debate was sampled for arguments and leads, not authority:
+
+- LinkedIn activity `7491531674393079808` amplified the immediate Kestin result as “twice as much learning”; public replies correctly noted the absent delayed outcome and bundled hand-built intervention. The empirical link resolves to [S002].
+- LinkedIn activity `7444752880089354241` framed unpractised AI capability as “borrowed competence” and linked to the Barcaui trial. The original DOI, not the post, supplied the empirical lead.
+- X status `2063923537803354242` argued that deploying poorly understood AI tutors to disadvantaged learners was irresponsible. This is a governance position, not effect evidence.
+- Sillage episode 17, Apple show `1896883763`, episode `1000786970936`, published 2026-08-31, distinguished production from practice and selective from indiscriminate dependence. The publisher page was hashed, but no verified timestamped transcript or original empirical result justified admission.
+
+### Decisions
+
+- Include [S063]: the publisher full text reports supervised unfamiliar immediate and delayed transfer after a 16-week attempt-first, compare-and-verify workflow. Treat as historical-system, nonrandomized configuration-level evidence.
+- Include [S064]: the full open PDF directly separates current GPT-5.3 supported writing from supervised no-AI near transfer. Treat as fragile six-class quasi-experimental boundary evidence.
+- Hold Wei, DOI `10.3389/fpsyg.2026.2029407`: useful outcome-state taxonomy and targeted Web of Science search map, but a purposive non-systematic review that missed [S063] cannot establish absence or completeness.
+- Hold Bassner, DOI `10.1016/j.caeai.2025.100537`: Zenodo v6 record `23598858` supersedes v5 and changes analytic N to 281. Version-of-record/corrigendum identity, posttest assistance state, exact model and ITT sensitivity remain unresolved.
+- Do not duplicate Barcaui or the current Eedi RCT already proposed in open PRs #8 and #10.
+- Hold Oreopoulos: large one-week null/interaction boundary, but the cited registry is a later follow-on, the exact model is undisclosed and the four-item outcome has assistance-state and multiplicity limits.
+- Hold Wu, Akgun and Toker, Qin, Sezgunsay and the Saudi vocabulary study for same-session horizons, simulated assistance, unverified withdrawal, unmatched packages or unclear model identity.
+
+### Coverage boundary and failures
+
+This remains a bounded weekly update, not the database-complete review. The intent-level gateway worked for capabilities, discovery, identity resolution, lawful staging and Frontiers fetches. Unpaywall, Podcast Index, YouTube and transcription remained unavailable. The MDPI gateway PDF and HTML fetches returned HTTP 403; the complete publisher HTML was inspectable through native web. Docling did not return a usable bounded extraction for the Frontiers PDFs, so lawful local copies were inspected with `pdftotext`. No full text or transcript entered Git.

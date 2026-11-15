@@ -58,7 +58,7 @@ Type: source
 Status: reviewed
 Topics: ai-tutoring, learning-vs-performance, scaffolding
 Technology dependence: model-dependent
-Technology context: custom physics AI tutor / exact model snapshot not captured in the inspected note; study=not reported in the inspected note; temporal relevance=unknown; review due=2026-10-15
+Technology context: custom physics AI tutor / OpenAI GPT-4 through PS2 Pal; exact snapshot not reported; study=Fall 2023; temporal relevance=historical-system; review due=2027-05-15
 Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 
 # S002 — AI tutoring outperforms in-class active learning
@@ -74,6 +74,8 @@ In a randomized controlled trial with 194 students in an undergraduate physics c
 ## Limitations and boundary conditions
 
 This was a single course, institution, set of lessons, and implementation. Outcomes were short-term and close to instruction. The study compares a particular tutor lesson with a particular active-learning lesson, not AI with all human teaching. The authors explicitly caution against universal extrapolation.
+
+The study ran in Fall 2023 using a GPT-4-based custom tutor. It is historical-system evidence for current product decisions; the pedagogical design may transfer more durably than the reported magnitude.
 
 ## Evidence profile
 
@@ -1193,6 +1195,146 @@ Supports [C012](../../claims/C012-minimal-ai-access-did-not-improve-bedside-perf
 
 The public anonymized dataset is registered at Zenodo DOI 10.5281/zenodo.17459336. Funding came in whole or part from the Gates Foundation; the authors reported no potential conflict.
 
+## S063 — Independent Engineering Transfer After Traceable Generative-AI-Assisted Learning: A Six-University Controlled Trial with Deterministic Cluster Allocation in Agricultural Engineering Education
+
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, transfer, ai-tutoring, human-ai-collaboration
+Technology dependence: model-dependent
+Technology context: Microsoft 365 Copilot Chat in Microsoft Teams / GPT-4o backbone dated 2024-08-06; provider build not disclosed; study=2025-02-03 to 2025-09-08; intervention ended 2025-05-19; temporal relevance=historical-system; review due=2027-05-15
+Canonical path: `sources/notes/S063-syromiatnykov-independent-engineering-transfer.md`
+
+# S063 — Traceable GenAI and independent engineering transfer
+
+## Why it matters
+
+This is a rare multicentre comparison with an active control, unfamiliar supervised tool-free transfer forms, and a follow-up almost four months after instruction ended. Its positive direction narrows the delayed-transfer gap, but deterministic post-baseline class allocation prevents a randomization-based causal interpretation.
+
+## Identity and provenance
+
+- Canonical identifiers: DOI `10.3390/app16188949`; OpenAlex `W7211991287`.
+- Version inspected: 21-page published *Applied Sciences* article dated 9 September 2026 plus the publisher's public methods, results, limitations and supplementary-material descriptions.
+- Gateway provenance: staged candidate `cand_cc0d319484b97e8b`; Crossref and OpenAlex found no correction or retraction relation.
+- Access: CC BY publisher full text. The gateway PDF fetch returned HTTP 403, so full content was inspected through the publisher HTML; no copyrighted full text was committed.
+- Locators: sections 2.1, 2.4–2.10, 3.2–3.4 and 4.7; tables 2–3; supplementary files S1–S8.
+
+## Study
+
+- Population and setting: 656 second- and third-year agricultural-engineering students in 28 intact classes taught by nine instructors at six universities in Uzbekistan.
+- Design: two-arm controlled trial. Classes were assigned within teacher blocks by deterministic constrained minimization after baseline covariates were observed; assignment was not random.
+- Intervention: a 16-week five-stage workflow requiring an independent attempt, a bounded adaptive GenAI alternative, critical comparison, independent verification, and a documented professional decision. Dialogue was limited to four turns.
+- Active control: the same curriculum, tasks, time, feedback, verification and decision workflow using version-controlled teacher/textbook alternatives and predefined clarifications. Adaptivity and dialogue were not fully matched.
+- Outcomes: Form A on 26 May 2025 and parallel Form B on 8 September 2025. Both used unfamiliar integrated scenarios and were supervised without GenAI, internet, notes, laptops or communication. Blinded assessors scored eight engineering-transfer criteria on a 0–32 scale.
+- Registration: no public prospective trial registration. A date-stamped protocol existed, but the signed protocol, analysis plan and protected allocation log were not public.
+
+## Findings
+
+- Available-outcome analyses included 641 immediate and 589 delayed outcomes from the 656 assigned students.
+- The adjusted immediate difference was `+2.78/32`, 95% CI `[2.02, 3.55]`, `p<.001`, model-based `d=.72` (table 3).
+- The delayed difference was `+2.34/32`, 95% CI `[1.54, 3.14]`, `p<.001`, model-based `d=.51` (table 3).
+- Class-level, allocation-covariate, attendance and leave-one-class-out sensitivity estimates were directionally similar. These checks do not remove residual confounding from deterministic allocation.
+- The study did not separately score assisted performance, so it does not observe the complete assisted → immediate independent → delayed independent chain.
+
+## Limitations and boundary conditions
+
+- Allocation selected one covariate-balanced assignment deterministically from 75,288 admissible allocations after baseline observation. Confidence intervals are model-based, not randomization-based.
+- The public supplement omits the signed protocol, analysis plan and allocation log. Residual class, schedule and institutional confounding remains possible.
+- The complete configuration was bundled: independent attempt, adaptive dialogue, comparison, verification, documentation and professional interpretation. The contrast cannot isolate the model, adaptivity, timing or traceability.
+- Form A failed the prespecified raw-score comparability tolerance against Forms P and B. Covariate-adjusted between-condition contrasts are interpretable; raw within-person change is not.
+- Delayed missingness was about 10%, and the deterministic pattern-mixture stress test did not include imputation uncertainty.
+- The author-developed assessment had strong scoring reliability but no separate formal content- or construct-validity study.
+- The intervention used historical GPT-4o, one language and one engineering programme family. It is not a current-system forecast.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | low-moderate | Strong active control, baseline adjustment, blinded scoring and cluster-sensitive analyses; deterministic post-baseline allocation and unavailable prospective materials leave material confounding risk |
+| Directness | high | Supervised unfamiliar tool-free immediate and delayed outcomes directly address independent near transfer |
+| Consistency | moderate | Positive configuration-level direction contrasts with adverse and null unrestricted-access studies without identifying a moderator |
+| Replication | low | One research programme; no independent replication located |
+| Magnitude | moderate | Model-based differences of 2.78 and 2.34 on a 32-point rubric, with causal interpretation limited by allocation |
+| Duration | moderate-high | Sixteen-week intervention and a delayed form almost four months after the module ended |
+| Transfer | moderate-high | Unfamiliar integrated scenarios in the same agricultural-engineering construct family |
+| Ecological validity | high | Authentic multicentre course delivery across six Uzbek universities |
+
+## Candidate claims
+
+Supports the bounded configuration-sensitivity claim in [C002](../../claims/C002-pedagogical-structure-changes-ai-learning-outcomes.md). It challenges any universal claim that AI-supported learning necessarily harms independent outcomes, but it does not establish that GenAI, attempt-first timing or verification caused the advantage.
+
+## Notes
+
+The decisive replication would prospectively randomize classes, freeze a current model, match adaptivity and dialogue in the active control, separately score assisted performance, and repeat novel independent forms immediately and after one and four to six weeks.
+
+## S064 — Layer-sensitive cognitive offloading in generative AI-assisted writing: supported performance and independent no-AI outcomes
+
+Type: source
+Status: reviewed
+Topics: learning-vs-performance, cognitive-offloading, transfer, scaffolding
+Technology dependence: model-dependent
+Technology context: OpenAI ChatGPT official browser interface / GPT-5.3; study=2026-03-02 to 2026-04-24; AI-supported tasks 2026-03-09 to 2026-04-17; temporal relevance=current-system; review due=2027-05-15
+Canonical path: `sources/notes/S064-chen-layer-sensitive-offloading.md`
+
+# S064 — Layer-sensitive offloading in AI-assisted writing
+
+## Why it matters
+
+This study directly separates current-system supported writing from a supervised no-AI near-transfer task. The observed pattern favoured open collaboration while support was present and bundled bounded support plus reflection after removal, but only six intact classes prevent a strong causal or component claim.
+
+## Identity and provenance
+
+- Canonical identifiers: DOI `10.3389/fpsyg.2026.1906199`; OpenAlex `W7204495850`.
+- Version inspected: 13-page published *Frontiers in Psychology* PDF, CC BY, dated 28 August 2026.
+- Gateway provenance: staged candidate `cand_0b05d8ac25218326`; local lawful working copy SHA-256 `d57226bea371aee14c175c8e1e4df46d8f3f54891106bd20c0d2f7c2ba46706a`.
+- Locators: design and conditions on pp. 3–4; measures and analysis on pp. 5–6; supported outcomes on p. 7; process analyses on pp. 7–9; independent outcomes in tables 10–11 on p. 10; limitations on p. 12.
+
+## Study
+
+- Population and setting: 180 Chinese L1 undergraduates in six intact English academic-writing classes at one university; 168 completed the prespecified records and Week 8 assessment.
+- Design: quasi-experimental class allocation, two classes per condition and one class per instructor in each condition. Condition remained confounded with class, timetable and cohort.
+- Conditions: no-AI writing; bounded AI support that prohibited ready-to-use substantive components and required a rationale for every AI-influenced change; and open AI collaboration for planning, drafting, argument development, revision and language polishing.
+- Exposure: three intervention assignments using GPT-5.3. Open collaboration used more prompts, incorporated more AI text, generated less independent text and spent less active time drafting than bounded support.
+- Outcome: a new same-course, same-genre English argument task in Week 8, immediately after the intervention. It was supervised for 60 minutes without GenAI, internet, previous writing, histories, notes, dictionaries or course materials.
+
+## Findings
+
+- Open collaboration had the highest aggregated observed supported-writing mean (`4.02/5`) versus bounded support (`3.83`) and no AI (`3.57`) (table 5).
+- The class-clustered open-minus-bounded supported contrast was `+0.21`, 95% CI `[0.06, 0.36]`, exact wild-cluster `p=.064`; the observed ordering was stable, but inference was imprecise.
+- On the Week 8 no-AI task, bounded support had the highest observed writing quality (`3.88`), higher-order thinking (`3.83`), argument depth (`3.86`) and independent revision quality (`3.88`) (table 10).
+- Adjusted bounded-minus-open differences were `+0.27`, `+0.35`, `+0.42` and `+0.39`; exact wild-cluster p values ranged from `.050` to `.063` (table 11).
+- Within the AI-exposed sample, deeper offloading and reduced self-generated text were associated with worse Week 8 higher-order thinking. These are associative decompositions, not causal mediation.
+
+## Limitations and boundary conditions
+
+- Six classes supply too little independent assignment information. The student count does not compensate for class-level confounding.
+- Bounded support combined two interventions: delegation limits and compulsory reflection. Neither component was isolated.
+- The no-AI assessment immediately followed the eight-week sequence. It is near transfer, not delayed, cross-genre or far transfer.
+- AI-related topics could create demand characteristics and permit imperfect rater blinding.
+- The offloading framework has initial structural, reliability and convergence evidence but no independent validation.
+- Self-generated text and drafting time were reconstructed from available records rather than complete keystroke logging.
+- One Chinese university and English L2 writing limit generalization; accessibility burden was not independently assessed.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | low | Non-random class allocation, six clusters, bundled treatment and boundary-level exact inference |
+| Directness | high | Separately observes supported products and a supervised no-AI new-topic writing task using a current system |
+| Consistency | moderate-low | Fits a performance/learning divergence and configuration-sensitivity pattern but lacks independent replication |
+| Replication | low | One course, institution and research team |
+| Magnitude | unclear | Student-level differences are sizeable, but cluster-level uncertainty is fragile |
+| Duration | low | Eight-week exposure but no delayed outcome after instruction ended |
+| Transfer | moderate | New topic in the same course and genre; no cross-genre or delayed transfer |
+| Ecological validity | moderate-high | Authentic classroom writing cycles with complete interaction histories |
+
+## Candidate claims
+
+Supports the measurement boundary in [C001](../../claims/C001-assisted-performance-is-not-learning.md) and the provisional configuration-sensitivity claim in [C002](../../claims/C002-pedagogical-structure-changes-ai-learning-outcomes.md). It does not establish that open AI harmed learning, that bounded support caused the observed advantage, or that reflection, delegation limits or reduced offloading was the active mechanism.
+
+## Notes
+
+A decisive test would randomize learners or many classes to independently varied delegation limits and reflection, match practice time, preserve access supports, and measure novel no-AI writing immediately and after one and four to six weeks.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -1212,6 +1354,8 @@ The immediate/delayed divergence is not unique to AI: restudy can look effective
 
 In a small programming study, Copilot produced a large assisted speed/completion advantage, but not a reliable absolute advantage when participants repeated the task pools alone one week later [S023]. Its much larger assisted-to-retest drop is descriptive of the proxy failure; because the absolute retest contrast was imprecise, it is not evidence of a general Copilot learning penalty.
 
+In a current-system six-class writing study, open GPT-5.3 collaboration produced the highest observed supported writing quality, while a bundled bounded-support-plus-reflection condition had the strongest observed Week 8 supervised no-AI near-transfer profile [S064]. Class-level confounding and boundary-level cluster inference prevent a causal harm claim; the study is useful here because it directly shows why an assisted product score cannot substitute for an independent score.
+
 ## Boundary conditions
 
 This is not the claim that assistance necessarily harms learning. Structured tutoring can improve measured learning [S002, S005]. Effects depend on the interaction, learner, task, duration, and what is measured after support is removed.
@@ -1219,6 +1363,8 @@ This is not the claim that assistance necessarily harms learning. Structured tut
 ## Counterevidence and uncertainty
 
 Longitudinal, independent, and transfer outcomes remain sparse for modern generative systems. [S015] is a concrete positive counterexample to any stronger claim that ordinary AI access necessarily harms learning: it found a 0.27 SD one-week unaided test gain in a time-held laboratory task. Beneficial AI conditions may also create capabilities that conventional post-tests under-measure. Those possibilities strengthen the need for better measurement rather than allowing assisted output to stand in for learning.
+
+[S063] is a positive historical-system counterweight: a 16-week attempt-first, compare-and-verify GPT-4o configuration was associated with higher supervised unfamiliar immediate and delayed engineering-transfer scores than a matched curated-alternative workflow. Its deterministic allocation and bundled adaptivity make it evidence against a universal harm narrative, not causal proof of a reusable component.
 
 ## Product relevance
 
@@ -1243,15 +1389,19 @@ The convergent pattern is promising across secondary mathematics, university phy
 
 [S024] narrows one potentially causal design dimension: its delayed-access policy beat always-on access on an immediate unassisted test. Because conditions were assigned by workshop and the adaptive reward was bundled, this strengthens the access-timing hypothesis without establishing the superiority of RL or any specific component.
 
+[S063] adds a longer-horizon positive signal: across 28 classes at six Uzbek universities, an attempt-first, compare-and-verify GPT-4o workflow was associated with higher supervised unfamiliar immediate and delayed engineering-transfer scores than a closely matched curated-alternative workflow. Deterministic post-baseline allocation and unmatched adaptivity mean the result belongs to the complete configuration and remains non-causal.
+
+[S064] adds a current-system but fragile contrast. Open GPT-5.3 collaboration produced the strongest assisted writing products, while bounded support plus compulsory reflection produced the strongest observed supervised no-AI near-transfer profile. With only six intact classes and exact wild-cluster p values from 0.050 to 0.063, it is mechanism-consistent boundary evidence rather than a validated policy recipe.
+
 ## Boundary conditions
 
 Each intervention bundles multiple components. We cannot yet infer one universal “AI tutor recipe,” the independent contribution of the model, or durable far transfer. Domain structure, instructor role, dosage, and learner characteristics vary.
 
-The mechanism claim is more durable than any effect magnitude: the chain includes GPT-4/4o-era systems plus recent Mistral evidence, but no source is yet classified `current-system`. Current-model replications should test whether stronger generation changes the value of guardrails and access timing rather than assuming transfer.
+The mechanism claim is more durable than any effect magnitude. The chain now includes a current GPT-5.3 classroom comparison, but that study is class-confounded and bundles reflection with delegation limits. Historical GPT-4/4o and recent-system evidence still carry much of the stronger causal or delayed-outcome signal. Current-model randomized replications should test whether stronger generation changes the value of guardrails, reflection, verification and access timing rather than assuming transfer.
 
 ## Counterevidence and uncertainty
 
-Novelty, extra time, unusually intensive author-led design, and aligned assessments may inflate results. Independent replications and component studies are priorities.
+Novelty, extra time, unusually intensive author-led design, aligned assessments and unmatched adaptivity may inflate results. The new positive delayed study and the current-system bounded-support pattern do not identify attempt timing, reflection, verification, adaptivity or the model as the active component. Independent replications and factorial component studies remain priorities.
 
 ## Product relevance
 
@@ -1907,7 +2057,7 @@ A cumulative set of credible comparative studies, preferably with delayed unassi
 
 ## Next search
 
-Update the structured search in `reviews/R001-learning-performance-gap/search-strategy.md`, prioritizing studies published after the current cutoff and backward/forward citation searching around [S001] and [S002].
+Complete the reproducible database search and duplicate risk-of-bias appraisal. Prioritize a preregistered current-system study that separately scores assisted performance, immediate independent performance, and delayed novel independent transfer with verified withdrawal; test whether attempt-first, reflection, verification or adaptivity adds value over a matched transparent non-AI scaffold.
 
 ## Q002 — What should a trustworthy learner model represent?
 

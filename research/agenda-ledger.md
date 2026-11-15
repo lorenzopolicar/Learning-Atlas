@@ -55,3 +55,14 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Bias and novelty risk: recent work is more likely to be preprint-only, underpowered, under-replicated or benchmark-driven. Methodological quality and outcome relevance remain separate from freshness.
 - Review horizon and success signal: review monthly; success means `atlas.py freshness` exposes no unlabeled model-dependent source and product briefs distinguish current, recent and historical systems.
 - Human decision: accepted by direct instruction on 2 September 2026.
+
+### 2026-11-15 — Separate technology freshness from outcome horizon
+
+- Signal: [S064] supplies a current GPT-5.3 assisted/no-AI contrast but no delayed outcome, while [S063] supplies a long delayed unfamiliar tool-free outcome using historical GPT-4o and nonrandom allocation.
+- Decision: keep Q001/R001 at priority 2 and preserve the joint endpoint of a frozen current system, separately scored assisted and immediate outcomes, and delayed novel independent transfer with verified withdrawal. Do not let model freshness substitute for duration or let a long horizon substitute for causal identification.
+- Method: prioritize preregistered multisite randomization with a matched transparent non-AI scaffold; independently vary attempt timing, reflection, verification and adaptivity where feasible; preserve access-restoring support.
+- Source-lane effect: a selective mini-review was useful for measurement taxonomy but missed the strongest new delayed-transfer candidate, so primary-study discovery and citation chaining remain necessary.
+- Opportunity cost: defer additional aligned immediate studies and media commentary unless they isolate a component, disclose a current system or falsify the outcome-chain boundary.
+- Bias and novelty risk: current-model studies may be recent but under-clustered; longer studies may use historical models and nonrandom institutional allocation.
+- Review horizon: revisit after a preregistered current-system delayed novel-transfer trial, completion of the reproducible R001 search, or duplicate risk-of-bias adjudication.
+- Human decision: pending review of this draft research PR.
