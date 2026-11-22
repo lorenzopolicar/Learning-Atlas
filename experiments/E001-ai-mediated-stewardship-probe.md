@@ -6,7 +6,7 @@
   "status": "draft",
   "date": "2026-09-01",
   "topics": ["human-ai-collaboration", "assessment-validity", "metacognition", "product-measurement", "ethics-and-governance"],
-  "tests_claims": ["C010", "C011"],
+  "tests_claims": ["C010", "C011", "C039", "C040"],
   "tests_beliefs": ["B004"],
   "tests_principles": ["P001", "P002", "P005", "P006"]
 }
@@ -21,6 +21,8 @@
 [S024] provides fragile, same-session evidence that requiring early performance before AI access can outperform always-on access, so E001 uses a transparent self-first sequence as the main measurement baseline rather than beginning with an opaque adaptive policy [C011, P001]. It also randomizes order on matched tasks because eliciting an initial judgment may itself change the construct.
 
 [S023] found a large supported programming advantage but an inconclusive absolute one-week retest contrast, while [S025] found high perceived helpfulness without improved unaided bedside performance. Neither validates stewardship as a construct. Together they strengthen the requirement to separate supported output, later accessible-independent performance, perceived usefulness and process evidence [C001, C012, P005].
+
+[S065] shows that fine-grained GenAI interaction categories can be selectively missing and only moderately reproducible. The pilot must therefore treat assistance function as a versioned, correctable assertion rather than an observed learner fact [C039]. [S066] shows that aggregate calibration can hide stage- and group-specific decision errors, so any inference evaluation must report the population, evidence regime, threshold and false-decision pattern [C040]. [S067] makes the collection boundary explicit: define the use first, collect the minimum necessary, and preserve learner access and correction.
 
 ## Hypotheses
 
@@ -69,6 +71,8 @@ Pre-register task exclusions, missing-data handling and the estimand for each ou
 
 Audit ordering effects, denominator stability, measurement invariance, differential burden and missingness. Treat post-hoc subgroup results as exploratory unless powered and predeclared.
 
+Prospectively double-code the assistance function on a reliability subset using learner, domain and accessibility perspectives. Report per-label agreement, `unknown` and `mixed` rates, unusable or missing traces, learner corrections, and whether the logging/review requirement changes participation. Compare the rich ledger with a purpose-minimal no-history baseline on actual intervention or review decisions, not prediction fit alone.
+
 ## Falsification and stop rules
 
 The operational approach should be rejected or narrowed if any of the following holds:
@@ -79,6 +83,8 @@ The operational approach should be rejected or narrowed if any of the following 
 - the measures do not predict delayed accessible-independent or authentic outcomes;
 - accessibility or invariance audits reveal construct-irrelevant group penalties;
 - learners cannot understand, correct or contest the evidence;
+- assistance classifications are too unstable, missing or reactive to support the intended decision;
+- aggregate calibration masks unacceptable stage-, subgroup- or threshold-specific false decisions;
 - privacy, anxiety or interaction costs exceed the product value.
 
 ## Result and interpretation

@@ -55,3 +55,14 @@ Agents may propose agenda changes in a briefing or pull request. Scheduled agent
 - Bias and novelty risk: recent work is more likely to be preprint-only, underpowered, under-replicated or benchmark-driven. Methodological quality and outcome relevance remain separate from freshness.
 - Review horizon and success signal: review monthly; success means `atlas.py freshness` exposes no unlabeled model-dependent source and product briefs distinguish current, recent and historical systems.
 - Human decision: accepted by direct instruction on 2 September 2026.
+
+### 2026-11-22 — Capability-evidence classifications must earn their fields
+
+- Proposal: keep Q002 active, but move its next action from adding schema vocabulary to testing whether the vocabulary is reproducible, complete, decision-useful and proportionate [C039, C040].
+- Triggering signals: authentic GenAI logs had moderate average classification agreement and selective missingness [S065]; aggregate knowledge-tracing calibration concealed stage- and performance-group decision errors [S066]; current institutional guidance requires purpose limitation, minimum necessary data, learner correction and bounded retention [S067].
+- Method and source-lane change: prospectively double-code assistance functions across learner, domain and accessibility perspectives; report per-label agreement and missingness; compare a rich ledger with a purpose-minimal baseline; audit calibration and false decisions at predeclared stages, groups and thresholds.
+- Product implication: no Orqestra schema expansion is authorized by this pass. Assistance function must remain a versioned assertion and model confidence a decision-bounded inference.
+- Opportunity cost: hold broader event-standard and learner-model feature collection until the smaller contract demonstrates incremental decision value.
+- Bias and novelty risk: one classification study and one calibration study cannot set universal thresholds; the latter's subgroup is performance-defined and its mastery decisions are simulated.
+- Review horizon and success signal: revisit after co-design and a reliability/usability dry run. Continue only if labels are understandable and reproducible, missingness and burden are acceptable, and the rich ledger improves a declared decision over the minimal baseline.
+- Human decision: pending review of the draft pull request; no product implementation is authorized.

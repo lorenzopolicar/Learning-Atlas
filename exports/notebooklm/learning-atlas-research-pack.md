@@ -58,7 +58,7 @@ Type: source
 Status: reviewed
 Topics: ai-tutoring, learning-vs-performance, scaffolding
 Technology dependence: model-dependent
-Technology context: custom physics AI tutor / exact model snapshot not captured in the inspected note; study=not reported in the inspected note; temporal relevance=unknown; review due=2026-10-15
+Technology context: custom physics AI tutor / OpenAI GPT-4 through PS2 Pal; exact snapshot not reported; study=Fall 2023; temporal relevance=historical-system; review due=2027-05-15
 Canonical path: `sources/notes/S002-kestin-ai-tutoring-rct.md`
 
 # S002 — AI tutoring outperforms in-class active learning
@@ -74,6 +74,8 @@ In a randomized controlled trial with 194 students in an undergraduate physics c
 ## Limitations and boundary conditions
 
 This was a single course, institution, set of lessons, and implementation. Outcomes were short-term and close to instruction. The study compares a particular tutor lesson with a particular active-learning lesson, not AI with all human teaching. The authors explicitly caution against universal extrapolation.
+
+The study ran in Fall 2023 using a GPT-4-based custom tutor. It is historical-system evidence for current product decisions; the pedagogical design may transfer more durably than the reported magnitude.
 
 ## Evidence profile
 
@@ -1193,6 +1195,165 @@ Supports [C012](../../claims/C012-minimal-ai-access-did-not-improve-bedside-perf
 
 The public anonymized dataset is registered at Zenodo DOI 10.5281/zenodo.17459336. Funding came in whole or part from the Gates Foundation; the authors reported no potential conflict.
 
+## S065 — Assessing students' DRIVE: A framework to evaluate learning through interactions with generative AI
+
+Type: source
+Status: reviewed
+Topics: human-ai-collaboration, assessment-validity, learner-modelling, product-measurement
+Technology dependence: system-dependent
+Canonical path: `sources/notes/S065-oliveira-drive-interaction-taxonomy.md`
+
+# S065 — DRIVE interaction taxonomy
+
+## Why it matters
+
+This is a direct warning against storing an AI-assistance function as if it were an observed fact. In authentic student logs, a detailed process taxonomy had only moderate average agreement, missing records were common, and collection conditions may have changed participation.
+
+## Identity and provenance
+
+- Canonical identifier: Oliveira, M., Zednik, C., Bombaerts, G. J. T., Sadowski, B. M., and Conijn, R. (2025), *Computers and Education: Artificial Intelligence* 9, 100497; DOI 10.1016/j.caeai.2025.100497.
+- Version inspected: CC BY publisher PDF, received 15 July 2025, accepted 13 November 2025.
+- Content inspected: complete paper, especially Sections 5.2, 7, 9.1, 10.2, Figure 3, and the limitations.
+- Retrieval: gateway candidate `cand_669daf33e5e859b4`; PDF SHA-256 `3d848c243aa94df5cd27bb85666871817d64f17315e17783a42105dbbfa5ae3a`.
+- Locator convention: numbered section, figure, and publisher PDF page.
+
+## Study
+
+- Population and setting: 445 essays across three STEM writing-intensive university courses; 103 learners reported using GenAI and 70 had usable interaction logs paired with an essay.
+- Process representation: four annotators classified 1,450 learner prompts using a 35-subcategory taxonomy under Writing, Content, and Argument. A reliability subset comprised 33 logs and 772 annotations.
+- Outcomes: taxonomy reliability, process-quality ratings, essay ratings, interaction-pattern prevalence, and their association.
+
+## Findings
+
+- Mean pairwise Cohen's kappa was 0.44 (SD 0.06), at the boundary of fair and moderate agreement; subcategory agreement ranged from very low to high (Section 7; Figure 3, p. 8).
+- Thirty-three of the 103 reported GenAI users lacked a usable log because links or files were missing or interactions were negligible. Twenty-one of the 70 included learners did not report the tool or model (Sections 5.2 and 7).
+- Process-quality and essay scores correlated at r = .54 (p < .001, N = 70), but this is neither incremental validity nor causal evidence (Section 9.1; Figure 4).
+- The authors report that GenAI adoption fell when interaction quality became graded and warn that logs can contain performative rather than genuine engagement (Sections 5.2 and 10.2).
+
+## Limitations and boundary conditions
+
+- Voluntary GenAI use and usable-log selection create substantial selection and missingness risks.
+- The same assessor rated each artifact once; no delayed, independent, or transfer outcome was measured.
+- Model versions were often unknown, and the taxonomy was developed in argumentative writing courses.
+- The framework proposes a learning interpretation, but the observed association cannot establish that a logged interaction caused or demonstrated learning.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | low | Observational, selected AI users, missing logs, no causal comparator |
+| Directness | high | Directly tests classification of authentic learner–GenAI traces |
+| Consistency | unclear | First inspected use of this detailed taxonomy |
+| Replication | low | Three courses in one institutional setting |
+| Magnitude | moderate | Average kappa .44; process/output correlation .54 |
+| Duration | not-applicable | Classification and concurrent output study |
+| Transfer | low | Argumentative writing only |
+| Ecological validity | moderate | Authentic graded course work, but submission changed behaviour |
+
+## Candidate claims
+
+Primary support for [C039](../../claims/C039-assistance-function-is-a-fallible-classification.md). It strengthens [C008](../../claims/C008-trustworthy-assessment-needs-multiple-evidence-channels.md): process evidence can add context, but it remains incomplete and interpretation-dependent.
+
+## S066 — Subgroup Calibration and Mastery Decision Errors in Knowledge Tracing
+
+Type: source
+Status: reviewed
+Topics: learner-modelling, assessment-validity, product-measurement, ethics-and-governance
+Technology dependence: model-independent
+Canonical path: `sources/notes/S066-nurmukhambet-subgroup-calibration.md`
+
+# S066 — Subgroup calibration and mastery decision errors
+
+## Why it matters
+
+This paper shows how strong aggregate calibration can conceal materially worse reliability for a lower-performing subgroup and how the error changes with learning stage and decision threshold. A learner-model confidence field is therefore incomplete without the population, evidence regime, threshold, and decision for which calibration was checked.
+
+## Identity and provenance
+
+- Canonical identifier: Nurmukhambet, S., and Meirmanova, A., *2026 IEEE 6th International Conference on Smart Information Systems and Technologies (SIST)*, 13–15 May 2026; DOI 10.1109/SIST61674.2026.11596401.
+- Version inspected: complete author-posted rendering alongside the IEEE record; no open licence was identified and no full text is stored in Git.
+- Content inspected: complete paper, especially Methods pp. 3–4, Tables III–VII, Discussion, and limitations pp. 7–8.
+- Retrieval: gateway candidate `cand_80d688651f0f548b`; Crossref/OpenAlex identity verified, OpenAlex W7168267893; no correction, retraction, or cited-by records found on 22 November 2026.
+- Locator convention: publisher page and numbered paper table/page.
+
+## Study
+
+- Data: EdNet-KT1, 20,705 retained learners, 142 skills, 12,259 questions, and 5.89 million interactions; learner-level 80/10/10 split.
+- Models: BKT, logistic regression, DKT, SAKT, AKT, and SAINT; SAINT showed an undertraining warning.
+- Analysis: aggregate and subgroup calibration by learner performance third and early/middle/late learning stage; simulated promotion decisions at thresholds .70 to .90.
+- Outcomes: ECE and related calibration metrics, false mastery rate, and decision equity ratio.
+
+## Findings
+
+- Aggregate ECE remained below .025 for every model, but all six overpredicted the lower-performing group and underpredicted the higher-performing group (Tables II–III).
+- The five worst group-by-stage cells were all lower-performing learners under BKT or logistic regression, with ECE .157 to .195 (Table IV).
+- At a .85 threshold, false mastery rates for lower-performing learners were 15.5% to 24.8%, compared with 8.3% to 14.2% for higher-performing learners; the gap changed with model and threshold (Tables V and VII).
+- About one in seven lower-performing learners received more incorrect than correct simulated promotion decisions under the neural models (Table VI).
+
+## Limitations and boundary conditions
+
+- One Korean TOEIC dataset; performance groups are defined from observed accuracy, not demographic or protected groups.
+- Promotion is simulated from each interaction as if it were an independent mastery decision, so false mastery rates are upper bounds rather than observed platform harm.
+- No post-hoc subgroup correction, learning outcome, fairness intervention, or replication was tested.
+- The work does not show that subgroup-specific calibrators are fair or that their use would improve learning.
+
+## Evidence profile
+
+| Dimension | Rating | Reason |
+|---|---|---|
+| Internal validity | moderate | Large held-out dataset and multiple models; decision outcomes are simulated |
+| Directness | high | Directly audits calibration and threshold decisions in learner models |
+| Consistency | unclear | No cited-by replication located |
+| Replication | low | One dataset and one research group |
+| Magnitude | moderate | Aggregate ECE below .025 concealed subgroup-stage ECE up to .195 |
+| Duration | low | Stage analysis within one logged course history |
+| Transfer | low | One TOEIC platform and performance-defined subgroups |
+| Ecological validity | moderate | Real interaction histories; simulated promotion decisions |
+
+## Candidate claims
+
+Primary support for [C040](../../claims/C040-calibration-depends-on-evidence-history.md). It narrows [C007](../../claims/C007-learner-models-are-probabilistic-inferences.md): calibration belongs to a versioned inference and decision context, not to a model or learner in the abstract.
+
+## S067 — Code of practice for learning analytics
+
+Type: source
+Status: reviewed
+Topics: learner-modelling, ethics-and-governance, product-measurement, institutional-design
+Technology dependence: system-dependent
+Canonical path: `sources/notes/S067-jisc-learning-analytics-code.md`
+
+# S067 — Jisc code of practice for learning analytics
+
+## Why it matters
+
+The current Jisc code turns privacy and contestability into concrete design constraints: name the decision purpose before collection, collect the minimum necessary, validate incomplete data, make labels reviewable and correctable, bound access and retention, and do not use AI predictions for ranking or high-stakes restriction without explicit governance.
+
+## Identity and provenance
+
+- Publisher: Jisc; authors named on the guide are Niall Sclater and Paul Bailey.
+- Publication history: first published 4 June 2015; materially updated 9 September 2026 with an AI appendix.
+- Version inspected: complete public HTML as retrieved 22 November 2026, CC BY 4.0.
+- Retrieval: gateway candidate `cand_2f105e8da3909f0c`; content SHA-256 `400da78ba134e7d8871cf14a6229718c2f0ff6f90924953415e5968dd23a726e`; normalized SHA-256 `758facb9dc17af02cfb0c64b3457667967aac42ca81d40f61052a8ba147d767a`.
+- Locator convention: named section.
+
+## Guidance
+
+- **Transparency and consent:** define objectives, necessary and out-of-scope data, sources, metrics, access, usage boundaries, interpretation, and AI involvement before collection.
+- **Validity:** understand inaccurate and incomplete data; validate and review algorithms; treat AI analysis as supporting material under skilled judgment.
+- **Access:** learners should see their data, metrics, and labels and have a meaningful route to understand, question, and correct AI-enabled interpretations.
+- **Minimising adverse impacts:** analytics are incomplete pictures; monitor whether observation changes participation, reinforces labels, or creates group harms.
+- **Stewardship of data and AI appendix:** keep only the minimum necessary, use declared retention periods, permit destruction or anonymisation where applicable, and avoid penalties, ranking, or high-stakes restrictions without specific justification and governance.
+
+## Limitations and boundary conditions
+
+- This is UK-oriented institutional guidance, not an empirical evaluation, legal advice, or proof that compliance produces valid learner models.
+- It does not choose an assistance taxonomy, confidence measure, calibration method, retention interval, or event serialization.
+- The 2026 AI additions are current guidance but have not been evaluated as an intervention.
+
+## Candidate claims
+
+Strengthens the governance boundary in [C008](../../claims/C008-trustworthy-assessment-needs-multiple-evidence-channels.md), [D002](../../decisions/D002-pilot-task-level-ai-stewardship.md), and [E001](../../experiments/E001-ai-mediated-stewardship-probe.md). It is not evidence that a richer evidence ledger improves learning or decisions.
+
 ## C001 — Assisted performance is not evidence of durable learning
 
 Type: claim
@@ -1354,6 +1515,8 @@ Canonical path: `claims/C007-learner-models-are-probabilistic-inferences.md`
 
 Knowledge tracing infers latent mastery through assumptions about skills, learning, guesses, slips, and observation sequences [S011]. Validity attaches to the interpretation and use of evidence, not to a score in isolation [S013]. Therefore a learner model cannot responsibly be represented as a context-free fact about a person.
 
+Aggregate calibration is also not enough. In one large real-log comparison, all six models looked well calibrated overall while lower-performing learners were systematically overpredicted and simulated false-mastery rates depended on model, stage and threshold [S066, C040]. Calibration must be stated for the population, evidence regime and decision in which it was evaluated.
+
 ## Boundary conditions
 
 This does not make learner modelling futile. It makes transparency, calibration, validity evidence, and decision-appropriate confidence necessary. Low-stakes content sequencing and high-stakes capability certification demand different assurance.
@@ -1374,6 +1537,8 @@ Canonical path: `claims/C008-trustworthy-assessment-needs-multiple-evidence-chan
 ## Evidence and reasoning
 
 AI makes a submitted artifact a weaker proxy for unaided capability. Sector guidance advocates programme-level, varied, contextualized evidence [S012], while validity theory requires justification of the interpretations and actions drawn from that evidence [S013]. Sequential advice studies show that final accuracy can hide correct adoption and correct resistance [S020], and that raw confidence is weaker than confidence that discriminates errors [S021]. Disabled learners' accounts show that AI may reduce construct-irrelevant access barriers as well as delegate cognition [S022].
+
+Authentic GenAI interaction logs add a further boundary. Fine-grained process categories were only moderately reproducible on average, a third of reported users lacked usable logs, and grading the process may have reduced participation [S065, C039]. Institutional guidance therefore requires purpose limitation, data minimisation, validation of incomplete data, learner access and correction, and bounded retention before richer traces are treated as useful evidence [S067].
 
 ## Boundary conditions
 
@@ -1500,6 +1665,48 @@ GPT-4o is historical-system evidence for current product decisions. More capable
 ## Product relevance
 
 Orqestra should represent tool access, assistance state and stewardship actions separately. A human–AI capability experiment should teach and manipulate a workflow, preserve the learner's pre-advice state, and measure both immediate assisted quality and later accessible-independent performance.
+
+## C039 — Assistance function is a fallible classification, not a directly observed fact
+
+Type: claim
+Status: provisional
+Topics: human-ai-collaboration, assessment-validity, learner-modelling, product-measurement
+Canonical path: `claims/C039-assistance-function-is-a-fallible-classification.md`
+
+# C039 — Assistance function is a fallible classification, not a directly observed fact
+
+## Evidence and reasoning
+
+In [S065], four annotators applied a 35-subcategory taxonomy to authentic student–GenAI logs. Mean pairwise kappa was .44, subcategory agreement varied widely, 33 of 103 reported users lacked a usable log, and making process quality part of grading may have reduced participation. The study's process/output correlation does not turn the categories into observed traits.
+
+## Boundary conditions
+
+The taxonomy was unusually detailed and domain-specific. A smaller vocabulary may be more reliable, especially when learners classify the function in context. That is a hypothesis to test, not a reason to treat the field as objective.
+
+## Product relevance
+
+Separate the interaction trace from the classification assertion. Preserve classification scheme/version, basis, classifier, time, confidence or disagreement, missingness, learner review, and correction chain. Compare the richer label with an `unknown`-tolerant minimal baseline on actual decision value.
+
+## C040 — Aggregate learner-model calibration can conceal subgroup decision errors
+
+Type: claim
+Status: seed
+Topics: learner-modelling, assessment-validity, product-measurement
+Canonical path: `claims/C040-calibration-depends-on-evidence-history.md`
+
+# C040 — Aggregate learner-model calibration can conceal subgroup decision errors
+
+## Evidence and reasoning
+
+[S066] found aggregate ECE below .025 for all six knowledge-tracing models, while every model overpredicted the lower-performing group and underpredicted the higher-performing group. Group-by-stage ECE reached .157 to .195 in the worst cells, and false-mastery rates differed by group, model, and threshold in the simulated decision layer.
+
+## Boundary conditions
+
+This is a useful falsifier of a single aggregate calibration flag, not proof of demographic unfairness or a production effect. The groups were defined from observed performance, the decision layer was simulated, and the work did not test whether subgroup recalibration improves learning or fairness.
+
+## Product relevance
+
+An inference record needs the evidence stage, calibration population, model and calibrator versions, metrics, decision threshold, and false-decision audit. Raw observation events should not carry model confidence, and aggregate ECE should not authorize a learner-level action.
 
 ## B001 — Optimize durable capability, not completion
 
@@ -1932,7 +2139,7 @@ An architectural synthesis plus product experiments comparing transparent baseli
 
 ## Next search
 
-Begin with contemporary knowledge-tracing surveys, evidence-centred design, assessment validity, uncertainty communication, and learner-model ethics.
+Prospectively double-code a small, co-designed assistance vocabulary and report per-label agreement, missingness, burden and learner corrections [C039]. For any learner-model inference, test subgroup- and stage-specific calibration plus threshold-level false decisions against a transparent baseline [C040]. Compare the purpose-minimal contract with the richer ledger on actual decision value and privacy cost before adding fields.
 
 ## Q003 — What is worth learning in an AI-rich world?
 

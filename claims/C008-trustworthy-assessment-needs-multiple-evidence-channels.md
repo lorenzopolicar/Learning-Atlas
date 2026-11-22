@@ -7,11 +7,11 @@
   "status": "provisional",
   "confidence": "moderate",
   "topics": ["assessment-validity", "human-ai-collaboration", "institutional-design"],
-  "supporting_sources": ["S012", "S013", "S020", "S021", "S022"],
+  "supporting_sources": ["S012", "S013", "S020", "S021", "S022", "S065", "S067"],
   "contradicting_sources": [],
-  "boundary_conditions": ["The required evidence depends on decision stakes and construct.", "Multiple weak or redundant observations do not automatically create validity.", "The presence of AI does not reveal whether it restored access or performed construct-relevant cognition; independence must be defined against an accessible baseline."],
+  "boundary_conditions": ["The required evidence depends on decision stakes and construct.", "Multiple weak or redundant observations do not automatically create validity.", "The presence of AI does not reveal whether it restored access or performed construct-relevant cognition; independence must be defined against an accessible baseline.", "Assistance-function labels derived from interaction traces are fallible and can be selectively missing or reactive to collection conditions [C039]."],
   "product_relevance": "Model an evidence portfolio across accessible independent, AI-assisted, and supervisory contexts; record assistance function and match assurance to the consequence of the decision.",
-  "last_reviewed": "2026-08-31"
+  "last_reviewed": "2026-11-22"
 }
 ---
 
@@ -20,6 +20,8 @@
 ## Evidence and reasoning
 
 AI makes a submitted artifact a weaker proxy for unaided capability. Sector guidance advocates programme-level, varied, contextualized evidence [S012], while validity theory requires justification of the interpretations and actions drawn from that evidence [S013]. Sequential advice studies show that final accuracy can hide correct adoption and correct resistance [S020], and that raw confidence is weaker than confidence that discriminates errors [S021]. Disabled learners' accounts show that AI may reduce construct-irrelevant access barriers as well as delegate cognition [S022].
+
+Authentic GenAI interaction logs add a further boundary. Fine-grained process categories were only moderately reproducible on average, a third of reported users lacked usable logs, and grading the process may have reduced participation [S065, C039]. Institutional guidance therefore requires purpose limitation, data minimisation, validation of incomplete data, learner access and correction, and bounded retention before richer traces are treated as useful evidence [S067].
 
 ## Boundary conditions
 

@@ -7,11 +7,11 @@
   "status": "provisional",
   "confidence": "high",
   "topics": ["learner-modelling", "assessment-validity", "ethics-and-governance"],
-  "supporting_sources": ["S011", "S013"],
+  "supporting_sources": ["S011", "S013", "S066"],
   "contradicting_sources": [],
-  "boundary_conditions": ["Predictive accuracy can still make an imperfect model useful.", "The appropriate uncertainty representation depends on the decision and model family."],
+  "boundary_conditions": ["Predictive accuracy can still make an imperfect model useful.", "The appropriate uncertainty representation depends on the decision, model family, evidence stage, calibration population and threshold.", "Subgroup calibration evidence in S066 uses performance-defined groups and simulated promotion decisions; it does not establish demographic unfairness or a real learning effect."],
   "product_relevance": "Store evidence and inference separately; show why a capability estimate exists and prevent unsupported certainty from driving high-stakes action.",
-  "last_reviewed": "2026-08-31"
+  "last_reviewed": "2026-11-22"
 }
 ---
 
@@ -20,6 +20,8 @@
 ## Evidence and reasoning
 
 Knowledge tracing infers latent mastery through assumptions about skills, learning, guesses, slips, and observation sequences [S011]. Validity attaches to the interpretation and use of evidence, not to a score in isolation [S013]. Therefore a learner model cannot responsibly be represented as a context-free fact about a person.
+
+Aggregate calibration is also not enough. In one large real-log comparison, all six models looked well calibrated overall while lower-performing learners were systematically overpredicted and simulated false-mastery rates depended on model, stage and threshold [S066, C040]. Calibration must be stated for the population, evidence regime and decision in which it was evaluated.
 
 ## Boundary conditions
 
