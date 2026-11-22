@@ -120,6 +120,20 @@
       "path": "claims/C012-minimal-ai-access-did-not-improve-bedside-performance.md"
     },
     {
+      "id": "C039",
+      "type": "claim",
+      "title": "Assistance function is a fallible classification, not a directly observed fact",
+      "status": "provisional",
+      "path": "claims/C039-assistance-function-is-a-fallible-classification.md"
+    },
+    {
+      "id": "C040",
+      "type": "claim",
+      "title": "Aggregate learner-model calibration can conceal subgroup decision errors",
+      "status": "seed",
+      "path": "claims/C040-calibration-depends-on-evidence-history.md"
+    },
+    {
       "id": "D001",
       "type": "decision",
       "title": "Use Git as the canonical synthesis store",
@@ -398,6 +412,27 @@
       "title": "AI at the bedside: Randomised controlled trial of ChatGPT's impact on student performance in real-patient clinical exams",
       "status": "reviewed",
       "path": "sources/notes/S025-saloojee-ai-at-bedside.md"
+    },
+    {
+      "id": "S065",
+      "type": "source",
+      "title": "Assessing students' DRIVE: A framework to evaluate learning through interactions with generative AI",
+      "status": "reviewed",
+      "path": "sources/notes/S065-oliveira-drive-interaction-taxonomy.md"
+    },
+    {
+      "id": "S066",
+      "type": "source",
+      "title": "Subgroup Calibration and Mastery Decision Errors in Knowledge Tracing",
+      "status": "reviewed",
+      "path": "sources/notes/S066-nurmukhambet-subgroup-calibration.md"
+    },
+    {
+      "id": "S067",
+      "type": "source",
+      "title": "Code of practice for learning analytics",
+      "status": "reviewed",
+      "path": "sources/notes/S067-jisc-learning-analytics-code.md"
     }
   ],
   "edges": [
@@ -572,6 +607,11 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C007",
+      "target": "S066",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "C008",
       "target": "S012",
       "relation": "supporting_sources"
@@ -597,6 +637,16 @@
       "relation": "supporting_sources"
     },
     {
+      "source": "C008",
+      "target": "S065",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C008",
+      "target": "S067",
+      "relation": "supporting_sources"
+    },
+    {
       "source": "C009",
       "target": "S015",
       "relation": "supporting_sources"
@@ -619,6 +669,16 @@
     {
       "source": "C012",
       "target": "S025",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C039",
+      "target": "S065",
+      "relation": "supporting_sources"
+    },
+    {
+      "source": "C040",
+      "target": "S066",
       "relation": "supporting_sources"
     },
     {
@@ -672,6 +732,16 @@
       "relation": "related_claims"
     },
     {
+      "source": "D002",
+      "target": "C039",
+      "relation": "related_claims"
+    },
+    {
+      "source": "D002",
+      "target": "C040",
+      "relation": "related_claims"
+    },
+    {
       "source": "E001",
       "target": "B004",
       "relation": "tests_beliefs"
@@ -684,6 +754,16 @@
     {
       "source": "E001",
       "target": "C011",
+      "relation": "tests_claims"
+    },
+    {
+      "source": "E001",
+      "target": "C039",
+      "relation": "tests_claims"
+    },
+    {
+      "source": "E001",
+      "target": "C040",
       "relation": "tests_claims"
     },
     {
@@ -894,6 +974,16 @@
     {
       "source": "Q002",
       "target": "C008",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q002",
+      "target": "C039",
+      "relation": "related_claims"
+    },
+    {
+      "source": "Q002",
+      "target": "C040",
       "relation": "related_claims"
     },
     {

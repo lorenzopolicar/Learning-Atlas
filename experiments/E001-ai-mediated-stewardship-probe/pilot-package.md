@@ -35,7 +35,7 @@ The review surface must use observation language, not trait language:
 
 > This record shows what happened on a small set of practice tasks. It does not establish your general mastery, intelligence, employability or a permanent ability to work with AI.
 
-For every event, show the task and instrument versions, assistance lane, support classification, observed action/outcome, permitted use, expiry, uncertainty and a **correct or contest this record** action. A correction appends a new event that refers to the original; it never silently overwrites history.
+For every event, show the task and instrument versions, assistance lane, support classification and its assertion provenance, observed action/outcome, permitted use, expiry, uncertainty and a **correct or contest this record** action. A correction appends a new event that refers to the original; it never silently overwrites history. The interface must distinguish a learner declaration, human classification and automated classification, and support `unknown`, `mixed` and `disputed` without forcing false precision [C039].
 
 After the last planted-error trial, debrief which advice was controlled, identify every planted error, explain the safer reasoning and offer misconception repair. Let a learner withdraw future use where the consent model permits it.
 
@@ -63,7 +63,7 @@ For the pilot, add a separate append-only research event table or research-data 
 
 ## Delivery sequence
 
-1. Co-design the support vocabulary, burden, review copy and contest flow with a varied learner advisory group that includes disabled learners.
+1. Co-design the support vocabulary, burden, review copy and contest flow with a varied learner advisory group that includes disabled learners; keep the smallest vocabulary that can be classified reliably enough for the declared use.
 2. Domain-review the task/rubric/advice bank and planted-error severity; pre-register exclusions, estimands, timing and minimum information thresholds.
 3. Run schema fixtures through the implementation's chosen JSON Schema validator and keep the repository invariant tests green.
 4. Instrument only the research-flag path and conduct an internal dry run with synthetic identities.
@@ -87,7 +87,9 @@ python3 -m unittest tests.test_e001_contract -v
 - severity-weighted error acceptance and repair;
 - verification, escalation and unresolved-uncertainty events;
 - order effects, missingness, interaction burden and subgroup/invariance diagnostics;
+- per-label assistance-classification agreement, provenance, unknown/disputed rates, learner corrections and participation effects;
 - incremental prediction over domain accuracy and domain accuracy plus raw confidence;
+- threshold-level false-decision rates and calibration by predeclared evidence stage and relevant learner groups, never aggregate calibration alone;
 - contest rate, correction rate and learner comprehension of the record.
 
 No analysis should produce a leaderboard, credential, employment signal, silent mastery update or diagnosis.
@@ -97,5 +99,6 @@ No analysis should produce a leaderboard, credential, employment signal, silent 
 - a learner/domain/accessibility co-design group has not reviewed the task and event vocabulary;
 - the product cannot preserve ordinary access supports across conditions;
 - event visibility, correction, expiry and prohibited-use enforcement are only policy text rather than testable behaviour;
+- the assistance vocabulary cannot be double-coded with acceptable, predeclared agreement or produces selective missingness that undermines its intended use;
 - a controlled error could cause real-world harm or persist beyond debrief and repair;
 - the team cannot separate pilot research data from operational learner scoring.

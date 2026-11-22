@@ -7,7 +7,7 @@
   "date": "2026-08-31",
   "topics": ["human-ai-collaboration", "assessment-validity", "learner-modelling", "product-measurement", "ethics-and-governance"],
   "principles": ["P002", "P005", "P006"],
-  "related_claims": ["C007", "C008", "C010"],
+  "related_claims": ["C007", "C008", "C010", "C039", "C040"],
   "supersedes": []
 }
 ---
@@ -33,6 +33,9 @@ The full design brief is [Orqestra design brief — AI-mediated task stewardship
 - Trustworthy judgments require multiple construct-relevant channels [C008, P006].
 - Learning claims require delayed performance after substantive assistance is removed, while necessary access support remains [P005].
 - Disabled learners report both meaningful access/autonomy benefits and overreliance concerns, so assistance function is indispensable [S022].
+- Assistance function is itself an assertion: authentic GenAI-log categories showed moderate average rater agreement and selective missingness [S065, C039].
+- A model can look calibrated overall while producing materially different decision reliability by evidence stage and learner group [S066, C040].
+- The ledger must earn its collection cost through a defined purpose, minimum necessary fields, learner access/correction, and bounded retention [S067].
 
 ## Alternatives considered
 
@@ -44,4 +47,4 @@ The full design brief is [Orqestra design brief — AI-mediated task stewardship
 
 ## Consequences and revisit trigger
 
-The pilot adds task and telemetry burden, must be co-designed, and cannot support high-stakes claims. Revisit the decision after [E001], especially if measures fail to add validity, create inequitable burden, are highly reactive to ordering, or do not predict delayed or authentic outcomes. A future composite should be considered only after a public construct model, independent validation, fairness evidence and a legitimate decision use exist.
+The pilot adds task and telemetry burden, must be co-designed, and cannot support high-stakes claims. Revisit the decision after [E001], especially if assistance classifications cannot be reproduced or understood, records are selectively missing, measures fail to add decision value, collection changes participation, creates inequitable burden, is highly reactive to ordering, or does not predict delayed or authentic outcomes. A future composite should be considered only after a public construct model, independent validation, subgroup and threshold calibration, fairness evidence and a legitimate decision use exist.

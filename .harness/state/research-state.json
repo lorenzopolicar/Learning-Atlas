@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "last_weekly_scout": "2026-09-01",
+  "last_weekly_scout": "2026-11-22",
   "last_monthly_synthesis": "2026-08-31",
   "last_quarterly_review": "2026-08-31",
   "active_review": "R001",
-  "current_queue_item": 1,
+  "current_queue_item": 3,
   "scheduled_run_observation": {
     "target": 3,
-    "actual_scheduled_runs_observed": 0,
+    "actual_scheduled_runs_observed": 2,
     "supervised_shadow_cycles": 2,
-    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass exercised scheduled research controls under supervision. Neither is counted as an actual scheduler execution."
+    "note": "The 2026-08-31 proving cycle and 2026-09-01 controlled-outcomes pass remain supervised shadows. The live scheduler record establishes 2026-11-14 and 2026-11-22 as the first two actual executions; observation 1 is preserved in draft PR #12 and observation 2 in this run."
   },
   "runs": [
     {
@@ -67,6 +67,14 @@
       "sources_added": ["S023", "S024", "S025"],
       "briefing": "briefings/weekly/2026-09-01-assisted-independent-outcomes.md",
       "note": "Human-directed supervised shadow pass admitted one null/inconclusive one-week contrast, one fragile positive access-timing study and one authentic clinical null; held two abstract-only candidates."
+    },
+    {
+      "date": "2026-11-22",
+      "kind": "scheduled-research-scout",
+      "question": "Q002",
+      "sources_added": ["S065", "S066", "S067"],
+      "briefing": "briefings/weekly/2026-11-22-capability-evidence-classification.md",
+      "note": "Second actual scheduler observation. Added classification-reliability, subgroup-calibration and current-governance constraints without changing claim maturity or authorizing an Orqestra schema expansion."
     }
   ]
 }

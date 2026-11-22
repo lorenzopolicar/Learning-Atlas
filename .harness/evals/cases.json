@@ -42,6 +42,13 @@
       "types": ["claim", "belief", "decision", "experiment", "discourse"],
       "expected_ids": ["C008", "C010", "B004", "D002", "E001", "N001"],
       "required_concepts": ["accessible baseline", "correct resistance", "assistance function"]
+    },
+    {
+      "id": "EV007",
+      "query": "Is assistance function an observed fact and is aggregate learner model calibration enough for a decision threshold?",
+      "types": ["claim", "decision", "experiment"],
+      "expected_ids": ["C039", "C040", "D002", "E001"],
+      "required_concepts": ["classification", "subgroup", "threshold"]
     }
   ]
 }

@@ -7,8 +7,8 @@
   "status": "open",
   "priority": "high",
   "topics": ["learner-modelling", "assessment-validity", "ethics-and-governance"],
-  "related_claims": ["C007", "C008"],
-  "last_reviewed": "2026-08-31"
+  "related_claims": ["C007", "C008", "C039", "C040"],
+  "last_reviewed": "2026-11-22"
 }
 ---
 
@@ -28,4 +28,4 @@ An architectural synthesis plus product experiments comparing transparent baseli
 
 ## Next search
 
-Begin with contemporary knowledge-tracing surveys, evidence-centred design, assessment validity, uncertainty communication, and learner-model ethics.
+Prospectively double-code a small, co-designed assistance vocabulary and report per-label agreement, missingness, burden and learner corrections [C039]. For any learner-model inference, test subgroup- and stage-specific calibration plus threshold-level false decisions against a transparent baseline [C040]. Compare the purpose-minimal contract with the richer ledger on actual decision value and privacy cost before adding fields.

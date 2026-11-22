@@ -21,7 +21,7 @@ The product therefore needs two distinctions:
 1. **Evidence lane:** accessible independent, declared AI-assisted, or supervisory/recovery performance.
 2. **Assistance function:** access restoration, representation, expression, executive support, substantive cognitive delegation, or mixed.
 
-These are descriptions of an observation, not moral rankings. The intended construct and decision stakes determine what each observation can support.
+These are descriptions of an observation, not moral rankings. The assistance function is still a fallible classification rather than a directly observed learner fact: preserve who or what classified it, the vocabulary/version, uncertainty or disagreement, missingness and learner correction [C039]. The intended construct and decision stakes determine what each observation can support.
 
 ## Current-system gap
 
@@ -46,14 +46,14 @@ Create append-only observations with corrections rather than mutating a learner 
 | identity and version | event ID, learner/pseudonymous actor, objective ID/version, task/form ID/version, timestamp | prevents evidence from floating free of the construct and instrument |
 | intended inference | target capability, stakes, purpose, permitted uses, expiry/retention | constrains downstream claims [C007, P002] |
 | evidence lane | `accessible-independent`, `ai-assisted`, `supervisory-recovery` | prevents assisted output from silently becoming independent mastery [B004] |
-| assistance envelope | tools allowed/used, assistance function, accessible baseline, substantive-generation state | distinguishes access restoration from delegation [S022] |
+| assistance envelope | tools allowed/used, accessible baseline, substantive-generation state; separate versioned assistance-function assertion with classifier, basis, uncertainty/disagreement and correction status | distinguishes access restoration from delegation without laundering a fallible label into fact [S022, C039] |
 | system provenance | provider/model/version, prompt or advice version, retrieval/source provenance, known uncertainty | makes changing AI conditions interpretable |
 | pre-advice state | initial response or decision, confidence, rationale when proportionate | enables two-sided reliance measures [C010] |
 | intervention | advice content/hash, correctness or rubric state where defensible, ordering, explanation/provenance cues | records what the learner actually encountered |
 | post-advice state | final response, confidence, rationale, accepted/rejected/edited elements | distinguishes outcome and decision process |
 | stewardship actions | verification, source checks, repair, tool switching, human escalation, uncertainty escalation, contest action | captures responsible recovery beyond solitary completion |
 | outcome and delay | correctness/rubric with severity, immediate result, delayed accessible independent result, transfer distance | separates performance from learning [P005] |
-| inference record | model/version, estimate, uncertainty, boundary, evidence links, correction/supersession | keeps inference separate and revisable [P002] |
+| inference record | model/version, estimate, uncertainty, boundary, evidence links, correction/supersession, calibration population/stage, decision threshold and false-decision audit | keeps inference separate and revisable; aggregate calibration is insufficient [P002, C040] |
 
 Do not record a disability diagnosis merely to classify an assistance function. Let learners retain ordinary access supports, declare what support did in context, and review or contest classifications.
 
@@ -93,6 +93,8 @@ Proceed from research pilot to product capability only if:
 - ordering effects and trial burden are acceptable;
 - accessibility and measurement-invariance audits do not reveal systematic construct-irrelevant penalties;
 - learners can understand and successfully contest the record;
+- assistance functions can be classified with acceptable predeclared agreement and without selective participation or missingness;
+- calibration and false-decision rates remain acceptable across relevant evidence stages, learner groups and decision thresholds;
 - the marginal value justifies privacy and implementation cost.
 
 If these gates fail, retain the conceptual distinction between evidence lanes and assistance functions but do not persist a stewardship inference.
